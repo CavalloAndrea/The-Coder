@@ -57,6 +57,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-%w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
-  gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
-end
+#%w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+#  gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
+#end
