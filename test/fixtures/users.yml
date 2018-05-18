@@ -2,3 +2,15 @@ prova:
   name: Utente Prova
   email: utenteprova@gmail.com
   password_digest: <%= User.digest('password')%>
+
+rossi:
+  name: Mario rossi
+  email: mariorossi@gmail.com
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name: <%= "User#{n}" %>
+  email: <%= "user-#{n}@gmail.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>
