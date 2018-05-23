@@ -3,7 +3,12 @@
 			<%= link_to "The Coder", root_path, id:"logo"%>
 			<nav>
 				<ul class="nav navbar-nav pull-right">
+					<% if logged_in? %>
+					<li><%= link_to "Corsi", root_path%>
+					</li>
+					<% else %>
 					<li> <%= link_to "Home", root_path %> </li>
+					<% end %>
 					
 					<% if logged_in? %>
 					<li> <%= link_to "Forum", forum_path %> </li>
