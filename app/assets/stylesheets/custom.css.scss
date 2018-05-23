@@ -212,3 +212,20 @@ input{
 		border-bottom: 1px solid #eaeaea;
 	}
 }
+
+/* PAGINA CORSI */
+div.center{
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.corsi ul {
+	list-style: none;
+
+}
+
+.corsi ul li {
+	float:left;
+	padding: 5%;
+}

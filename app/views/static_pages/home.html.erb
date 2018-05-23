@@ -1,12 +1,35 @@
+<% if logged_in? %>
+<h1>Seleziona un corso</h1>
+	<div class="center">
+		<section class="corsi">
+			<ul>
+				<li><a href="#"><figure><%= image_tag("c.png", alt: "Linguaggio C", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>C</b></figcaption></figure></li>
+				<li><figure><a href="#"><%= image_tag("java.png", alt: "Linguaggio Java", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>Java</b></figcaption></figure></li>
+				<li><figure><a href="#"><%= image_tag("python.png", alt: "Linguaggio Python", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>Python</b></figcaption></figure></li>
+				<li><figure><a href="#"><%= image_tag("assembly.png", alt: "Linguaggio Assembly", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>Assembly</b></figcaption></figure></li>
+			</ul>
+		</section>
+			<section class="corsi">
+			<ul>
+				<li><figure><a href="#"><%= image_tag("sql.png", alt: "Linguaggio SQL", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>SQL</b></figcaption></figure></li>
+				<li><figure><a href="#"><%= image_tag("html.png", alt: "Linguaggio HTML", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>HTML</b></figcaption></figure></li>
+				<li><figure><a href="#"><%= image_tag("css.png", alt: "Linguaggio CSS", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>CSS</b></figcaption></figure></li>
+				<li><figure><a href="#"><%= image_tag("javascript.png", alt: "Linguaggio Javascript", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>Javascript</b></figcaption></figure></li>
+			</ul>
+		</section>
+	</div>
+
+<% else %>
 <div class="center jumbotron">
 	<h1>Benvenuti su </h1>
+
 	<h1 style="color:#FF8100; margin-bottom: 30px"><b>The Coder</b></h1>
 
 	
-	
+
 	<%= link_to "Iscriviti", signup_path , class: "btn btn-lg btn-primary" %>
 	<%= link_to "Accedi", login_path, class: "btn btn-lg btn-primary" %>
 </div>
 
 <%= link_to image_tag("logo.png", alt: "The Coder logo", :height => "30%", :width => "30%")%>
-
+<% end %>
