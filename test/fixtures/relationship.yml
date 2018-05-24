@@ -1,0 +1,15 @@
+one:
+  follower: prova
+  followed: lana
+
+two:
+  follower: prova
+  followed: mallory
+
+three:
+  follower: lana
+  followed: prova
+
+four:
+  follower: archer
+  followed: prova
