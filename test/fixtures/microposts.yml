@@ -1,15 +1,26 @@
 orange:
   content: "Il tempo è sereno!"
   created_at: <%= 10.minutes.ago %>
+  user: prova
 
 tau_manifesto:
   content: "Guarda questo sito: http://momentswithyou.it"
   created_at: <%= 3.years.ago %>
+  user: prova
 
 cat_video:
   content: "Video di un gatto triste: http://youtu.be/PKffm2uI4dk"
   created_at: <%= 2.hours.ago %>
+  user: prova
 
 most_recent:
   content: "Sto scrivendo una poesia.."
   created_at: <%= Time.zone.now %>
+  user: prova
+
+<% 30.times do |n| %>
+micropost_<%= n %>:
+ content: <%= Faker::Lorem.sentence(5) %>
+ created_at: <%= 42.days.ago %>
+ user: prova
+<% end %>
