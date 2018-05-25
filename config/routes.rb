@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   
+  get 'esercizi/new'
+
   get 'password_resets/new'
 
   get 'password_resets/edit'
@@ -26,12 +28,15 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
 
   delete 'logout' => 'sessions#destroy'
+
+  get 'problem' => 'problems#new'
   
   resources :users do
     member do
       get :following, :followers
     end
   end
+  resources :problems, only:[:create]
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :microposts, only:[:create, :destroy]

@@ -1,0 +1,24 @@
+<% provide(:title, 'Proponi Esercizio') %>
+<h1>Proponi Esercizio</h1>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<%= form_for(@problem) do |f| %>
+				<%= render 'shared/problem_message' %>
+
+				<%= f.label :titolo %>
+				<%= f.text_field :titolo, class: 'form-control' %>
+
+				<%= f.label :linguaggio %>
+				<%= f.select(:linguaggio, options_for_select(['C','Java','Python']))%>
+
+				<%= f.label :esercizio %>
+				<%= f.text_area :esercizio, class: 'form-control'%>
+
+				<%= f.label :soluzione %>
+				<%= f.text_area :soluzione, class: 'form-control' %>
+				
+				<%= f.submit "Aggiungi esercizio", class: "btn btn-primary" %>
+			<% end %>
+		</div>
+	</div>
