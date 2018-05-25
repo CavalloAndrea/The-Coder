@@ -18,7 +18,7 @@ class ProblemsController < ApplicationController
 		if linguaggio.blank?
 			@data = Problem.where("((titolo LIKE ?) or (esercizio LIKE ?))", "%#{searchword}%","%#{searchword}%")
 		else
-			@data = Problem.where("((titolo LIKE ?) or (esercizio LIKE ?)) and linguaggio < ?","%#{searchword}%","%#{searchword}%","#{linguaggio}")
+			@data = Problem.where("((titolo LIKE ?) or (esercizio LIKE ?)) and linguaggio == ?","%#{searchword}%","%#{searchword}%","#{linguaggio}")
 		end
 	end
 
