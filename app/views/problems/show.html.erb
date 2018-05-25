@@ -1,0 +1,14 @@
+<% provide(:title, @problem.titolo) %>
+<h1> <%= @problem.titolo %></h1>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h4>Titolo: <%= @problem.titolo %></h4>
+
+        <p><b>Linguaggio:</b> <%= @problem.linguaggio %></p>
+
+        <p><b>Esercizio:</b> <%= @problem.esercizio %></p>
+
+        <p><b>Soluzione:</b> <%= @problem.soluzione %></p>
+    </div>
+</div>

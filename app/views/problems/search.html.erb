@@ -1,0 +1,10 @@
+<h1>Risultati ricerca  ' <%= params[:search] %> '</h1>
+
+ <% if @data.empty? %>
+   <h1>Nessun esercizio trovato</h1>
+ <% end %>
+
+ <% @data.each do |problem| %>
+   <%= link_to problem.titolo, problem_path(problem) %>
+        <br>
+<% end %>

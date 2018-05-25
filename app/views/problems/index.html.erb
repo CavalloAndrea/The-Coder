@@ -1,0 +1,37 @@
+<% provide(:title, 'Esercizi') %>
+<h1>Tutti gli esercizi</h1>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h6>Inserisci la parola chiave dell'esercizio</h6>
+        <%= form_tag search_path, method: 'get' do %>
+        <%= text_field_tag :search, params[:search] %> 
+        <h6>Inserisci il linguaggio</h6>
+        <%= text_field_tag :linguaggio, params[:search]%> 
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-md-offset-2">
+        <%= submit_tag "Cerca", class: "btn btn-primary" %>
+    </div>
+
+<% end %>
+    <div class="col-md-2">
+        <%= link_to "Proponi un esercizio", new_problem_path, class: "btn btn-primary", style: "width: 100%;" %>
+        <br>
+    </div>
+</div>
+ <br>
+ <br>
+
+<%= will_paginate %>
+
+<ul class="problem">
+    <% @problems.each do |problem| %>
+        <%= link_to problem.titolo, problem_path(problem) %>
+        <br>
+    <% end %>
+
+</ul>
+
+<%= will_paginate %>

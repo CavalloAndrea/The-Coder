@@ -9,6 +9,10 @@
 					<% else %>
 					<li> <%= link_to "Home", root_path %> </li>
 					<% end %>
+
+					<% if logged_in? %>
+                    <li><%= link_to "Esercizi", problems_path %></li>
+                	<% end %>
 					
 					<% if logged_in? %>
 					<li> <%= link_to "Forum", forum_path %> </li>
