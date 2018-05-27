@@ -3,20 +3,48 @@
 	<div class="center">
 		<section class="corsi">
 			<ul>
-				<li><a href="#"><figure><%= image_tag("c.png", alt: "Linguaggio C", :height => "150px", :width => "150px" ) %></a><br><br><figcaption><b>C</b></figcaption></figure></li>
-				<li><figure><a href="#"><%= image_tag("java.png", alt: "Linguaggio Java", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>Java</b></figcaption></figure></li>
-				<li><figure><a href="#"><%= image_tag("python.png", alt: "Linguaggio Python", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>Python</b></figcaption></figure></li>
-				<li><figure><a href="#"><%= image_tag("assembly.png", alt: "Linguaggio Assembly", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>Assembly</b></figcaption></figure></li>
+				<li><%= link_to image_tag('c.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio =>
+					"C") %><br><br><%= link_to 'C', searching_path(:linguaggio=>"C")%></li>
+
+				<li><%= link_to image_tag('java.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'Java') %><br><br><%= link_to 'Java', searching_path(:linguaggio=>'Java')%></li>
+
+				<li><%= link_to image_tag('python.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'Python') %><br><br><%= link_to 'Python', searching_path(:linguaggio=='Python')%></li>
+
+				<li><%= link_to image_tag('assembly.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'Assembly') %><br><br><%= link_to 'Assembly', searching_path(:linguaggio=>'Assembly')%></li>
+
 			</ul>
 		</section>
 			<section class="corsi">
 			<ul>
-				<li><figure><a href="#"><%= image_tag("sql.png", alt: "Linguaggio SQL", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>SQL</b></figcaption></figure></li>
-				<li><figure><a href="#"><%= image_tag("html.png", alt: "Linguaggio HTML", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>HTML</b></figcaption></figure></li>
-				<li><figure><a href="#"><%= image_tag("css.png", alt: "Linguaggio CSS", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>CSS</b></figcaption></figure></li>
-				<li><figure><a href="#"><%= image_tag("javascript.png", alt: "Linguaggio Javascript", :height => "150px", :width => "150px") %></a><br><br><figcaption><b>Javascript</b></figcaption></figure></li>
+				<li><%= link_to image_tag('sql.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'SQL') %><br><br><%= link_to 'SQL', searching_path(:linguaggio=>'SQL')%></li>
+
+				<li><%= link_to image_tag('html.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'HTML') %><br><br><%= link_to 'HTML', searching_path(:linguaggio=>'HTML')%></li>
+
+				<li><%= link_to image_tag('css.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'CSS') %><br><br><%= link_to 'CSS', searching_path(:linguaggio=>'CSS')%></li>
+
+				<li><%= link_to image_tag('javascript.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'Javascript') %><br><br><%= link_to 'Javascript', searching_path(:linguaggio=>'Javascript')%></li>
 			</ul>
 		</section>
+		<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h6>Inserisci la parola chiave dell'argomento</h6>
+        <%= form_tag searching_path, method: 'get' do %>
+        <%= text_field_tag :searching, params[:searching] %> 
+        <h6>Inserisci il linguaggio</h6>
+        <%= select_tag :linguaggio,  options_for_select(['Assembly','C','CSS','HTML','Java','Javascript','Python','SQL'], params[:search]) %> 
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-2">
+        <%= submit_tag "Cerca", class: "btn btn-primary" %>
+    </div>
+    <div class="col-md-2">
+        <%= link_to "Proponi un esercizio", new_tutorial_path, class: "btn btn-primary", style: "width: 100%;" %>
+        <br>
+    </div>
+
+<% end %>
 	</div>
 
 <% else %>

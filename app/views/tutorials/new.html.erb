@@ -1,0 +1,22 @@
+<% provide(:title, 'Proponi Argomento') %>
+<h1>Proponi Argomento</h1>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<%= form_for(@tutorial) do |f| %>
+				
+
+				<%= f.label :titolo %>
+				<%= f.text_field :titolo, class: 'form-control' %>
+
+				<%= f.label :linguaggio %>
+				<%= f.select(:linguaggio, options_for_select(['Assembly','C','CSS','HTML','Java','Javascript','Python','SQL']))%>
+
+				<%= f.label :lezione %>
+				<%= f.text_area :lezione, class: 'form-control'%>
+
+				
+				<%= f.submit "Aggiungi", class: "btn btn-primary" %>
+			<% end %>
+		</div>
+	</div>

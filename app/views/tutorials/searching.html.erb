@@ -1,0 +1,12 @@
+
+ <% if @data.empty? %>
+   <h1>L'argomento non si trova all'interno del linguaggio <%= params[:linguaggio]%></h1>
+  <% else %>
+  <h1>Corso di <%= params[:linguaggio]%></h1>
+ <% end %>
+
+
+ <% @data.each do |tutorial| %>
+   <%= link_to tutorial.titolo, tutorial_path(tutorial) %>
+        <br>
+<% end %>

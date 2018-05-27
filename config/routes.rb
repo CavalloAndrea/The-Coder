@@ -30,6 +30,8 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
 
   get 'search' => 'problems#search'
+
+  get 'searching' => 'tutorials#searching'
   
   resources :users do
     member do
@@ -37,6 +39,7 @@ Rails.application.routes.draw do
     end
   end
   resources :problems
+  resources :tutorials
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :microposts, only:[:create, :destroy]
