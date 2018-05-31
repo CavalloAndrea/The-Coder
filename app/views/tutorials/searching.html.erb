@@ -5,7 +5,7 @@
   <h1>Corso di <%= params[:linguaggio]%></h1>
  <% end %>
 
-
+<div style="float: right;"><%= link_to '<button class="btn btn-primary">Quiz finale</button>'.html_safe, quiz_path(:linguaggio => params[:linguaggio])%></div>
  <% @data.each do |tutorial| %>
    <%= link_to tutorial.titolo, tutorial_path(tutorial) %>
         <br>

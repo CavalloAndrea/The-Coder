@@ -32,6 +32,8 @@ Rails.application.routes.draw do
   get 'search' => 'problems#search'
 
   get 'searching' => 'tutorials#searching'
+
+  get 'quiz' => 'tutorials#quiz'
   
   resources :users do
     member do

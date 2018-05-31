@@ -1,0 +1,206 @@
+<% if params[:linguaggio] == 'C' %>
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+
+	<style type="text/css">
+		div#contenitore{
+			 border:#000 1px solid; 
+			 padding:10px 40px 40px 40px;
+		}
+		
+		h1#giusta1{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata1{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta2{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata2{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta3{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata3{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		.codice{
+			background-color: #f0f0f0!important;
+    border: 1px solid #ccc!important;
+    width: 15%;
+    padding: 10px;
+    margin: 10px;
+
+		}
+		input{
+			width: 0 !important;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		function verifica(){
+			
+			if(document.getElementById("A1").checked){
+
+				t = document.getElementById("giusta1");
+				t2 = document.getElementById("sbagliata1");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A1").checked==false){
+				
+				t2 = document.getElementById("giusta1");
+				t2.style.display="none";
+				t = document.getElementById("sbagliata1");
+				t.style.display="block";
+				verde = document.getElementById("a1");
+				verde.style.color = "#00E100";
+			}
+
+			if(document.getElementById("B2").checked){
+
+				t = document.getElementById("giusta2");
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("B2").checked==false){
+				
+				t = document.getElementById("giusta2");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="block";
+				verde = document.getElementById("b2");
+				verde.style.color = "#00E100";
+				
+			}
+
+			if(document.getElementById("D3").checked){
+
+				t = document.getElementById("giusta3");
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("D3").checked==false){
+				
+				t = document.getElementById("giusta3");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="block";
+				verde = document.getElementById("d3");
+				verde.style.color = "#00E100";
+				
+			}
+
+		}
+	</script>
+
+</head>
+<body>
+		<h1>Quiz finale di <%= params[:linguaggio]%> </h1>
+		<div id="contenitore">
+		<ol>
+			<li>Quali di queste è la definizione di variabile globale?</li>
+			
+				<br><div><h1 id="giusta1">&#10004;Corretta</h1><h1 id="sbagliata1">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a1"><input type="radio" name="d1" id="A1" value="A" > Sono variabili che possono venire usate da tutte le procedure e dal programma principale</div>
+				<br>
+				<div id="b1"><input type="radio" name="d1" id="B1" value="B"> Sono variabili che possono venire usate solo dalla procedura in cui vengono dichiarate</div>
+				<br>
+				<div id="c1"><input type="radio" name="d1" id="C1" value="C"> Sono variabili che possono venire usate solo dalla procedura in cui vengono inizializzate</div>
+				<br>
+				<div id="d1"><input type="radio" name="d1" id="D1" value="D"> Sono variabili che si trovano esclusivamente all'interno di un ciclo for o while</div>
+			
+			<br><br>
+
+			<li>Quanto vale la variabile <b>b</b> alla fine del codice qui sotto?<div class="codice">int a = 4;<br>int b;<br>b = a++;</div></li>
+			<br><div><h1 id="giusta2">&#10004;Corretta</h1><h1 id="sbagliata2">&#10006;Sbagliata</h1></div>
+				
+				<div id="a2"><input type="radio" name="d2" id="A2" value="A"> 2</div>
+				<br>
+				<div id="b2"><input type="radio" name="d2" id="B2" value="B"> 4</div>
+				<br>
+				<div id="c2"><input type="radio" name="d2" id="C2" value="C"> 5</div>
+				<br>
+				<div id="d2"><input type="radio" name="d2" id="D2" value="D"> Non viene inizializzata</div>
+
+				<br><br>
+				<li>Cosa stampa il programma qui sotto?<br>
+				<div class="codice">
+					    int j = 7;<br>
+					    int k = 7;<br>
+					    while (j &gt; 2){<br>
+					        &emsp;j--;<br>
+					        &emsp;k++;<br>
+					     }<br>
+					   printf (" %d \n", k);<br>
+					</div>
+				</li>
+				<br><div><h1 id="giusta3">&#10004;Corretta</h1><h1 id="sbagliata3">&#10006;Sbagliata</h1></div>
+				
+				<div id="a3"><input type="radio" name="d3" id="A3" value="A"> 13</div>
+				<br>
+				<div id="b3"><input type="radio" name="d3" id="B3" value="B"> 11</div>
+				<br>
+				<div id="c3"><input type="radio" name="d3" id="C3" value="C"> 7</div>
+				<br>
+				<div id="d3"><input type="radio" name="d3" id="D3" value="D"> 12</div>		
+
+
+		</ol>
+		<br>
+		<button class="btn btn-primary" name="invia"  onclick="verifica();">Conferma Risposte</button>
+		
+		
+	</div>
+
+
+
+</body>
+</html>
+<% elsif params[:linguaggio] == 'Java' %>
+	<p>Questo è il quiz di Java</p>
+<% elsif params[:linguaggio] == 'Assembly' %>
+	<p>Qui ci va il quiz di Assembly</p>
+<% elsif params[:linguaggio] == 'Python' %>
+	<p>Qui ci va il quiz di Python</p>
+<% elsif params[:linguaggio] == 'SQL' %>
+	<p>Qui ci va il quiz di SQL</p>
+<% elsif params[:linguaggio] == 'HTML' %>
+	<p>Qui ci va il quiz di HMTL</p>
+<% elsif params[:linguaggio] == 'CSS' %>
+	<p>Qui ci va il quiz di CSS</p>
+<% elsif params[:linguaggio] == 'Javascript' %>
+	<p>Qui ci va il quiz di Javascript</p>
+	
+<%end%>

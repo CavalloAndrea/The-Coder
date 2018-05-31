@@ -1,5 +1,6 @@
 <% if logged_in? %>
-<h1 id="corsi">Seleziona un corso</h1>
+<h1 id="corsi">&emsp;&emsp;&emsp;&emsp;Seleziona un corso &emsp;&emsp;&emsp;&emsp;<a href="#cerca"><%= image_tag('lente.png', :width=>'50px', :height=>'50px') %></a></h1>
+	
 	<div class="center">
 		<section class="corsi">
 			<ul>
@@ -24,13 +25,17 @@
 
 				<li><%= link_to image_tag('javascript.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'Javascript') %><br><br><%= link_to 'Javascript', searching_path(:linguaggio=>'Javascript')%></li>
 			</ul>
+			<br>
+
 		</section>
-		<div class="row">
+		<hr>
+		<br>
+		<a name="cerca"><div class="row"></a>
     <div class="col-md-8 col-md-offset-2">
-        <h6>Inserisci la parola chiave dell'argomento</h6>
+        <h5 ><b>Inserisci la parola chiave dell'argomento</b></h5>
         <%= form_tag searching_path, method: 'get' do %>
         <%= text_field_tag :searching, params[:searching] %> 
-        <h6>Inserisci il linguaggio</h6>
+        <h5><b>Inserisci il linguaggio<b></h5>
         <%= select_tag :linguaggio,  options_for_select(['Assembly','C','CSS','HTML','Java','Javascript','Python','SQL'], params[:search]) %> 
     </div>
 </div>
