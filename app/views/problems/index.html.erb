@@ -1,12 +1,12 @@
 <% provide(:title, 'Esercizi') %>
 <h1>Tutti gli esercizi</h1>
 
-<div class="row">
+<div class="row"> 
     <div class="col-md-8 col-md-offset-2">
-        <h6>Inserisci la parola chiave dell'esercizio</h6>
+        <h5><b>Inserisci la parola chiave dell'esercizio</h5>
         <%= form_tag search_path, method: 'get' do %>
         <%= text_field_tag :search, params[:search] %> 
-        <h6>Inserisci il linguaggio</h6>
+        <h5><b>Inserisci il linguaggio</b></h5>
         <%= select_tag :linguaggio,  options_for_select(['Assembly','C','CSS','HTML','Java','Javascript','Python','SQL'], params[:search]) %> 
     </div>
 </div>

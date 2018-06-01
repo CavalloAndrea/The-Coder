@@ -1,16 +1,62 @@
 <% provide(:title, "Edit user") %>
-<h1>Aggiorna il tuo profilo</h1>
+<h1>Completa o aggiorna il tuo profilo</h1>
 
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
 		<%= form_for(@user) do |f| %>
 			<%= render 'shared/error_messages', object: f.object %>
 
-			<%= f.label :name %>
+			<%= f.label :name, 'Nome' %>
 			<%= f.text_field :name, class: 'form-control' %>
 
 			<%= f.label :nickname %>
 			<%= f.text_field :nickname, class: 'form-control' %>
+
+			<%= f.label :eta,'Età' %>
+			<%= f.text_field :eta, class: 'form-control' %>
+
+			<%= f.label :sesso %><br>
+			<%= f.radio_button :sesso,'Uomo',:style=>"width:0px"%> Uomo <br>
+
+			<%= f.radio_button :sesso, 'Donna', :style=>"width:0px"%> Donna <br><br>
+
+			<%= f.label :istruzione,'Nella programmazione ti consideri' %>
+			<%= f.select(:istruzione, options_for_select(['Principiante','Intermedio','Esperto']))%>
+			
+			
+			<div style="display: none;">
+			<%= f.label :linguaggi, 'Linguaggi conosciuti' %>
+    
+			<table>
+			<tr>
+				<td><%= f.check_box :linguaggi, {:style=>"width:0px"},'C'%> C </td>
+				<td><%= f.check_box :linguaggi, {:style=>"width:0px"},'Java'%> Java </td>
+			
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> C++ </td>
+
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> SQL</td>
+
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Ruby</td></tr>
+
+			<tr>
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> HTML</td>
+			
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> C# </td>
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Javascript</td>
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Python </td>
+
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Pascal</td></tr>
+
+			<tr>
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> CSS </td>
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Scala </td>
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Assembly</td>
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> PHP </td>
+
+				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Altro</td></tr>
+
+		</table> </div>
+
 
 			<%= f.label :email %>
 			<%= f.email_field :email, class: 'form-control' %>
@@ -18,13 +64,16 @@
 			<%= f.label :password %>
 			<%= f.password_field :password, class: 'form-control' %>
 
-			<%= f.label :password_confirmation %>
+			<%= f.label :Conferma_Password %>
 			<%= f.password_field :password_confirmation, class: 'form-control'%>
 
 			<div class="gravatar_edit">
 				<%= gravatar_for @user %>
 				<a href="http://gravatar.com/emails" target=_blank>Cambia</a>
+
 			</div>
+			<br>
+			<br>
 
 			<%= f.submit "Salva modifiche", class: "btn btn-primary" %>
 

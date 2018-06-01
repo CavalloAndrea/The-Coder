@@ -64,8 +64,9 @@ end
   private
 
   def user_params
-  	params.require(:user).permit(:name,:nickname, :email, :password, :password_confirmation)
+  	params.require(:user).permit(:name,:nickname,:eta,:sesso,:istruzione,:linguaggi, :email, :password, :password_confirmation)
   end
+
 
   def logged_in_user
   	unless logged_in?

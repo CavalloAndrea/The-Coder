@@ -12,6 +12,16 @@
 		<section class="stats">
 				<%= render 'shared/stats' %>
 			</section>
+		<section style="line-height: 30px; letter-spacing: 1px">
+			Nickname: <b><%= @user.nickname %></b>
+			<br>
+			Età: <b><%= @user.eta %></b>
+			<br>
+			Sesso: <b><%= @user.sesso %></b>
+			<br>
+			Livello di esperienza: <b><%= @user.istruzione %></b>
+			<br>
+		</section>
 	</aside>
 	<div class="col-md-8">
 		<%= render 'follow_form' if logged_in? %>
