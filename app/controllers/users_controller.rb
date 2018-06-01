@@ -61,6 +61,14 @@ end
     render 'show_follow'
   end
 
+  def friends
+        @friends = Array.new
+        if current_user.oauth_token.present?
+            graph = Koala::Facebook::API.new(current_user.oauth_token)
+            @friends = graph.get_connections("me", "friends")
+        end
+    end
+
   private
 
   def user_params

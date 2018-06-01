@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180531143235) do
+ActiveRecord::Schema.define(version: 20180601160215) do
 
   create_table "microposts", force: :cascade do |t|
     t.text "content"
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 20180531143235) do
     t.string "nickname"
     t.boolean "admin"
     t.string "activation_digest"
-    t.boolean "activated"
+    t.boolean "activated", default: false
     t.datetime "activated_at"
     t.string "reset_digest"
     t.datetime "reset_sent_at"
@@ -70,6 +70,10 @@ ActiveRecord::Schema.define(version: 20180531143235) do
     t.string "sesso"
     t.string "istruzione"
     t.string "linguaggi"
+    t.string "uid"
+    t.string "provider"
+    t.string "oauth_token"
+    t.datetime "oauth_expires_at"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
