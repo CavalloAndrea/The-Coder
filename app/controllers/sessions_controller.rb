@@ -42,7 +42,7 @@ class SessionsController < ApplicationController
             user.update_attribute(:activated, true)
             user.save
             log_in user
-            redirect_to root_path
+            redirect_to edit_user_path(current_user)
             
         end
     end

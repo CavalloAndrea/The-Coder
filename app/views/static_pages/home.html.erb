@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <% if logged_in? %>
 <h1 id="corsi">&emsp;&emsp;&emsp;&emsp;Seleziona un corso &emsp;&emsp;&emsp;&emsp;<a href="#cerca"><%= image_tag('lente.png', :width=>'50px', :height=>'50px') %></a></h1>
 	
@@ -54,13 +55,15 @@
 
 <% else %>
 <div class="center jumbotron">
-	<h1>Benvenuti su </h1>
+	<h1 id="titolo">Benvenuti su </h1>
 
-	<h1 style="color:#FF8100; margin-bottom: 30px"><b>The Coder</b></h1>
-
-	<%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in", class: "btn btn-lg btn-primary" %>
-	<%= link_to "Iscriviti", signup_path ,id:"bottone", class: "btn btn-lg btn-primary" %>
+	<h1 id="titolo" style="color:#FF8100; margin-bottom: 30px"><b>The Coder</b></h1>
+	
+	
+	<%= link_to "Iscriviti", signup_path ,id:"bottone", class: "btn btn-lg btn-primary" %>&nbsp;
 	<%= link_to "Accedi", login_path, class: "btn btn-lg btn-primary" %>
+	<br>
+	<%= link_to raw("<i class=\"fa fa-facebook-square \"> &nbsp; Accedi con <b>Facebook</b></i>"), "/auth/facebook", id: "sign_in", class: "btn btn-lg btn-primary"  %>
 </div>
 
 
