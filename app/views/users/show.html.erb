@@ -21,10 +21,19 @@
 			<br>
 			Livello di esperienza: <b><%= @user.istruzione %></b>
 			<br>
+			Profilo :
+			<% if @user.privato %>
+				<b> Privato </b>
+			<% else %>
+				<b>Pubblico</b>
+			<% end %>
 		</section>
 	</aside>
 	<div class="col-md-8">
 		<%= render 'follow_form' if logged_in? %>
+	</div>
+	<% if !@user.privato || (current_user.following?(@user) && @user.privato) || current_user?(@user) || current_user.admin?%>
+		<div class="col-md-8">
 		<% if @user.microposts.any? %>
 		<h3>Post (<%= @user.microposts.count %>)</h3>
 		<ol class="microposts">
@@ -33,4 +42,9 @@
 		<%= will_paginate @microposts %>
 		<% end%>
 	</div>
+	<%else%>
+	<br><br>
+		<h2 style="font-size: 2em !important;">PROFILO PRIVATO</h2>
+		<h4>Per vedere i post pubblicati da <%= @user.name%> devi iniziare a seguirlo con il tasto <i>Follow</i> </h4>
+	<%end%>
 </div>

@@ -33,7 +33,9 @@ end
   end
 
   def update
+    @user = User.find(params[:id])
   	if @user.update_attributes(user_params)
+      params[:user][:privato] == '1' ? @user.update_attributes(privato: true) : @user.update_attributes(privato: false)
   		flash[:success] = "Profilo aggiornato correttamente"
   		redirect_to @user
   	else
@@ -72,7 +74,7 @@ end
   private
 
   def user_params
-  	params.require(:user).permit(:name,:nickname,:eta,:sesso,:istruzione,:linguaggi, :email, :password, :password_confirmation)
+  	params.require(:user).permit(:name,:nickname,:eta,:sesso,:istruzione,:privato,:linguaggi, :email, :password, :password_confirmation)
   end
 
 

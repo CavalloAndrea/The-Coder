@@ -22,6 +22,14 @@
 
 			<%= f.label :istruzione,'Nella programmazione ti consideri' %>
 			<%= f.select(:istruzione, options_for_select(['Principiante','Intermedio','Esperto']))%>
+			<br>
+			<br>
+
+			<%= f.label :privato, "Rendi il Profilo privato" %>
+             <%= f.check_box :privato, {:style=> "width:0px"} %>
+             <br>
+             <br>
+             
 			
 			
 			<div style="display: none;">
