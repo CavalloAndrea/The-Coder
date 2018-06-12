@@ -13,6 +13,11 @@ class TutorialsController < ApplicationController
 		@linguaggio = Tutorial.where("linguaggio ==?","#{linguaggio}")
 	end
 
+	def esercizio
+		linguaggio = params[:linguaggio]
+		@linguaggio = Tutorial.where("linguaggio ==?","#{linguaggio}")
+	end
+
 	def index
 		@tutorials = Tutorial.paginate(page: params[:page])
 	end
