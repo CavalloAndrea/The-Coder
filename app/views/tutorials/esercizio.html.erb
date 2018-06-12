@@ -1,0 +1,29 @@
+<% if params[:linguaggio] == 'C' %>
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+		</head>
+		
+		<body>
+
+		<h1>Esercizio finale di <%= params[:linguaggio]%> </h1>
+		</body>
+	</html>
+
+	<% elsif params[:linguaggio] == 'Java' %>
+	<p>Questo è il quiz di Java</p>
+<% elsif params[:linguaggio] == 'Assembly' %>
+	<p>Qui ci va il quiz di Assembly</p>
+<% elsif params[:linguaggio] == 'Python' %>
+	<p>Qui ci va il quiz di Python</p>
+<% elsif params[:linguaggio] == 'SQL' %>
+	<p>Qui ci va il quiz di SQL</p>
+<% elsif params[:linguaggio] == 'HTML' %>
+	<p>Qui ci va il quiz di HMTL</p>
+<% elsif params[:linguaggio] == 'CSS' %>
+	<p>Qui ci va il quiz di CSS</p>
+<% elsif params[:linguaggio] == 'Javascript' %>
+	<p>Qui ci va il quiz di Javascript</p>
+	
+<%end%>
