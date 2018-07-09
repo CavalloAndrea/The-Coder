@@ -27,6 +27,75 @@
 			<% else %>
 				<b>Pubblico</b>
 			<% end %>
+			<br>
+
+			Progresso Corsi:
+			<br>
+			<% if @user.c != '0' && @user.c != '10'%>
+			&emsp;	<b> C : <%= @user.c%>0% </b><br>
+			<%end%>
+			<% if @user.c == '10'%>
+			&emsp;	<b> C : <bold style="color: green;">Completato</bold> </b><br>
+			<%end%>
+
+			
+			<% if @user.java != '0' && @user.java != '10'%>
+			&emsp;	<b> Java : <%= @user.java%>0% </b><br>
+			<%end%>
+			<% if @user.java == '10'%>
+			&emsp;	<b> Java : <bold style="color: green;">Completato</bold> </b><br>
+			<%end%>
+
+			
+			<% if @user.python != '0' && @user.python != '10'%>
+			&emsp;	<b> Python : <%= @user.python%>0% </b><br>
+			<%end%>
+			<% if @user.python == '10'%>
+			&emsp;	<b> Python : <bold style="color: green;">Completato</bold> </b><br>
+			<%end%>
+
+			
+			<% if @user.assembly != '0' && @user.assembly != '10'%>
+			&emsp;	<b> Assembly : <%= @user.assembly%>0% </b><br>
+			<%end%>
+			<% if @user.assembly == '10'%>
+			&emsp;	<b> Assembly : <bold style="color: green;">Completato</bold> </b><br>
+			<%end%>
+
+			
+			<% if @user.sql != '0' && @user.sql != '10'%>
+			&emsp;	<b> SQL : <%= @user.sql%>0% </b><br>
+			<%end%>
+			<% if @user.sql == '10'%>
+			&emsp;	<b> SQL : <bold style="color: green;">Completato</bold> </b><br>
+			<%end%>
+
+			
+			<% if @user.html != '0' && @user.html != '10'%>
+			&emsp;	<b> HTML : <%= @user.html%>0% </b><br>
+			<%end%>
+			<% if @user.html == '10'%>
+			&emsp;	<b> HTML : <bold style="color: green;">Completato</bold> </b><br>
+			<%end%>
+
+
+			<% if @user.javascript != '0' && @user.javascript != '10'%>
+			&emsp;	<b> Javascript : <%= @user.javascript%>0% </b><br>
+			<%end%>
+			<% if @user.javascript == '10'%>
+			&emsp;	<b> Javascript : <bold style="color: green;">Completato</bold> </b><br>
+			<%end%>
+
+			
+			<% if @user.css != '0' && @user.css != '10'%>
+			&emsp;	<b> CSS : <%= @user.css%>0% </b><br>
+			<%end%>
+			<% if @user.css == '10'%>
+			&emsp;	<b> CSS : <bold style="color: green;">Completato</bold> </b><br>
+			<%end%> 
+
+
+
 		</section>
 	</aside>
 	<div class="col-md-8">

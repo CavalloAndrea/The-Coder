@@ -21,9 +21,46 @@
 			<%= f.radio_button :sesso, 'Donna', :style=>"width:0px"%> Donna <br><br>
 
 			<%= f.label :istruzione,'Nella programmazione ti consideri' %>
-			<%= f.select(:istruzione, options_for_select(['Principiante','Intermedio','Esperto']))%>
+			<%= f.select(:istruzione, options_for_select(['Principiante','Intermedio','Esperto'],:selected => f.object.istruzione)) %>
 			<br>
 			<br>
+
+			<b>Aggiorna i progressi fatti nei vari corsi</b>
+			<br>
+			<br>
+			<%= f.label :c,'C 	'%>&emsp;&emsp;&emsp;&emsp;
+			<%= f.select(:c,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.c),{},{ :class => 'stile' })%>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+			<%= f.label :sql,'SQL'%>&emsp;&emsp;&emsp;
+			<%= f.select(:sql,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.sql),{},{ :class => 'stile' })%>
+			<br>
+
+			<%= f.label :java,'Java'%>&emsp;&emsp;&nbsp;&thinsp;
+			<%= f.select(:java,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.java),{},{ :class => 'stile' })%>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+			<%= f.label :html,'HTML'%>&emsp;&emsp;&nbsp;
+			<%= f.select(:html,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.html),{},{ :class => 'stile' })%>
+
+			<br>
+
+			<%= f.label :python,'Python'%>&emsp;&nbsp;
+			<%= f.select(:python,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.python),{},{ :class => 'stile' })%>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+			<%= f.label :javascript,'Javascript'%>
+			<%= f.select(:javascript,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.javascript),{},{ :class => 'stile' })%>
+			<br>
+
+			<%= f.label :assembly,'Assembly'%>
+			<%= f.select(:assembly,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.assembly),{},{ :class => 'stile' })%>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+
+			<%= f.label :css,'CSS'%>&emsp;&emsp;&emsp;
+			<%= f.select(:css,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.css),{},{ :class => 'stile' })%>
+			<br>
+			<br>
+			<br>
+
 
 			<%= f.label :privato, "Rendi il Profilo privato" %>
              <%= f.check_box :privato, {:style=> "width:0px"} %>
@@ -32,38 +69,6 @@
              
 			
 			
-			<div style="display: none;">
-			<%= f.label :linguaggi, 'Linguaggi conosciuti' %>
-    
-			<table>
-			<tr>
-				<td><%= f.check_box :linguaggi, {:style=>"width:0px"},'C'%> C </td>
-				<td><%= f.check_box :linguaggi, {:style=>"width:0px"},'Java'%> Java </td>
-			
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> C++ </td>
-
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> SQL</td>
-
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Ruby</td></tr>
-
-			<tr>
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> HTML</td>
-			
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> C# </td>
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Javascript</td>
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Python </td>
-
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Pascal</td></tr>
-
-			<tr>
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> CSS </td>
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Scala </td>
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Assembly</td>
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> PHP </td>
-
-				<td><%= f.check_box :linguaggi, :style=>"width:0px"%> Altro</td></tr>
-
-		</table> </div>
 
 
 			<%= f.label :email %>

@@ -74,7 +74,7 @@ end
   private
 
   def user_params
-  	params.require(:user).permit(:name,:nickname,:eta,:sesso,:istruzione,:privato,:linguaggi, :email, :password, :password_confirmation)
+  	params.require(:user).permit(:name,:nickname,:eta,:sesso,:istruzione,:privato,:linguaggi,:java,:python,:c,:assembly,:sql,:html,:javascript,:css, :email, :password, :password_confirmation)
   end
 
 
