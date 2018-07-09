@@ -31,68 +31,117 @@
 
 			Progresso Corsi:
 			<br>
-			<% if @user.c != '0' && @user.c != '10'%>
-			&emsp;	<b> C : <%= @user.c%>0% </b><br>
+			<% if @user.c != '0'%>
+			&emsp;<b> C </b>
+			<div class="progress" style="width: 250px;margin-left: 50px;">
+
+  			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
+  				aria-valuemin="0" aria-valuemax="100" style="width:<%=@user.c%>0%">
+    			<b><%=@user.c%>0%</b>
+    			
+  			</div>
+			</div>
+
 			<%end%>
-			<% if @user.c == '10'%>
-			&emsp;	<b> C : <bold style="color: green;">Completato</bold> </b><br>
+
+
+			<% if @user.java != '0'%>
+			&emsp;<b> Java </b>
+			<div class="progress" style="width: 250px;margin-left: 50px;">
+
+  			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
+  				aria-valuemin="0" aria-valuemax="100" style="width:<%=@user.java%>0%">
+    			<b><%=@user.java%>0%</b>
+    			
+  			</div>
+			</div>
+
 			<%end%>
 
 			
-			<% if @user.java != '0' && @user.java != '10'%>
-			&emsp;	<b> Java : <%= @user.java%>0% </b><br>
+			<% if @user.python != '0'%>
+			&emsp;<b> Python </b>
+			<div class="progress" style="width: 250px;margin-left: 50px;">
+
+  			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
+  				aria-valuemin="0" aria-valuemax="100" style="width:<%=@user.python%>0%">
+    			<b><%=@user.python%>0%</b>
+    			
+  			</div>
+			</div>
+
 			<%end%>
-			<% if @user.java == '10'%>
-			&emsp;	<b> Java : <bold style="color: green;">Completato</bold> </b><br>
+
+
+			
+			<% if @user.assembly != '0'%>
+			&emsp;<b> Assembly </b>
+			<div class="progress" style="width: 250px;margin-left: 50px;">
+
+  			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
+  				aria-valuemin="0" aria-valuemax="100" style="width:<%=@user.assembly%>0%">
+    			<b><%=@user.assembly%>0%</b>
+    			
+  			</div>
+			</div>
+
 			<%end%>
 
 			
-			<% if @user.python != '0' && @user.python != '10'%>
-			&emsp;	<b> Python : <%= @user.python%>0% </b><br>
-			<%end%>
-			<% if @user.python == '10'%>
-			&emsp;	<b> Python : <bold style="color: green;">Completato</bold> </b><br>
+			<% if @user.sql != '0'%>
+			&emsp;<b> SQL </b>
+			<div class="progress" style="width: 250px;margin-left: 50px;">
+
+  			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
+  				aria-valuemin="0" aria-valuemax="100" style="width:<%=@user.sql%>0%">
+    			<b><%=@user.sql%>0%</b>
+    			
+  			</div>
+			</div>
+
 			<%end%>
 
 			
-			<% if @user.assembly != '0' && @user.assembly != '10'%>
-			&emsp;	<b> Assembly : <%= @user.assembly%>0% </b><br>
+			<% if @user.html != '0'%>
+			&emsp;<b> HTML </b>
+			<div class="progress" style="width: 250px;margin-left: 50px;">
+
+  			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
+  				aria-valuemin="0" aria-valuemax="100" style="width:<%=@user.html%>0%">
+    			<b><%=@user.html%>0%</b>
+    			
+  			</div>
+			</div>
+
 			<%end%>
-			<% if @user.assembly == '10'%>
-			&emsp;	<b> Assembly : <bold style="color: green;">Completato</bold> </b><br>
+
+
+			<% if @user.javascript != '0'%>
+			&emsp;<b> Javascript </b>
+			<div class="progress" style="width: 250px;margin-left: 50px;">
+
+  			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
+  				aria-valuemin="0" aria-valuemax="100" style="width:<%=@user.javascript%>0%">
+    			<b><%=@user.javascript%>0%</b>
+    			
+  			</div>
+			</div>
+
 			<%end%>
 
 			
-			<% if @user.sql != '0' && @user.sql != '10'%>
-			&emsp;	<b> SQL : <%= @user.sql%>0% </b><br>
-			<%end%>
-			<% if @user.sql == '10'%>
-			&emsp;	<b> SQL : <bold style="color: green;">Completato</bold> </b><br>
-			<%end%>
+			<% if @user.css != '0'%>
+			&emsp;<b> CSS </b>
+			<div class="progress" style="width: 200px;margin-left: 50px;">
 
-			
-			<% if @user.html != '0' && @user.html != '10'%>
-			&emsp;	<b> HTML : <%= @user.html%>0% </b><br>
-			<%end%>
-			<% if @user.html == '10'%>
-			&emsp;	<b> HTML : <bold style="color: green;">Completato</bold> </b><br>
-			<%end%>
+  			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
+  				aria-valuemin="0" aria-valuemax="100" style="width:<%=@user.css%>0%">
+    			<b><%=@user.css%>0%</b>
+    			
+  			</div>
+			</div>
 
-
-			<% if @user.javascript != '0' && @user.javascript != '10'%>
-			&emsp;	<b> Javascript : <%= @user.javascript%>0% </b><br>
 			<%end%>
-			<% if @user.javascript == '10'%>
-			&emsp;	<b> Javascript : <bold style="color: green;">Completato</bold> </b><br>
-			<%end%>
-
-			
-			<% if @user.css != '0' && @user.css != '10'%>
-			&emsp;	<b> CSS : <%= @user.css%>0% </b><br>
-			<%end%>
-			<% if @user.css == '10'%>
-			&emsp;	<b> CSS : <bold style="color: green;">Completato</bold> </b><br>
-			<%end%> 
 
 
 
