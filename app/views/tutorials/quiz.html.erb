@@ -46,10 +46,34 @@
 			position: absolute;
 			right: 15%;
 		}
+		h1#giusta4{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata4{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta5{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata5{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
 		.codice{
 			background-color: #f0f0f0!important;
     border: 1px solid #ccc!important;
-    width: 15%;
+    width: 20%;
     padding: 10px;
     margin: 10px;
 
@@ -119,6 +143,42 @@
 				verde.style.color = "#00E100";
 				
 			}
+			if(document.getElementById("D4").checked){
+
+				t = document.getElementById("giusta4");
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("D4").checked==false){
+				
+				t = document.getElementById("giusta4");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="block";
+				verde = document.getElementById("d4");
+				verde.style.color = "#00E100";
+				
+			}
+			if(document.getElementById("C5").checked){
+
+				t = document.getElementById("giusta5");
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C5").checked==false){
+				
+				t = document.getElementById("giusta5");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="block";
+				verde = document.getElementById("c5");
+				verde.style.color = "#00E100";
+				
+			}
 
 		}
 	</script>
@@ -175,7 +235,36 @@
 				<div id="c3"><input type="radio" name="d3" id="C3" value="C"> 7</div>
 				<br>
 				<div id="d3"><input type="radio" name="d3" id="D3" value="D"> 12</div>		
+				<br><br>
 
+				<li>Come commenteresti la sottostante dichiarazione?<br>
+				<div class="codice">
+					    signed int *p=(int*) malloc(sizeof(unsigned int));<br>
+					   
+					</div>
+				</li>
+				<br><div><h1 id="giusta4">&#10004;Corretta</h1><h1 id="sbagliata4">&#10006;Sbagliata</h1></div>
+				
+				<div id="a4"><input type="radio" name="d4" id="A4" value="A">tipo di casting improprio</div>
+				<br>
+				<div id="b4"><input type="radio" name="d4" id="B4" value="B">potrebbe generare un errore di Runtime</div>
+				<br>
+				<div id="c4"><input type="radio" name="d4" id="C4" value="C">La memoria potrebbe essere allocata ma non èpossibile tenere un intero in memoria</div>
+				<br>
+				<div id="d4"><input type="radio" name="d4" id="D4" value="D">Nessun problema con la dichiarazione</div>
+				<br><br>
+
+				<li>per una struttura, se una variabile si comporta come un puntatore, quale degli operatori sotto indicati può essere utilizzato per accedere ai dati della struttura tramite il puntatore variabile?<br>
+				</li>
+				<br><div><h1 id="giusta5">&#10004;Corretta</h1><h1 id="sbagliata5">&#10006;Sbagliata</h1></div>
+				
+				<div id="a5"><input type="radio" name="d5" id="A5" value="A">-.</div>
+				<br>
+				<div id="b5"><input type="radio" name="d5" id="B5" value="B">.%</div>
+				<br>
+				<div id="c5"><input type="radio" name="d5" id="C5" value="C">--></div>
+				<br>
+				<div id="d5"><input type="radio" name="d5" id="D5" value="D">-#</div>
 
 		</ol>
 		<br>
@@ -190,17 +279,2026 @@
 </html>
 <% elsif params[:linguaggio] == 'Java' %>
 	<p>Questo è il quiz di Java</p>
+		<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+
+	<style type="text/css">
+		div#contenitore{
+			 border:#000 1px solid; 
+			 padding:10px 40px 40px 40px;
+		}
+		
+		h1#giusta1{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata1{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta2{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata2{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta3{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata3{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta4{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata4{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta5{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata5{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		.codice{
+			background-color: #f0f0f0!important;
+    border: 1px solid #ccc!important;
+    width: 26%;
+    padding: 10px;
+    margin: 10px;
+
+		}
+		input{
+			width: 0 !important;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		function verifica(){
+			
+			if(document.getElementById("D1").checked){
+
+				t = document.getElementById("giusta1");
+				t2 = document.getElementById("sbagliata1");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("D1").checked==false){
+				
+				t2 = document.getElementById("giusta1");
+				t2.style.display="none";
+				t = document.getElementById("sbagliata1");
+				t.style.display="block";
+				verde = document.getElementById("d1");
+				verde.style.color = "#00E100";
+			}
+
+
+
+			if(document.getElementById("A2").checked){
+
+				t = document.getElementById("giusta2");
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A2").checked==false){
+				
+				t = document.getElementById("giusta2");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="block";
+				verde = document.getElementById("a2");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("D3").checked){
+
+				t = document.getElementById("giusta3");
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("D3").checked==false){
+				
+				t = document.getElementById("giusta3");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="block";
+				verde = document.getElementById("d3");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("B4").checked){
+
+				t = document.getElementById("giusta4");
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("B4").checked==false){
+				
+				t = document.getElementById("giusta4");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="block";
+				verde = document.getElementById("b4");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("D5").checked){
+
+				t = document.getElementById("giusta5");
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("D5").checked==false){
+				
+				t = document.getElementById("giusta5");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="block";
+				verde = document.getElementById("d5");
+				verde.style.color = "#00E100";
+				
+			}
+
+		}
+	</script>
+
+</head>
+<body>
+		<h1>Quiz finale di <%= params[:linguaggio]%> </h1>
+		<div id="contenitore">
+		<ol>
+			<li>Quanto pesa una variabile int?</li>
+			
+				<br><div><h1 id="giusta1">&#10004;Corretta</h1><h1 id="sbagliata1">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a1"><input type="radio" name="d1" id="A1" value="A" > 8 bit</div>
+				<br>
+				<div id="b1"><input type="radio" name="d1" id="B1" value="B"> 16 bit</div>
+				<br>
+				<div id="c1"><input type="radio" name="d1" id="C1" value="C"> 32 bit</div>
+				<br>
+				<div id="d1"><input type="radio" name="d1" id="D1" value="D"> 64 bit</div>
+			
+			<br><br>
+
+			<li> Qual'è il valore di Default di una variabile int?</li>
+			<br><div><h1 id="giusta2">&#10004;Corretta</h1><h1 id="sbagliata2">&#10006;Sbagliata</h1></div>
+				
+				<div id="a2"><input type="radio" name="d2" id="A2" value="A"> 0</div>
+				<br>
+				<div id="b2"><input type="radio" name="d2" id="B2" value="B"> 0.0</div>
+				<br>
+				<div id="c2"><input type="radio" name="d2" id="C2" value="C"> null</div>
+				<br>
+				<div id="d2"><input type="radio" name="d2" id="D2" value="D"> not defined</div>
+
+				<br><br>
+				<li>Quale tra le seguenti affermazioni su una classe final è vera?<br></li>
+				<br><div><h1 id="giusta3">&#10004;Corretta</h1><h1 id="sbagliata3">&#10006;Sbagliata</h1></div>
+				
+				<div id="a3"><input type="radio" name="d3" id="A3" value="A"> Una classe dichiarata final è una final class</div>
+				<br>
+				<div id="b3"><input type="radio" name="d3" id="B3" value="B"> Le final classes sono create in modo che i metodi implementati non possano sovrascriverle</div>
+				<br>
+				<div id="c3"><input type="radio" name="d3" id="C3" value="C">non può essere ereditata </div>
+				<br>
+				<div id="d3"><input type="radio" name="d3" id="D3" value="D"> tutte le precedenti</div>		
+ 			<br><br>
+ 			<li>Qual'e' l'output? <br>
+ 			<div class="codice">
+					int res1 = 1000 % 60;<br>
+					int res2 = 100 % 60;<br>
+					System.out.println(res1 + " / " + res2);<br>
+					</div>
+				</li>
+			
+				<br><div><h1 id="giusta4">&#10004;Corretta</h1><h1 id="sbagliata4">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a4"><input type="radio" name="d4" id="A4" value="A" > 16/1.6 bit</div>
+				<br>
+				<div id="b4"><input type="radio" name="d4" id="B4" value="B"> 40/40 bit</div>
+				<br>
+				<div id="c4"><input type="radio" name="d4" id="C4" value="C"> 0/0 bit</div>
+				<br>
+				<div id="d4"><input type="radio" name="d4" id="D4" value="D"> 1.6/1.6 bit</div>
+			
+			<br><br>
+			<li>Cosa rappresenta la parola "void"? </li>
+ 				
+			
+				<br><div><h1 id="giusta5">&#10004;Corretta</h1><h1 id="sbagliata5">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a5"><input type="radio" name="d5" id="A5" value="A" >Classe </div>
+				<br>
+				<div id="b5"><input type="radio" name="d5" id="B5" value="B">Parola chiave</div>
+				<br>
+				<div id="c5"><input type="radio" name="d5" id="C5" value="C"> Nessuno dei due casi elencati prima</div>
+				<br>
+				<div id="d5"><input type="radio" name="d5" id="D5" value="D">Entrambi i casi elencati prima</div>
+			
+			<br><br>
+			
+		</ol>
+		<br>
+		<button class="btn btn-primary" name="invia"  onclick="verifica();">Conferma Risposte</button>
+		
+		
+	</div>
+
+
+
+</body>
+</html>
+
 <% elsif params[:linguaggio] == 'Assembly' %>
-	<p>Qui ci va il quiz di Assembly</p>
+	<html>
+<head>
+	<title>Quiz</title>
+
+	<style type="text/css">
+		div#contenitore{
+			 border:#000 1px solid; 
+			 padding:10px 40px 40px 40px;
+		}
+		
+		h1#giusta1{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata1{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta2{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata2{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta3{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata3{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta4{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata4{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta5{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata5{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		.codice{
+			background-color: #f0f0f0!important;
+    border: 1px solid #ccc!important;
+    width: 26%;
+    padding: 10px;
+    margin: 10px;
+
+		}
+		input{
+			width: 0 !important;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		function verifica(){
+			
+			if(document.getElementById("C1").checked){
+
+				t = document.getElementById("giusta1");
+				t2 = document.getElementById("sbagliata1");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C1").checked==false){
+				
+				t2 = document.getElementById("giusta1");
+				t2.style.display="none";
+				t = document.getElementById("sbagliata1");
+				t.style.display="block";
+				verde = document.getElementById("c1");
+				verde.style.color = "#00E100";
+			}
+
+
+
+			if(document.getElementById("A2").checked){
+
+				t = document.getElementById("giusta2");
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A2").checked==false){
+				
+				t = document.getElementById("giusta2");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="block";
+				verde = document.getElementById("a2");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("B3").checked){
+
+				t = document.getElementById("giusta3");
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("B3").checked==false){
+				
+				t = document.getElementById("giusta3");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="block";
+				verde = document.getElementById("b3");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("A4").checked){
+
+				t = document.getElementById("giusta4");
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A4").checked==false){
+				
+				t = document.getElementById("giusta4");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="block";
+				verde = document.getElementById("a4");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("A5").checked){
+
+				t = document.getElementById("giusta5");
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A5").checked==false){
+				
+				t = document.getElementById("giusta5");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="block";
+				verde = document.getElementById("a5");
+				verde.style.color = "#00E100";
+				
+			}
+
+		}
+	</script>
+
+</head>
+<body>
+		<h1>Quiz finale di <%= params[:linguaggio]%> </h1>
+		<div id="contenitore">
+		<ol>
+			<li>Il sistema operativo(DOS/Windows) carica generalmente da:</li>
+			
+				<br><div><h1 id="giusta1">&#10004;Corretta</h1><h1 id="sbagliata1">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a1"><input type="radio" name="d1" id="A1" value="A" >ROM</div>
+				<br>
+				<div id="b1"><input type="radio" name="d1" id="B1" value="B">RAM</div>
+				<br>
+				<div id="c1"><input type="radio" name="d1" id="C1" value="C">Hard/Floppy Disk</div>
+				<br>
+				<div id="d1"><input type="radio" name="d1" id="D1" value="D">Nessuna delle precedenti</div>
+			
+			<br><br>
+
+			<li> Il risultato dell'operazione logica 1 XOR 0</li>
+			<br><div><h1 id="giusta2">&#10004;Corretta</h1><h1 id="sbagliata2">&#10006;Sbagliata</h1></div>
+				
+				<div id="a2"><input type="radio" name="d2" id="A2" value="A"> logic 0</div>
+				<br>
+				<div id="b2"><input type="radio" name="d2" id="B2" value="B"> 0.0</div>
+				<br>
+				<div id="c2"><input type="radio" name="d2" id="C2" value="C"> null</div>
+				<br>
+				<div id="d2"><input type="radio" name="d2" id="D2" value="D">logic</div>
+
+				<br><br>
+				<li>Per visualizzare il contenuto di 100 bytes partendo dall'indirizzo fisico 00000 usando il debug<br></li>
+				<br><div><h1 id="giusta3">&#10004;Corretta</h1><h1 id="sbagliata3">&#10006;Sbagliata</h1></div>
+				
+				<div id="a3"><input type="radio" name="d3" id="A3" value="A"> -d 0 FF</div>
+				<br>
+				<div id="b3"><input type="radio" name="d3" id="B3" value="B"> -d 0:0 FF</div>
+				<br>
+				<div id="c3"><input type="radio" name="d3" id="C3" value="C">-d 0:0 0:FF </div>
+				<br>
+				<div id="d3"><input type="radio" name="d3" id="D3" value="D"> nessuna delle precedenti</div>		
+ 			<br><br>
+ 			<li>qual è la modalità di indirizzamento della memoria della prima istruzione dell' operando MOV [BX], 1234<br>	</li>
+			
+				<br><div><h1 id="giusta4">&#10004;Corretta</h1><h1 id="sbagliata4">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a4"><input type="radio" name="d4" id="A4" value="A" > modalità di indirizzamento indiretto</div>
+				<br>
+				<div id="b4"><input type="radio" name="d4" id="B4" value="B"> modalità di indirizzamento immediato</div>
+				<br>
+				<div id="c4"><input type="radio" name="d4" id="C4" value="C">modalità di indirizzzamento al registro</div>
+				<br>
+				<div id="d4"><input type="radio" name="d4" id="D4" value="D"> nessuna delle precedenti</div>
+			
+			<br><br>
+			<li>qual'è il valore del registr AX dopo aver eseguito : MOV AX,456h  CMP AX,456h </li>
+ 				
+			
+				<br><div><h1 id="giusta5">&#10004;Corretta</h1><h1 id="sbagliata5">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a5"><input type="radio" name="d5" id="A5" value="A" >456h</div>
+				<br>
+				<div id="b5"><input type="radio" name="d5" id="B5" value="B">1</div>
+				<br>
+				<div id="c5"><input type="radio" name="d5" id="C5" value="C"> 0</div>
+				<br>
+				<div id="d5"><input type="radio" name="d5" id="D5" value="D">sconosciuto</div>
+			
+			<br><br>
+			
+		</ol>
+		<br>
+		<button class="btn btn-primary" name="invia"  onclick="verifica();">Conferma Risposte</button>
+		
+		
+	</div>
+
+
+
+</body>
+</html>
+
 <% elsif params[:linguaggio] == 'Python' %>
-	<p>Qui ci va il quiz di Python</p>
+	<html>
+<head>
+	<title>Quiz</title>
+
+	<style type="text/css">
+		div#contenitore{
+			 border:#000 1px solid; 
+			 padding:10px 40px 40px 40px;
+		}
+		
+		h1#giusta1{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata1{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta2{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata2{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta3{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata3{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta4{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata4{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta5{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata5{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		.codice{
+			background-color: #f0f0f0!important;
+    border: 1px solid #ccc!important;
+    width: 26%;
+    padding: 10px;
+    margin: 10px;
+
+		}
+		input{
+			width: 0 !important;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		function verifica(){
+			
+			if(document.getElementById("B1").checked){
+
+				t = document.getElementById("giusta1");
+				t2 = document.getElementById("sbagliata1");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("B1").checked==false){
+				
+				t2 = document.getElementById("giusta1");
+				t2.style.display="none";
+				t = document.getElementById("sbagliata1");
+				t.style.display="block";
+				verde = document.getElementById("b1");
+				verde.style.color = "#00E100";
+			}
+
+
+
+			if(document.getElementById("D2").checked){
+
+				t = document.getElementById("giusta2");
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("D2").checked==false){
+				
+				t = document.getElementById("giusta2");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="block";
+				verde = document.getElementById("d2");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("C3").checked){
+
+				t = document.getElementById("giusta3");
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C3").checked==false){
+				
+				t = document.getElementById("giusta3");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="block";
+				verde = document.getElementById("c3");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("C4").checked){
+
+				t = document.getElementById("giusta4");
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C4").checked==false){
+				
+				t = document.getElementById("giusta4");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="block";
+				verde = document.getElementById("c4");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("B5").checked){
+
+				t = document.getElementById("giusta5");
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("B5").checked==false){
+				
+				t = document.getElementById("giusta5");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="block";
+				verde = document.getElementById("b5");
+				verde.style.color = "#00E100";
+				
+			}
+
+		}
+	</script>
+
+</head>
+<body>
+		<h1>Quiz finale di <%= params[:linguaggio]%> </h1>
+		<div id="contenitore">
+		<ol>
+			<li>Cosa fa il seguente codice?
+			<div class="codice">
+					def a(b, c, d): pass<br>
+					</div>
+				</li>
+			
+				<br><div><h1 id="giusta1">&#10004;Corretta</h1><h1 id="sbagliata1">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a1"><input type="radio" name="d1" id="A1" value="A" >definisce una lista e la inizializza</div>
+				<br>
+				<div id="b1"><input type="radio" name="d1" id="B1" value="B">definisce una funzione, che non fa nulla</div>
+				<br>
+				<div id="c1"><input type="radio" name="d1" id="C1" value="C">definisce una funzione, che passa attraverso i suoi parametri</div>
+				<br>
+				<div id="d1"><input type="radio" name="d1" id="D1" value="D">definisce una classe vuota</div>
+			
+			<br><br>
+
+			<li> Qual'è l'output del seguente codice?
+				<div class="codice">
+					print(type([1,2]))<br>
+					</div>
+				</li>
+			
+			<br><div><h1 id="giusta2">&#10004;Corretta</h1><h1 id="sbagliata2">&#10006;Sbagliata</h1></div>
+				
+				<div id="a2"><input type="radio" name="d2" id="A2" value="A">classe di tipo 'tuple'</div>
+				<br>
+				<div id="b2"><input type="radio" name="d2" id="B2" value="B">classe di tipo 'int'</div>
+				<br>
+				<div id="c2"><input type="radio" name="d2" id="C2" value="C">classe di tipo 'set'</div>
+				<br>
+				<div id="d2"><input type="radio" name="d2" id="D2" value="D">classe di tipo 'list'</div>
+
+				<br><br>
+				<li>Qual'è l'output del seguente codice?
+				<div class="codice">
+					a = [1,2,3,None,(),[],]<br>
+					print(len(a))<br>
+					</div>
+				</li><br><div><h1 id="giusta3">&#10004;Corretta</h1><h1 id="sbagliata3">&#10006;Sbagliata</h1></div>
+				
+				<div id="a3"><input type="radio" name="d3" id="A3" value="A">syntax error</div>
+				<br>
+				<div id="b3"><input type="radio" name="d3" id="B3" value="B">4</div>
+				<br>
+				<div id="c3"><input type="radio" name="d3" id="C3" value="C">6</div>
+				<br>
+				<div id="d3"><input type="radio" name="d3" id="D3" value="D">7</div>		
+ 			<br><br>
+
+ 			<li>Cosa stampa ?<br>
+ 			<div class="codice">
+					d = lambda p: p * 2<br>
+					t = lambda p: p * 3<br>
+					x = 2<br>
+					x = d(x)<br>
+					x = t(x)<br>
+					x = d(x)<br>
+					print(x)<br>
+					</div>
+				</li>
+			
+				<br><div><h1 id="giusta4">&#10004;Corretta</h1><h1 id="sbagliata4">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a4"><input type="radio" name="d4" id="A4" value="A" >7</div>
+				<br>
+				<div id="b4"><input type="radio" name="d4" id="B4" value="B">12</div>
+				<br>
+				<div id="c4"><input type="radio" name="d4" id="C4" value="C">24</div>
+				<br>
+				<div id="d4"><input type="radio" name="d4" id="D4" value="D">36</div>
+			
+			<br><br>
+			<li>Se una funzione contiene almeno una dichiarazione yield, diventa: </li>
+ 				
+			
+				<br><div><h1 id="giusta5">&#10004;Corretta</h1><h1 id="sbagliata5">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a5"><input type="radio" name="d5" id="A5" value="A" >un iterabile</div>
+				<br>
+				<div id="b5"><input type="radio" name="d5" id="B5" value="B">una funzione di generatore</div>
+				<br>
+				<div id="c5"><input type="radio" name="d5" id="C5" value="C">una funzione anonima</div>
+				<br>
+				<div id="d5"><input type="radio" name="d5" id="D5" value="D">Nessuno dei precedenti</div>
+			
+			<br><br>
+			
+		</ol>
+		<br>
+		<button class="btn btn-primary" name="invia"  onclick="verifica();">Conferma Risposte</button>
+		
+		
+	</div>
+
+
+
+</body>
+</html>
 <% elsif params[:linguaggio] == 'SQL' %>
-	<p>Qui ci va il quiz di SQL</p>
+	<html>
+<head>
+	<title>Quiz</title>
+
+	<style type="text/css">
+		div#contenitore{
+			 border:#000 1px solid; 
+			 padding:10px 40px 40px 40px;
+		}
+		
+		h1#giusta1{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata1{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta2{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata2{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta3{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata3{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta4{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata4{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta5{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata5{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		.codice{
+			background-color: #f0f0f0!important;
+    border: 1px solid #ccc!important;
+    width: 26%;
+    padding: 10px;
+    margin: 10px;
+
+		}
+		input{
+			width: 0 !important;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		function verifica(){
+			
+			if(document.getElementById("C1").checked){
+
+				t = document.getElementById("giusta1");
+				t2 = document.getElementById("sbagliata1");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C1").checked==false){
+				
+				t2 = document.getElementById("giusta1");
+				t2.style.display="none";
+				t = document.getElementById("sbagliata1");
+				t.style.display="block";
+				verde = document.getElementById("c1");
+				verde.style.color = "#00E100";
+			}
+
+
+
+			if(document.getElementById("C2").checked){
+
+				t = document.getElementById("giusta2");
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C2").checked==false){
+				
+				t = document.getElementById("giusta2");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="block";
+				verde = document.getElementById("c2");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("C3").checked){
+
+				t = document.getElementById("giusta3");
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C3").checked==false){
+				
+				t = document.getElementById("giusta3");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="block";
+				verde = document.getElementById("c3");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("A4").checked){
+
+				t = document.getElementById("giusta4");
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A4").checked==false){
+				
+				t = document.getElementById("giusta4");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="block";
+				verde = document.getElementById("a4");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("D5").checked){
+
+				t = document.getElementById("giusta5");
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("D5").checked==false){
+				
+				t = document.getElementById("giusta5");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="block";
+				verde = document.getElementById("d5");
+				verde.style.color = "#00E100";
+				
+			}
+
+		}
+	</script>
+
+</head>
+<body>
+		<h1>Quiz finale di <%= params[:linguaggio]%> </h1>
+		<div id="contenitore">
+		<ol>
+			<li>Quale proposizione SQL è usata per estrarre un dato da un database?</li>
+			
+				<br><div><h1 id="giusta1">&#10004;Corretta</h1><h1 id="sbagliata1">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="d1"><input type="radio" name="d1" id="A1" value="A" >EXTRACT</div>
+				<br>
+				<div id="d1"><input type="radio" name="d1" id="B1" value="B">OPEN</div>
+				<br>
+				<div id="d1"><input type="radio" name="d1" id="C1" value="C">SELECT</div>
+				<br>
+				<div id="d1"><input type="radio" name="d1" id="D1" value="D">GET</div>
+			
+			<br><br>
+
+			<li>Quale stato SQL è usato per rimuovere un dato da un database</li>
+			<br><div><h1 id="giusta2">&#10004;Corretta</h1><h1 id="sbagliata2">&#10006;Sbagliata</h1></div>
+				
+				<div id="a2"><input type="radio" name="d2" id="A2" value="A"> REMOVE</div>
+				<br>
+				<div id="b2"><input type="radio" name="d2" id="B2" value="B">COLLAPSE</div>
+				<br>
+				<div id="c2"><input type="radio" name="d2" id="C2" value="C">DELETE</div>
+				<br>
+				<div id="d2"><input type="radio" name="d2" id="D2" value="D">ERASE</div>
+
+				<br><br>
+				<li>Quale tra le seguenti proposizioni ritorna il totale dei valori della colonna'Price' nella tabella 'Sales'?<br></li>
+				<br><div><h1 id="giusta3">&#10004;Corretta</h1><h1 id="sbagliata3">&#10006;Sbagliata</h1></div>
+				
+				<div id="a3"><input type="radio" name="d3" id="A3" value="A"> SELECT SUM (Price) WHERE Sales</div>
+				<br>
+				<div id="b3"><input type="radio" name="d3" id="B3" value="B"> SELECT ADD (Price) FROM Sales</div>
+				<br>
+				<div id="c3"><input type="radio" name="d3" id="C3" value="C">SELECT SUM (Price) FROM Sales </div>
+				<br>
+				<div id="d3"><input type="radio" name="d3" id="D3" value="D"> SELECT TOTAL(Price) FROM Sales</div>		
+ 			<br><br>
+
+
+ 			<li>Le relazioni primary-foreign key sono usate per: <br></li>
+			
+				<br><div><h1 id="giusta4">&#10004;Corretta</h1><h1 id="sbagliata4">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a4"><input type="radio" name="d4" id="A4" value="A" > Tabelle di riferimenti di database incrociati</div>
+				<br>
+				<div id="b4"><input type="radio" name="d4" id="B4" value="B"> l'indice del database</div>
+				<br>
+				<div id="c4"><input type="radio" name="d4" id="C4" value="C"> il reset del database</div>
+				<br>
+				<div id="d4"><input type="radio" name="d4" id="D4" value="D"> nessuna delle precedenti</div>
+			
+			<br><br>
+			<li>Il valore NULL SQL è usato per..</li>
+ 				
+			
+				<br><div><h1 id="giusta5">&#10004;Corretta</h1><h1 id="sbagliata5">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="d5"><input type="radio" name="d5" id="A5" value="A" >rappresentare il valore 0</div>
+				<br>
+				<div id="d5"><input type="radio" name="d5" id="B5" value="B">Rappresentare il valore infinito negativo</div>
+				<br>
+				<div id="d5"><input type="radio" name="d5" id="C5" value="C"> rappresentare il valore infinito postivo</div>
+				<br>
+				<div id="d5"><input type="radio" name="d5" id="D5" value="D">Rappresentare la mancanza di valore o un valore sconosciuto, NULL SQL quindi non rappresenta nulla</div>
+			
+			<br><br>
+			
+		</ol>
+		<br>
+		<button class="btn btn-primary" name="invia"  onclick="verifica();">Conferma Risposte</button>
+		
+		
+	</div>
+
+
+
+</body>
+</html>
 <% elsif params[:linguaggio] == 'HTML' %>
-	<p>Qui ci va il quiz di HMTL</p>
+	<html>
+<head>
+	<title>Quiz</title>
+
+	<style type="text/css">
+		div#contenitore{
+			 border:#000 1px solid; 
+			 padding:10px 40px 40px 40px;
+		}
+		
+		h1#giusta1{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata1{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta2{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata2{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta3{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata3{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta4{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata4{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta5{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata5{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		.codice{
+			background-color: #f0f0f0!important;
+    border: 1px solid #ccc!important;
+    width: 26%;
+    padding: 10px;
+    margin: 10px;
+
+		}
+		input{
+			width: 0 !important;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		function verifica(){
+			
+			if(document.getElementById("A1").checked){
+
+				t = document.getElementById("giusta1");
+				t2 = document.getElementById("sbagliata1");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A1").checked==false){
+				
+				t2 = document.getElementById("giusta1");
+				t2.style.display="none";
+				t = document.getElementById("sbagliata1");
+				t.style.display="block";
+				verde = document.getElementById("a1");
+				verde.style.color = "#00E100";
+			}
+
+
+
+			if(document.getElementById("A2").checked){
+
+				t = document.getElementById("giusta2");
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A2").checked==false){
+				
+				t = document.getElementById("giusta2");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="block";
+				verde = document.getElementById("a2");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("D3").checked){
+
+				t = document.getElementById("giusta3");
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("D3").checked==false){
+				
+				t = document.getElementById("giusta3");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="block";
+				verde = document.getElementById("d3");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("C4").checked){
+
+				t = document.getElementById("giusta4");
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C4").checked==false){
+				
+				t = document.getElementById("giusta4");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="block";
+				verde = document.getElementById("c4");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("C5").checked){
+
+				t = document.getElementById("giusta5");
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C5").checked==false){
+				
+				t = document.getElementById("giusta5");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="block";
+				verde = document.getElementById("c5");
+				verde.style.color = "#00E100";
+				
+			}
+
+		}
+	</script>
+
+</head>
+<body>
+		<h1>Quiz finale di <%= params[:linguaggio]%> </h1>
+		<div id="contenitore">
+		<ol>
+			<li>La struttura di un documento HTML e' composta da...</li>
+			
+				<br><div><h1 id="giusta1">&#10004;Corretta</h1><h1 id="sbagliata1">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a1"><input type="radio" name="d1" id="A1" value="A" >dalle sezioni di intestazione e dal corpo</div>
+				<br>
+				<div id="b1"><input type="radio" name="d1" id="B1" value="B">dalla testa al piede</div>
+				<br>
+				<div id="c1"><input type="radio" name="d1" id="C1" value="C">dall'intestazione e dai tag</div>
+				<br>
+				<div id="d1"><input type="radio" name="d1" id="D1" value="D">da tanti tag</div>
+			
+			<br><br>
+
+			<li>Il tag break <'br /'> serve per..</li>
+			<br><div><h1 id="giusta2">&#10004;Corretta</h1><h1 id="sbagliata2">&#10006;Sbagliata</h1></div>
+				
+				<div id="a2"><input type="radio" name="d2" id="A2" value="A">ritorno a capo</div>
+				<br>
+				<div id="b2"><input type="radio" name="d2" id="B2" value="B">rompere le pagine</div>
+				<br>
+				<div id="c2"><input type="radio" name="d2" id="C2" value="C">creare una taballa</div>
+				<br>
+				<div id="d2"><input type="radio" name="d2" id="D2" value="D">creare un paragrafo</div>
+
+				<br><br>
+				<li>L'Uniform Resource Locator non e' l'indirizzo univoco di...<br></li>
+				<br><div><h1 id="giusta3">&#10004;Corretta</h1><h1 id="sbagliata3">&#10006;Sbagliata</h1></div>
+				
+				<div id="a3"><input type="radio" name="d3" id="A3" value="A">un'immagine</div>
+				<br>
+				<div id="b3"><input type="radio" name="d3" id="B3" value="B"> una pagina HTML</div>
+				<br>
+				<div id="c3"><input type="radio" name="d3" id="C3" value="C">un documento</div>
+				<br>
+				<div id="d3"><input type="radio" name="d3" id="D3" value="D">di un tag </div>		
+ 			<br><br>
+
+
+ 			<li>Nell'head' del documento Html e' possibile inserire...<br></li>
+			
+				<br><div><h1 id="giusta4">&#10004;Corretta</h1><h1 id="sbagliata4">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a4"><input type="radio" name="d4" id="A4" value="A" > immagini</div>
+				<br>
+				<div id="b4"><input type="radio" name="d4" id="B4" value="B"> tabelle</div>
+				<br>
+				<div id="c4"><input type="radio" name="d4" id="C4" value="C"> metadata</div>
+				<br>
+				<div id="d4"><input type="radio" name="d4" id="D4" value="D">contenuti multimediali</div>
+			
+			<br><br>
+			<li>Cos'è HTML?</li>
+ 				
+			
+				<br><div><h1 id="giusta5">&#10004;Corretta</h1><h1 id="sbagliata5">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a5"><input type="radio" name="d5" id="A5" value="A" >Un linguaggio di programmazione</div>
+				<br>
+				<div id="b5"><input type="radio" name="d5" id="B5" value="B">Un linguaggio Macchina</div>
+				<br>
+				<div id="c5"><input type="radio" name="d5" id="C5" value="C"> Linguaggio di Markup</div>
+				<br>
+				<div id="d5"><input type="radio" name="d5" id="D5" value="D">Nessuna delle precedenti</div>
+			
+			<br><br>
+			
+		</ol>
+		<br>
+		<button class="btn btn-primary" name="invia"  onclick="verifica();">Conferma Risposte</button>
+		
+		
+	</div>
+
+
+
+</body>
+</html>
 <% elsif params[:linguaggio] == 'CSS' %>
-	<p>Qui ci va il quiz di CSS</p>
+		<html>
+<head>
+	<title>Quiz</title>
+
+	<style type="text/css">
+		div#contenitore{
+			 border:#000 1px solid; 
+			 padding:10px 40px 40px 40px;
+		}
+		
+		h1#giusta1{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata1{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta2{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata2{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta3{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata3{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta4{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata4{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta5{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata5{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		.codice{
+			background-color: #f0f0f0!important;
+    border: 1px solid #ccc!important;
+    width: 26%;
+    padding: 10px;
+    margin: 10px;
+
+		}
+		input{
+			width: 0 !important;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		function verifica(){
+			
+			if(document.getElementById("A1").checked){
+
+				t = document.getElementById("giusta1");
+				t2 = document.getElementById("sbagliata1");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A1").checked==false){
+				
+				t2 = document.getElementById("giusta1");
+				t2.style.display="none";
+				t = document.getElementById("sbagliata1");
+				t.style.display="block";
+				verde = document.getElementById("a1");
+				verde.style.color = "#00E100";
+			}
+
+
+
+			if(document.getElementById("A2").checked){
+
+				t = document.getElementById("giusta2");
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A2").checked==false){
+				
+				t = document.getElementById("giusta2");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="block";
+				verde = document.getElementById("a2");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("C3").checked){
+
+				t = document.getElementById("giusta3");
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C3").checked==false){
+				
+				t = document.getElementById("giusta3");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="block";
+				verde = document.getElementById("c3");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("A4").checked){
+
+				t = document.getElementById("giusta4");
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A4").checked==false){
+				
+				t = document.getElementById("giusta4");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="block";
+				verde = document.getElementById("a4");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("D5").checked){
+
+				t = document.getElementById("giusta5");
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("D5").checked==false){
+				
+				t = document.getElementById("giusta5");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="block";
+				verde = document.getElementById("d5");
+				verde.style.color = "#00E100";
+				
+			}
+
+		}
+	</script>
+
+</head>
+<body>
+		<h1>Quiz finale di <%= params[:linguaggio]%> </h1>
+		<div id="contenitore">
+		<ol>
+			<li>Cosa significa l'acronimo CSS?</li>
+			
+				<br><div><h1 id="giusta1">&#10004;Corretta</h1><h1 id="sbagliata1">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a1"><input type="radio" name="d1" id="A1" value="A" >Cascading Style Sheets</div>
+				<br>
+				<div id="b1"><input type="radio" name="d1" id="B1" value="B">Cascading Story Sheet</div>
+				<br>
+				<div id="c1"><input type="radio" name="d1" id="C1" value="C">Cascading Spy Sheet</div>
+				<br>
+				<div id="d1"><input type="radio" name="d1" id="D1" value="D">Control Style Sheet</div>
+			
+			<br><br>
+
+			<li>Qual'è la corretta sintassi in CSS?</li>
+			<br><div><h1 id="giusta2">&#10004;Corretta</h1><h1 id="sbagliata2">&#10006;Sbagliata</h1></div>
+				
+				<div id="a2"><input type="radio" name="d2" id="A2" value="A">{body;color:block;}</div>
+				<br>
+				<div id="b2"><input type="radio" name="d2" id="B2" value="B">{body:color=black;}</div>
+				<br>
+				<div id="c2"><input type="radio" name="d2" id="C2" value="C">body{color:black;}</div>
+				<br>
+				<div id="d2"><input type="radio" name="d2" id="D2" value="D">body:color=black;</div>
+
+				<br><br>
+				<li>Quale tra questi è chiamato selettore universale ?<br></li>
+				<br><div><h1 id="giusta3">&#10004;Corretta</h1><h1 id="sbagliata3">&#10006;Sbagliata</h1></div>
+				
+				<div id="a3"><input type="radio" name="d3" id="A3" value="A">$</div>
+				<br>
+				<div id="b3"><input type="radio" name="d3" id="B3" value="B">#</div>
+				<br>
+				<div id="c3"><input type="radio" name="d3" id="C3" value="C">*</div>
+				<br>
+				<div id="d3"><input type="radio" name="d3" id="D3" value="D">&</div>		
+ 			<br><br>
+
+
+ 			<li>Qual'è la corretta sintassi in CSS per fare tutti gli elementi < p >in grassetto? <br></li>
+			
+				<br><div><h1 id="giusta4">&#10004;Corretta</h1><h1 id="sbagliata4">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a4"><input type="radio" name="d4" id="A4" value="A" >{font-weight:bold}</div>
+				<br>
+				<div id="b4"><input type="radio" name="d4" id="B4" value="B">p{text-size:bold};</div>
+				<br>
+				<div id="c4"><input type="radio" name="d4" id="C4" value="C">< p style="font-size:bold;"></div>
+				<br>
+				<div id="d4"><input type="radio" name="d4" id="D4" value="D">< p style="font-size:bold;"></div>
+			
+			<br><br>
+			<li>In CSS come si possono selezionare tutti i < p > tags in una pagina?</li>
+ 				
+			
+				<br><div><h1 id="giusta5">&#10004;Corretta</h1><h1 id="sbagliata5">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a5"><input type="radio" name="d5" id="A5" value="A" >< p >{<br>   }</div>
+				<br>
+				<div id="b5"><input type="radio" name="d5" id="B5" value="B">.p{<br>   }</div>
+				<br>
+				<div id="c5"><input type="radio" name="d5" id="C5" value="C">#p{<br>   }</div>
+				<br>
+				<div id="d5"><input type="radio" name="d5" id="D5" value="D">p{<br>   }</div>
+			
+			<br><br>
+			
+		</ol>
+		<br>
+		<button class="btn btn-primary" name="invia"  onclick="verifica();">Conferma Risposte</button>
+		
+		
+	</div>
+
+
+
+</body>
+</html>
 <% elsif params[:linguaggio] == 'Javascript' %>
-	<p>Qui ci va il quiz di Javascript</p>
+		<html>
+<head>
+	<title>Quiz</title>
+
+	<style type="text/css">
+		div#contenitore{
+			 border:#000 1px solid; 
+			 padding:10px 40px 40px 40px;
+		}
+		
+		h1#giusta1{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata1{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta2{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata2{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta3{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata3{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta4{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata4{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#giusta5{
+			color: green;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		h1#sbagliata5{
+			color: red;
+			display: none;
+			position: absolute;
+			right: 15%;
+		}
+		.codice{
+			background-color: #f0f0f0!important;
+    border: 1px solid #ccc!important;
+    width: 26%;
+    padding: 10px;
+    margin: 10px;
+
+		}
+		input{
+			width: 0 !important;
+		}
+
+
+	</style>
+
+	<script type="text/javascript">
+		function verifica(){
+			
+			if(document.getElementById("A1").checked){
+
+				t = document.getElementById("giusta1");
+				t2 = document.getElementById("sbagliata1");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A1").checked==false){
+				
+				t2 = document.getElementById("giusta1");
+				t2.style.display="none";
+				t = document.getElementById("sbagliata1");
+				t.style.display="block";
+				verde = document.getElementById("a1");
+				verde.style.color = "#00E100";
+			}
+
+
+
+			if(document.getElementById("D2").checked){
+
+				t = document.getElementById("giusta2");
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("D2").checked==false){
+				
+				t = document.getElementById("giusta2");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata2");
+				t2.style.display="block";
+				verde = document.getElementById("d2");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("B3").checked){
+
+				t = document.getElementById("giusta3");
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("B3").checked==false){
+				
+				t = document.getElementById("giusta3");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata3");
+				t2.style.display="block";
+				verde = document.getElementById("b3");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("A4").checked){
+
+				t = document.getElementById("giusta4");
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("A4").checked==false){
+				
+				t = document.getElementById("giusta4");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata4");
+				t2.style.display="block";
+				verde = document.getElementById("a4");
+				verde.style.color = "#00E100";
+				
+			}
+
+
+
+			if(document.getElementById("C5").checked){
+
+				t = document.getElementById("giusta5");
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="none";
+				t.style.display="block";
+				
+			}
+			if(document.getElementById("C5").checked==false){
+				
+				t = document.getElementById("giusta5");
+				t.style.display="none";
+				t2 = document.getElementById("sbagliata5");
+				t2.style.display="block";
+				verde = document.getElementById("c5");
+				verde.style.color = "#00E100";
+				
+			}
+
+		}
+	</script>
+
+</head>
+<body>
+		<h1>Quiz finale di <%= params[:linguaggio]%> </h1>
+		<div id="contenitore">
+		<ol>
+			<li>Cosa stampa il seguente codice?
+			<div class="codice">
+					var foo=function foo() {<br>
+						console.log(foo==foo);<br>
+					};<br>
+					foo();<br>
+					</div>
+				</li>
+			
+				<br><div><h1 id="giusta1">&#10004;Corretta</h1><h1 id="sbagliata1">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a1"><input type="radio" name="d1" id="A1" value="A" >true</div>
+				<br>
+				<div id="b1"><input type="radio" name="d1" id="B1" value="B">false</div>
+				<br>
+				<div id="c1"><input type="radio" name="d1" id="C1" value="C">ReferenceError</div>
+				<br>
+				<div id="d1"><input type="radio" name="d1" id="D1" value="D">SyntaxError</div>
+			
+			<br><br>
+
+			<li> qual'è l'avviso di sopra?
+				<div class="codice">
+					function aaa(){<br>
+						return<br>
+						{<br>
+							test 1<br>
+						};<br>
+					}<br>
+					alert(typeof aaa());<br>
+					</div>
+				</li>
+			
+			<br><div><h1 id="giusta2">&#10004;Corretta</h1><h1 id="sbagliata2">&#10006;Sbagliata</h1></div>
+				
+				<div id="a2"><input type="radio" name="d2" id="A2" value="A">function</div>
+				<br>
+				<div id="b2"><input type="radio" name="d2" id="B2" value="B">numero</div>
+				<br>
+				<div id="c2"><input type="radio" name="d2" id="C2" value="C">oggetto</div>
+				<br>
+				<div id="d2"><input type="radio" name="d2" id="D2" value="D">indefinito</div>
+
+				<br><br>
+				<li>Qual'è l'output del seguente codice?
+				<div class="codice">
+					"1"--"1"<br>
+					</div>
+				</li><br><div><h1 id="giusta3">&#10004;Corretta</h1><h1 id="sbagliata3">&#10006;Sbagliata</h1></div>
+				
+				<div id="a3"><input type="radio" name="d3" id="A3" value="A">0</div>
+				<br>
+				<div id="b3"><input type="radio" name="d3" id="B3" value="B">2</div>
+				<br>
+				<div id="c3"><input type="radio" name="d3" id="C3" value="C">11</div>
+				<br>
+				<div id="d3"><input type="radio" name="d3" id="D3" value="D">"11"</div>		
+ 			<br><br>
+
+ 			<li>Cosa stampa ?
+ 			<div class="codice">
+					[] + [] 'foo'.split('');<br>
+					</div>
+				</li>
+			
+				<br><div><h1 id="giusta4">&#10004;Corretta</h1><h1 id="sbagliata4">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a4"><input type="radio" name="d4" id="A4" value="A" >"f,o,o"</div>
+				<br>
+				<div id="b4"><input type="radio" name="d4" id="B4" value="B">TypeError</div>
+				<br>
+				<div id="c4"><input type="radio" name="d4" id="C4" value="C">["f","o","o"]</div>
+				<br>
+				<div id="d4"><input type="radio" name="d4" id="D4" value="D">[][]["f","o","o"]</div>
+			
+			<br><br>
+			<li>Cosa stampa ?<br>
+ 			<div class="codice">
+					var x=0;<br>
+					function foo(){<br>
+						x++;<br>
+						this.x=x;<br>
+						return foo;<br>
+					}<br>
+					var bar= new new foo;<br>
+					console.log(bar.x);<br>
+					</div>
+				</li>
+			
+			
+				<br><div><h1 id="giusta5">&#10004;Corretta</h1><h1 id="sbagliata5">&#10006;Sbagliata</h1></div>
+				
+
+				<div id="a5"><input type="radio" name="d5" id="A5" value="A" >ReferenceError</div>
+				<br>
+				<div id="b5"><input type="radio" name="d5" id="B5" value="B">TypeError</div>
+				<br>
+				<div id="c5"><input type="radio" name="d5" id="C5" value="C">indefinito</div>
+				<br>
+				<div id="d5"><input type="radio" name="d5" id="D5" value="D">1</div>
+			
+			<br><br>
+			
+		</ol>
+		<br>
+		<button class="btn btn-primary" name="invia"  onclick="verifica();">Conferma Risposte</button>
+		
+		
+	</div>
+
+
+
+</body>
+</html>
 	
 <%end%>
