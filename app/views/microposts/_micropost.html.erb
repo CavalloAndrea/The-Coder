@@ -10,6 +10,10 @@
 		<%#    Pubblicato <%= time_ago_in_words(micropost.created_at) %> <%#fa.       %>
 		<% if current_user?(micropost.user) #|| current_user.admin? %>
 			<%= link_to "Elimina", micropost, method: :delete, data: {confirm: "Sei sicuro?"} %>
+		<% else %>
+			<div style="visibility: hidden;">
+				<%= link_to "Elimina", micropost, method: :delete, data: {confirm: "Sei sicuro?"} %>
+			</div>
 			<% end %>
 	</span>
 </li>

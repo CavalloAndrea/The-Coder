@@ -35,7 +35,13 @@ textarea{
 }
 
 .stile{
-	width: 10% !important;
+	width: 11% !important;
+}
+.colore{
+	color:#0216ff;
+}
+.colore:hover{
+	color:#0216ff;
 }
 
 /* stile del testo */
@@ -164,6 +170,7 @@ aside {
 .gravatar {
 	float: left;
 	margin-right: 10px;
+	margin-bottom: 20px;
 	
 }
 
