@@ -30,11 +30,11 @@
 			<br>
 
 			Progresso Corsi:
-			<br>
+			<br><br>
 			<% if @user.c != 0%>
 		<div style="height: 40px;">
-			<b style="position: absolute;line-height: 20px;left:35px;color:blue;"> <%= link_to 'C', searching_path(:linguaggio=>"C"),class: 'colore' %> </b>
-			<div class="progress" style="width: 235px;position: absolute;left:105px;">
+			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'C', searching_path(:linguaggio=>"C"),class: 'colore' %> </b>
+			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
 
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
@@ -50,8 +50,8 @@
 
 			<% if @user.java != 0%>
 		<div style="height: 40px;">
-			<b style="position: absolute;line-height: 20px;left:35px;color:blue;"> <%= link_to 'Java', searching_path(:linguaggio=>"Java") ,class: 'colore' %></b>
-			<div class="progress" style="width: 235px;position: absolute;left:105px;">
+			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'Java', searching_path(:linguaggio=>"Java") ,class: 'colore' %></b>
+			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
 
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
@@ -67,8 +67,8 @@
 			
 			<% if @user.python != 0%>
 		<div style="height: 40px;">
-			<b style="position: absolute;line-height: 20px;left:35px;color: blue;"> <%= link_to 'Python', searching_path(:linguaggio=>"Python") ,class: 'colore' %></b>
-			<div class="progress" style="width: 235px;position: absolute;left:105px;">
+			<b style="position: absolute;line-height: 20px;left:25px;color: blue;"> <%= link_to 'Python', searching_path(:linguaggio=>"Python") ,class: 'colore' %></b>
+			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
 
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
@@ -85,8 +85,8 @@
 			
 			<% if @user.assembly != 0%>
 		<div style="height: 40px;">
-			<b style="position: absolute;line-height: 20px;left:35px;color:blue;"> <%= link_to 'Assembly', searching_path(:linguaggio=>"Assembly") ,class: 'colore' %></b>
-			<div class="progress" style="width: 235px;position: absolute;left:105px;">
+			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'Assembly', searching_path(:linguaggio=>"Assembly") ,class: 'colore' %></b>
+			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
 
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
@@ -102,8 +102,8 @@
 			
 			<% if @user.sql != 0%>
 		<div style="height: 40px;">
-			<b style="position: absolute;line-height: 20px;left:35px;color:blue;"><%= link_to 'SQL', searching_path(:linguaggio=>"SQL") ,class: 'colore' %></b>
-			<div class="progress" style="width: 235px;position: absolute;left:105px;">
+			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"><%= link_to 'SQL', searching_path(:linguaggio=>"SQL") ,class: 'colore' %></b>
+			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
 
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
@@ -119,8 +119,8 @@
 			
 			<% if @user.html != 0%>
 		<div style="height: 40px;">
-			<b style="position: absolute;line-height: 20px;left:35px;color:blue;"> <%= link_to 'HTML', searching_path(:linguaggio=>"HTML") ,class: 'colore' %></b>
-			<div class="progress" style="width: 235px;position: absolute;left:105px;">
+			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'HTML', searching_path(:linguaggio=>"HTML") ,class: 'colore' %></b>
+			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
 
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
@@ -134,10 +134,10 @@
 			<%end%>
 
 
-			<% if @user.javascript != 0%>
+			<% if @user.javascript != 1%>
 		<div style="height: 40px;">
-			<b style="position: absolute;line-height: 20px;left:35px;color:blue;"> <%= link_to 'Javascript', searching_path(:linguaggio=>"Javascript") ,class: 'colore' %></b>
-			<div class="progress" style="width: 235px;position: absolute;left:105px;">
+			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'Javascript', searching_path(:linguaggio=>"Javascript") ,class: 'colore' %></b>
+			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
 
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
@@ -153,8 +153,8 @@
 			
 			<% if @user.css != 0%>
 		<div style="height: 40px;">
-			<b style="position: absolute;line-height: 20px;left:35px;color:blue"> <%= link_to 'CSS', searching_path(:linguaggio=>"CSS") ,class: 'colore' %></b>
-			<div class="progress" style="width: 235px;position: absolute;left:105px;">
+			<b style="position: absolute;line-height: 20px;left:25px;color:blue"> <%= link_to 'CSS', searching_path(:linguaggio=>"CSS") ,class: 'colore' %></b>
+			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
 
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
