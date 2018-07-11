@@ -1,0 +1,114 @@
+<% provide(:title, @quiz.titolo) %>
+<head>
+<script type="text/javascript">
+	function Controlla(){
+		var score = 0;
+
+		array1 = document.getElementsByName('1');
+		for(i=0;i<array1.length;i++){
+			if(array1[i].checked){
+				if(array1[i].value == '<%= @quiz.g1%>' )
+					score += 1;
+			}
+		}
+
+		array2 = document.getElementsByName('2');
+		for(i=0;i<array2.length;i++){
+			if(array2[i].checked){
+				if(array2[i].value == '<%= @quiz.g2%>' )
+					score += 1;
+			}
+		}
+
+		array3 = document.getElementsByName('3');
+		for(i=0;i<array3.length;i++){
+			if(array3[i].checked){
+				if(array3[i].value == '<%= @quiz.g3%>' )
+					score += 1;
+			}
+		}
+
+		array4 = document.getElementsByName('4');
+		for(i=0;i<array4.length;i++){
+			if(array4[i].checked){
+				if(array4[i].value == '<%= @quiz.g4%>' )
+					score += 1;
+			}
+		}
+
+		array5 = document.getElementsByName('5');
+		for(i=0;i<array5.length;i++){
+			if(array5[i].checked){
+				if(array5[i].value == '<%= @quiz.g5%>' )
+					score += 1;
+			}
+		}
+
+		if(score<3){
+			alert("Peccato hai totalizzato " + score +"/5, devi ripassare la lezione e ripetere il quiz."); 
+		}
+		else{
+			alert("Complimenti hai totalizzato " + score +"/5" +", puoi passare alla lezione successiva!");
+			document.getElementById("prossima").disabled =false;
+		}
+
+		
+	}
+</script>
+
+</head>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1><%= @quiz.titolo %></h1>
+
+      
+        <p><b>Domanda1:</b><br> <%= @quiz.d1 %></p>
+
+        <input style="width: 0px;" type="radio" name="1" value="<%= @quiz.r1_1 %>"> <%= @quiz.r1_1 %> <br>
+        <input style="width: 0px;" type="radio" name="1" value="<%= @quiz.r1_2 %>"> <%= @quiz.r1_2 %> <br>
+        <input style="width: 0px;" type="radio" name="1" value="<%= @quiz.r1_3 %>"> <%= @quiz.r1_3 %> <br>
+
+        <hr>
+
+        <p><b>Domanda2:</b><br> <%= @quiz.d2 %></p>
+
+        <input style="width: 0px;" type="radio" name="2" value="<%= @quiz.r2_1 %>"> <%= @quiz.r2_1 %> <br>
+        <input style="width: 0px;" type="radio" name="2" value="<%= @quiz.r2_2 %>"> <%= @quiz.r2_2 %> <br>
+        <input style="width: 0px;" type="radio" name="2" value="<%= @quiz.r2_3 %>"> <%= @quiz.r2_3 %> <br>
+
+        <hr>
+
+        <p><b>Domanda3:</b><br> <%= @quiz.d3 %></p>
+
+        <input style="width: 0px;" type="radio" name="3" value="<%= @quiz.r3_1 %>"> <%= @quiz.r3_1 %> <br>
+        <input style="width: 0px;" type="radio" name="3" value="<%= @quiz.r3_2 %>"> <%= @quiz.r3_2 %> <br>
+        <input style="width: 0px;" type="radio" name="3" value="<%= @quiz.r3_3 %>"> <%= @quiz.r3_3 %> <br>
+
+        <hr>
+
+        <p><b>Domanda4:</b><br> <%= @quiz.d4 %></p>
+
+        <input style="width: 0px;" type="radio" name="4" value="<%= @quiz.r4_1 %>"> <%= @quiz.r4_1 %> <br>
+        <input style="width: 0px;" type="radio" name="4" value="<%= @quiz.r4_2 %>"> <%= @quiz.r4_2 %> <br>
+        <input style="width: 0px;" type="radio" name="4" value="<%= @quiz.r4_3 %>"> <%= @quiz.r4_3 %> <br>
+
+        <hr>
+
+        <p><b>Domanda5:</b><br> <%= @quiz.d5 %></p>
+
+        <input style="width: 0px;" type="radio" name="5" value="<%= @quiz.r5_1 %>"> <%= @quiz.r5_1 %> <br>
+        <input style="width: 0px;" type="radio" name="5" value="<%= @quiz.r5_2 %>"> <%= @quiz.r5_2 %> <br>
+        <input style="width: 0px;" type="radio" name="5" value="<%= @quiz.r5_3 %>"> <%= @quiz.r5_3 %> <br>
+
+        <br><br>
+        <button onclick="Controlla();" class="btn btn-primary">Conferma risposte</button>
+
+ 
+	<%= link_to '<button id="prossima" disabled="true"  style="float: right; background-color:green;" class="btn btn-primary">Lezione successiva</button>'.html_safe, tutorial_path(:id => @quiz.next) %> 
+
+	<button style="float: right; background-color:red;margin-right: 30px;" onclick="history.go(-1);"  class="btn btn-primary">Ripassa lezione</button>&emsp;
+
+       
+    </div>
+</div>

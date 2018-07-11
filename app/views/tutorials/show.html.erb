@@ -9,6 +9,8 @@
 
         <p><b>Lezione:</b> <%= @tutorial.lezione %></p>
 
+        <div><%= link_to '<button style="width:120px;" class="btn btn-primary">Quiz</button>'.html_safe, quiz_path(:tutorial_id => params[:id])%></div>
+
         
     </div>
 </div>

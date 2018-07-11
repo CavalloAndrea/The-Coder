@@ -1,0 +1,85 @@
+<% provide(:title, 'Proponi Quiz') %>
+<h1>Nuovo Quiz</h1>
+
+<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<%= form_for(@quiz) do |f| %>
+				
+				<%= f.label :tutorial_id %>
+				<%= f.text_field :tutorial_id, class: 'form-control' %>
+
+				<%= f.label :next %>
+				<%= f.text_field :next, class: 'form-control' %>
+
+				<%= f.label :titolo %>
+				<%= f.text_field :titolo, class: 'form-control' %>
+
+				<%= f.label :d1 %>
+				<%= f.text_area :d1, class: 'form-control' %>
+				<%= f.label :r1_1 %>
+				<%= f.text_field :r1_1, class: 'form-control'%>
+				<%= f.label :r1_2 %>
+				<%= f.text_field :r1_2, class: 'form-control'%>
+				<%= f.label :r1_3 %>
+				<%= f.text_field :r1_3, class: 'form-control'%>
+				<%= f.label :g1 %>
+				<%= f.text_field :g1, class: 'form-control' %>
+
+				<hr style="border-top:2px solid #000;">
+
+				<%= f.label :d2 %>
+				<%= f.text_area :d2, class: 'form-control' %>
+				<%= f.label :r2_1 %>
+				<%= f.text_field :r2_1, class: 'form-control'%>
+				<%= f.label :r2_2 %>
+				<%= f.text_field :r2_2, class: 'form-control'%>
+				<%= f.label :r2_3 %>
+				<%= f.text_field :r2_3, class: 'form-control'%>
+				<%= f.label :g2 %>
+				<%= f.text_field :g2, class: 'form-control' %>
+
+				<hr style="border-top:2px solid #000;">
+
+				<%= f.label :d3 %>
+				<%= f.text_area :d3, class: 'form-control' %>
+				<%= f.label :r3_1 %>
+				<%= f.text_field :r3_1, class: 'form-control'%>
+				<%= f.label :r3_2 %>
+				<%= f.text_field :r3_2, class: 'form-control'%>
+				<%= f.label :r3_3 %>
+				<%= f.text_field :r3_3, class: 'form-control'%>
+				<%= f.label :g3 %>
+				<%= f.text_field :g3, class: 'form-control' %>
+
+				<hr style="border-top:2px solid #000;">
+
+				<%= f.label :d4 %>
+				<%= f.text_area :d4, class: 'form-control' %>
+				<%= f.label :r4_1 %>
+				<%= f.text_field :r4_1, class: 'form-control'%>
+				<%= f.label :r4_2 %>
+				<%= f.text_field :r4_2, class: 'form-control'%>
+				<%= f.label :r4_3 %>
+				<%= f.text_field :r4_3, class: 'form-control'%>
+				<%= f.label :g4 %>
+				<%= f.text_field :g4, class: 'form-control' %>
+
+				<hr style="border-top:2px solid #000;">
+
+				<%= f.label :d5 %>
+				<%= f.text_area :d5, class: 'form-control' %>
+				<%= f.label :r5_1 %>
+				<%= f.text_field :r5_1, class: 'form-control'%>
+				<%= f.label :r5_2 %>
+				<%= f.text_field :r5_2, class: 'form-control'%>
+				<%= f.label :r5_3 %>
+				<%= f.text_field :r5_3, class: 'form-control'%>
+				<%= f.label :g5 %>
+				<%= f.text_field :g5, class: 'form-control' %>
+				
+				
+
+				<%= f.submit "Aggiungi quiz", class: "btn btn-primary" %>
+			<% end %>
+		</div>
+	</div>

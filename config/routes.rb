@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   
+  get 'quizzes/new'
+
   get 'esercizi/new'
 
   get 'password_resets/new'
@@ -35,9 +37,9 @@ Rails.application.routes.draw do
 
   get 'searching' => 'tutorials#searching'
 
-  get 'quiz' => 'tutorials#quiz'
-
   get 'esercizio' => 'tutorials#esercizio'
+
+
   
   resources :users do
     member do
@@ -45,6 +47,7 @@ Rails.application.routes.draw do
     end
   end
   resources :problems
+  resources :quizzes
   resources :tutorials
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]

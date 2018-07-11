@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180709093300) do
+ActiveRecord::Schema.define(version: 20180711092854) do
 
   create_table "microposts", force: :cascade do |t|
     t.text "content"
@@ -33,6 +33,40 @@ ActiveRecord::Schema.define(version: 20180709093300) do
     t.index ["user_id"], name: "index_problems_on_user_id"
   end
 
+  create_table "quizzes", force: :cascade do |t|
+    t.string "titolo"
+    t.string "d1"
+    t.string "d2"
+    t.string "d3"
+    t.string "d4"
+    t.string "d5"
+    t.string "g1"
+    t.string "g2"
+    t.string "g3"
+    t.string "g4"
+    t.string "g5"
+    t.string "r1_1"
+    t.string "r1_2"
+    t.string "r1_3"
+    t.string "r2_1"
+    t.string "r2_2"
+    t.string "r2_3"
+    t.string "r3_1"
+    t.string "r3_2"
+    t.string "r3_3"
+    t.string "r4_1"
+    t.string "r4_2"
+    t.string "r4_3"
+    t.string "r5_1"
+    t.string "r5_2"
+    t.string "r5_3"
+    t.integer "tutorial_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "next"
+    t.index ["tutorial_id"], name: "index_quizzes_on_tutorial_id"
+  end
+
   create_table "relationships", force: :cascade do |t|
     t.integer "follower_id"
     t.integer "followed_id"
@@ -50,6 +84,7 @@ ActiveRecord::Schema.define(version: 20180709093300) do
     t.text "quiz"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "next"
   end
 
   create_table "users", force: :cascade do |t|
