@@ -25,42 +25,7 @@
 			<br>
 			<br>
 
-			<b>Aggiorna i progressi fatti nei vari corsi</b>
-			<br>
-			<br>
-			<%= f.label :c,'C 	'%>&emsp;&emsp;&emsp;&emsp;
-			<%= f.select(:c,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.c),{},{ :class => 'stile' })%>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-
-			<%= f.label :sql,'SQL'%>&emsp;&emsp;&emsp;
-			<%= f.select(:sql,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.sql),{},{ :class => 'stile' })%>
-			<br>
-
-			<%= f.label :java,'Java'%>&emsp;&emsp;&nbsp;&thinsp;
-			<%= f.select(:java,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.java),{},{ :class => 'stile' })%>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-
-			<%= f.label :html,'HTML'%>&emsp;&emsp;&nbsp;&thinsp;
-			<%= f.select(:html,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.html),{},{ :class => 'stile' })%>
-
-			<br>
-
-			<%= f.label :python,'Python'%>&emsp;&nbsp;
-			<%= f.select(:python,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.python),{},{ :class => 'stile' })%>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-
-			<%= f.label :javascript,'Javascript'%>&thinsp;
-			<%= f.select(:javascript,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.javascript),{},{ :class => 'stile' })%>
-			<br>
-
-			<%= f.label :assembly,'Assembly'%>
-			<%= f.select(:assembly,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.assembly),{},{ :class => 'stile' })%>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-
-
-			<%= f.label :css,'CSS'%>&emsp;&emsp;&emsp;&thinsp;
-			<%= f.select(:css,options_for_select(['0','1','2','3','4','5','6','7','8','9','10'],:selected => f.object.css),{},{ :class => 'stile' })%>
-			<br>
-			<br>
-			<br>
-
+			
 
 			<%= f.label :privato, "Rendi il Profilo privato" %>
              <%= f.check_box :privato, {:style=> "width:0px"} %>

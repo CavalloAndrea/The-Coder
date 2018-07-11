@@ -47,10 +47,56 @@
 		if(score<3){
 			alert("Peccato hai totalizzato " + score +"/5, devi ripassare la lezione e ripetere il quiz."); 
 		}
-		else{
+		if(score>=3){
 			alert("Complimenti hai totalizzato " + score +"/5" +", puoi passare alla lezione successiva!");
 			document.getElementById("prossima").disabled =false;
+			
 		}
+
+		<% if @quiz.id <=10 %>
+			<% if current_user.c < @quiz.id %>
+				<%= current_user.update(:c => params[:id]) %>
+			<%end%>
+
+		<% elsif @quiz.id >10 && @quiz.id <=20 %>
+			<% if current_user.java < @quiz.id %>
+				<%= current_user.update(:java => params[:id]) %>
+			<%end%>
+
+		<% elsif @quiz.id >20 && @quiz.id <=30 %>
+			<% if current_user.python < @quiz.id %>
+				<%= current_user.update(:python => params[:id]) %>
+			<%end%>
+
+		<% elsif @quiz.id >30 && @quiz.id <=40 %>
+			<% if current_user.assembly < @quiz.id %>
+				<%= current_user.update(:assembly => params[:id]) %>
+			<%end%>
+
+		<% elsif @quiz.id >40 && @quiz.id <=50 %>
+			<% if current_user.sql < @quiz.id %>
+				<%= current_user.update(:sql => params[:id]) %>
+			<%end%>
+
+		<% elsif @quiz.id >50 && @quiz.id <=60 %>
+			<% if current_user.html < @quiz.id %>
+				<%= current_user.update(:html => params[:id]) %>
+			<%end%>
+
+		<% elsif @quiz.id >60 && @quiz.id <=70 %>
+			<% if current_user.css < @quiz.id %>
+				<%= current_user.update(:css => params[:id]) %>
+			<%end%>
+
+		<% elsif @quiz.id >70 && @quiz.id <=80 %>
+			<% if current_user.javascript < @quiz.id %>
+				<%= current_user.update(:javascript => params[:id]) %>
+			<%end%>
+
+		<% end %>
+
+
+
 
 		
 	}
@@ -108,7 +154,7 @@
 	<%= link_to '<button id="prossima" disabled="true"  style="float: right; background-color:green;" class="btn btn-primary">Lezione successiva</button>'.html_safe, tutorial_path(:id => @quiz.next) %> 
 
 	<button style="float: right; background-color:red;margin-right: 30px;" onclick="history.go(-1);"  class="btn btn-primary">Ripassa lezione</button>&emsp;
-
+	
        
     </div>
 </div>
