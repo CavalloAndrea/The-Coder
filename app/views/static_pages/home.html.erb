@@ -5,8 +5,7 @@
 	<div class="center">
 		<section class="corsi">
 			<ul>
-				<li><%= link_to image_tag('c.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio =>
-					"C") %><br><br><%= link_to 'C', searching_path(:linguaggio=>"C")%></li>
+				<li><%= link_to image_tag('c.png',:width=>"150px", :height=>"150px"), searching_path(:id => current_user.c,:linguaggio =>"C") %><br><br><%= link_to 'C', searching_path(:linguaggio=>"C")%></li>
 
 				<li><%= link_to image_tag('java.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'Java') %><br><br><%= link_to 'Java', searching_path(:linguaggio=>'Java')%></li>
 

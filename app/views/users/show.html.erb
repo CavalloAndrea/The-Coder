@@ -134,7 +134,7 @@
 			<%end%>
 
 
-			<% if @user.javascript != 1%>
+			<% if @user.javascript != 0%>
 		<div style="height: 40px;">
 			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'Javascript', searching_path(:linguaggio=>"Javascript") ,class: 'colore' %></b>
 			<div class="progress" style="width: 225px;position: absolute;left:120px;">

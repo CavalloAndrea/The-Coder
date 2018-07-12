@@ -6,8 +6,41 @@
  <% end %>
 
 
-<div style="float: right;"><%= link_to '<button style="width:120px;" class="btn btn-primary">Esercizio finale</button>'.html_safe, esercizio_path(:linguaggio => params[:linguaggio])%></div>
+        <% if current_user.c == 10 %>
+        	<div style="float: right;"><%= link_to '<button style="width:120px;" class="btn btn-primary">Esercizio finale</button>'.html_safe, esercizio_path(:linguaggio => 'C')%></div>
+        <% end %>
+
+        <% if current_user.java == 20 %>
+        	<div style="float: right;"><%= link_to '<button style="width:120px;" class="btn btn-primary">Esercizio finale</button>'.html_safe, esercizio_path(:linguaggio => 'Java')%></div>
+        <% end %>
+
+        <% if current_user.python == 30 %>
+        	<div style="float: right;"><%= link_to '<button style="width:120px;" class="btn btn-primary">Esercizio finale</button>'.html_safe, esercizio_path(:linguaggio => 'Python')%></div>
+        <% end %>
+
+        <% if current_user.assembly == 40 %>
+        	<div style="float: right;"><%= link_to '<button style="width:120px;" class="btn btn-primary">Esercizio finale</button>'.html_safe, esercizio_path(:linguaggio => 'Assembly')%></div>
+        <% end %>
+
+        <% if current_user.sql == 50 %>
+        	<div style="float: right;"><%= link_to '<button style="width:120px;" class="btn btn-primary">Esercizio finale</button>'.html_safe, esercizio_path(:linguaggio => 'SQL')%></div>
+        <% end %>
+
+        <% if current_user.html == 60 %>
+        	<div style="float: right;"><%= link_to '<button style="width:120px;" class="btn btn-primary">Esercizio finale</button>'.html_safe, esercizio_path(:linguaggio => 'HTML')%></div>
+        <% end %>
+
+        <% if current_user.css == 70 %>
+        	<div style="float: right;"><%= link_to '<button style="width:120px;" class="btn btn-primary">Esercizio finale</button>'.html_safe, esercizio_path(:linguaggio => 'CSS')%></div>
+        <% end %>
+
+        <% if current_user.javascript == 80 %>
+        	<div style="float: right;"><%= link_to '<button style="width:120px;" class="btn btn-primary">Esercizio finale</button>'.html_safe, esercizio_path(:linguaggio => 'Javascript')%></div>
+        <% end %>
+ 
  <% @data.each do |tutorial| %>
    <%= link_to tutorial.titolo, tutorial_path(tutorial) %>
+        
         <br>
+
 <% end %>
