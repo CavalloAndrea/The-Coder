@@ -5,25 +5,25 @@
 	<div class="center">
 		<section class="corsi">
 			<ul>
-				<li><%= link_to image_tag('c.png',:width=>"150px", :height=>"150px"), searching_path(:id => current_user.c,:linguaggio =>"C") %><br><br><%= link_to 'C', searching_path(:linguaggio=>"C")%></li>
+				<li><%= link_to image_tag('c.png',:width=>"150px", :height=>"150px"), searching_path(:id => current_user.c,:linguaggio =>"C") %><br><br><%= link_to 'C', searching_path(:id => current_user.c,:linguaggio=>"C")%></li>
 
-				<li><%= link_to image_tag('java.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'Java') %><br><br><%= link_to 'Java', searching_path(:linguaggio=>'Java')%></li>
+				<li><%= link_to image_tag('java.png',:width=>"150px", :height=>"150px"), searching_path(:id => current_user.java,:linguaggio => 'Java') %><br><br><%= link_to 'Java', searching_path(:id => current_user.java,:linguaggio=>'Java')%></li>
 
-				<li><%= link_to image_tag('python.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'Python') %><br><br><%= link_to 'Python', searching_path(:linguaggio=='Python')%></li>
+				<li><%= link_to image_tag('python.png',:width=>"150px", :height=>"150px"), searching_path(:id => current_user.python,:linguaggio => 'Python') %><br><br><%= link_to 'Python', searching_path(:id => current_user.python,:linguaggio=>'Python')%></li>
 
-				<li><%= link_to image_tag('assembly.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'Assembly') %><br><br><%= link_to 'Assembly', searching_path(:linguaggio=>'Assembly')%></li>
+				<li><%= link_to image_tag('assembly.png',:width=>"150px", :height=>"150px"), searching_path(:id => current_user.assembly,:linguaggio => 'Assembly') %><br><br><%= link_to 'Assembly', searching_path(:id => current_user.assembly,:linguaggio=>'Assembly')%></li>
 
 			</ul>
 		</section>
 			<section class="corsi">
 			<ul>
-				<li><%= link_to image_tag('sql.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'SQL') %><br><br><%= link_to 'SQL', searching_path(:linguaggio=>'SQL')%></li>
+				<li><%= link_to image_tag('sql.png',:width=>"150px", :height=>"150px"), searching_path(:id => current_user.sql,:linguaggio => 'SQL') %><br><br><%= link_to 'SQL', searching_path(:id => current_user.sql,:linguaggio=>'SQL')%></li>
 
-				<li><%= link_to image_tag('html.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'HTML') %><br><br><%= link_to 'HTML', searching_path(:linguaggio=>'HTML')%></li>
+				<li><%= link_to image_tag('html.png',:width=>"150px", :height=>"150px"), searching_path(:id => current_user.html,:linguaggio => 'HTML') %><br><br><%= link_to 'HTML', searching_path(:id => current_user.html,:linguaggio=>'HTML')%></li>
 
-				<li><%= link_to image_tag('css.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'CSS') %><br><br><%= link_to 'CSS', searching_path(:linguaggio=>'CSS')%></li>
+				<li><%= link_to image_tag('css.png',:width=>"150px", :height=>"150px"), searching_path(:id => current_user.css,:linguaggio => 'CSS') %><br><br><%= link_to 'CSS', searching_path(:id => current_user.css,:linguaggio=>'CSS')%></li>
 
-				<li><%= link_to image_tag('javascript.png',:width=>"150px", :height=>"150px"), searching_path(:linguaggio => 'Javascript') %><br><br><%= link_to 'Javascript', searching_path(:linguaggio=>'Javascript')%></li>
+				<li><%= link_to image_tag('javascript.png',:width=>"150px", :height=>"150px"), searching_path(:id => current_user.javascript,:linguaggio => 'Javascript') %><br><br><%= link_to 'Javascript', searching_path(:id => current_user.javascript,:linguaggio=>'Javascript')%></li>
 			</ul>
 			<br>
 
@@ -35,8 +35,7 @@
         <h5 ><b>Inserisci la parola chiave dell'argomento</b></h5>
         <%= form_tag searching_path, method: 'get' do %>
         <%= text_field_tag :searching, params[:searching] %> 
-        <h5><b>Inserisci il linguaggio<b></h5>
-        <%= select_tag :linguaggio,  options_for_select(['Assembly','C','CSS','HTML','Java','Javascript','Python','SQL'], params[:search]) %> 
+
     </div>
 </div>
 

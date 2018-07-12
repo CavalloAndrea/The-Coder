@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180712085542) do
+ActiveRecord::Schema.define(version: 20180712145109) do
 
   create_table "microposts", force: :cascade do |t|
     t.text "content"
@@ -110,14 +110,14 @@ ActiveRecord::Schema.define(version: 20180712085542) do
     t.string "oauth_token"
     t.datetime "oauth_expires_at"
     t.boolean "privato"
-    t.integer "java", default: 11
-    t.integer "python", default: 21
-    t.integer "c", default: 1
-    t.integer "assembly", default: 31
-    t.integer "sql", default: 41
-    t.integer "html", default: 51
-    t.integer "javascript", default: 71
-    t.integer "css", default: 61
+    t.integer "java", default: 10
+    t.integer "python", default: 20
+    t.integer "c", default: 0
+    t.integer "assembly", default: 30
+    t.integer "sql", default: 40
+    t.integer "html", default: 50
+    t.integer "javascript", default: 70
+    t.integer "css", default: 60
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 

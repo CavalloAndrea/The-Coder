@@ -39,7 +39,7 @@ class TutorialsController < ApplicationController
 		if linguaggio.blank?
 			@data = Tutorial.where("((titolo LIKE ?) or (lezione LIKE ?))", "%#{searchword}%","%#{searchword}%")
 		else
-			@data = Tutorial.where("((titolo LIKE ?) or (lezione LIKE ?)) and linguaggio == ? and id <=  ?","%#{searchword}%","%#{searchword}%","#{linguaggio}","#{id}")
+			@data = Tutorial.where("((titolo LIKE ?) or (lezione LIKE ?)) and linguaggio == ? and id <=  ?+1","%#{searchword}%","%#{searchword}%","#{linguaggio}","#{id}")
 		end
 	end
 
