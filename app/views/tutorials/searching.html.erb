@@ -1,8 +1,8 @@
 
  <% if @data.empty? %>
-   <h1>La ricerca non ha prodotto nessun risultato</h1>
+   <h1>La ricerca non ha prodotto risultati</h1>
 
-   <% elsif @linguaggio.blank? %>
+   <% elsif params[:linguaggio]== nil %>
    <h1>Risultati ricerca per '<%= params[:searching] %>'</h1>
 
   <% else %>
