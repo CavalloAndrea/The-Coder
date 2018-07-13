@@ -56,6 +56,9 @@
 			<%= f.submit "Salva modifiche", class: "btn btn-primary" %>
 
 		<% end %>
+		<br>
+
+		<%= button_to "Cancella il tuo account", self_destroy_user_path, action: :self_destroy, data: {confirm: "Sei sicuro?"}, class: "btn btn-danger" %>
 		
 
 	</div>
