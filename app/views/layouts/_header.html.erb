@@ -25,6 +25,9 @@
 							<ul class="dropdown-menu">
 								<li><%= link_to "Profilo", current_user%></li>
 								<li><%= link_to "Modifica profilo", edit_user_path(current_user) %></li>
+								<% if current_user.admin? %>
+									<li><%= link_to "Privilegi Admin", specialoptions_path %></li>
+								<%end%>
 								<li class="divider"></li>
 								<li><%= link_to "Logout", logout_path, method: "delete" %>
 								</li>

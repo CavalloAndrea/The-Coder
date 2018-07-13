@@ -1,0 +1,17 @@
+<% provide(:title, "Privilegi Admin") %>
+<% provide(:button_text, 'Salva modifiche') %>
+
+<h1>Gestisci The Coder</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+ 
+  <%= form_for Site.find(1) do |f| %>
+     <%= f.label :sospeso, class: "checkbox inline" do %>
+     <%= f.check_box :sospeso, id: 'sospeso' %>
+     <span>Sospendi il sito web</span>
+     <% end %>
+     <br>
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+  <% end %>
+  </div>
+</div>

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
   
+  get 'the_coder/new'
+
+  get 'sites/new'
+
   get 'quizzes/new'
 
   get 'esercizi/new'
@@ -17,6 +21,8 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
+  get  'sospeso'  => 'the_coder#sospeso'
+
   get 'forum' => 'static_pages#forum'
 
   get 'about' => 'static_pages#about'
@@ -24,6 +30,14 @@ Rails.application.routes.draw do
   get 'contact' => 'static_pages#contact'
 
   get 'map' => 'static_pages#map'
+
+  get 'sospendi' => 'sites#sospendi'
+
+  put   'sites'  => 'sites#sospendi'
+
+  get  'specialoptions'   => 'the_coder#specialoptions'
+
+  post '/specialoptions'  =>  'the_coder#sospeso'
 
   get 'signup' => 'users#new'
 
@@ -49,6 +63,7 @@ Rails.application.routes.draw do
   resources :problems
   resources :quizzes
   resources :tutorials
+  resources :sites
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :microposts, only:[:create, :destroy]
