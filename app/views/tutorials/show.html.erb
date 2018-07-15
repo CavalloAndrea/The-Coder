@@ -3,11 +3,8 @@
 
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
-        <h4>Titolo: <%= @tutorial.titolo %></h4>
 
-        <p><b>Linguaggio:</b> <%= @tutorial.linguaggio %></p>
-
-        <p><b>Lezione:</b> <%= @tutorial.lezione %></p>
+		<br><%= sanitize @tutorial.lezione %><br><br>
 
         <div><%= link_to '<button style="width:120px;" class="btn btn-primary">Quiz</button>'.html_safe, quiz_path(:tutorial_id => params[:id])%></div>
 

@@ -110,43 +110,43 @@
         <h1><%= @quiz.titolo %></h1>
 
       
-        <p><b>Domanda1:</b><br> <%= @quiz.d1 %></p>
+        <p><b>Domanda1:</b><br> <%= sanitize @quiz.d1 %></p>
 
-        <input style="width: 0px;" type="radio" name="1" value="<%= @quiz.r1_1 %>"> <%= @quiz.r1_1 %> <br>
-        <input style="width: 0px;" type="radio" name="1" value="<%= @quiz.r1_2 %>"> <%= @quiz.r1_2 %> <br>
-        <input style="width: 0px;" type="radio" name="1" value="<%= @quiz.r1_3 %>"> <%= @quiz.r1_3 %> <br>
-
-        <hr>
-
-        <p><b>Domanda2:</b><br> <%= @quiz.d2 %></p>
-
-        <input style="width: 0px;" type="radio" name="2" value="<%= @quiz.r2_1 %>"> <%= @quiz.r2_1 %> <br>
-        <input style="width: 0px;" type="radio" name="2" value="<%= @quiz.r2_2 %>"> <%= @quiz.r2_2 %> <br>
-        <input style="width: 0px;" type="radio" name="2" value="<%= @quiz.r2_3 %>"> <%= @quiz.r2_3 %> <br>
+        <input style="width: 0px;" type="radio" name="1" value="<%= @quiz.r1_1 %>"> <%= sanitize @quiz.r1_1 %> <br>
+        <input style="width: 0px;" type="radio" name="1" value="<%= @quiz.r1_2 %>"> <%= sanitize @quiz.r1_2 %> <br>
+        <input style="width: 0px;" type="radio" name="1" value="<%= @quiz.r1_3 %>"> <%= sanitize @quiz.r1_3 %> <br>
 
         <hr>
 
-        <p><b>Domanda3:</b><br> <%= @quiz.d3 %></p>
+        <p><b>Domanda2:</b><br> <%= sanitize @quiz.d2 %></p>
 
-        <input style="width: 0px;" type="radio" name="3" value="<%= @quiz.r3_1 %>"> <%= @quiz.r3_1 %> <br>
-        <input style="width: 0px;" type="radio" name="3" value="<%= @quiz.r3_2 %>"> <%= @quiz.r3_2 %> <br>
-        <input style="width: 0px;" type="radio" name="3" value="<%= @quiz.r3_3 %>"> <%= @quiz.r3_3 %> <br>
-
-        <hr>
-
-        <p><b>Domanda4:</b><br> <%= @quiz.d4 %></p>
-
-        <input style="width: 0px;" type="radio" name="4" value="<%= @quiz.r4_1 %>"> <%= @quiz.r4_1 %> <br>
-        <input style="width: 0px;" type="radio" name="4" value="<%= @quiz.r4_2 %>"> <%= @quiz.r4_2 %> <br>
-        <input style="width: 0px;" type="radio" name="4" value="<%= @quiz.r4_3 %>"> <%= @quiz.r4_3 %> <br>
+        <input style="width: 0px;" type="radio" name="2" value="<%= @quiz.r2_1 %>"> <%= sanitize @quiz.r2_1 %> <br>
+        <input style="width: 0px;" type="radio" name="2" value="<%= @quiz.r2_2 %>"> <%= sanitize @quiz.r2_2 %> <br>
+        <input style="width: 0px;" type="radio" name="2" value="<%= @quiz.r2_3 %>"> <%= sanitize @quiz.r2_3 %> <br>
 
         <hr>
 
-        <p><b>Domanda5:</b><br> <%= @quiz.d5 %></p>
+        <p><b>Domanda3:</b><br> <%= sanitize @quiz.d3 %></p>
 
-        <input style="width: 0px;" type="radio" name="5" value="<%= @quiz.r5_1 %>"> <%= @quiz.r5_1 %> <br>
-        <input style="width: 0px;" type="radio" name="5" value="<%= @quiz.r5_2 %>"> <%= @quiz.r5_2 %> <br>
-        <input style="width: 0px;" type="radio" name="5" value="<%= @quiz.r5_3 %>"> <%= @quiz.r5_3 %> <br>
+        <input style="width: 0px;" type="radio" name="3" value="<%= @quiz.r3_1 %>"> <%= sanitize @quiz.r3_1 %> <br>
+        <input style="width: 0px;" type="radio" name="3" value="<%= @quiz.r3_2 %>"> <%= sanitize @quiz.r3_2 %> <br>
+        <input style="width: 0px;" type="radio" name="3" value="<%= @quiz.r3_3 %>"> <%= sanitize @quiz.r3_3 %> <br>
+
+        <hr>
+
+        <p><b>Domanda4:</b><br> <%= sanitize @quiz.d4 %></p>
+
+        <input style="width: 0px;" type="radio" name="4" value="<%= @quiz.r4_1 %>"> <%= sanitize @quiz.r4_1 %> <br>
+        <input style="width: 0px;" type="radio" name="4" value="<%= @quiz.r4_2 %>"> <%= sanitize @quiz.r4_2 %> <br>
+        <input style="width: 0px;" type="radio" name="4" value="<%= @quiz.r4_3 %>"> <%= sanitize @quiz.r4_3 %> <br>
+
+        <hr>
+
+        <p><b>Domanda5:</b><br> <%= sanitize @quiz.d5 %></p>
+
+        <input style="width: 0px;" type="radio" name="5" value="<%= @quiz.r5_1 %>"> <%= sanitize @quiz.r5_1 %> <br>
+        <input style="width: 0px;" type="radio" name="5" value="<%= @quiz.r5_2 %>"> <%= sanitize @quiz.r5_2 %> <br>
+        <input style="width: 0px;" type="radio" name="5" value="<%= @quiz.r5_3 %>"> <%= sanitize @quiz.r5_3 %> <br>
 
         <br><br>
         <button onclick="Controlla();" class="btn btn-primary">Conferma risposte</button>

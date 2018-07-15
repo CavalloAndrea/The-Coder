@@ -46,6 +46,6 @@ class TutorialsController < ApplicationController
 	private
 
 	def tutorial_params
-		params.require(:tutorial).permit(:titolo, :lezione, :linguaggio, :quiz)
+		params.require(:tutorial).permit(:id,:titolo, :lezione, :linguaggio, :quiz)
 	end
 end
