@@ -36,7 +36,7 @@
 			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'C', searching_path(:linguaggio=>"C"),class: 'colore' %> </b>
 			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
-
+	<% if @user.c != nil %>
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
   				aria-valuemin="0" aria-valuemax="100" style="width:<%=@user.c%>0%;color:black">
   				<% if @user.c != 0 %>
@@ -48,7 +48,7 @@
   			</div>
 			</div>
 		</div>
-
+<%end%>
 			
 
 
@@ -57,7 +57,7 @@
 			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'Java', searching_path(:linguaggio=>"Java") ,class: 'colore' %></b>
 			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
-
+<% if @user.java != nil %>
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
   				aria-valuemin="0" aria-valuemax="100" style="width: calc((<%=@user.java%> - 10)* 10%);color:black">
   				<% if @user.java != 10 %>
@@ -68,7 +68,7 @@
   			</div>
 			</div>
 		</div>
-
+<%end%>
 			
 
 			
@@ -77,7 +77,7 @@
 			<b style="position: absolute;line-height: 20px;left:25px;color: blue;"> <%= link_to 'Python', searching_path(:linguaggio=>"Python") ,class: 'colore' %></b>
 			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
-
+<% if @user.python != nil %>
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
   				aria-valuemin="0" aria-valuemax="100" style="width:calc((<%=@user.python%> - 20)* 10%);color:black;">
     			<% if @user.python != 20 %>
@@ -89,7 +89,7 @@
   			</div>
 			</div>
 		</div>
-
+<%end%>
 			
 
 
@@ -99,7 +99,7 @@
 			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'Assembly', searching_path(:linguaggio=>"Assembly") ,class: 'colore' %></b>
 			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
-
+<% if @user.assembly != nil %>
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
   				aria-valuemin="0" aria-valuemax="100" style="width:calc((<%=@user.assembly%> - 30)* 10%);color:black;">
     			<% if @user.assembly != 30 %>
@@ -111,7 +111,7 @@
   			</div>
 			</div>
 		</div>
-
+<%end%>
 			
 
 			
@@ -120,7 +120,7 @@
 			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"><%= link_to 'SQL', searching_path(:linguaggio=>"SQL") ,class: 'colore' %></b>
 			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
-
+<% if @user.sql != nil %>
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
   				aria-valuemin="0" aria-valuemax="100" style="width:calc((<%=@user.sql%> - 40)* 10%);color:black;">
     			<% if @user.sql != 40 %>
@@ -132,7 +132,7 @@
   			</div>
 			</div>
 		</div>
-
+<%end%>
 			
 
 			
@@ -141,7 +141,7 @@
 			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'HTML', searching_path(:linguaggio=>"HTML") ,class: 'colore' %></b>
 			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
-
+<% if @user.html != nil %>
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
   				aria-valuemin="0" aria-valuemax="100" style="width:calc((<%=@user.html%> - 50)* 10%);color:black;">
     			<% if @user.html != 50 %>
@@ -153,7 +153,7 @@
   			</div>
 			</div>
 		</div>
-
+<% end %>
 			
 
 
@@ -162,7 +162,7 @@
 			<b style="position: absolute;line-height: 20px;left:25px;color:blue;"> <%= link_to 'Javascript', searching_path(:linguaggio=>"Javascript") ,class: 'colore' %></b>
 			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
-
+<% if @user.javascript != nil %>
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
   				aria-valuemin="0" aria-valuemax="100" style="width:calc((<%=@user.javascript%> - 70)* 10%);color:black;">
     			<% if @user.javascript != 70 %>
@@ -174,7 +174,7 @@
   			</div>
 			</div>
 		</div>
-
+<%end %>
 			
 
 			
@@ -183,7 +183,7 @@
 			<b style="position: absolute;line-height: 20px;left:25px;color:blue"> <%= link_to 'CSS', searching_path(:linguaggio=>"CSS") ,class: 'colore' %></b>
 			<div class="progress" style="width: 225px;position: absolute;left:120px;">
 				
-
+<% if @user.css != nil %>
   			<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="60"
   				aria-valuemin="0" aria-valuemax="100" style="width:calc((<%=@user.css%> - 60)* 10%);color:black;">
     			<% if @user.css != 60 %>
@@ -195,7 +195,7 @@
   			</div>
 			</div>
 		</div>
-
+<%end%>
 			
 
 
