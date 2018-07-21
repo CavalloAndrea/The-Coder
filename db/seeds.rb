@@ -45,7 +45,7 @@ contenuto = file.read
 contenuto = contenuto.force_encoding('UTF-8').gsub("\u2028", " ")
 tutorial = contenuto.split("|")
 
-(0..3).step(3) do |n|
+(0..4).step(3) do |n|
 
     titolo = tutorial[n].split(":")[1]
     linguaggio = tutorial[n+1].split(":")[1]
