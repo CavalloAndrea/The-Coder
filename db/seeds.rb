@@ -38,3 +38,17 @@ followers = users[3..40]
 following.each { |followed| user.follow(followed) }
 followers.each { |follower| follower.follow(user) }
 
+
+# Creazione Tutorial
+file = File.open("db/tutorial.txt", "rb")
+contenuto = file.read
+contenuto = contenuto.force_encoding('UTF-8').gsub("\u2028", " ")
+tutorial = contenuto.split("|")
+
+(0..3).step(3) do |n|
+
+    titolo = tutorial[n].split(":")[1]
+    linguaggio = tutorial[n+1].split(":")[1]
+    lezione = tutorial[n+2].split(":")[1]
+    Tutorial.create!(titolo: titolo, linguaggio: linguaggio, lezione: lezione)
+end
