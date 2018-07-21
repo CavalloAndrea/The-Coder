@@ -60,7 +60,7 @@ contenuto = file.read
 contenuto = contenuto.force_encoding('UTF-8').gsub("\u2028", " ")
 quiz = contenuto.split("|")
 
-(0..26).step(28) do |n|
+(0..52).step(28) do |n|
 
     titolo = quiz[n].split("£")[1]
     nex = quiz[n+1].split("£")[1]

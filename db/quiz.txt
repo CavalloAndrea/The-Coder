@@ -30,4 +30,40 @@ d5£Cosa si intende per carattere di escape?|
 r5_1£Un carattere per uscire dal programma|
 r5_2£Un carattere per terminare ogni riga di codice|
 r5_3£Un carattere|
-g5£Un carattere
+g5£Un carattere|
+
+
+
+titolo£ Quiz Variabili|
+next£3|
+tutorial_id£2|
+
+d1£ Quale di questi non è un attributo di base delle variabili in C?|
+r1_1£Valore|
+r1_2£Tipo|
+r1_3£Forma|
+g1£Forma|
+
+d2£Quale di questi rappresenta il simbolo per l'istruzione di assegnamento delle variabili?|
+r2_1£->|
+r2_2£=|
+r2_3£//|
+g2£=|
+
+d3£Quando è possibile cambiare il valore di una costante?|
+r3_1£Mai|
+r3_2£Solo nel main()|
+r3_3£In ogni momento|
+g3£Mai|
+
+d4£A cosa serve l'istruzione #define?|
+r4_1£A dichiarare variabili molto grandi|
+r4_2£A stampare elementi a video|
+r4_3£Ad assegnare ad una stringa un determinato valore|
+g4£Ad assegnare ad una stringa un determinato valore|
+
+d5£Cosa stampa il seguente frammento di codice?<br><code>#define altezza 182;<br>int peso = altezza/2;<br>printf("%d",peso);<br>...<br></code>|
+r5_1£182|
+r5_2£91|
+r5_3£Il porgramma va in errore|
+g5£91

@@ -25,10 +25,10 @@ a=100; <br>
 pi=3.1457;<br> 
 ch='p';</code><br><br>
 In ogni linguaggio di alto livello una variabile e` caratterizzata da un nome (identificatore) e quattro attributi base: <br>
- tipo, definisce l'insieme dei valori che la variabile puo` assumere e degli operatori applicabili. 
- valore, e` rappresentato (secondo la codifica adottata) nellarea di memoria legata alla variabile; 
- campo dazione (scope), e` linsieme di istruzioni del programma in cui la variabile e` nota e puo` essere manipolata; C, Pascal, determinabile staticamente LISP, dinamicamente 
- tempo di vita (o durata o estensione), e` lintervallo di tempo in cui unarea di memoria e` legata alla variabile; FORTRAN, allocazione statica C, Pascal, allocazione dinamica.<br><br>
+ tipo, definisce l'insieme dei valori che la variabile puo` assumere e degli operatori applicabili. <br>
+ valore, e` rappresentato (secondo la codifica adottata) nellarea di memoria legata alla variabile; <br>
+ campo d'azione (scope), e` linsieme di istruzioni del programma in cui la variabile e` nota e puo` essere manipolata;<br>
+ tempo di vita (o durata o estensione), e` lintervallo di tempo in cui unarea di memoria e` legata alla variabile;<br><br>
 Esempio: <br>
 /* programma che letto un numero a terminale stampa il valore della circonferenza del cerchio con quel raggio */<br><br>
 <code>#include main() { <br>
@@ -40,14 +40,19 @@ Esempio: <br>
 } </code><br><br>
 <b>Definizione di costanti </b><br>
 Una costante rappresenta un dato che non puo` cambiare di valore nel corso dellesecuzione.
-La dichiarazione di una costante associa ad un identificatore (nome della costante) un valore (numero o altro identificatore di costante). <br>
-Esempi: <br>
+La dichiarazione di una costante associa ad un identificatore (nome della costante) un valore (numero o altro identificatore di costante). <br><br>
+Esempi: <br><br>
+<code>
 const float pigreco = 3.14; <br>
 const float pigreco = 3.1415926; <br>
-e = 2.7182; menoe = - e; <br>
+e = 2.7182;<br>
+menoe = - e; </code><br>
 
- prima di essere usato, un identificatore deve essere gia` stato definito (ad es., e per definire menoe). Si aumenta la leggibilita` e modificabilita` dei programmi. <br>
-Altra soluzione:  <b>#define</b> e` una direttiva del precompilatore C: provoca una sostituzione nel testo: #define pigreco 3.14 #define e 2.7182 #define menoe -e (non si alloca spazio in memoria) <br>
+Prima di essere usato, un identificatore deve essere gia` stato definito (ad es., e per definire menoe). Si aumenta la leggibilita` e modificabilita` dei programmi. <br>
+Altra soluzione:  <b>#define</b> e` una direttiva del precompilatore C: provoca una sostituzione nel testo: <br><br>
+<code>#define pigreco 3.14<br>
+ #define e 2.7182<br> 
+ #define menoe -e //non si alloca spazio in memoria </code> <br><br>
 Esempio: <br>
 /* programma che, letto un numero a terminale stampa il valore della circonferenza del cerchio con quel raggio */ <br><br>
 <code>#include main() { <br>
