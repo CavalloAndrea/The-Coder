@@ -1,5 +1,5 @@
-titolo: [C] - Hello world
-linguaggio: C
+titolo: [C] - Hello world|
+linguaggio: C|
 lezione: Iniziamo vedendo un primo semplice esempio di programma realizzato in linguaggio C.<br>
 Programma <b>Hello World</b>:<br><br>
 <code>#include<stdio.h><br>
@@ -10,4 +10,50 @@ return 0;<br>
 Il programma dopo la sua esecuzione stamperà sullo schermo la riga di testo <i>Hello World</i>.
 Analizziamo ora riga per riga il funzionamento di questo programma per comprenderne tutti gli aspetti. <br>
 La nostra analisi inizia dalla riga numero 2 con la Funzione <code>int main(){ </code> questa è la funzione principale del programma e tutto ciò che viene scritto all'interno delle parentesi graffe (all'interno del <b>blocco</b>) che seguono la scritta <b>main()</b>, farà parte di questa funzione. Un programma scritto in C può contenere molte funzioni, ma non può mai mancare la funzione main() dalla quale inizia l'esecuzione del programma stesso. L'elemento che ci fa capire che questa è una funzione sono le parentesi tonde <b>( )</b> subito dopo il nome; all'interno delle parentesi si possono scrivere elementi che saranno gli <b>argomenti</b> della funzione (la funzione main è priva di argomenti). Vedremo più avanti il funzionamento dettagliato delle funzioni. <br> Continuando con l'analisi del programma troviamo la riga <code>printf("Hello World\n");</code> . Si tratta di una funzione che consente di stampare sul monitor il contenuto delle parentesi tonde; nel nostro caso all'interno delle parentesi troviamo una <b>Stringa di testo</b>, ossia una serie di caratteri racchiusi tra apici (singoli o doppi). Ci accorgiamo però che a differenza della stringa che troviamo all'interno della funzione printf, quella stampata in output è leggermente differente; infatti non compaiono i due caratteri finali <b>\n</b>. Il carattere <b>\</b> si chiama <b>carattere di escape (fuga) </b> e combinato con altri caratteri ha delle funzioni speciali. Nel nostro caso combinato con la lettera <b>n</b> indica un ritorno a capo e quindi una nuova riga; se infatti proviamo a stampare sul monitor un'altra stringa di testo, vedremo che non verrà visualizzata sulla stessa riga di Hello World, bensì sulla riga sottostante.
-Alla riga 4 del programma troviamo l'istruzione <code>return 0;</code>, questa se usata all'interno della funzione main determina la fine dell'esecuzione del programma e in questo caso, restituendo il valore 0 indica che il programma è terminato correttamente senza errori.<br> Infine vediamo il significato dell'istruzione <code>#include<stdio.h></code>; <b>#include</b> dice al compilatore di includere nel programma il contenuto del file posto tra <b> <  > </b>. In questo caso il file <b>stdio.h</b> contiene le librerie per la gestione di funzioni di input/output come printf(). Senza questa istruzione il compilatore non saprebbe interpretare l'istruzione <i>printf(..)</i> e restituirebbe un errore in fase di compilazione.
+Alla riga 4 del programma troviamo l'istruzione <code>return 0;</code>, questa se usata all'interno della funzione main determina la fine dell'esecuzione del programma e in questo caso, restituendo il valore 0 indica che il programma è terminato correttamente senza errori.<br> Infine vediamo il significato dell'istruzione <code>#include<stdio.h></code>; <b>#include</b> dice al compilatore di includere nel programma il contenuto del file posto tra <b> <  > </b>. In questo caso il file <b>stdio.h</b> contiene le librerie per la gestione di funzioni di input/output come printf(). Senza questa istruzione il compilatore non saprebbe interpretare l'istruzione <i>printf(..)</i> e restituirebbe un errore in fase di compilazione.|
+
+titolo: [C] - Variabili|
+linguaggio: C|
+lezione: Il concetto di <b>variabile</b> nel linguaggio C rappresenta una astrazione della cella di memoria.
+L'istruzione di assegnamento, quindi, e` l'astrazione dell'operazione di scrittura nella cella che la variabile rappresenta e si fa con il carattere <b>=</b>. <br>
+Esempi: <br>
+<code>int a;<br> 
+float pi;<br> 
+char ch; <br>
+... <br>
+a=100; <br>
+pi=3.1457;<br> 
+ch='p';</code><br><br>
+In ogni linguaggio di alto livello una variabile e` caratterizzata da un nome (identificatore) e quattro attributi base: <br>
+ tipo, definisce l'insieme dei valori che la variabile puo` assumere e degli operatori applicabili. 
+ valore, e` rappresentato (secondo la codifica adottata) nellarea di memoria legata alla variabile; 
+ campo dazione (scope), e` linsieme di istruzioni del programma in cui la variabile e` nota e puo` essere manipolata; C, Pascal, determinabile staticamente LISP, dinamicamente 
+ tempo di vita (o durata o estensione), e` lintervallo di tempo in cui unarea di memoria e` legata alla variabile; FORTRAN, allocazione statica C, Pascal, allocazione dinamica.<br><br>
+Esempio: <br>
+/* programma che letto un numero a terminale stampa il valore della circonferenza del cerchio con quel raggio */<br><br>
+<code>#include main() { <br>
+	float X, Y; <br>
+/* variabili locali */ <br>
+	scanf("%f",&X); <br>
+	Y = 2*3.14*X;<br>
+ 	printf("%f",Y); <br>
+} </code><br><br>
+<b>Definizione di costanti </b><br>
+Una costante rappresenta un dato che non puo` cambiare di valore nel corso dellesecuzione.
+La dichiarazione di una costante associa ad un identificatore (nome della costante) un valore (numero o altro identificatore di costante). <br>
+Esempi: <br>
+const float pigreco = 3.14; <br>
+const float pigreco = 3.1415926; <br>
+e = 2.7182; menoe = - e; <br>
+
+ prima di essere usato, un identificatore deve essere gia` stato definito (ad es., e per definire menoe). Si aumenta la leggibilita` e modificabilita` dei programmi. <br>
+Altra soluzione:  <b>#define</b> e` una direttiva del precompilatore C: provoca una sostituzione nel testo: #define pigreco 3.14 #define e 2.7182 #define menoe -e (non si alloca spazio in memoria) <br>
+Esempio: <br>
+/* programma che, letto un numero a terminale stampa il valore della circonferenza del cerchio con quel raggio */ <br><br>
+<code>#include main() { <br>
+	const float pigreco = 3.1415926; <br>
+	float X, Y; <br>
+	scanf("%f",&X); <br>
+	Y = 2*pigreco*X; <br>
+	printf("%f",Y); <br>
+} </code><br>
