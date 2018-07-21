@@ -1,0 +1,32 @@
+titolo£ Quiz Hello World|
+next£2|
+
+d1£ Cosa stampa il seguente frammento di codice?<br><code>#include<stdio.h><br>int main(){ <br>printf("Ciao"); <	br>printf( "a" ); <br>printf("tutti\n"); <br>return 0; }</code><br>|
+r1_1£"ciao<br> &emsp; a<br>&emsp; tutti"|
+r1_2£"Ciao a<br>&emsp; tutti"|
+r1_3£Ciao a tutti|
+g1£Ciao a tutti|
+
+d2£Come si chiama il frammento di codice racchiuso tra due parentesi graffe? { ... }|
+r2_1£Blocco|
+r2_2£Sezione|
+r2_3£Elemento
+g2£Blocco|
+
+d3£Quale elemento determina la fine dell'esecuzione del programma?|
+r3_1£#include<stdio.h>|
+r3_2£printf(  );|
+r3_3£return 0;|
+g3£return 0;|
+
+d4£Quale funzione deve essere sempre presente in un programma in C?|
+r4_1£main()|
+r4_2£printf()|
+r4_3£Hello World|
+g4£main()|
+
+d5£Cosa si intende per carattere di escape?|
+r5_1£Un carattere per uscire dal programma|
+r5_2£Un carattere per terminare ogni riga di codice|
+r5_3£Un carattere speciale che assume funzioni diverse quando combinato con altri caratteri|
+g5£Un carattere speciale che assume funzioni diverse quando combinato con altri caratteri
