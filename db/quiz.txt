@@ -4,7 +4,7 @@ tutorial_id£1|
 
 d1£ Cosa stampa il seguente frammento di codice?<br><code>#include<stdio.h><br>int main(){ <br>printf("Ciao"); <br>printf( "a" ); <br>printf("tutti\n"); <br>return 0; }</code><br>|
 r1_1£"ciao<br> &emsp; a<br>&emsp; tutti"|
-r1_2£"Ciao a<br>&emsp; tutti"|
+r1_2£Ciao a<br>&emsp; tutti|
 r1_3£Ciao a tutti|
 g1£Ciao a tutti|
 
