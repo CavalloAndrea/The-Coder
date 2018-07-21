@@ -1,7 +1,8 @@
 titolo£ Quiz Hello World|
 next£2|
+tutorial_id£1|
 
-d1£ Cosa stampa il seguente frammento di codice?<br><code>#include<stdio.h><br>int main(){ <br>printf("Ciao"); <	br>printf( "a" ); <br>printf("tutti\n"); <br>return 0; }</code><br>|
+d1£ Cosa stampa il seguente frammento di codice?<br><code>#include<stdio.h><br>int main(){ <br>printf("Ciao"); <br>printf( "a" ); <br>printf("tutti\n"); <br>return 0; }</code><br>|
 r1_1£"ciao<br> &emsp; a<br>&emsp; tutti"|
 r1_2£"Ciao a<br>&emsp; tutti"|
 r1_3£Ciao a tutti|
@@ -30,3 +31,4 @@ r5_1£Un carattere per uscire dal programma|
 r5_2£Un carattere per terminare ogni riga di codice|
 r5_3£Un carattere speciale che assume funzioni diverse quando combinato con altri caratteri|
 g5£Un carattere speciale che assume funzioni diverse quando combinato con altri caratteri
+
