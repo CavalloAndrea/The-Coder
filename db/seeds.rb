@@ -47,8 +47,8 @@ tutorial = contenuto.split("|")
 
 (0..4).step(3) do |n|
 
-    titolo = tutorial[n].split(":")[1]
-    linguaggio = tutorial[n+1].split(":")[1]
-    lezione = tutorial[n+2].split(":")[1]
+    titolo = tutorial[n].split("£")[1]
+    linguaggio = tutorial[n+1].split("£")[1]
+    lezione = tutorial[n+2].split("£")[1]
     Tutorial.create!(titolo: titolo, linguaggio: linguaggio, lezione: lezione)
 end
