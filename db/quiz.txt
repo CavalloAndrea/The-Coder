@@ -10,7 +10,7 @@ g1£Ciao a tutti|
 d2£Come si chiama il frammento di codice racchiuso tra due parentesi graffe? { ... }|
 r2_1£Blocco|
 r2_2£Sezione|
-r2_3£Elemento
+r2_3£Elemento|
 g2£Blocco|
 
 d3£Quale elemento determina la fine dell'esecuzione del programma?|
