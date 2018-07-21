@@ -1,5 +1,5 @@
 titolo: [C] - Hello world|
-linguaggio: C|
+linguaggio:C|
 lezione: Iniziamo vedendo un primo semplice esempio di programma realizzato in linguaggio C.<br>
 Programma <b>Hello World</b>:<br><br>
 <code>#include<stdio.h><br>
@@ -13,7 +13,7 @@ La nostra analisi inizia dalla riga numero 2 con la Funzione <code>int main(){ <
 Alla riga 4 del programma troviamo l'istruzione <code>return 0;</code>, questa se usata all'interno della funzione main determina la fine dell'esecuzione del programma e in questo caso, restituendo il valore 0 indica che il programma è terminato correttamente senza errori.<br> Infine vediamo il significato dell'istruzione <code>#include<stdio.h></code>; <b>#include</b> dice al compilatore di includere nel programma il contenuto del file posto tra <b> <  > </b>. In questo caso il file <b>stdio.h</b> contiene le librerie per la gestione di funzioni di input/output come printf(). Senza questa istruzione il compilatore non saprebbe interpretare l'istruzione <i>printf(..)</i> e restituirebbe un errore in fase di compilazione.|
 
 titolo: [C] - Variabili|
-linguaggio: C|
+linguaggio:C|
 lezione: Il concetto di <b>variabile</b> nel linguaggio C rappresenta una astrazione della cella di memoria.
 L'istruzione di assegnamento, quindi, e` l'astrazione dell'operazione di scrittura nella cella che la variabile rappresenta e si fa con il carattere <b>=</b>. <br>
 Esempi: <br>
