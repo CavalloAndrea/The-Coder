@@ -29,8 +29,8 @@ g4£main()|
 d5£Cosa si intende per carattere di escape?|
 r5_1£Un carattere per uscire dal programma|
 r5_2£Un carattere per terminare ogni riga di codice|
-r5_3£Un carattere|
-g5£Un carattere|
+r5_3£Un carattere speciale che combinato con altri assume diversi valori|
+g5£Un carattere speciale che combinato con altri assume diversi valori|
 
 
 
@@ -93,10 +93,10 @@ r3_3£Dominio dei dati della variabile|
 g3£Spazio in memoria per l'allocazione della variabile|
 
 d4£Cosa restituisce l'operatore & applicato ai puntatori?|
-r4_1£Il contenuto della variabile puntata|
-r4_2£Il tipo della variabile puntata|
-r4_3£L'indirizzo della variabile puntata|
-g4£L'indirizzo della variabile puntata|
+r4_1£Contenuto della variabile puntata|
+r4_2£Tipo della variabile puntata|
+r4_3£Indirizzo della variabile puntata|
+g4£Indirizzo della variabile puntata|
 
 d5£Cosa stampa il seguente frammento di codice?<br><code>...<br>int a= 5;<br>printf("%d",*a);<br>...<br></code>|
 r5_1£5|
@@ -117,10 +117,10 @@ r1_3£/|
 g1£>|
 
 d2£Qual è la forma corretta dell'operatore relazionale per la disuguaglianza?|
-r2_1£=!|
-r2_2£!==|
-r2_3£!=|
-g2£!=|
+r2_1£= !|
+r2_2£! = =|
+r2_3£! =|
+g2£! =|
 
 d3£Cosa restituisce il programma se l'operazione logica A==B è "vera"? |
 r3_1£true|
@@ -191,10 +191,10 @@ r1_3£include|
 g1£scanf|
 
 d2£Quale libreria standard bisogna includere per utilizzare funzioni di input e output?|
-r2_1£<stdlib.h>|
-r2_2£<stdi.o>|
-r2_3£<stdio.h>|
-g2£<stdio.h>|
+r2_1£stdlib.h|
+r2_2£stdi.o|
+r2_3£stdio.h|
+g2£stdio.h|
 
 d3£Cosa indica il valore "%f" all'interno di una printf()? |
 r3_1£Un dato int|
@@ -245,7 +245,7 @@ r4_3£do while non controlla mai la condizione di ciclo|
 g4£do while esegue il corpo della funzione almeno una volta|
 
 d5£In C un ciclo For è sempre sostituibile da un ciclo while|
-r5_1Vero|
+r5_1£Vero|
 r5_2£Falso|
 r5_3£Solo se la condizione è di uguaglianza|
 g5£Vero|
@@ -318,7 +318,7 @@ r4_3£Si, purchè coincidano gli indirizzi di ritorno|
 g4£Si, purchè coincidano i tipi|
 
 d5£E' possibile passare come argomento un numero diverso di elementi da quello definito nella dichiarazione della funzione?|
-r5_1Mai|
+r5_1£Mai|
 r5_2£Solo se è una funzione ricorsiva|
 r5_3£Solo se è una funzione void|
 g5£Mai|
@@ -340,7 +340,7 @@ d2£Usare una funzione ricorsiva è sempre più conveniente che usare un ciclo f
 r2_1£Vero|
 r2_2£Falso|
 r2_3£Solo nel caso di matrici|
-g2£Vero|
+g2£Falso|
 
 d3£Cosa succede se passiamo come argomento di una funzione ricorsiva sempre lo stesso valore? |
 r3_1£Si andrà in Stack Overflow|
@@ -350,12 +350,12 @@ g3£Si andrà in Stack Overflow|
 
 d4£Che cos'è la ricorsione di coda?|
 r4_1£Una ricorsione che non termina|
-r4_2£Una funzione in cui l'ultima chiamata è la chiamata ricorsiva|
+r4_2£Una funzione la cui ultima chiamata è la chiamata ricorsiva|
 r4_3£Una chiamata ricorsiva la valore null|
 g4£Una funzione in cui l'ultima chiamata è la chiamata ricorsiva|
 
 d5£E' possibile definire una funzione ricorsiva senza mettere nemmeno una condizione di if nel corpo?|
-r5_1Si|
+r5_1£Si|
 r5_2£Solo se si parte da un valore negativo|
 r5_3£No|
 g5£No

@@ -107,7 +107,7 @@ Il C prevede quattro tipi primitivi: <br>
  <b>float</b> (reali) <br>
  <b>double</b> (reali in doppia precisione) <br>
 <b>Qualificatori e Quantificatori</b><br>
- ? E` possibile applicare ai tipi primitivi dei quantificatori e dei qualificatori: <br>
+  E` possibile applicare ai tipi primitivi dei quantificatori e dei qualificatori: <br>
  I quantificatori (long e short) influiscono sullo spazio in memoria richiesto per lallocazione del dato. <br>
 	 short (applicabile al tipo int)<br> 
 	 long (applicabile ai tipi int e double) int X; long int Y; <br>
@@ -156,7 +156,7 @@ si applicano ad operandi interi e producono risultati booleani (cioe`, il cu
 ==, != uguaglianza, disuguaglianza: <br>
 10==3 -->falso  <br>
 10!=3 --> vero <br>
-<, >, <=, >=   minore, maggiore, minore o uguale, maggiore o uguale <br>
+< , > , <=, >=   minore, maggiore, minore o uguale, maggiore o uguale <br>
 10>=3 --> vero <br>
 <br>
 <u>Esempio: </u><br>
@@ -456,8 +456,8 @@ float *px,*py, x; <br>
 </code><br>
 definiscono rispettivamente 2 puntatori ad interi (pn,pm), 2 puntatori a reali (px,py) e 1 variabile reale x. Ci sono due operatori particolarmente importanti per lavorare con i puntatori: & e *. Loperatore <b>&</b> applicato ad una variabile restituisce il suo indirizzo di memoria (puntatore alla variabile). Loperatore <b>*</b> applicato ad un indirizzo di memoria (puntatore) restituisce il valore contenuto in quellindirizzo. <br>
 In C è essenziale avere un controllo diretto sugli indirizzi di memoria corrispondenti alle variabili. Due funzioni (della libreria stdlib.h) sono particolarmente utili a questo scopo: <br>
-&ensp -<b>sizeof</b>(tipo_della_variabile) <br>
-&ensp -<b>malloc</b>(numero_di_bytes) <br>
+&ensp; -<b>sizeof</b>(tipo_della_variabile) <br>
+&ensp; -<b>malloc</b>(numero_di_bytes) <br>
 La funzione sizeof restituisce il valore in bytes delloccupazione di memoria del tipo di variabile specificata nellargomento.<br> 
 La gestione della memoria che viene occupata da matrici e vettori (array) è un po piů complessa rispetto ad altri linguaggi perché in C si utilizzano in maniera piů trasparente gli indirizzi di memoria delle singole componenti di un vettore/matrice. Una matrice A[n][m] č una matrice a n righe e m colonne e gli indici dei suoi elementi A[i][j] sono tali che 0!i!n-1 e 0!j!m-1. <br>
 Una matrice in C viene trattata come un vettore di vettori (array di array) e viene memorizzata per righe in un unico vettore a nxm componenti. 
