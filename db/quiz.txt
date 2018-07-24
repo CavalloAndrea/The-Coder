@@ -66,4 +66,296 @@ d5£Cosa stampa il seguente frammento di codice?<br><code>#define altezza 182;<b
 r5_1£182|
 r5_2£91|
 r5_3£Il porgramma va in errore|
-g5£91
+g5£91|
+
+
+
+titolo£ Quiz Tipo di dato|
+next£4|
+tutorial_id£3|
+
+d1£ A quanti tipi può appartenere un tipo di dato (variabile o costante)?|
+r1_1£1|
+r1_2£Infiniti|
+r1_3£Massimo 3|
+g1£1|
+
+d2£Quali sono i tipi di dato primitivi in C?|
+r2_1£int,char,float,long|
+r2_2£char,int,double,string|
+r2_3£float,char,int,double|
+g2£float,char,int,double|
+
+d3£Su cosa influiscono i quantificatori long e short?|
+r3_1£Lunghezza dei caratteri della variabile|
+r3_2£Spazio in memoria per l'allocazione della variabile|
+r3_3£Dominio dei dati della variabile|
+g3£Spazio in memoria per l'allocazione della variabile|
+
+d4£Cosa restituisce l'operatore & applicato ai puntatori?|
+r4_1£Il contenuto della variabile puntata|
+r4_2£Il tipo della variabile puntata|
+r4_3£L'indirizzo della variabile puntata|
+g4£L'indirizzo della variabile puntata|
+
+d5£Cosa stampa il seguente frammento di codice?<br><code>...<br>int a= 5;<br>printf("%d",*a);<br>...<br></code>|
+r5_1£5|
+r5_2£*5|
+r5_3£0x00005|
+g5£5|
+
+
+
+titolo£ Quiz Operatori sugli interi|
+next£5|
+tutorial_id£4|
+
+d1£ Quale tra questi NON è un operatore aritmetico?|
+r1_1£+|
+r1_2£>|
+r1_3£/|
+g1£>|
+
+d2£Qual è la forma corretta dell'operatore relazionale per la disuguaglianza?|
+r2_1£=!|
+r2_2£!==|
+r2_3£!=|
+g2£!=|
+
+d3£Cosa restituisce il programma se l'operazione logica A==B è "vera"? |
+r3_1£true|
+r3_2£null|
+r3_3£1|
+g3£1|
+
+d4£Quali operazioni è possibile effettuare sui tipi di dato "char"?|
+r4_1£Solo la somma|
+r4_2£Le stesse del tipo int|
+r4_3£Solamente la sottrazione|
+g4£Le stesse del tipo int|
+
+d5£Cosa stampa il seguente frammento di codice?<br><code>...<br>int a= 2;<br>b= 3;<br>if(a==b)<br>printf("Vero");<br>else<br>printf("Falso");<br>...<br></code>|
+r5_1£Vero|
+r5_2£Falso|
+r5_3£" "|
+g5£Falso|
+
+
+
+
+titolo£ Quiz Espressioni|
+next£6|
+tutorial_id£5|
+
+d1£ Cosa bisogna fare prima di usare una variabile in un'espressione?|
+r1_1£Assegnarle un valore|
+r1_2£Stamparla|
+r1_3£Confrontarla con un'altra variabile|
+g1£Assegnarle un valore|
+
+d2£Quale tra le seguenti operazioni di assegnamento NON è corretta?|
+r2_1£int b = 3; int a = b;|
+r2_2£int b = 3; char a = b;|
+r2_3£int b = 3; inta a = ++b;|
+g2£int b = 3; char a = b;|
+
+d3£Quale tra i seguenti tipi di espressioni si può utilizzare in C? |
+r3_1£Espressione di dato|
+r3_2£Espressione alfanumerica|
+r3_3£Espressione relazionale|
+g3£Espressione relazionale|
+
+d4£Quali operatori logici è possibile associare in un'espressione?|
+r4_1£! e =|
+r4_2£! e &|
+r4_3£& e =|
+g4£! e =|
+
+d5£Cosa stampa il seguente frammento di codice?<br><code>int a = 3;<br>int b= ++a;<br>b = a++;<br>printf("%d", "%d",b,a);<br>...<br></code>|
+r5_1£4 5|
+r5_2£5 5|
+r5_3£3 4|
+g5£4 5|
+
+
+
+
+titolo£ Quiz Istruzioni di ingresso ed uscita|
+next£7|
+tutorial_id£6|
+
+d1£ Quale funzione è utilizzata per la lettura?|
+r1_1£printf|
+r1_2£scanf|
+r1_3£include|
+g1£scanf|
+
+d2£Quale libreria standard bisogna includere per utilizzare funzioni di input e output?|
+r2_1£<stdlib.h>|
+r2_2£<stdi.o>|
+r2_3£<stdio.h>|
+g2£<stdio.h>|
+
+d3£Cosa indica il valore "%f" all'interno di una printf()? |
+r3_1£Un dato int|
+r3_2£Un dato char|
+r3_3£Un dato float|
+g3£Un dato float|
+
+d4£Quali sono le istruzioni predefinite in C per l'input/output?|
+r4_1£in e out|
+r4_2£IN e OUT|
+r4_3£Non esistono|
+g4£Non esistono|
+
+d5£Cosa stampa il seguente frammento di codice?<br><code>int a = 3;<br>float b= 3.0;<br>printf("%d%f", "%d",a,b);<br>...<br></code>|
+r5_1£33.0|
+r5_2£3.03|
+r5_3£3.3|
+g5£33.0|
+
+
+
+titolo£ Quiz Cicli|
+next£8|
+tutorial_id£7|
+
+d1£ Quanti tipi di cicli diversi esistono in C?|
+r1_1£2|
+r1_2£3|
+r1_3£5|
+g1£3|
+
+d2£Quale espressione termina un ciclo?|
+r2_1£break;|
+r2_2£end;|
+r2_3£goto;|
+g2£break;|
+
+d3£Qual è la struttura di un ciclo for? |
+r3_1£for(Variabile di controllo; legge di incremento;condizione di ciclo)|
+r3_2£for(Condizione ciclo; legge di incremento;variabile di controllo)|
+r3_3£for(Variabile di controllo;condizione di ciclo;legge di incremento)|
+g3£for(Variabile di controllo;condizione di ciclo;legge di incremento)|
+
+d4£In cosa differisce il ciclo do while dal ciclo while?|
+r4_1£do while non termina mai|
+r4_2£do while esegue il corpo della funzione almeno una volta|
+r4_3£do while non controlla mai la condizione di ciclo|
+g4£do while esegue il corpo della funzione almeno una volta|
+
+d5£In C un ciclo For è sempre sostituibile da un ciclo while|
+r5_1Vero|
+r5_2£Falso|
+r5_3£Solo se la condizione è di uguaglianza|
+g5£Vero|
+
+
+
+titolo£ Quiz Vettori e Matrici|
+next£9|
+tutorial_id£8|
+
+d1£ In che modo si definisce un vettore in C?|
+r1_1£int vettore [10];|
+r1_2£int vettore {10};|
+r1_3£int vettore = [10];|
+g1£int vettore [10];|
+
+d2£In che modo si definisce una matrice in C?|
+r2_1£int matrice {5[10]};|
+r2_2£int matrice [5]10;|
+r2_3£int matrice[10][5];|
+g2£int matrice[10][5];|
+
+d3£Cosa restituisce la funzione sizeof(nome_variabile)? |
+r3_1£Il valore della variabile|
+r3_2£L'indirizzo della variabile|
+r3_3£La dimensione in bytes della variabile|
+g3£La dimensione in bytes della variabile|
+
+d4£Come viene trattata una matrice in linguaggio C?|
+r4_1£Come una matrice di valori|
+r4_2£Come un unico vettore di nxm elementi|
+r4_3£Come n vettori di nxm elementi|
+g4£Come un unico vettore di nxm elementi|
+
+d5£Quale tra le seguenti scritture NON è utilizzabile?|
+r5_1£int vettore [n][m];|
+r5_2£float matrice [n];|
+r5_3£float matrice[n[m]];|
+g5£float matrice[n[m]];|
+
+
+
+
+titolo£ Quiz Passaggio di variabili nelle funzioni|
+next£10|
+tutorial_id£9|
+
+d1£ Come vengono passati le variabili nelle chiamate delle funzioni?|
+r1_1£Per tipi|
+r1_2£Per indirizzo|
+r1_3£Per valore|
+g1£Per valore|
+
+d2£Quante variabili è possibile passare in una funzione?|
+r2_1£infinite|
+r2_2£5|
+r2_3£solo 1|
+g2£infinite|
+
+d3£E' possibile passare una variabile di tipo diverso da quello specificato nella funzione? |
+r3_1£Si|
+r3_2£No|
+r3_3£Solo se di tipo int|
+g3£No|
+
+d4£E' possibile passare come argomento di una funzione un'altra funzione?|
+r4_1£Si, purchè coincidano i tipi|
+r4_2£No|
+r4_3£Si, purchè coincidano gli indirizzi di ritorno|
+g4£Si, purchè coincidano i tipi|
+
+d5£E' possibile passare come argomento un numero diverso di elementi da quello definito nella dichiarazione della funzione?|
+r5_1Mai|
+r5_2£Solo se è una funzione ricorsiva|
+r5_3£Solo se è una funzione void|
+g5£Mai|
+
+
+
+
+titolo£ Quiz Ricorsione|
+next£1|
+tutorial_id£10|
+
+d1£ Cosa si intende per funzione ricorsiva?|
+r1_1£Una funzione che chiama sempre lo stesso valore|
+r1_2£Una funzione che non termina mai|
+r1_3£Una funzione che chiama se stessa|
+g1£Una funzione che chiama se stessa|
+
+d2£Usare una funzione ricorsiva è sempre più conveniente che usare un ciclo for|
+r2_1£Vero|
+r2_2£Falso|
+r2_3£Solo nel caso di matrici|
+g2£Vero|
+
+d3£Cosa succede se passiamo come argomento di una funzione ricorsiva sempre lo stesso valore? |
+r3_1£Si andrà in Stack Overflow|
+r3_2£Non succede nulla|
+r3_3£Darà errore in fase di compilazione|
+g3£Si andrà in Stack Overflow|
+
+d4£Che cos'è la ricorsione di coda?|
+r4_1£Una ricorsione che non termina|
+r4_2£Una funzione in cui l'ultima chiamata è la chiamata ricorsiva|
+r4_3£Una chiamata ricorsiva la valore null|
+g4£Una funzione in cui l'ultima chiamata è la chiamata ricorsiva|
+
+d5£E' possibile definire una funzione ricorsiva senza mettere nemmeno una condizione di if nel corpo?|
+r5_1Si|
+r5_2£Solo se si parte da un valore negativo|
+r5_3£No|
+g5£No

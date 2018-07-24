@@ -61,4 +61,477 @@ Esempio: <br>
 	scanf("%f",&X); <br>
 	Y = 2*pigreco*X; <br>
 	printf("%f",Y); <br>
-} </code><br>
+} </code><br>|
+
+
+titolo£[C]-Tipo di dato|
+Linguaggio£C|
+lezione£
+<b>Tipo di dato </b>
+
+Un tipo di dato T e` definito come: <br>
+ Un insieme di valori D (dominio) <br>
+ Un insieme di funzioni (operazioni) f1,...,fn, definite sul dominio D; <br>
+In pratica: Un tipo T e` definito: <br>
+ dallinsieme di valori che variabili di tipo T potranno assumere, <br>
+ dallinsieme di operazioni che possono essere applicate ad operandi del tipo T.<br>
+Esempio: Consideriamo i numeri naturali naturali = [N, {+, *, =, >, < }] <br>
+3*4 ---> 12<br>
+3>=4 ---> falso<br>
+<br>
+Rappresentazione per un tipo di dato: descrizione del tipo di dato attraverso le strutture linguistiche fornite dal linguaggio di programmazione scelto. <br>
+<br>
+<b>Il concetto di Tipo</b> <br>
+Proprieta`: <br>
+--> Ciascun dato (variabile o costante) del programma deve appartenere ad un solo tipo.<br> 
+--> Ciascun operatore richiede operandi di tipo specifico e produce risultati di tipo specifico. <br>
+<br>
+Vantaggi: Se un linguaggio di programmmazione e` tipato: <br>
+--> Astrazione:Lutente esprime i dati ad un livello di astrazione piu` alto della loro organizzazione fisica. Linsieme di bit che rappresenta un valore di un certo tipo non e` accessibile. Maggior portabilita`. <br>
+--> Protezione: Il linguaggio protegge lutente da combinazioni errate di dati ed operatori (controllo statico sulluso di variabili, etc. in fase di compilazione). <br>
+--> Portabilita`: lindipendenza dallarchitettura rende possibile la compilazione dello stesso programma su macchine profondamente diverse. <br>
+<br>
+<br>
+<b>Tipo di Dato in C </b><br>
+In C si possono utilizzare: <br>
+ tipi primitivi: sono tipi di dato previsti dal linguaggio (built-in) e quindi rappresentabili direttamente. <br>
+ tipi non primitivi: sono tipi definibili dallutente (mediante appositi costruttori di tipo, v. typedef). Inoltre si distingue tra:<br> 
+ tipi scalari, il cui dominio e` costituito da elementi atomici, cioe` logicamente non scomponibili. <br>
+ tipi strutturati, il cui dominio e` costituito da elementi non atomici (e quindi scomponibili in altri componenti). <br>
+<br>
+<br>
+<b>Tipi primitivi </b><br>
+Il C prevede quattro tipi primitivi: <br>
+ <b>char</b> (caratteri) <br>
+ <b>int</b> (interi) <br>
+ <b>float</b> (reali) <br>
+ <b>double</b> (reali in doppia precisione) <br>
+<b>Qualificatori e Quantificatori</b><br>
+ ? E` possibile applicare ai tipi primitivi dei quantificatori e dei qualificatori: <br>
+ I quantificatori (long e short) influiscono sullo spazio in memoria richiesto per lallocazione del dato. <br>
+	 short (applicabile al tipo int)<br> 
+	 long (applicabile ai tipi int e double) int X; long int Y; <br>
+ I qualificatori condizionano il dominio dei dati:<br> 
+	 signed (applicabile ai tipo int e char) <br>
+	 unsigned (applicabile ai tipo int e char) int A; unsigned int B; <br>
+<br>
+<br>
+<b>Il tipo int </b><br>
+Il dominio associato al tipo int rappresenta linsieme dei numeri interi (cioe` Z, insieme dei numeri relativi): ogni variabile di tipo int e` quindi l'astrazione di un intero. <br>
+int A; /* A e` un dato intero */ <br>
+? Poiche` si ha sempre a disposizione un numero finito di bit per la rappresentazione dei numeri interi, il dominio rappresentabile e` di estensione finita. <br>
+Ad esempio: se il numero n di bit a disposizione per la rappresentazione di un intero e` 16, allora il dominio rappresentabile e` composto di: (2^n-1)= 216-1= 65.536 valori <br>
+<u>Uso dei quantificatori short/long: </u><br>
+Aumentano/diminuiscono il numero di bit a disposizione per la rappresentazione di un intero: spazio(short int) <= spazio(int) <= spazio(long int) <br>
+<u>Uso dei qualificatori: </u><br>
+ signed: viene usato un bit per rappresentare il segno. <br>
+Quindi lintervallo rappresentabile e`: [-2^(n-1)-1, +2^(n-1)-1] <br>
+ unsigned: vengono rappresentati valori a priori positivi. <br>
+Intervallo rappresentabile: [0, (2^n - 1)] <br>
+<br>
+<b>Operatori relativi ai puntatori (&, *)</b> <br>
+Ci sono due operatori particolarmente importanti per lavorare con i puntatori: & e *. <br>
+Loperatore <b>&</b<> applicato ad una variabile restituisce il suo indirizzo di memoria (puntatore alla variabile). <br>
+Loperatore <b>*</b> applicato ad un indirizzo di memoria (puntatore) restituisce il valore contenuto in quellindirizzo. <br>
+Se a è una variabile e pa il suo puntatore avremo quindi: <br>
+&a restituisce pa <br>
+*pa restituisce a <br>
+<u>Esempio </u><br>
+Il comando &x individua il puntatore corrispondente alla variabile x mentre, fuori da un blocco di definizione, lespressione *pminimo indica il valore della variabile puntata da pminimo<br>
+|
+titolo£[C]-Operatori su Interi|
+Linguaggio£C|
+lezione£
+<b>Operatori sugli interi </b><br>
+Al tipo int (e tipi ottenuti da questo mediante qualificazione/quantificazione) sono applicabili i seguenti operatori: <br>
+<br>
+<b>Operatori aritmetici: </b><br>
+forniscono risultato intero:<br>
++, -, *, / -->  somma, sottrazione, prodotto, divisione intera.<br>
+% operatore modulo -->   resto della divisione intera: 10%3 "<br> 
+1 ++, --   -->  incremento e decremento: richiedono un solo operando (una variabile) e possono essere postfissi (a++) o prefissi (++a)<br>
+<br>
+<b>Operatori relazionali: </b><br>
+si applicano ad operandi interi e producono risultati booleani (cioe`, il cui valore puo` assumere soltanto uno dei due valori {vero, falso}): <br>
+==, != uguaglianza, disuguaglianza: <br>
+10==3 -->falso  <br>
+10!=3 --> vero <br>
+<, >, <=, >=   minore, maggiore, minore o uguale, maggiore o uguale <br>
+10>=3 --> vero <br>
+<br>
+<u>Esempio: </u><br>
+<code><br>
+/*programma che, letti due numeri a terminale, effettua la stampa del maggiore dei due */ <br>
+<br>
+#include main() { <br>
+<br>
+	int X,Y; <br>
+<br>
+	scanf("%d%d",&X,&Y); <br>
+	if ( X > Y )<br>
+		 printf("%d",X); <br>
+	else <br>
+		 printf("%d",Y); <br>
+}</code><br>
+<br>
+<b>Booleani </b><br>
+Sono dati il cui dominio e` di due soli valori (valori logici): {vero, falso} <br>
+In C non esiste un tipo primitivo per rappresentare dati booleani. <br>
+Come vengono rappresentati i risultati di espressioni relazionali ? Il C prevede che i valori logici vengano rappresentati attraverso interi: <br>
+ Ad esempio, l'espressione A == B restituisce: " 0, se la relazione non e` vera " 1 , se la relazione e` vera <br>
+<br>
+<b>Operatori logici: </b><br>
+si applicano ad operandi di tipo int e producono risultati booleani, cioe` interi appartenenti all'insieme {0,1} (il valore 0 corrisponde a falso, il valore 1 corrisponde a vero). <br>
+In particolare linsieme degli operatori logici e`:<br>
+&& operatore AND logico<br>
+\\ operatore OR logico <br>
+! operatore di negazione (NOT) <br>
+<br>
+In C, gli operandi di operatori logici sono di tipo int: <br>
+ se il valore di un operando e` diverso da zero, viene interpretato come vero. <br>
+ se il valore di un operando e` uguale a zero, viene interpretato come falso. <br>
+<br>
+<b>I tipi float e double (reali) </b><br>
+Rappresentano linsieme dei numeri reali.<br> 
+In realta`, sono un'approssimazione dei reali, sia come precisione che come intervallo di valori. Lo spazio allocato (e quindi l'insieme dei valori rappresentabili) dipende dalla rappresentazione adottata.<br>
+ Uso del quantificatore long: si puo` applicare a double, per aumentare la precisione: <br>
+spazio(float) <= spazio(double) <= spazio(long double) <br>
+<br>
+<b>Il tipo char </b><br>
+Rappresenta linsieme dei caratteri disponibili sul sistema di elaborazione (set di caratteri). <br>
+Per carattere si intende ogni simbolo grafico rappresentabile all'interno del sistema. <br>
+Ad esempio: <br>
+ le lettere dell'alfabeto (maiuscole, minuscole) <br>
+ le cifre decimali ('0',..'9')  i segni di punteggiatura (',', '.' etc.) <br>
+ altri simboli di vario tipo ('+', '-', '&', '@', etc.).<br> 
+Ogni valore viene specificato tra singoli apici. <br>
+Ad esempio: a b A 0 2 Come per i numeri, anche il dominio associato al tipo char e` ordinato.<br>
+ Lordine dipende dal codice utilizzato nella macchina.<br>
+ Di solito, codice ASCII esteso. <br>
+<br>
+<b>Operatori sui caratteri</b><br>
+ Il linguaggio C rappresenta i dati di tipo char come degli interi: ogni carattere viene mappato sull'intero che rappresenta il codice nella tabella dei set di caratteri.<br> 
+--> sui dati char e` possibile eseguire tutte le operazioni previste per gli interi.<br> 
+Ogni operazione, infatti, e` applicata ai codici associati agli operandi.<br>
+|
+titolo£[C]-Espressioni|
+Linguaggio£C|
+lezione£
+<b>Espressioni </b><br>
+Un'espressione e` una regola per il calcolo di un valore. <br>
+E` una combinazione di operandi tramite operatori. <br>
+3 * (17 - 193) % 19 (3 < 7) && (4 <= 5) (X > 10) <br>
+--> A ciascuna variabile che compare in una espressione deve essere gia` stato attribuito un valore: lespressione utilizza il valore corrente della variabile.<br>
+ Una espressione C puo` essere un'espressione aritmetica, relazionale, logica, di assegnamento o sequenziale. <br>
+<br>
+<b>Espressioni Aritmetiche: </b><br>
+A seconda del tipo degli operandi, restituiscono valore intero oppure reale. <br>
+ Espressioni aritmetiche di incremento e decremento: Si applicano ad operandi di tipo intero (o reale, o carattere) e producono un risultato dello stesso tipo. <br>
+int A=10; <br>
+A++; /*equivale a: A=A+1; */ <br>
+A--; /*equivale a: A=A-1; */<br>
+ Notazione Prefissa: (ad esempio, ++A) significa che l'incremento viene fatto prima dell'impiego del valore di A nella espressione.<br> 
+ Notazione Postfissa: (ad esempio, A++) significa che l'incremento viene effettuato dopo l'impiego del valore di A nella espressione. <br>
+<br>
+Ad esempio: <br>
+<code><br>
+int A=10, B; <br>
+char C='a'; <br>
+B=++A;                      /*A e B valgono 11 */ <br>
+B=A++;                       /* A=12, B=11 */ <br>
+C++;                               /* C vale 'b' */<br>
+ int i, j, k; k = 5;<br>
+ i = ++k;                        /* i = 6, k = 6 */<br>
+ j = i + k++;                             /* j=12, i=6,k=7 */ <br>
+j = i + k++;                         /*equivale a: j=i+k; k=k+1;*/ <br>
+</code><br>
+--> Si possono scrivere espressioni il cui valore e` difficile da predire:<br>
+<code><br>
+ k = 5; <br>
+j = ++k + k++;                /* j=12,k=7 */ <br>
+</code><br>
+<br>
+<b>Espressioni relazionali:</b><br>
+ Restituiscono un valore vero (in C, uguale a 1) o falso (in C, uguale a 0). <br>
+Sono ottenute applicando gli operatori relazionali ad operandi compatibili. (3 < 7) x <= y<br>
+<br>
+ <b>Espressioni logiche:</b><br>
+ Sono ottenute mediante gli operatori di: <br>
+ complemento (not) ! <br>
+ congiunzione (and) && <br>
+ disgiunzione (or) \\ <br>
+<br>
+<b>Espressione di assegnamento:</b> <br>
+Il simbolo <b>=</b> e` un operatore l'istruzione di assegnamento e` una espressione che ritorna un valore: <br>
+ il valore ritornato e` quello assegnato alla variabile a sinistra del simbolo = <br>
+ il tipo del valore ritornato e` lo stesso tipo della variabile oggetto dell'assegnamento <br>
+<br>
+|
+titolo£[C]-Istruzioni di Input/Output|
+Linguaggio£C|
+lezione£
+<b>Istruzioni di ingresso ed uscita (input/output) </b><br>
+<br>
+L'immissione dei dati di un programma e luscita dei suoi risultati avvengono attraverso operazioni di lettura e scrittura. 
+Il C non ha istruzioni predefinite per l'input/output. <br>
+In ogni versione ANSI C, esiste una Libreria Standard (stdio) che mette a disposizione alcune funzioni (dette funzioni di libreria) per effettuare l'input e l'output. <br>
+Le dichiarazioni delle funzioni messe a disposizione da tale libreria devono essere essere incluse nel programma: <code>#include</code><br> 
+<code> #include</code> e` una direttiva per il preprocessore C: nella fase precedente alla compilazione del programma ogni direttiva #... provoca delle modifiche testuali al programma sorgente. <br>
+Nel caso di #include viene sostituita listruzione stessa con il contenuto del file specificato. Dispositivi standard di input e di output: per ogni macchina, sono periferiche predefinite (generalmente tastiera e video). <br>
+<br>
+<b>Input/Output </b><br>
+Il C vede le informazioni lette/scritte da/verso i dispositivi standard di I/O come file sequenziali, cioe` sequenze di caratteri (o stream). Gli stream di input/output possono contenere dei caratteri di controllo: <br>
+ End Of File (EOF) <br>
+ End Of Line ... <br>
+Sono Disponibili funzioni di libreria per: <br>
+ Input/Output a caratteri <br>
+ Input/Output a stringhe di caratteri <br>
+ Input/Output con formato <br>
+<br>
+<b>I/O con formato </b><br>
+Nell'I/O con formato occorre specificare il formato (tipo) dei dati che si vogliono leggere oppure stampare.<br> 
+Il formato stabilisce: <br>
+ come interpretare la sequenza dei caratteri immessi dal dispositivo di ingresso (nel caso della lettura) <br>
+ con quale sequenza di caratteri rappresentare in uscita i valori da stampare (nel caso di scrittura) <br>
+<br>
+<b>Lettura: scanf </b><br>
+E` una particolare forma di assegnamento: la scanf assegna i valori letti alle variabili specificate come argomenti (nell'ordine di lettura).<br>
+<br>
+Ad esempio: <br>
+<code>int X; <br>
+float Y; <br>
+scanf("%d%f", &X, &Y);</code> <br>
+<br>
+ legge una serie di valori in base alle specifiche contenute in : in questo caso "%d%f" indica che devo leggere due valori, uno decimale (%d) ed uno reale (%f) <br>
+ memorizza i valori letti nelle variabili (X, Y nell'esempio) <br>
+ e` una funzione che restituisce il numero di valori letti e memorizzati, oppure EOF in caso di end of file <br>
+ Gli identificatori delle variabili a cui assegnare i valori sono (quasi) sempre preceduti dal simbolo &. Ad esempio: <code>scanf(%d%d%d, &A, &B, &C)</code>; => richiede tre dati interi da leggere <br>
+<br>
+<b>Scrittura: printf</b> <br>
+La printf viene utilizzata per fornire in uscita il valore di una variabile, o, piu` in generale, il risultato di una espressione. Anche in scrittura e` necessario specificare (mediante una stringa di formato) il formato dei dati che si vogliono stampare. <br>
+Ad esempio:<br>
+<code> int X; <br>
+float Y; <br>
+printf("%d%f", X*X,Y);</code> <br>
+<br>
+ scrive una serie di valori in base alle specifiche contenute in <stringa-formato> . In questo caso, un intero (%d), ed un reale (%f). <br>
+ i valori visualizzati sono i risultati delle espressioni che compaiono come argomenti <br>
+ restituisce il numero di caratteri scritti. <br>
+ la stringa di formato della printf puo` contenere sequenze costanti di caratteri da visualizzare, ad esempio il carattere di controllo \n (newline). <br>
+|
+titolo£[C]-Cicli|
+Linguaggio£C|
+lezione£
+
+<b>Cicli</b><br>
+Ci sono almeno tre modi diversi per costruire un ciclo in C e occorre utilizzare quello che meglio si
+adatta alle esigenze del problema che si vuole risolvere.<br>
+<code>while (espressione){<br>
+istruzione;<br>
+}</code><br>
+<code>do<br>
+istruzione;<br>
+while (espressione);<br>
+for (variabile di controllo= espressione iniziale; condizione di ciclo; legge di incremento){<br>
+istruzione; }</code><br>
+Le espressioni possono essere espressioni logiche (condizioni) che hanno un valore booleano
+(vero/falso), ma possono anche essere espressioni qualsiasi.<br>
+Nel secondo caso vengono considerate false quando il loro valore è zero, vere altrimenti.<br>
+Le istruzioni possono essere istruzioni composte (racchiuse tra {}). Il ciclo do...while corrisponde al
+ciclo repeat...until del Pascal. I cicli possono essere uno dentro l’altro (nidificazione).<br>
+L’esecuzione di un <b>break</b> interrompe il ciclo più interno ma non gli altri.<br>
+<b>While</b><br>
+<code>while (condizione){<br>
+istruzione</code>;<br>
+}<br>
+esegue l’istruzione finché il valore della condizione è true, appena quel valore diventa false esce dal ciclo<br>
+<u>Esempio</u><br>
+<code>Calcola 1 + 1/2 + 1/3 + ... + 1/n /*programma per while*/<br>
+void main (void) {<br>
+int n;<br>
+float h;<br>
+scanf (“%d”,&n);<br>
+printf(“%d”,n);<br>
+h= 0;<br>
+while (n>0) {<br>
+h= h + 1/n; /*oppure h+=1/n*/<br>
+n = n-1; /* oppure n--*/ }<br>
+printf (“Somma=%e \n”,h); }</code><br>
+Produce (se n=10): 10 Somma = 0.292896E+1<br>
+<br>
+<b>Do ... While</b>
+<code>do<br>
+istruzione;<br>
+while (condizione){...;<br>
+}</code><br>
+Ripete le istruzioni finché il valore della condizione è true. Poiché l’istruzione viene eseguita prima
+della valutazione della espressione, il ciclo viene eseguito almeno una volta. Vediamo lo stesso
+esempio con la nuova costruzione<br>
+<u>Esempio</u><br>
+</code><br>
+/*programma per do ... while*/<br>
+void main (void) {<br>
+int n;<br>
+float h;<br>
+scanf (“%d”,&n);<br>
+printf(“%d”,n);<br>
+h=0;<br>
+do{<br>
+h = h+1/n; /*oppure h+=1/n */<br>
+n=n-1; /* oppure n-- */<br>
+}<br>
+while (n!=0);<br>
+printf(“Somma=%e \n”,h);</code><br>
+<br>
+Il risultato è lo stesso ma ilsecondo programma non va bene se n!0 perché, se n=0 c’è un errore di
+division by zero mentre se n<0 il ciclo viene ripetuto infinite volte (visto che la variabile n in quel
+caso non può annullarsi mai).<br>
+<br>
+
+<b>for</b><br>
+<code>for (variabile di controllo=espressione iniziale; condizione di ciclo; legge di incremento)<br>
+istruzione;</code><br>
+In C e C++ il ciclo for è molto flessibile. Può semplicemente eseguire le instruzioni all’interno del
+ciclo al variare della variabile di controllo tra un valore iniziale ed un valore finale oppure può
+eseguirle fino a che non si verifica una condizione di uscita (NOT(condizione di ciclo)).<br>
+Normalmente il valore iniziale ed il valore finale sono variabili interi, inoltre devono soddisfare le
+condizioni seguenti:<br>
+valore iniziale<(>)valore finale se la variabile di controllo decresce (cresce) nel ciclo
+E’ obbligatorio specificare l’incremento della variabile di controllo.<br>
+<u>Esempio</u><br>
+<code>/* programma per for*/<br>
+main (void){<br>
+int n,i;<br>
+float h;<br>
+scanf(“%d”,&n); <br>
+printf(“%d”,n); h= 0;<br>
+for (i=1; i<=n;i++)<br>
+h = h+1/i; /*oppure h+=1/i */<br>
+printf(“Somma=%e \n”,h); }</code><br>
+Anche per le alternative ci sono varie istruzioni che vengono usate per scopi diversi :<br>
+<br>
+<b>if...else</b><br>
+<code>if (condizione )istruzione;<br>
+else istruzione;</code><br>
+oppure, in una versione leggermente semplificata,<br>
+<code>switch (espressione case)<br>
+{<br>
+case const_1: istruzione1;<br>
+break;<br>
+case const_2: istruzione2;<br>
+break;<br>
+case const_N: istruzioneN;<br>
+break;<br>
+default : istruzione _alternativa;<br>
+break; }</code><br>
+|
+titolo£[C]-Vettori e Matrici|
+Linguaggio£C|
+lezione£
+<b>Vettori/Matrici (array) </b><br>
+In C le matrici e i vettori si definiscono indicando il tipo dei loro elementi e le loro dimensioni tra <b>[ ]</b>. Non si possono definire <br>matrici di matrici. <br>
+Esempio<code> <br>
+int vettore V[10] <br>
+int matrice_A [2][10] <br>
+float matrice_M [5] [20] </code><br>
+sono rispettivamente un vettore a 10 componenti intere, una matrice di interi 2x10 ed una matrice di reali 5x20. In C il primo elemento di un vettore/matrice ha indice 0, dunque il primo elemento di V č V[0] e lultimo č V[9] mentre il il primo elemento di M č M[0][0] e lultimo è <code>M[4][19]</code>. Loccupazione di memoria di una matrice nxm č pari a n x m x occupazione di un reale (o intero) <br>
+<br>
+In realtà, le matrici vengono memorizzate per riga sotto forma di vettori. <br>
+Come vedremo, questa particolaritŕ rende un pň piů complessa una efficiente gestione di matrici/vettori. <br>
+Esempio  <br>      
+Matrice A<br>
+1 0 2 3 <br>
+6 -1 5 4 <br>
+7 8 -3 9  <br>
+<br>
+diventa in memoria Vettore a 1 0 2 3 6 -1 5 4 7 8 -3 9 <br>
+In questo modo lelemento A[i][j] di una matrice nxm viene memorizzato nellelemento a[i*m+j] del vettore (perchč il primo indice č comunque 0). Come vedremo, questa equivalenza è importante, per individuare gli elementi di una matrice attraverso i loro indirizzi di memoria. <br>
+<br>
+Come abbiamo visto, le variabili possono essere anche di tipo puntatore ad una variabile. Una variabile di tipo puntatore conterrà lindirizzo di memoria di unaltra variabile di tipo int, char, float,... Non č possibile (nč avrebbe senso) definire una variabile puntatore universale, cioč che punti indifferentemente ad una variabile intera, reale, character,... <br>
+Di conseguenza, a fianco del puntatore bisogna sempre indicare qual è il tipo di variabile cui punta. Per indicare che una variabile è un puntatore, nella sua dichiarazione occorre mettere * prima del nome.<br> 
+<br>
+Esempio <br>
+<code>int *pn,*pm; <br>
+float *px,*py, x; <br>
+</code><br>
+definiscono rispettivamente 2 puntatori ad interi (pn,pm), 2 puntatori a reali (px,py) e 1 variabile reale x. Ci sono due operatori particolarmente importanti per lavorare con i puntatori: & e *. Loperatore <b>&</b> applicato ad una variabile restituisce il suo indirizzo di memoria (puntatore alla variabile). Loperatore <b>*</b> applicato ad un indirizzo di memoria (puntatore) restituisce il valore contenuto in quellindirizzo. <br>
+In C è essenziale avere un controllo diretto sugli indirizzi di memoria corrispondenti alle variabili. Due funzioni (della libreria stdlib.h) sono particolarmente utili a questo scopo: <br>
+&ensp -<b>sizeof</b>(tipo_della_variabile) <br>
+&ensp -<b>malloc</b>(numero_di_bytes) <br>
+La funzione sizeof restituisce il valore in bytes delloccupazione di memoria del tipo di variabile specificata nellargomento.<br> 
+La gestione della memoria che viene occupata da matrici e vettori (array) è un po piů complessa rispetto ad altri linguaggi perché in C si utilizzano in maniera piů trasparente gli indirizzi di memoria delle singole componenti di un vettore/matrice. Una matrice A[n][m] č una matrice a n righe e m colonne e gli indici dei suoi elementi A[i][j] sono tali che 0!i!n-1 e 0!j!m-1. <br>
+Una matrice in C viene trattata come un vettore di vettori (array di array) e viene memorizzata per righe in un unico vettore a nxm componenti. 
+Lelemento A[i][j] della matrice viene quindi memorizzato nellelemento di posto i*m+j. Il suo indirizzo di memoria è &A[i][j] e corrisponde allindirizzo di memoria<br>
+ <code>&A[0][0]+i*m+j</code><br>
+ cioè nellindirizzo che si ottiene sommando allindirizzo di memoria del primo elemento A[0][0] il numero degli elementi che precedono A[i][j]. <br>
+Questo è vero qualunque sia il tipo degli elementi della matrice e dipende dal fatto che le operazioni sui puntatori tengono conto del tipo di dato cui punta la variabile. <br>
+|
+titolo£[C]-Passaggio di Variabili|
+Linguaggio£C|
+lezione£
+<b>Passaggio di variabili nelle funzioni </b><br>
+Come abbiamo già visto, un programma C è articolato in sottoprogrammi che vengono chiamati funzioni. E naturale passare le variabili da una funzione ad unaltra oppure dal programma principale (che in C è comunque una funzione) ad unaltra funzione. La prima funzione viene solitamente indicata come funzione chiamante . In C il passaggio delle variabili è per valore, per questo motivo eventuali modifiche delle variabili passate potrebbero rimanere inaccessibili alla funzione chiamante. Se si vuole permettere ad una funzione di cambiare una variabile x occorre passarne lindirizzo in memoria, cioè il programma chiamante deve passare alla funzione &x ( e non x).<br> 
+<u>Esempio:</u> <br>
+<b>Passaggio per valore </b><br>
+<code><br>
+float media(float x,y,z){ <br>
+	return((x+y+z)/3) <br>
+}<br>
+</code><br>
+La chiamata a questa funzione è media(a,b,c) dove a,b,c, devono essere tre reali in semplice precisione (float). Il comando return serve ad assegnare a media il valore tra () alluscita dalla funzione. In questo modo vengono create tre variabili di appoggio temporanee per contenere x,y,z. All'uscita della procedura quelle variabili vengono cancellate e non sono più recuperabili. Dalla procedura esce solo il valore della media. <br>
+Viene usato quando si vuole recuperare il contenuto delle variabili che vengono passate alla fine della esecuzione della funzione. Questo permette di utilizzare i valori in uscita in altre funzioni. <br>
+<br>
+<u>Esempio</u> <br>
+<code><br>
+lettura_dati(float *x,*y)<br>
+{ /* x e y sono puntatori reali*/ <br>
+	printf(inserisci il valore della prima variabile \n); <br>
+	scanf(%e,x); <br>
+	printf(inserisci il valore della seconda variabile \n); <br>
+	scanf(%e,y); <br>
+	return() } <br>
+	</code><br>
+la chiamata alla funzione è lettura_dati(&a,&b) /*vengono passati gli indirizzi*/ <br>
+<br>
+Ovviamente a, b devono essere variabili reali (float) altrimenti il tipo con corrisponderebbe alla definizione della funzione. In questo modo le variabili non vengono create perché già esistono (come indirizzi) e sono utilizzabili anche in seguito. Si evita la duplicazione. Si può passare ad una funzione un numero arbitrario di variabili, alcune saranno passate per valore altre per indirizzo. <br>
+|
+titolo£[C]-Ricorsione|
+Linguaggio£C|
+lezione£
+<b>Ricorsione</b><br>
+Si parla di funzione ricorsiva quando una funzione richiama se stessa. <br>
+Supponiamo che la funzione p che vogliamo definire sia lelevamento a potenza, xn.<br>
+Ovviamente possiamo scrivere una assegnazione del tipo p=x*x*x*x*x.......*x n volte <br>
+In modo più elegante, possiamo definire xn in modo ricorsivo come 1 se n=0 per ogni x xn = x* xn-1 altrimenti <br>
+Il linguaggio C, come altri linguaggi moderni, permette di scrivere funzioni ricorsive.<br> 
+Vediamo come possiamo definire una funzione ricorsiva per x^n<br> 
+<u>Esempio</u> <br>
+Supponiamo che n sia >=0. <br>
+La funzione richiede una variabile di appoggio app<br>
+ <code><br>
+float p(float x; int n) { <br>
+	float app; <br>
+	if (n=0) <br>
+		then app=1 <br>
+	else {<br>
+		app=x; <br>
+		for(i=1;i <n;i++){<br>
+			app= x*app } <br>
+	return app;<br>
+}<br>
+</code><br>
+La sua versione ricorsiva <br>
+<code><br>
+float p(float x; int n) {<br>
+ /*indirizzo 1*/ <br>
+if (n>0) <br>
+	return(x*p(x,n-1)); <br>
+/*indirizzo 2*/ <br>
+else 	<br>
+	return(1); } <br>
+	</code><br>
+non la richiede ed è molto più compatta. <br>
+Si osservi anche che ambedue le funzioni producono un risultato sbagliato per n<0. La chiamata alla funzione è, ad esempio, p(y,4).
+ Bisogna sapere che la definizione di una funzione ricorsiva è certamente più elegante ma non necessariamente più efficiente dal punto di vista del calcolo. <br>
+Infatti, scrivere una funzione ricorsiva corrisponde fare il calcolo in due tempi: 1. Prima si costruisce una tabella (pila) in cui c'è l'indirizzo dell'istruzione da cui viene fatta la chiamata (indirizzo 1) e lindirizzo della istruzione chiamata nella definizione (indirizzo 2). <br>
+Se il numero delle iterazioni è noto dallinizio (come ad esempio nel prodotto matrice per vettore) converrà usare un ciclo for evitando in questo modo la creazione della pila.<br>
