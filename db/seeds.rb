@@ -45,7 +45,7 @@ contenuto = file.read
 contenuto = contenuto.force_encoding('UTF-8').gsub("\u2028", " ")
 tutorial = contenuto.split("|")
 
-(0..29).step(3) do |n|
+(0..239).step(3) do |n|
 
     titolo = tutorial[n].split("£")[1]
     linguaggio = tutorial[n+1].split("£")[1]
@@ -60,7 +60,7 @@ contenuto = file.read
 contenuto = contenuto.force_encoding('UTF-8').gsub("\u2028", " ")
 quiz = contenuto.split("|")
 
-(0..279).step(28) do |n|
+(0..2239).step(28) do |n|
 
     titolo = quiz[n].split("£")[1]
     nex = quiz[n+1].split("£")[1]
@@ -92,3 +92,19 @@ quiz = contenuto.split("|")
     g5 = quiz[n+27].split("£")[1]
     Quiz.create!(titolo: titolo, next: nex, tutorial_id: tutorial_id, d1: d1, r1_1: r1_1,r1_2: r1_2, r1_3: r1_3, g1: g1, d2: d2, r2_1: r2_1,r2_2: r2_2, r2_3: r2_3, g2: g2, d3: d3, r3_1: r3_1,r3_2: r3_2, r3_3: r3_3, g3: g3, d4: d4, r4_1: r4_1,r4_2: r4_2, r4_3: r4_3, g4: g4, d5: d5, r5_1: r5_1,r5_2: r5_2, r5_3: r5_3, g5: g5)
 end
+
+# Creazione EsercizioProposto
+file = File.open("db/esercizifinali.txt", "rb")
+contenuto = file.read
+contenuto = contenuto.force_encoding('UTF-8').gsub("\u2028", " ")
+esercizi = contenuto.split("|")
+
+(0..31).step(4) do |n|
+
+    titolo = esercizi[n].split("£")[1]
+    linguaggio = esercizi[n+1].split("£")[1]
+    testo = esercizi[n+2].split("£")[1]
+    soluzione = esercizi[n+3].split("£")[1]
+    Esercizi.create!(titolo: titolo, linguaggio: linguaggio, testo: testo, soluzione: soluzione)
+end
+

@@ -358,4 +358,2358 @@ d5£E' possibile definire una funzione ricorsiva senza mettere nemmeno una condi
 r5_1£Si|
 r5_2£Solo se si parte da un valore negativo|
 r5_3£No|
-g5£No
+g5£No|
+
+titolo£ Quiz Introduzione|
+next£12|
+tutorial_id£11|
+
+d1£ Cosa sono i pakages?|
+r1_1£è un particolare contenitore che può raccogliere al suo interno una serie di classi o altri packages|
+r1_2£Una classe particolare di Java che contiene le cartelle di sviluppo|
+r1_3£una classe|
+g1£è un particolare contenitore che può raccogliere al suo interno una serie di classi o altri packages|
+
+d2£Quale di queste non è una keyword?|
+r2_1£private |
+r2_2£public |
+r2_3£int|
+g2£int|
+
+d3£Cosa indica la keyword <code> static</code>?|
+r3_1£applicato a un metodo indica che esso può essere invocato anche se la classe di cui fa parte non è stata istanziata|
+r3_2£una proprietà static sarà condivisa fra tutte le istanze di tale classe|
+r3_3£Sono vere entrambe le precedenti|
+g3£Sono vere entrambe le precedenti|
+
+d4£qual è la funzione di static del seguente codice? <code><br>
+Public class MyClass { <br>
+Public static myMethod() {} <br>
+Public static void main(String args[]) { <br>
+MyClass.myMethod(); } <br>
+} </code><br>|
+r4_1£serve per definire un valore costante|
+r4_2£serve per definire una classe valida solo nel blocco in cui è contenuta|
+r4_3£ha lo stesso valore della class |
+g4£serve per definire un valore costante|
+
+d5£Cosa comporta l'utilizzo di codice bytecode? |
+r5_1£Una maggiore leggibilità del codice|
+r5_2£il codice Java sarà meno efficiente di un codice nativo|
+r5_3£che il codice deve essere necessariamente convertito manualmente in binario prima della compilazione|
+g5£il codice Java sarà meno efficiente di un codice nativo|
+
+
+
+titolo£ Quiz Controllo del Flusso|
+next£13|
+tutorial_id£12|
+
+d1£ qualidi questi non è un costrutto per il controllo dei flussi?|
+r1_1£while|
+r1_2£if...else|
+r1_3£swipe|
+g1£swipe|
+
+d2£Quale delle seguenti affermazioni sul costrutto if..else è vero?<code><br>
+if(espressione booleana) <br>
+	istruzione1 <br>
+else <br>
+	istruzione2 <br>
+</code><br>|
+r2_1£l'istruzione 2 viene eseguita sempre|
+r2_2£se l'espressione booleana è true l'else non viene proprio letto|
+r2_3£dopo aver letto l'istruzione 1 viene eseguita l'istruzione 2 solo se l'espressione booleana è true|
+g2£se l'espressione booleana è true l'else non viene proprio letto|
+
+d3£Qual'è a differenza tra il ciclo <code> while </code> e il <code> do... while</code>|
+r3_1£il while a differenza del do... while prende un espressione booleana|
+r3_2£solo il while può essere interrotto con un break;|
+r3_3£il do... while esegue almeno una volta l'istruzione che segue il do|
+g3£il do... while esegue almeno una volta l'istruzione che segue il do|
+
+d4£Quale tra le seguenti è la forma corretta del ciclo for?|
+r4_1£<code> <br>
+for(espressione di inizializzazione; espressione booleana; espressione di incremento)<br>
+	 { istruzione } <br>
+</code><br>|
+r4_2£<code> <br>
+for(espressione booleana;espressione di inizializzazione; espressione di incremento)<br>
+	 { istruzione } <br>
+</code><br>|
+r4_3£<code> <br>
+for(espressione di inizializzazione;espressione booleana; istruzione)<br>
+	 { incremento } <br>
+</code><br>|
+g4£<code> <br>
+for(espressione di inizializzazione; espressione booleana; espressione di incremento)<br>
+	 { istruzione } <br>
+</code><br>|
+
+d5£Cosa comporta l'espressione <code> continue</code> ?|
+r5_1£182espressione continue provoca il salto alla fine del ciclo dove è inserita|
+r5_2£91Provoca l'esecuzioni di tutte le istruzini che la seguono fino al break|
+r5_3£provoca il salto all'inizio del ciclo dove è inserita|
+g5£91espressione continue provoca il salto alla fine del ciclo dove è inserita|
+
+
+
+titolo£ Quiz I costruttori di Classe|
+next£14|
+tutorial_id£13|
+
+d1£ A cosa serve il costruttore di classe?|
+r1_1£è un metodo che serve per definire delle variabili nella classe|
+r1_2£serve per creare una istanza della classe stessa|
+r1_3£serve per costruire una classe|
+g1£serve per creare una istanza della classe stessa|
+
+d2£Quale tra i seguenti metodi è un distruttore?|
+r2_1£finalize|
+r2_2£static|
+r2_3£final|
+g2£finalize|
+
+d3£Come si definisce un costruttore di classe?|
+r3_1£è necessario e sufficiente creare un metodo con lo stesso nome della classe|
+r3_2£è necessario creare un metodo con lo stesso nome della casse e inizializzarne le variabili|
+r3_3£è necessario usare un ciclo e definirlo istanza per istanza|
+g3£è necessario e sufficiente creare un metodo con lo stesso nome della classe|
+
+d4£Quali tra le seguenti affermazioni è falsa?|
+r4_1£In Java ogni oggetto definito deve obbligatoriamente avere un costruttore|
+r4_2£Nel caso in cui si definisca un costruttore, allora il costruttore di default non verrà generato|
+r4_3£In java le variabili locali possono non essere definite in quanto impostate di default|
+g4£In java le variabili locali possono non essere definite in quanto impostate di default|
+
+d5£Quali delle seguenti affermazioni su super() è falsa?|
+r5_1£è una funzione analoga alla this|
+r5_2£serve per fare riferimento alla classe padre rispetto a quella in uso|
+r5_3£è una fuzione che richiama la return della funzione precedente|
+g5£è una fuzione che richiama la return della funzione precedente|
+
+
+
+titolo£ Eccezioni|
+next£15|
+tutorial_id£14|
+
+d1£Cos'è un eccezione?|
+r1_1£un'anomalia di funzionamento del programma che non può essere prevista in fase di scrittura del codice|
+r1_2£un'anomalia di funzionamento del programma che può essere prevista in fase di scrittura del codice|
+r1_3£è un bug del programma che si riscontra durante la compilazione|
+g1£un'anomalia di funzionamento del programma che non può essere prevista in fase di scrittura del codice|
+
+d2£Quale di queste espressioni causa un eccezione?|
+r2_1£ una semplice divisione il cui denominatore è nullo|
+r2_2£ un ciclo infinito|
+r2_3£ritorno di una funzione diverso dalla tipo richiesto|
+g2£ una semplice divisione il cui denominatore è nullo|
+
+d3£Da cosa derivano termini quali "throw" e "catch"? |
+r3_1£golf|
+r3_2£baseball|
+r3_3£football|
+g3£baseball|
+
+d4£data la struttura try... catch quale delle seguenti affermazioni è vera?<br>
+<code><br>
+try { ... // porzione di codice che potrebbe dare dei problemi ... } <br>
+catch(Exception1 e) <br>
+	{ ... // gestione delleventuale problema nato nel blocco try ... } <br>
+catch(Exception2 e) <br>
+	{ ... // gestione delleventuale problema nato nel blocco try ... }<br>
+ finally <br>
+	{ ... // codice da eseguire sempre } <br>
+</code><br>|
+r4_1£nel caso si verifichi una eccezione il controllo viene passato al costrutto catch dove si possono implementare soluzioni di gestione di tale anomalia|
+r4_2£nel caso si verifichi una eccezione il programma "salta" tali istruzioni in modo da non creare errori a tempo di compilazione|
+r4_3£la finally viene eseguta solo se non vi sono errori|
+g4£nel caso si verifichi una eccezione il controllo viene passato al costrutto catch dove si possono implementare soluzioni di gestione di tale anomalia|
+
+d5£Qual è la differenza tra ce eccezioni checked e unchecked?|
+r5_1£le prime devono essere necessariamente controllate mentre le seconde no|
+r5_2£devono essere controllate entrambe ma le unchecked causano semplici Warnings e non errori|
+r5_3£le unchecked non rallentano l'esecuzione del programma|
+g5£le prime devono essere necessariamente controllate mentre le seconde no|
+
+
+
+
+titolo£ Quiz Ereditarietà|
+next£16|
+tutorial_id£15|
+
+d1£Qual'è la soluzione di Java all'impossibilità di implementare l'ereditarietà multipla? |
+r1_1£Java può implementare l'ereditarietà multipla ma è un processo lungo e difficile|
+r1_2£Una classe può implementare più interfacce e in questo modo è possibile definire per essa diversi comportamenti|
+r1_3£Una classe può implementare più sottoclassi e in questo modo è possibile definire per essa diversi comportamenti|
+g1£Una classe può implementare più interfacce e in questo modo è possibile definire per essa diversi comportamenti|
+
+d2£Quale tra le seguenti informazioni su <code>Persistent</code> è falsa?|
+r2_1£l'interfaccia Persistent nasconde completamente i dettagli di salvataggio che potrebbe avvenire su file oppure su DB attraverso JDBC.|
+r2_2£è utile ad aggirare il problema dell'ereditarietà multipla|
+r2_3£consente di impostare una variabile immutabile|
+g2£consente di impostare una variabile immutabile|
+
+d3£Quale programmazione permette di riutilizzare funzionalità esistenti principalmente attraverso ereditarietà fra classi e composizione di oggetti|
+r3_1£00|
+r3_2£01|
+r3_3£11|
+g3£00|
+
+d4£Qual'è la caratteristica fondamentale della composizione|
+r4_1£la possibilità di creare diverse interfacce che comunichino tra loro|
+r4_2£permette di riutilizzare funzionalità esistenti principalmente attraverso ereditarietà fra classi e composizione di oggetti|
+r4_3£sfrutta l'ereditarietà per utilizzare funzioni gi esistenti, che vanno chiamate attraverso il <code>Validator</code>|
+g4£permette di riutilizzare funzionalità esistenti principalmente attraverso ereditarietà fra classi e composizione di oggetti|
+
+d5£Le logiche di validazione saranno incorporate all'interno di un'opportuna classe che implementa un'interfaccia Validator, qual'è la sua struttura?|
+r5_1£<br><code><br>public interface Validator { <br>public void validate(Object o);<br> } <br></code><br>|
+r5_2£<br><code><br>public interface Validator { <br>public void validator(Object o);<br> } <br></code><br>|
+r5_3£<br><code><br>public Class Validator { <br>public void validate(Object o);<br> } <br></code><br>|
+g5£<br><code><br>public interface Validator { <br>public void validate(Object o);<br> } <br></code><br>|
+
+
+
+
+titolo£ Quiz Processi e Multitasking|
+next£17|
+tutorial_id£16|
+
+d1£Qual'è il principale utilizzo del multitasking ?|
+r1_1£organizzare il codice di una stessa applicazione in modo che possano essere mandate in esecuzione contemporanea più Classi differenti fra loro|
+r1_2£la possibilità di lanciare una funzione che faccia più istruzioni contemporaneamente|
+r1_3£organizzare il codice di una stessa applicazione in modo che possano essere mandate in esecuzione contemporanea più parti di codice differenti fra loro|
+g1£organizzare il codice di una stessa applicazione in modo che possano essere mandate in esecuzione contemporanea più parti di codice differenti fra loro|
+
+d2£Quando è possibile un parallelismo reale?|
+r2_1£Quando si hanno più processori all'opera|
+r2_2£Quando di ha attiva la Virtual Box|
+r2_3£quando si lavora su un processore x64|
+g2£Quando si hanno più processori all'opera|
+
+d3£Nei sistemi preemptive vi è poi un processo particolare che gestisce tutti gli altri processi:...|
+r3_1£socket|
+r3_2£la Virtual Box|
+r3_3£lo scheduler|
+g3£lo scheduler|
+
+d4£Quale dei seguenti stati non può essere assunto da un processo?|
+r4_1£in attesa|
+r4_2£eseguibile|
+r4_3£bloccato|
+g4£bloccato|
+
+d5£qual'è la funzione del metodo join?|
+r5_1£possibile eseguire una determinata operazione nel momento in cui un thread termina la sua esecuzione|
+r5_2£evita che un solo thread monopolizzi il processore per periodi troppo lunghi|
+r5_3£consente di eseguire in parallelo le diverse funzioni di un thread|
+g5£possibile eseguire una determinata operazione nel momento in cui un thread termina la sua esecuzione|
+
+
+
+titolo£ Quiz Input/Output|
+next£18|
+tutorial_id£17|
+
+d1£ cosa sono gli stream?|
+r1_1£una libreria che contiene le funzione di I/O di java|
+r1_2£mezzo di comunicazione dei programmi|
+r1_3£uno tra i packages più usati in java|
+g1£mezzo di comunicazione dei programmi|
+
+d2£Se si desidera sia leggere che scrivere su uno stesso canale di comunicazione si dovranno aprire quanti stream?|
+r2_1£2|
+r2_2£4|
+r2_3£1|
+g2£2|
+
+d3£ Qual'è la struttura implementata dagli stream?|
+r3_1£LIFO|
+r3_2£FIFO|
+r3_3£FILO|
+g3£FIFO|
+
+d4£Le classi dello stram in quale libreria sono contenuti?|
+r4_1£stdio.io|
+r4_2£java.util.io|
+r4_3£java.io|
+g4£java.io|
+
+d5£Quale delle seguenti affermazioni sul codice è vera?<br><code>public abstract void write(int b) throws IOException </code><br>
+|
+r5_1£nonostante l'argomento sia di tipo intero, verrà scritto solo il byte meno significativo|
+r5_2£essendo abstract non verrà scritto nulla attraverso lo stream a meno che non vi sia un'eccezione|
+r5_3£nonostante l'argomento sia di tipo intero, verrà scritto solo il byte più significativo|
+g5£nonostante l'argomento sia di tipo intero, verrà scritto solo il byte meno significativo|
+
+
+
+titolo£ Quiz File|
+next£19|
+tutorial_id£18|
+
+d1£ Cosa consente in java l'accesso ai file? |
+r1_1£i pakages|
+r1_2£le librerie|
+r1_3£gli stream|
+g1£gli stream|
+
+d2£cosa restituisce il seguente codice? <br><code> public String getName() <br>public String getPath()</code><br>|
+r2_1£il nome e il percorso dell'oggetto File|
+r2_2£non resituisce nulla|
+r2_3£ritorna il puntatore al nome e alla posizione|
+g2£il nome e il percorso dell'oggetto File|
+
+d3£cosa restituisce il seguente codice?<br><code>public boolean exists()<br>public boolean canWrite() <br>public boolean canRead() </code><br>
+<br>|
+r3_1£Questi metodi permettono di capire se un file con il nome specificato esiste, se è scrivibile e se è leggibile.|
+r3_2£Ritora true se e solo se un file con il nome specificato esiste, se è scrivibile e se è leggibile.|
+r3_3£Ritora true se e solo se un file con il nome specificato esiste, o se è scrivibile o se è leggibile.|
+g3£Questi metodi permettono di capire se un file con il nome specificato esiste, se è scrivibile e se è leggibile.|
+
+d4£cosa fa il seguente codice?<br><code>public boolean mkdir() <br>public boolean mkdirs()</code><br>|
+r4_1£restituisce true se ci troviamo nella directory dell'oggetto File|
+r4_2£crea un oggetto File nella directory|
+r4_3£Permette di creare una directory che corrisponde all'oggetto File.|
+g4£Permette di creare una directory che corrisponde all'oggetto File.|
+
+d5£La classe File fornisce l'accesso a file e directory in modo indipendente dal sistema operativo.|
+r5_1£Vero|
+r5_2£Falso|
+r5_3£solo se siamo operando su Linux|
+g5£Vero|
+
+
+
+
+titolo£ Quiz Classi Reader e Writer|
+next£20|
+tutorial_id£19|
+
+d1£ Quale tra i seguenti tipi di stream NON esiste? |
+r1_1£character stream|
+r1_2£float stream|
+r1_3£byte stream|
+g1£float stream|
+
+d2£character stream operano su...|
+r2_1£caratteri, array di caratteri, o dizionari|
+r2_2£caratteri o array di caratteri|
+r2_3£caratteri, array di caratteri, o stringhe|
+g2£caratteri, array di caratteri, o stringhe|
+
+d3£cosa è Unicode?|
+r3_1£è una codifica con la quale è possibile rappresentare la maggior parte dei caratteri delle varie lingue|
+r3_2£è una codifica con la quale è possibile rappresentare solo i caratteri delle varie occidentali|
+r3_3£è una codifica che consente il criptaccio di alcuni file|
+g3£è una codifica con la quale è possibile rappresentare la maggior parte dei caratteri delle varie lingue|
+
+d4£Quali tra i seguenti metodi NON è descritto nel PrintStream?|
+r4_1£print|
+r4_2£println|
+r4_3£printchar|
+g4£printlchar|
+
+d5£è possibile convertire character stream e byte stream?|
+r5_1£Mai|
+r5_2£solo se effettuata manualmente|
+r5_3£si, viene fatta in automatico|
+g5£si, viene fatta in automatico|
+
+
+
+
+titolo£ Quiz Networking|
+next£11|
+tutorial_id£20|
+
+d1£ cosa rende Java così poco performante nella programmazione internet?|
+r1_1£la difficoltà di adattare i suoi molteplici metodi alle variazioni|
+r1_2£poichè è utile solo nella creazione di Applet|
+r1_3£falso, java è diffuso soprattutto per la sua adattabilità|
+g1£falso, java è diffuso soprattutto per la sua adattabilità|
+
+d2£come si chiamano le applicazioni che devono girare in rete interagendo con più computer|
+r2_1£applicazioni globali|
+r2_2£applicazioni locali|
+r2_3£applicazioni distribuite|
+g2£applicazioni distribuite|
+
+d3£ Dove sono definite le classi che java usa per il networking?|
+r3_1£java.net|
+r3_2£java.com|
+r3_3£java.eth|
+g3£java.net|
+
+d4£Cosa è una socket?|
+r4_1£una porta di comunicazione|
+r4_2£un package|
+r4_3£uno stream specifico per internet|
+g4£una porta di comunicazione|
+
+d5£Qual è il protocollo standard per collegarsi ad una socket?|
+r5_1£FIFO|
+r5_2£TCP/IP|
+r5_3£Lan/Eth|
+g5£TCP/IP|
+
+titolo£ Quiz Introduzione|
+next£22|
+tutorial_id£21|
+
+d1£ Quali sono i punti di forza di Python?|
+r1_1£gratuito,multi-paradigma,portabile|
+r1_2£semploce e potente,grande varietà di librerie|
+r1_3£entrambe le precedenti|
+g1£entrambe le precedenti|
+
+d2£Come si possono scaricare moduli aggiuntivi e sempre aggiornati?|
+r2_1£Python Classes Index|
+r2_2£Package Python Index|
+r2_3£Python Package Index|
+g2£Python Package Index|
+
+d3£di cosa si occupa il garbage collection?|
+r3_1£di aggiornare le librerie|
+r3_2£dell'allocazione e il rilascio della memoria|
+r3_3£consente di non definire le variabili|
+g3£dell'allocazione e il rilascio della memoria|
+
+d4£Come è sviluppato Python?|
+r4_1£in ANSI C|
+r4_2£in iOS|
+r4_3£in Unix|
+g4£in ANSI C|
+
+d5£cosa fa di python un linguaggio multi-paradigma?|
+r5_1£supporta la programmazione procedurale|
+r5_2£supporta la programmazione ad oggetti |
+r5_3£le supporta entrambe|
+g5£le supporta entrambe|
+
+
+
+titolo£ Quiz Print e Input|
+next£23|
+tutorial_id£22|
+
+d1£qual'è la principale funzione dell'input?|
+r1_1£consente di chiedere dei valori all'utente|
+r1_2£consente di inserire dei valori nel database|
+r1_3£consente di inserire dei valori in una lisa|
+g1£consente di chiedere dei valori all'utente|
+
+d2£Cosa stampa il seguente codice?<code><br> a = 12<br> b = 3<br> print(a, b, a-b)<br>|
+r2_1£genera un errore|
+r2_2£12 3 9|
+r2_3£12 3 3|
+g2£12 3 9|
+
+d3£Quanti valori può rendere in input la print?|
+r3_1£1|
+r3_2£3|
+r3_3£infiniti|
+g3£infiniti|
+
+d4£per visualizzare un elemento sull'interprete interattivo, non è necessario chiamare la print|
+r4_1£vero|
+r4_2£falso|
+r4_3£solo se la print prende un solo valore in ingresso|
+g4£vero|
+
+d5£cosa stampa il seguente codice?<code><br> raggio = input('Inserisci il raggio: ')<br>Inserisci il raggio: 8.4<br> r = float(raggio)<br> raggio, r<br>('8.4', 8.4)<br> print('Area:', 3.14 * r**2)<br>|
+r5_1£Syntax Error|
+r5_2£Area,52.752|
+r5_3£Area: 221.5584|
+g5£Area: 221.5584|
+
+
+
+titolo£ Quiz Indentazione e Variabili|
+next£24|
+tutorial_id£23|
+
+d1£ La PEP 8 cosa suggerisce?|
+r1_1£usare sempre 4 spazi per livello di indentazione;<br>
+    evitare l’uso dei caratteri di tabulazione;<br>
+    non mischiare mai l’uso di tabulazioni e spazi.<br>|
+r1_2£usare sempre 4 spazi per livello di indentazione;<br>
+    usare sempre dei caratteri di tabulazione;<br>
+    non mischiare mai l’uso di tabulazioni e spazi.<br>|
+r1_3£usare sempre 4 spazi per livello di indentazione;<br>
+    evitare l’uso dei caratteri di tabulazione;<br>|
+g1£usare sempre 4 spazi per livello di indentazione;<br>
+    evitare l’uso dei caratteri di tabulazione;<br>
+    non mischiare mai l’uso di tabulazioni e spazi.<br>|
+
+d2£Come vengono definite le variabili in Python?|
+r2_1£Attraverso un assegnazione(=)|
+r2_2£Ne va prima definito il tipo e poi assegnato un valore|
+r2_3£se non ne viene definito il tipo vengono messe di defoult a int|
+g2£Attraverso un assegnazione(=)|
+
+d3£Cosa stampa il seguente codice?<code><br>x = 10<br>x = "Python"<br>x = [1, 2, 3]<br>print(x)</code><br>|
+r3_1£Errore |
+r3_2£x = [1, 2, 3]|
+r3_3£x=10|
+g3£x = [1, 2, 3]|
+
+d4£Quali tra le seguenti affermazioni è falsa?|
+r4_1£ogni nome di variabile deve iniziare con una lettera o con il carattere underscore (_)|
+r4_2£sono Case Sensitive|
+r4_3£non vi sono kay-word riservate|
+g4£non vi sono kay-word riservate|
+
+d5£Come si scrive un commento in Python?|
+r5_1£#|
+r5_2£//|
+r5_3£/*....*/|
+g5£#|
+
+
+
+titolo£ Quiz Numeri e Operatori Logici|
+next£25|
+tutorial_id£24|
+
+d1£quali sono i tipi di sato numerici in Python?|
+r1_1£int,float,complex,boolean|
+r1_2£int,float,double,boolean|
+r1_3£int,float,complex,double|
+g1£int,float,complex,boolean|
+
+d2£cosa restituisce 9%4|
+r2_1£0.36|
+r2_2£2|
+r2_3£1|
+g2£1|
+
+d3£se a=1 e b=0 cosa restituisce a and b?|
+r3_1£true|
+r3_2£false|
+r3_3£1|
+g3£true|
+
+d4£cosa fa x^y?|
+r4_1£fa la potenza di x|
+r4_2£fa il prodotto|
+r4_3£fa l'or esclusivo|
+g4£fa l'or esclusivo|
+
+d5£cosa restituisce 12//5|
+r5_1£2|
+r5_2£2.0|
+r5_3£2.4|
+g5£2|
+
+
+
+
+titolo£ Quiz Stringhe|
+next£26|
+tutorial_id£25|
+
+d1£Come si dichiara una stringa?|
+r1_1£x=Hello World!|
+r1_2£x=< Hello World! >|
+r1_3£x="Hello World!"|
+g1£x="Hello World!"|
+
+d2£Cos'è l'indexing|
+r2_1£la possibilità di accedere agli elementi di una sequenza, usando la sintassi sequenza[indice]|
+r2_2£la possibilità di accedere agli elementi di una sequenza, usando la sintassi sequenza(indice)|
+r2_3£è il tipo di indentazione tipico di python|
+g2£la possibilità di accedere agli elementi di una sequenza, usando la sintassi sequenza[indice]|
+
+d3£Cosa stampa il seguente codice?s = <br><code>s='Python'<br>print(s[1])<br></code> |
+r3_1£P|
+r3_2£'y'|
+r3_3£'P'|
+g3£'y'|
+
+d4£In cosa consiste lo slicinig?|
+r4_1£la possibilà di partizionare random una sequenza|
+r4_2£la possibilità di ottenere una nuova sequenza dello stesso tipo che include tutti gli elementi partendo dall’indice inizio (incluso) all’indice fine (escluso).|
+r4_3£la possibilità di ottenere una nuova sequenza dello stesso tipo che include tutti gli elementi partendo dall’indice inizio (non incluso) all’indice fine (escluso).|
+g4£la possibilità di ottenere una nuova sequenza dello stesso tipo che include tutti gli elementi partendo dall’indice inizio (incluso) all’indice fine (escluso).|
+
+d5£cosa stampa il seguente codice?<code><br>s = 'Python'<br>'py' in s<br></code>|
+r5_1£True|
+r5_2£False|
+r5_3£py|
+g5£False|
+
+
+
+
+titolo£ Quiz Tuple|
+next£27|
+tutorial_id£26|
+
+d1£qual'è l'operatore che definisce le tuple?|
+r1_1£(.)|
+r1_2£(,)|
+r1_3£(;)|
+g1£(,)|
+
+d2£Sono necessarie le parentesi per definire una tupla?|
+r2_1£Vero|
+r2_2£Falso|
+r2_3£se le virgole hanno già un significato diverso (ad esempio separare gli argomenti di una funzione)|
+g2£se le virgole hanno già un significato diverso (ad esempio separare gli argomenti di una funzione)|
+
+d3£le tuple sono...|
+r3_1£immutabili|
+r3_2£classi|
+r3_3£mutabili|
+g3£immutabili|
+
+d4£cosa stampa il codice?<code><br>t = ('abc', 123, 45.67)<br>print(t * 2)|
+r4_1£Syntax Error|
+r4_2£('abcabc', 123123, 45.6745.67)|
+r4_3£('abc', 123, 45.67, 'abc', 123, 45.67)|
+g4£('abc', 123, 45.67, 'abc', 123, 45.67)|
+
+d5£è possibile usare min() su una tupla?|
+r5_1£sempre|
+r5_2£mai|
+r5_3£solo se gli elementi sono comparabili|
+g5£solo se gli elementi sono comparabili|
+
+
+titolo£ Quiz Liste e Dizionari|
+next£28|
+tutorial_id£27|
+
+d1£Come vengono definite le liste?|
+r1_1£([,])|
+r1_2£[(,)]|
+r1_3£{(,)}|
+g1£([,])|
+
+d2£Cosa fa l'istruzione empty = [];|
+r2_1£Elimina tutti gli elementi di una lista|
+r2_2£Crea una nuova lista ripempita di valori 0|
+r2_3£Crea una nuova lista vuota|
+g2£Crea una nuova lista vuota|
+
+d3£Cosa restituisce .count() se applicato a una lista?|
+r3_1£il numero di elementi doppi nella lista|
+r3_2£la lunghezza della lista|
+r3_3£quante volte l'elemento tra () è presente nella lista|
+g3£quante volte l'elemento tra () è presente nella lista|
+
+d4£qual'è la differenza tra tuple e liste?|
+r4_1£Nessuna|
+r4_2£le seconde sono immutabili|
+r4_3£Le prime possono contenere oggetti di tipo diverso, le seconde no|
+g4£le seconde sono immutabili|
+
+d5£Sia d un dizionario non vuoto, cosa restituisce d.popitem()?|
+r5_1£Rimuove e restituisce un elemento arbitrario da d|
+r5_2£Restituisce gli elementi di d come un insieme di tuple|
+r5_3£Rimuove tutti gli elementi di d|
+g5£Rimuove e restituisce un elemento arbitrario da d|
+
+
+
+titolo£ Conversione tra Tipi|
+next£29|
+tutorial_id£28|
+
+d1£Il tipo di un oggetto può essere cambiato?|
+r1_1£No|
+r1_2£Si|
+r1_3£Solo se della stessa categoria(da int a double)|
+g1£No|
+
+d2£Se volessi convertire una stringa <code>myString='3.14' in float, come dovrei fare?|
+r2_1£myString= float(3.14)|
+r2_2£myFloat=float(myString)|
+r2_3£myFloat='3.14'|
+g2£myFloat=float(myString)|
+
+d3£è possibile convertire una lista in un intero? se si in quali casi?|
+r3_1£Sempre possibile|
+r3_2£Solo se la lista è composta da interi|
+r3_3£Mai|
+g3£Mai|
+
+d4£Cosa è il tipo Decimal?|
+r4_1£permette di lavorare con numeri a virgola fissa|
+r4_2£permette di lavorare con numeri a virgola mobile|
+r4_3£si utilizza per lavorare con i decimali con maggiore precisione|
+g4£permette di lavorare con numeri a virgola mobile|
+
+d5£per utilizzare tipi diversi da queli "base" cosa bisogna fare?|
+r5_1£import|
+r5_2£import Python.Types|
+r5_3£#import|
+g5£import|
+
+
+
+
+titolo£ Quiz Istruzioni condizionali|
+next£30|
+tutorial_id£29|
+
+d1£Qual'è la peculiarità delle istruzioni if.. elif.. else?|
+r1_1£permette di eseguire  una sola istruzione a seconda del verificarsi di una o più condizioni|
+r1_2£è un sostituto dei cicli|
+r1_3£permette di eseguire istruzioni o gruppi di istruzioni diverse a seconda del verificarsi di una o più condizioni|
+g1£permette di eseguire istruzioni o gruppi di istruzioni diverse a seconda del verificarsi di una o più condizioni|
+
+d2£quale tra le affermazioni sul seguente codice è falsa?<br><code>n = int(input('Inserisci un numero: '))<br>
+if n < 0:   <br>    n = -n  <br>print(n)<br>
+</code><br>|
+r2_1£esegue la print solo se n<0|
+r2_2£esegue sempre la print|
+r2_3£calcola il valore assoluto di n|
+g2£esegue la print solo se n<0|
+
+d3£aggiungendo dopo le istruzioni dell'if, else: cosa succede|
+r3_1£l'else deve prendere necessariamente una codizione booleana altrimenti non viene eseguito|
+r3_2£l'else viene sempre eseguito subito dopo l'if|
+r3_3£le istruzioni dopo l'else vengono eseguite solo se la condizione dell'if è falsa|
+g3£le istruzioni dopo l'else vengono eseguite solo se la condizione dell'if è falsa|
+
+d4£dove va inserito l'elif ?|
+r4_1£tra l'if e l'else|
+r4_2£subito dopo l'else|
+r4_3£prima dell'if|
+g4£tra l'if e l'else|
+
+d5£cosa stampa il seguente codice?<code>n = int(input('Inserisci un numero: '))<br>if n < 0: <br>    print(n, 'è negativo')<br>elsif n>0:  <br>    print(n, 'è positivo')<br>
+</code><br>|
+r5_1£Se n=0 non stampa nulla|
+r5_2£se n=0 stampa che n è sia positivo che negativo|
+r5_3£se n=0 va in errore|
+g5£Se n=0 non stampa nulla|
+
+
+
+
+titolo£ Quiz Cicli for e While|
+next£21|
+tutorial_id£30|
+
+d1£Quanti tipi di cicli esistono in Python?|
+r1_1£2|
+r1_2£3|
+r1_3£4|
+g1£2|
+
+d2£Come è strutturato il ciclo for?|
+r2_1£"for" variabile "in" i++|
+r2_2£"for" i "in" i++|
+r2_3£"for" variabile "in" iterabile|
+g2£"for" variabile "in" iterabile|
+
+d3£cosa ritorna list(range(5))|
+r3_1£[012345]|
+r3_2£[0, 1, 2, 3, 4]|
+r3_3£[1, 2, 3, 4, 5]|
+g3£[0, 1, 2, 3, 4]|
+
+d4£Esiste il costrutto do...while in Python?|
+r4_1£No|
+r4_2£Si|
+r4_3£Si, ma è poco usato|
+g4£No|
+
+d5£Qual'è l'errore del seguente codice? n = '8'<br>>>> while True:<br>...     guess = int(input('Inserisci un numero da 1 a 10: '))<br>...     if guess == n:<br>...         print('Hai indovinato!')<br>...         break  # numero indovinato, interrompi il ciclo<br>...     else:<br>...         print('Ritenta sarai più fortunato')<br>...<br>|
+r5_1£Essendo n un int non lo si può confrontare con guess porta un ciclo infinito|
+r5_2£Non vi è errore, Python riconosce comunque che n=guess se inserisco 8|
+r5_3£il ciclo si interrompe dopo 10 tentativi|
+g5£Essendo n un int non lo si può confrontare con guess porta un ciclo infinito|
+
+
+
+
+
+titolo£ Quiz Assembly|
+next£32|
+tutorial_id£31|
+|||||||||||||||||||||||||
+
+titolo£ Quiz Assembly|
+next£33|
+tutorial_id£32|
+|||||||||||||||||||||||||
+
+titolo£ Quiz Assembly|
+next£34|
+tutorial_id£33|
+|||||||||||||||||||||||||
+
+titolo£ Quiz Assembly|
+next£35|
+tutorial_id£34|
+|||||||||||||||||||||||||
+
+titolo£ Quiz Assembly|
+next£36|
+tutorial_id£35|
+|||||||||||||||||||||||||
+
+titolo£ Quiz Assembly|
+next£37|
+tutorial_id£36|
+|||||||||||||||||||||||||
+
+titolo£ Quiz Assembly|
+next£38|
+tutorial_id£37|
+|||||||||||||||||||||||||
+
+
+titolo£ Quiz Assembly|
+next£39|
+tutorial_id£38|
+|||||||||||||||||||||||||
+
+
+titolo£ Quiz Assembly|
+next£40|
+tutorial_id£39|
+|||||||||||||||||||||||||
+
+titolo£ Quiz Assembly|
+next£31|
+tutorial_id£40|
+|||||||||||||||||||||||||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+titolo£ Quiz Introduzione|
+next£42|
+tutorial_id£41|
+
+d1£Per cosa sta SQL?|
+r1_1£Structured Query Language|
+r1_2£Socket Query Language|
+r1_3£Structured Query Library|
+g1£Structured Query Language|
+
+d2£SQL non ...|
+r2_1£ è Case-Sensitive|
+r2_2£riconosce la differenza tra apici singoli e doppi|
+r2_3£è facilmente leggibile|
+g2£è Case-Sensitive|
+
+d3£cosa è il database?|
+r3_1£uno strato software che si frappone fra l’utente ed i dati veri e propri|
+r3_2£e’ una collezione di dati che viene gestita e organizzata da un software specifico, il BDMS|
+r3_3£e’ una collezione di dati che viene gestita e organizzata da un software specifico, il DBMS|
+g3£e’ una collezione di dati che viene gestita e organizzata da un software specifico, il DBMS|
+
+d4£Cosa è lo ‘Schema del database’|
+r4_1£n patrimonio di centinaia di milioni di pagine riguardanti praticamente ogni argomento di interesse|
+r4_2£la forma di rappresentazione dei dati piu’ ad alto livello a cui un utente del database puo’ accedere|
+r4_3£rappresentazione logica di dati, che e’ la sola cosa che i loro utilizzatori conoscono|
+g4£rappresentazione logica di dati, che e’ la sola cosa che i loro utilizzatori conoscono|
+
+d5£quali sono i tipi di database?|
+r5_1£gerarchici,reticolari,relazionali,ad oggetti|
+r5_2£gerarchici,reticolari,ad oggetti|
+r5_3£gerarchici,reticolari,relazionali,ad oggetti,strutturali|
+g5£gerarchici,reticolari,relazionali,ad oggetti|
+
+
+
+titolo£ Quiz Il Modello Relazionale|
+next£43|
+tutorial_id£42|
+
+d1£Quali tra i seguenti non è motivo del successo del database relazionale?|
+r1_1£forniscono sistemi semplici ed efficienti per rappresentare e manipolare i dati|
+r1_2£si basano su un modello, quello relazionale, con solide basi teoriche|
+r1_3£ Le relazioni rappresentano le entita’ che si ritiene essere interessanti nel database.|
+g1£ Le relazioni rappresentano le entita’ che si ritiene essere interessanti nel database.|
+
+d2£Definizione di “chiave primaria”:|
+r2_1£un insieme di attributi che permettono di identificare univocamente una tupla in una relazione.|
+r2_2£|un insieme di istanze che permettono di identificare univocamente una tupla in una relazione.
+r2_3£un insieme di attributi che permettono di identificare una tupla in una relazione.|
+g2£un insieme di attributi che permettono di identificare univocamente una tupla in una relazione.|
+
+d3£Ogni attributo di una relazione NON e’ caratterizzato da|
+r3_1£un nome|
+r3_2£un identificatico numerico|
+r3_3£un dominio|
+g3£un identificatico numerico|
+
+d4£Cosa fa la JOIN in SQL?|
+r4_1£applicato a due relazioni compatibili, ne restituisce una terza contenente le tuple che si trovano solo nella prima relazione.|
+r4_2£viene applicato a due relazioni ed effettua il prodotto cartesiano delle tuple. Ogni tupla della prima relazione viene concatenata con ogni tupla della seconda|
+r4_3£vengono concatenate le tuple di due relazioni in base al valore di un insieme dei loro attibuti|
+g4£vengono concatenate le tuple di due relazioni in base al valore di un insieme dei loro attibuti|
+
+d5£Cosa fa l'INTERSECT?|
+r5_1£applicato a due relazioni, restituisce una relazione contenente le tuple che esistono in entrambe le relazioni|
+r5_2£applicato a due relazioni, restituisce una relazione contenente le tuple di entrambe le relazioni|
+r5_3£applicato a due relazioni compatibili, restituisce una relazione contenente le tuple che esistono in entrambe le relazioni|
+g5£applicato a due relazioni compatibili, restituisce una relazione contenente le tuple che esistono in entrambe le relazioni|
+
+
+
+titolo£ Quiz Come interagire con un DBMS|
+next£44|
+tutorial_id£43|
+
+d1£L’invio delle istruzioni al DBMS NON puo’ avvenire in:|
+r1_1£invocazione tramite un programma applicativo|
+r1_2£invocazione interattiva|
+r1_3£invocazione tramite un programma relazionale|
+g1£invocazione tramite un programma relazionale|
+
+d2£La sintassi per invocare il programma psql è:|
+r2_1£<code>psql [ dbname [ user ] ]</code>|
+r2_2£<code>psql  [ user ] </code>|
+r2_3£<code>user [ dbname [ psql ] ]</code>|
+g2£<code>psql [ dbname [ user ] ]</code>|
+
+d3£Cosa fa il comando :<code>psql mydb benfante</code>|
+r3_1£crea un nuovo database chiamato 'benefante'|
+r3_2£attiva il programma psql, accedendo al database mydb come utente benfante|
+r3_3£attiva il programma psql, accedendo al database benefante come utente mydb|
+g3£attiva il programma psql, accedendo al database mydb come utente benfante|
+
+d4£ cosa fa l’istruzione SQL “CREATE SCHEMA”:|
+r4_1£Crea un nuovo database|
+r4_2£Crea degli spazi dei nomi separati|
+r4_3£crea una nuova tabella piena|
+g4£Crea degli spazi dei nomi separati|
+
+d5£ cosa fa l'istruzione CHARACTER VARYING(n)|
+r5_1£Crea una stringa a lunghezza variabile di al massimo n caratteri.|
+r5_2£Una lista a lunghezza variabile di al massimo n caratteri.|
+r5_3£Una stringa a lunghezza n.|
+g5£Una stringa a lunghezza variabile di al massimo n caratteri.|
+
+
+
+titolo£ Quiz Popolazione del database|
+next£45|
+tutorial_id£44|
+
+d1£Cosa si intede con il termine 'popolazione del database'?|
+r1_1£l’attività di inserimento dei dati al suo interno|
+r1_2£l’attività di aggiornamento dei dati al suo interno|
+r1_3£si intende la creazione del database|
+g1£l’attività di inserimento dei dati al suo interno|
+
+d2£Cosa succede se un vincolo viene violato?|
+r2_1£il DBMS ripristina la tabella|
+r2_2£il DBMS impedisce l’operazione di inserimento facendola fallire|
+r2_3£il DBMS impedisce l’operazione di inserimento senza però farla fallire|
+g2£il DBMS impedisce l’operazione di inserimento facendola fallire|
+
+d3£Qual'è la sintassi dell'utilizzo dell'INSERT?|
+r3_1£<code>INSERT INTO nome_tabella [ ( elenco_campi ) ]<br>VALUES ( elenco_valori )<br></code>|
+r3_2£<code>INSERT nome_tabella [ ( elenco_campi ) ]<br>VALUES ( elenco_valori )<br></code>|
+r3_3£<code>INSERT INTO nome_tabella [ ( elenco_campi ) ]<br></code>|
+g3£<code>INSERT INTO nome_tabella [ ( elenco_campi ) ]<br>VALUES ( elenco_valori )<br></code>|
+
+d4£Cosa permette di fare la SELECT?|
+r4_1£permette di estrarre dalle tabelle del database dei dati che vengono organizzati in una relazione già esistente|
+r4_2£permette di selezionare delle tabelle del databasei che vengono organizzati in una nuova relazione|
+r4_3£permette di estrarre dalle tabelle del database che vengono organizzate in una nuova relazione|
+g4£permette di estrarre dalle tabelle del database dei dati che vengono organizzati in una nuova relazione|
+
+d5£Che valori NON possono essere assunti dalla tabella|
+r5_1£quelli del tipo di variabile|
+r5_2£NULL|
+r5_3£valori di tipi diversi|
+g5£valori di tipi diversi|
+
+
+
+
+titolo£ Quiz la SELECT|
+next£46|
+tutorial_id£45|
+
+d1£Cosa permette di fare la SELECT?|
+r1_1£permette di estrarre dalle tabelle del database dei dati che vengono organizzati in una relazione già esistente|
+r1_2£permette di selezionare delle tabelle del databasei che vengono organizzati in una nuova relazione|
+r1_3£permette di estrarre dalle tabelle del database che vengono organizzate in una nuova relazione|
+g1£permette di estrarre dalle tabelle del database dei dati che vengono organizzati in una nuova relazione|
+
+d2£Data la sintassi della select riportata in seguito , quali istruzioni sono obbligatorie?<br><code><br>SELECT [DISTINCT ] lista_elementi_selezione<br>FROM lista_riferimenti_tabella<br>[ WHERE espressione_condizionale ]<br>[ GROUP BY lista_colonne ]<br>[ HAVING espressione_condizionale ]<br>[ ORDER BY lista_colonne ]<br></code><br>|
+r2_1£SELECT & DISTINCT|
+r2_2£SELECT & FROM|
+r2_3£Tutte|
+g2£SELECT & FROM|
+
+d3£Cosa definisce la clausola WHERE?|
+r3_1£definisce invece un filtro sulle righe che verranno analizzate|
+r3_2£definisce dove le stringhe verranno analizzate|
+r3_3£definisce l’ordinamento da applicare al risultato finale|
+g3£definisce invece un filtro sulle righe che verranno analizzate|
+
+d4£Cosa indica l'asterisco in:<code>SELECT Person.* FROM Person</code>|
+r4_1£che andrà fatta il prodotto cartesiano tra la tabella selezionata e quella originale|
+r4_2£che si vogliono analizzare tutte le colonne di una tabella|
+r4_3£che si vogliono analizzare tutte le righe di una tabella|
+g4£che si vogliono analizzare tutte le colonne di una tabella|
+
+d5£Cosa si riferisce la parola chiave AS?|
+r5_1£A selezioare per nome|
+r5_2£A specificare dei nomi alternativi|
+r5_3£A specificare un operazione di confronto tra valori|
+g5£A specificare dei nomi alternativi|
+
+
+
+
+titolo£ Quiz Ricerca, Filtraggio e Ordinamento|
+next£47|
+tutorial_id£46|
+
+d1£Cosa definisce la clausola WHERE?|
+r1_1£definisce invece un filtro sulle righe che verranno analizzate|
+r1_2£definisce dove le stringhe verranno analizzate|
+r1_3£definisce l’ordinamento da applicare al risultato finale|
+g1£definisce invece un filtro sulle righe che verranno analizzate|
+
+d2£Quali dei seguenti caratteri NON è uno dei carattery jolly di LIKE?|
+r2_1£%|
+r2_2£$|
+r2_3£_|
+g2£$|
+
+d3£Quale tra i seguenti operatori logici riscontra maggiore importanza nel filtraggio?|
+r3_1£NOT|
+r3_2£AND|
+r3_3£OR|
+g3£NOT|
+
+d4£Quale tra le seguenti affermazioni sull'operatore BETWEEN è falsa?|
+r4_1£serve per cercare valori in un intervallo|
+r4_2£Non funziona su variabili VARCHAR|
+r4_3£l'intervallo si intende chiuso|
+g4£Non funziona su variabili VARCHAR|
+
+d5£Come si riconosce un valore NULL in SQL?|
+r5_1£IS NULL|
+r5_2£ISNT NULL|
+r5_3£Entrambe le precedenti|
+g5£IS NULL|
+
+
+titolo£ Quiz GROUP BY e funzioni di aggregazione|
+next£48|
+tutorial_id£47|
+
+d1£Quale è una valida alternativa al GROUP BY?|
+r1_1£DISTINC|
+r1_2£ORDER BY|
+r1_3£Non vi è un'alternativa|
+g1£DISTINCT|
+
+d2£Qual'è la principale funzione di GROUP BY?|
+r2_1£serve a specificare quali sono i campi sui cui effettuare i raggruppamenti|
+r2_2£distingue le righe uguali riportandole quindi una sola volta|
+r2_3£modifica la tabella di lavoro eliminando tutti gli elementi esclusi|
+g2£serve a specificare quali sono i campi sui cui effettuare i raggruppamenti|
+
+d3£se viene specificata una clausola GROUP BY, allora nella clausola SELECT deve esserci:|
+r3_1£un campo specificato nella clausola GROUP BY;|
+r3_2£una funzione di aggregazione|
+r3_3£una delle due|
+g3£una delle due|
+
+d4£Quale delle seguenti non è tra le più famose funzioni di aggregazione?|
+r4_1£GROUP_CONCAT|
+r4_2£AVG|
+r4_3£MAX|
+g4£GROUP_CONCAT|
+
+d5£Cosa fa la funzione SUM?|
+r5_1£somma i valori dei campi trovati nel gruppo, valori nulli non vengono ignorati|
+r5_2£somma tutti i valori dei campi selezionati, senza contare le ripetizioni|
+r5_3£somma i valori dei campi trovati nel gruppo, i valori nulli vengono ignorati|
+g5£somma i valori dei campi trovati nel gruppo, i valori nulli vengono ignorati|
+
+
+
+titolo£ Quiz Modificare i dati|
+next£49|
+tutorial_id£48|
+
+d1£Cosa serve il comando UPDATE?|
+r1_1£Modificare dati già esistenti nel database|
+r1_2£Modificare dati già esistenti nel database, se non esistenti ne crea di nuovi|
+r1_3£Modificare dati già esistenti nel database, creandone uno nuovo|
+g1£Modificare dati già esistenti nel database|
+
+d2£Qual'è la sintassi di UPDATE?|
+r2_1£<code>UPDATE nome_tabella<br>SET nomeCampo1 = <valore1> [,nomeCampoX = <valoreX>]*<br>[ WHERE predicato ]</code><br>|
+r2_2£<code>UPDATE nome_tabella<br>SET nomeCampo1 = <valore1> [,nomeCampoX = <valoreX>]/<br>[ WHERE predicato ]</code><br>|
+r2_3£<code>UPDATE nome_tabella<br>SET nomeCampo1 = <valore1> [nomeCampoX = <valoreX>]*<br>[ WHERE predicato ]</code><br>|
+g2£<code>UPDATE nome_tabella<br>SET nomeCampo1 = <valore1> [,nomeCampoX = <valoreX>]*<br>[ WHERE predicato ]</code><br>|
+
+d3£Qual'è l'utilizzo tipo?|
+r3_1£Modificare in blocco tutti i valori del database|
+r3_2£Modificare in blocco tutti i valori di una specifica tabella|
+r3_3£Modificare un singolo valore usando l'id|
+g3£Modificare un singolo valore usando l'id|
+
+d4£Cosa vi è di sbagliato nel seguente codice?: <code>UPDATE Person SET given_names = 'Stefano' WHERE ID = 4</code>|
+r4_1£Nulla|
+r4_2£il set non può selezionare tra gli utenti quelli di nome 'Stefano'|
+r4_3£UPDATE si deve riferire all'ID non alla tabella Person|
+g4£Nulla|
+
+d5£Cosa fa questo Codice?:<code>UPDATE Book SET volume = 1, note='1 solo volume'  WHERE volume IS NULL</code>|
+r5_1£Setta a NULL tutti i valori di book|
+r5_2£Setta a 1 tutti i valori null|
+r5_3£mettendo a 1 il valore del campo volume di tutti i record|
+g5£Setta a 1 tutti i valori null|
+
+
+
+
+titolo£ Quiz Eliminare i dati|
+next£50|
+tutorial_id£49|
+
+d1£Cosa permette di fare l'istruzione DELETE?|
+r1_1£di eliminare i record di una tabella che soddisfano un certo predicato|
+r1_2£di creare una nuova tabella senza i record di una tabella che soddisfano un certo predicato|
+r1_3£di eliminare i record di una tabella indistintamente|
+g1£di eliminare i record di una tabella che soddisfano un certo predicato|
+
+d2£Qual'è la struttura CLASSICA di DELETE?|
+r2_1£<code>DELETE FROM nome_tabella<br></code><br>|
+r2_2£<code>DELETE nome_tabella<br></code><br>|
+r2_3£<code>DELETE FROM nome_tabella<br>[ WHERE predicato ]<br></code><br>|
+g2£<code>DELETE FROM nome_tabella<br>[ WHERE predicato ]<br></code><br>|
+
+d3£Nel caso in cui venga esclusa la clausola WHERE cosa succede?|
+r3_1£ritorna ERRORE|
+r3_2£ l’eliminazione avverrà su tutte le righe della tabella|
+r3_3£ l’eliminazione avverrà su tutte le colonne della tabella|
+g3£ l’eliminazione avverrà su tutte le righe della tabella|
+
+d4£Cosa succede se sussistono delle chiavi esterne sui record che vengono specificati|
+r4_1£Nulla, l'eleminazione avviene senza errori|
+r4_2£l'eliminazione fallisce|
+r4_3£vengono eliminate anche le chiavi esterne collegate ai record|
+g4£l'eliminazione fallisce|
+
+d5£Cosa comporta la clausola ON DELETE CASCADE?|
+r5_1£vengono eliminate anche le chiavi esterne collegate ai record|
+r5_2£vengono eliminate solo le chiavi esterne collegate ai record|
+r5_3£vengono eliminati solo i collegamenti alle chiavi esterne collegate ai record|
+g5£vengono eliminate anche le chiavi esterne collegate ai record|
+
+
+
+
+titolo£ Quiz Transazioni|
+next£41|
+tutorial_id£50|
+
+d1£Cosa fa questo codice?<code><br>START TRANSACTION;<br>   DELETE FROM Book WHERE Publisher = 1;<br>   DELETE FROM Publisher WHERE ID = 1<br>COMMIT;<br></code><br>|
+r1_1£elimina l’editore con ID pari a 1, e dopo vengono eliminati i libri pubblicati da esso|
+r1_2£elimina l’editore con ID pari a 1, ma prima vengono eliminati i libri pubblicati da esso|
+r1_3£elimina l’editore con ID pari a 1|
+g1£elimina l’editore con ID pari a 1, ma prima vengono eliminati i libri pubblicati da esso|
+
+d2£Racchiudendo il blocco tra START TRANSACTION e COMMIT TRANSACTION|
+r2_1£si può scrivere un commento vicino al codice|
+r2_2£Si rende il blocco atomico|
+r2_3£si rende possibile passare da un'istruzione all'altra senza generare errori|
+g2£Si rende il blocco atomico|
+
+d3£Cosa fa l'istruzione ROLLBACK|
+r3_1£si forza la chiusura della transazione|
+r3_2£si salta alla fine della transazione|
+r3_3£si forza il fallimento della transazione|
+g3£si forza il fallimento della transazione|
+
+d4£Lo standard ANSI/ISO stabilisce quattro livelli di isolamento, quali sono?|
+r4_1£Serializable,Repeatable Read,Read Committed,Read Uncommitted|
+r4_2£Serializable,Repeatable,Read Committed,Uncommitted|
+r4_3£Serializable,Repeatable,Read Committed,Read Uncommitted|
+g4£Serializable,Repeatable Read,Read Committed,Read Uncommitted|
+
+d5£Cosa prevede il livello Serializable?|
+r5_1£Utilizzando questo livello, si evitano i lock in lettura sulle tabelle che sono molto onerosi dal punto di vista prestazionale|
+r5_2£Con questo livello si fa in modo che i dati letti durante la transazione in corso non possono essere modificati da altre transazioni per tutta la durata della transazione in corso.|
+r5_3£È il massimo livello di isolamento: ogni transazione, dall’inizio alla fine, non vede le modifiche fatte ai dati acceduti|
+g5£È il massimo livello di isolamento: ogni transazione, dall’inizio alla fine, non vede le modifiche fatte ai dati acceduti|
+
+titolo£ Quiz Introduzione|
+next£52|
+tutorial_id£51|
+
+d1£ Cosa significa l'acronimo HTML?|
+r1_1£HiperText Model Language|
+r1_2£HiperText Markup Language|
+r1_3£HighText Markup Language|
+g1£HiperText Markup Language|
+
+d2£E' possibile realizzare un sito web utilizzando esclusivamente codice HTML?|
+r2_1£Si|
+r2_2£No|
+r2_3£Solo se utilizziamo Internet Explorer|
+g2£Si|
+
+d3£Quali sono gli strumenti necessari per sviluppare in HTML?|
+r3_1£Editor e rete WiFi|
+r3_2£Browser e compilatore|
+r3_3£Editor e Browser|
+g3£Editor e Browser|
+
+d4£Che cosa è un ipertesto?|
+r4_1£Un documento che ha la possibilità di visualizzare elementi multimediali|
+r4_2£Un documento che contiene un altro documento al suo interno|
+r4_3£Un documento di dimensioni troppo grandi per essere caricato dal Browser|
+g4£Un documento che ha la possibilità di visualizzare elementi multimediali|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£HTML è un linguaggio di scripting e contiene la formattazione del testo|
+r5_2£Per eseguire il codice HTML dobbiamo aprire un Browser|
+r5_3£Il codice HTML può essere eseguito correttamente solo sulla macchina dove è stato sviluppato|
+g5£Il codice HTML può essere eseguito correttamente solo sulla macchina dove è stato sviluppato|
+
+
+
+
+
+
+
+titolo£ Quiz Tag fondamentali|
+next£53|
+tutorial_id£52|
+
+d1£ Cosa sono i TAG?|
+r1_1£Elementi esterni al documento|
+r1_2£Comandi che permettono una corretta visualizzazione del documento|
+r1_3£Comandi che consentono di scrivere il testo in modo ordinato|
+g1£Comandi che permettono una corretta visualizzazione del documento|
+
+d2£Qual è il simbolo di chiusura dei TAG?|
+r2_1£#|
+r2_2£)|
+r2_3£/|
+g2£/|
+
+d3£Quali sono generalmente il primo e l'ultimo TAG di un documento HTML?|
+r3_1£< html > e </ html >|
+r3_2£< head > e </ head >|
+r3_3£< body > e </ body >|
+g3£< html > e </ html >|
+
+d4£Di quali parti si compone un documento HTML?|
+r4_1£Titolo e Intestazione|
+r4_2£Intestazione e Corpo|
+r4_3£Titolo e Corpo|
+g4£Intestazione e Corpo|
+
+d5£In quale parte del documento è contenuto il testo visualizzato sul browser?|
+r5_1£Head|
+r5_2£Body|
+r5_3£Title|
+g5£Body|
+
+
+
+
+
+
+titolo£ Quiz Meta-Tag|
+next£54|
+tutorial_id£53|
+
+d1£ Cosa sono i META-TAG?|
+r1_1£Tag principali del documento|
+r1_2£Pseudo-comandi che aiutano il browser|
+r1_3£Tag che racchiudono titolo e intestazione|
+g1£Pseudo-comandi che aiutano il browser|
+
+d2£Quali sono gli attributi dei META-TAG?|
+r2_1£HTTP-EQUIV / NAME / CONTENT|
+r2_2£HTTP-EQUIV / TITLE / CONTENT|
+r2_3£HTTP-EQUIV / NAME / HEAD|
+g2£HTTP-EQUIV / NAME / CONTENT|
+
+d3£Cosa indica il seguente META-TAG?<br><code>< META HTTP-EQUIV="Content-Language" CONTENT="It" ></code>|
+r3_1£Che il sito finisce con .it|
+r3_2£Che il sito è stato scritto in Italia|
+r3_3£Che la lingua della pagina è in italiano|
+g3£Che la lingua della pagina è in italiano|
+
+d4£Che cosa indica il META NAME="Keywords"?|
+r4_1£Le parole chiave per la ricerca del browser|
+r4_2£Le parole che si ripetono più volte nel documento|
+r4_3£Le parole chiave del nome del sito|
+g4£Le parole chiave per la ricerca del browser|
+
+d5£Quale delle seguenti affermazioni è corretta?|
+r5_1£I META-TAG vanno inseriti all'interno del body|
+r5_2£I META-TAG non sono obbligatori in una pagina web|
+r5_3£I META-TAG possono essere al massimo 3 per ogni documento|
+g5£I META-TAG non sono obbligatori in una pagina web|
+
+
+
+
+
+
+
+
+titolo£ Quiz Impostazione della pagina|
+next£55|
+tutorial_id£54|
+
+d1£ Quale attributo di body definisce il colore di sfondo?|
+r1_1£COLOR|
+r1_2£BGCOLOR|
+r1_3£BACKGROUND|
+g1£BGCOLOR|
+
+d2£Quale simbolo va usato per definire un colore in notazione esadecimale?|
+r2_1£-|
+r2_2£/|
+r2_3£#|
+g2£#|
+
+d3£Quale attributo si usa per impostare una immagine come sfondo?|
+r3_1£BGCOLOR|
+r3_2£BACKGROUND|
+r3_3£IMG|
+g3£BACKGROUND|
+
+d4£Cosa fa la funzione < ..body .. ONLOAD = "controlla();" ?|
+r4_1£Chiama la funzione Controlla() al caricamento della pagina|
+r4_2£Chiama la funzione Controlla() al caricamento dell'immagine di sfondo|
+r4_3£Chiama la funzione Controlla() alla fine della pagina|
+g4£Chiama la funzione Controlla() al caricamento della pagina|
+
+d5£Quale delle seguenti affermazioni è corretta?|
+r5_1£Gli attributti del body sono obbligatori|
+r5_2£Nel body non posso inserire sia BACKGROUND che BGCOLOR contemporaneamente|
+r5_3£VLINK si riferisce ai link della pagina già cliccati dall'utente|
+g5£VLINK si riferisce ai link della pagina già cliccati dall'utente|
+
+
+
+
+
+
+
+
+titolo£ Quiz Impostazione del testo|
+next£56|
+tutorial_id£55|
+
+d1£ Quante grandezze di titolo possiamo definire attraverso il TAG < HN >?|
+r1_1£5|
+r1_2£3|
+r1_3£6|
+g1£6|
+
+d2£Quale TAG è utilizzato per raggruppare elementi diversi in uno unico?|
+r2_1£DIR|
+r2_2£IMG|
+r2_3£DIV|
+g2£DIV|
+
+d3£Quanto spazio viene lasciato prima e dopo un TAG < P >?|
+r3_1£Nessuno|
+r3_2£Mezza riga|
+r3_3£Una riga e mezza|
+g3£Una riga e mezza|
+
+d4£Quale TAG ci permette di andare a capo?|
+r4_1£DIR|
+r4_2£BR|
+r4_3£HR|
+g4£BR|
+
+d5£Quale delle seguenti affermazioni è corretta?|
+r5_1£Il TAG < HR > non può avere attributi|
+r5_2£Il TAG < DIR > raggruppa elementi diversi|
+r5_3£Il TAG < P > può non essere chiuso|
+g5£Il TAG < P > può non essere chiuso|
+
+
+
+
+
+titolo£ Quiz Formattazione del testo|
+next£57|
+tutorial_id£56|
+
+d1£ Quale tra i seguenti TAG non può essere usato per scrivere in grassetto?|
+r1_1£I|
+r1_2£STRONG|
+r1_3£BOLD|
+g1£BOLD|
+
+d2£Quale TAG permette di visualizzare spazi e ritorni a capo così come scritti dall'utente?|
+r2_1£P|
+r2_2£PRE|
+r2_3£DIV|
+g2£PRE|
+
+d3£Quale effetto produce il TAG < FONT > senza attributi?|
+r3_1£Nessuno|
+r3_2£Ingrandisce il testo al suo interno|
+r3_3£Rende il testo di un altro carattere|
+g3£Nessuno|
+
+d4£Qual è la dimensione massima positiva che si può attribuire a SIZE?|
+r4_1£10|
+r4_2£5|
+r4_3£7|
+g4£7|
+
+d5£Quale delle seguenti affermazioni è corretta?|
+r5_1£COLOR vuole solo colori in esadecimale|
+r5_2£SIZE può assumere anche valori negativi|
+r5_3£COLOR è un tag che non va chiuso|
+g5£SIZE può assumere anche valori negativi|
+
+
+
+
+
+
+titolo£ Quiz Inserimento di immagini|
+next£58|
+tutorial_id£57|
+
+d1£ Quale tra i seguenti TAG serve ad inserire un immagine?|
+r1_1£IMAGE|
+r1_2£IMG|
+r1_3£SRC|
+g1£IMG|
+
+d2£Quale attributo è obbligatorio nel TAG < IMG .. >?|
+r2_1£COLOR|
+r2_2£WIDTH|
+r2_3£SRC|
+g2£SRC|
+
+d3£A cosa serve ALT nel tag < IMG  ALT = .. >?|
+r3_1£Alla descrizione dell'imagine che appare quando non viene caricata correttamente dal browser|
+r3_2£Alla descrizione dell'imagine che appare quando carichiamo troppe volte la pagina|
+r3_3£Alla descrizione dell'imagine che appare accanto all'immagine come didascalia|
+g3£Alla descrizione dell'imagine che appare quando non viene caricata correttamente dal browser|
+
+d4£Quale attributo si IMG ne determina la larghezza?|
+r4_1£HEIGTH|
+r4_2£LARGE|
+r4_3£WIDTH|
+g4£WIDTH|
+
+d5£Quale delle seguenti affermazioni è corretta?|
+r5_1£HSPACE indica quanti pixel lasciare sopra e sotto|
+r5_2£ALIGN può assumere solo i valori left e right|
+r5_3£BORDER è di default di colore nero|
+g5£BORDER è di default di colore nero|
+
+
+
+
+
+
+titolo£ Quiz Collegamenti ipertestuali|
+next£59|
+tutorial_id£58|
+
+d1£ Un link serve solamente a mandarci in una altra pagina web|
+r1_1£Vero|
+r1_2£Falso|
+r1_3£Solo se posti nel body|
+g1£Falso|
+
+d2£Qual è il TAG per inserire un link?|
+r2_1£LINK|
+r2_2£A|
+r2_3£HREF|
+g2£A|
+
+d3£Quale attributo fa da "segnalibro" negli elementi della pagina?|
+r3_1£ID|
+r3_2£NAME|
+r3_3£HREF|
+g3£NAME|
+
+d4£Qual è la sintassi corretta di HREF?|
+r4_1£HREF : "indirizzo"|
+r4_2£HREF = indirizzo|
+r4_3£HREF = "indirizzo"|
+g4£HREF = "indirizzo"|
+
+d5£Quale delle seguenti affermazioni è corretta?|
+r5_1£Un indirizzo assoluto è del tipo "/home/documento.html"|
+r5_2Il nome di un segnalibro si richiamo con il simbolo #|
+r5_3£Nella pagina ci deve essere almeno un segnalibro|
+g5£Il nome di un segnalibro si richiamo con il simbolo #|
+
+
+
+
+
+titolo£ Quiz Tabelle|
+next£60|
+tutorial_id£59|
+
+d1£ Quale tag è usato per le celle di una tabella?|
+r1_1£TABLE|
+r1_2£TR|
+r1_3£TD|
+g1£TD|
+
+d2£Quale attributo delimita gli elementi di una tabella?|
+r2_1£SIZE|
+r2_2£BORDER|
+r2_3£TH|
+g2£BORDER|
+
+d3£Quale attributo consente di definire la distanza tra i bordi di due celle adiacenti?|
+r3_1£ALIGN|
+r3_2£CELLPADDING|
+r3_3£CELLSPACING|
+g3£CELLSPACING|
+
+d4£Qual è la la funzione di ROWSPAN E COLSPAN?|
+r4_1£Unire righe e colonne adiacenti|
+r4_2£Sovrascrivere righe e colonne|
+r4_3£Uscire dai margini di riga e colonna della tabella|
+g4£Unire righe e colonne adiacenti|
+
+d5£Quale delle seguenti affermazioni è corretta?|
+r5_1£Il TAG TABLE non ha bisogno di essere chiuso|
+r5_2Il TAG CAPTION permette di inserire una didascalia alla tabella|
+r5_3£Non è possibile inserire una riga contenente i titoli delle colonne|
+g5£Il TAG CAPTION permette di inserire una didascalia alla tabella|
+
+
+
+
+
+titolo£ Quiz Form|
+next£51|
+tutorial_id£60|
+
+d1£ Quale attributo indica chi dovrà ricevere i dati del form?|
+r1_1£GET|
+r1_2£POST|
+r1_3£ACTION|
+g1£ACTION|
+
+d2£Quali valori può assumere METHOD ?|
+r2_1£POST o GET|
+r2_2£POST o ACTION|
+r2_3£GET o ACTION|
+g2£POST o GET|
+
+d3£Quale elemento deve essere sempre presente alla fine di un form?|
+r3_1£Il campo nome|
+r3_2£Il tasto Reset|
+r3_3£Il tasto Submit|
+g3£Il tasto Submit|
+
+d4£Quali elementi posso inserire in un modulo della form?|
+r4_1£INPUT,NAME,TEXTAREA|
+r4_2£INPUT,TEXTAREA,BUTTON|
+r4_3£INPUT,TEXTAREA,SELECT|
+g4£INPUT,TEXTAREA,SELECT|
+
+d5£Quale delle seguenti affermazioni è corretta?|
+r5_1£Il TAG FORM non ha bisogno di essere chiuso|
+r5_2ACTION può essere vuoto|
+r5_3£I form servono a inviare dati a qualcuno|
+g5£ACTION può essere vuoto|
+
+titolo£ Quiz Introduzione|
+next£61|
+tutorial_id£61|
+
+d1£ A cosa serve il linguaggio CSS?|
+r1_1£A dare lo stile alle pagine HTML|
+r1_2£A creare contenuti per le pagine HTML|
+r1_3£A rendere dinamiche le pagine HTML|
+g1£A dare lo stile alle pagine HTML|
+
+d2£E' più conveniente utilizzare fogli di stili esterni o interni al documento HTML?|
+r2_1£Interni|
+r2_2£Esterni|
+r2_3£Interni se sono pagine pesanti|
+g2£Esterni|
+
+d3£Quale attributo permette di settare lo stile direttamente nel TAG HTML?|
+r3_1£STYLE|
+r3_2£LINK|
+r3_3£CSS|
+g3£STYLE|
+
+d4£Quale attributo è obbligatorio per il TAG STYLE dichiarato nell'head?|
+r4_1£Media|
+r4_2£Link|
+r4_3£Type|
+g4£Type|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Al TAG LINK posso dare massimo 4 attributi|
+r5_2£@import prevede una url con il percorso del foglio di stile|
+r5_3£Il tag STYLE posso dichiararlo anche fuori dal HEAD|
+g5£Il tag STYLE posso dichiararlo anche fuori dal HEAD|
+
+
+
+
+
+
+
+titolo£ Quiz Regole dei CSS|
+next£63|
+tutorial_id£62|
+
+d1£ Quanti valori di stile diversi posso dare ad un elemento della mia pagina HTML?|
+r1_1£Solo 1|
+r1_2£Massimo 5|
+r1_3£Infiniti|
+g1£Infiniti|
+
+d2£Quale simbolo separa i diversi elementi di stile di uno stesso TAG?|
+r2_1£}|
+r2_2£-|
+r2_3£;|
+g2£;|
+
+d3£Quale simbolo devo porre tra la proprietà e il valore di una regola CSS?|
+r3_1£=|
+r3_2£:|
+r3_3£=>|
+g3£:|
+
+d4£Quanti valori può avere la proprietà margin?|
+r4_1£Da 2 a 4|
+r4_2£Da 1 a 4|
+r4_3£Da 3 a 5|
+g4£Da 1 a 4|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£La regola margin assegna i valori in senso orario|
+r5_2£Color serve a definire il colore di sfondo della pagina|
+r5_3£Se a margin diamo un solo valore si applica a tutte e 4 le direzioni|
+g5£Color serve a definire il colore di sfondo della pagina|
+
+
+
+
+
+
+titolo£ Quiz Le Classi e gli ID|
+next£64|
+tutorial_id£63|
+
+d1£ Dove si dichiarano gli attributi Class e ID?|
+r1_1£Dentro HEAD|
+r1_2£Dentro il TAG di interesse|
+r1_3£In un documento separato|
+g1£Dentro il TAG di interesse|
+
+d2£Quale simbolo si usa per assegnare lo stile agli elementi con un determinato ID?|
+r2_1£#|
+r2_2£.|
+r2_3£:|
+g2£#|
+
+d3£A quanti elementi posso applicare un determinato ID?|
+r3_1£Soltanto 1|
+r3_2£Infiniti|
+r3_3£1 per ogni tag differente|
+g3£Soltanto 1|
+
+d4£A quanti elementi posso applicare una determinata classe?|
+r4_1£Infiniti|
+r4_2£Soltanto 1|
+r4_3£Infiniti ma solo se si tratta di TAG diversi tra loro|
+g4£Infiniti|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£E' possibile applicare uno stile solo ad alcuni TAG di una classe|
+r5_2£Posso omettere il simbolo # per indicare lo stile di un TAG con un certo ID|
+r5_3£Posso assegnare ad un TAG sia una classe che un ID|
+g5£Posso omettere il simbolo # per indicare lo stile di un TAG con un certo ID|
+
+
+
+
+
+
+titolo£ Quiz I Selettori|
+next£65|
+tutorial_id£64|
+
+d1£ Come si chiama il selettore *?|
+r1_1£Selettore della classe|
+r1_2£Selettore universale|
+r1_3£Selettore di linea|
+g1£Selettore universale|
+
+d2£Come posso assegnare un insieme di regole a più elementi?|
+r2_1£Separandoli con un trattino|
+r2_2£Separandoli con una virgola|
+r2_3£Non è possibile farlo|
+g2£Separandoli con una virgola|
+
+d3£Se scrivo <code> div p {color:green} </code> quale parte del documento diventerà di colore verde?|
+r3_1£Nessuna|
+r3_2£Tutti gli elementi che si trovano nel div|
+r3_3£Solo gli elementi p che si trovano nel div|
+g3£Solo gli elementi p che si trovano nel div|
+
+d4£Cosa indica la proprietà :hover abbinata la tag a?|
+r4_1£Il passaggio del mouse sul link|
+r4_2£Il doppio click sul link|
+r4_3£La selezione del link|
+g4£Il passaggio del mouse sul link|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£:focus indica la selezione del link|
+r5_2£:first-child associa la proprietà a tutti i figli del tag|
+r5_3£Si può evitare di mettere il ; se dopo quella proprietà non ce ne sono altre|
+g5£:first-child associa la proprietà a tutti i figli del tag|
+
+
+
+
+
+
+titolo£ Quiz Proprietà dei caratteri|
+next£66|
+tutorial_id£65|
+
+d1£ In quale ordine i Browser interpretano i font.family?|
+r1_1£Da destra verso sinistra|
+r1_2£Da sinistra verso destra|
+r1_3£In ordine alfabetico|
+g1£Da sinistra verso destra|
+
+d2£Quale accorgimento devo avere per i font composti da 2 o più nomi?|
+r2_1£Scrivere il nome maiuscolo|
+r2_2£Separare le parole con un underscore|
+r2_3£Scrivere in nome tra apici|
+g2£Scrivere in nome tra apici|
+
+d3£A cosa serve la proprietà font-weight?|
+r3_1£Al tipo di font|
+r3_2£Allo spessore dei caratteri|
+r3_3£Alla grandezza del testo|
+g3£Allo spessore dei caratteri|
+
+d4£Quali tra le seguenti proprietà non posso assegnare a font-size?|
+r4_1£normal|
+r4_2£xx-large|
+r4_3£medium|
+g4£normal|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Font-weight accetta anche numeri come parametro|
+r5_2£Font-style può essere solo italic o normal|
+r5_3£Font-size accetta anche valori percentuali|
+g5£Font-style può essere solo italic o normal|
+
+
+
+
+titolo£ Quiz Proprietà dei colori|
+next£67|
+tutorial_id£66|
+
+d1£ In quale scala variano i colori in formato rgb?|
+r1_1£Da 0 a 100|
+r1_2£Da 1 a 250|
+r1_3£Da 0 a 255|
+g1£Da 0 a 255|
+
+d2£La proprietà background accetta solamente colori|
+r2_1£Vero|
+r2_2£Vero solo se si riferisce al body|
+r2_3£Falso|
+g2£Falso|
+
+d3£Quale parametro devo passare a color per avere uno sfondo trasparente?|
+r3_1£None|
+r3_2£Transparent|
+r3_3£Clear|
+g3£Transparent|
+
+d4£Quale valore di background-repeat fa ripetere una immagine solamente in verticale?|
+r4_1£repeat|
+r4_2£repeat-x|
+r4_3£repeat-y|
+g4£repeat-y|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Background può avere sia un colore che una immagine contemporaneamente|
+r5_2£Rgb indica la sigla red green blue|
+r5_3£Il colore di default di uno sfondo è black|
+g5£Il colore di default di uno sfondo è black|
+
+
+
+
+
+
+titolo£ Quiz Proprietà dei testi|
+next£68|
+tutorial_id£67|
+
+d1£ Quale proprietà può avere come valore uppercase?|
+r1_1£Text-decoration|
+r1_2£Text-align|
+r1_3£Text-transform|
+g1£Text-transform|
+
+d2£Cosa gestisce la proprietà line-height?|
+r2_1£Spessore del testo|
+r2_2£Interlinea del testo|
+r2_3£Spazi tra le lettere|
+g2£Interlinea del testo|
+
+d3£Quale effetto produce blink in text-decoration?|
+r3_1£Testo sottolineato|
+r3_2£Testo lampeggiante|
+r3_3£Testo barrato|
+g3£Testo lampeggiante|
+
+d4£Quale effetto produce capitalize in text-transform?|
+r4_1£Rende tutto il testo maiuscolo|
+r4_2£Rende tutto il testo minuscolo|
+r4_3£Rende tutte le prime lettere maiuscole|
+g4£Rende tutte le prime lettere maiuscole|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Text-decoration non accetta valori numerici|
+r5_2£Text-align accetta il valore normal|
+r5_3£Il valore di default di letter-spacing è 0|
+g5£Text-align accetta il valore normal|
+
+
+
+titolo£ Quiz Proprietà dei bordi|
+next£69|
+tutorial_id£68|
+
+d1£ Quale proprietà non può essere abbinata a border-?|
+r1_1£color|
+r1_2£size|
+r1_3£style|
+g1£size|
+
+d2£Come si può scrivere la proprietà border in modo compatto?|
+r2_1£Colore,dimensione,stile|
+r2_2£Stile,colore,dimensione|
+r2_3£Dimensione,colore,stile|
+g2£Dimensione,colore,stile|
+
+d3£Come si può ottenere un bordo più spesso del normale?|
+r3_1£Thick|
+r3_2£Bold|
+r3_3£Double|
+g3£Thick|
+
+d4£Si può assegnare una misura in px al border-width?|
+r4_1£Si|
+r4_2£No|
+r4_3£Solo se tutti i bordi sono della stessa misura|
+g4£Si|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Border-style accetta come valore none|
+r5_2£Border-color non accetta valori esadecimali|
+r5_3£Dotted rende il bordo puntinato|
+g5£Border-color non accetta valori esadecimali|
+
+
+
+
+
+titolo£ Quiz Tabelle|
+next£70|
+tutorial_id£69|
+
+d1£ Cosa succede se il valore di empty-cell è impostato su hide?|
+r1_1£Le celle vuote della tabella non vengono visualizzate|
+r1_2£Le celle vuote della tabella vengono visualizzate|
+r1_3£Le celle vuote della tabella vengono unite alle altre limitrofe|
+g1£Le celle vuote della tabella non vengono visualizzate|
+
+d2£Cosa fa la proprietà border-collapse: collapse?|
+r2_1£Unisce i contenuti di due celle vicine|
+r2_2£Unisce le celle togliendo i bordi|
+r2_3£Unisce i bordi di due celle in uno unico|
+g2£Unisce i bordi di due celle in uno unico|
+
+d3£Cosa succede se a border-spacing diamo un solo valore?|
+r3_1£Vale solo per la prima cella a sinistra|
+r3_2£Vale per tutti e 4 i bordi della cella|
+r3_3£Vale solo per il bordo superiore e inferiore|
+g3£Vale per tutti e 4 i bordi della cella|
+
+d4£Cosa accade se ho impostato il valore di table-layout a fixed?|
+r4_1£La dimensione delle celle resta fissa anche se il contenuto è più grande|
+r4_2£La tabella non si muove dalla posizione in cui viene messa inizialmente|
+r4_3£Le colonne della tabella restano di numero fisso anche se aggiungiamo informazioni|
+g4£La dimensione delle celle resta fissa anche se il contenuto è più grande|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Empty-cells prende solo 2 possibili valori|
+r5_2£Caption-size può accettare top come valore|
+r5_3£Border-collapse accetta il valore none|
+g5£Border-collapse accetta il valore none|
+
+
+
+
+
+
+titolo£ Quiz Dimensionamento e misure|
+next£61|
+tutorial_id£70|
+
+d1£Quanti spazi possono esserci tra numero e unità di misura?|
+r1_1£0|
+r1_2£1|
+r1_3£Infiniti|
+g1£0|
+
+d2£Cosa indica em tra le dimensioni relative?|
+r2_1£La dimensione di un inches|
+r2_2£La dimensione di un 30-simo della pagina|
+r2_3£La dimensione di una lettera m nel carattere utilizzato|
+g2£La dimensione di una lettera m nel carattere utilizzato|
+
+d3£Posso mettere una unità di misura dopo lo 0?|
+r3_1£No|
+r3_2£si|
+r3_3£Solo se metto % come unità di misura|
+g3£Solo se metto % come unità di misura|
+
+d4£La dimensione in pixel dipende dal dispositivo utilizzato?|
+r4_1£Si|
+r4_2£No|
+r4_3£Solo se ci si riferisce a un dispositivo mobile|
+g4£Si|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£pt indica la 72-ma parte di un inch|
+r5_2£12px e 10em misurano uguali|
+r5_3£La scrittura 0% è corretta|
+g5£12px e 10em misurano uguali|
+
+titolo£ Quiz Hello World|
+next£72|
+tutorial_id£71|
+
+d1£ Cosa fa il metodo document.write( .. )?|
+r1_1£Apre il documento scritto tra parentesi|
+r1_2£Stampa il contenuto delle parentesi|
+r1_3£Stampa il nome del documento corrente|
+g1£Stampa il contenuto delle parentesi|
+
+d2£Quale simbolo separa ogni istruzione di Javascript?|
+r2_1£;|
+r2_2£:|
+r2_3£Nessuno|
+g2£;|
+
+d3£Cosa accade quando inseriamo un alert con del testo al suo interno?|
+r3_1£Il programma genera un codice di errore|
+r3_2£Ci appare una finestrella sul browser|
+r3_3£Ci esce automaticamente dal browser|
+g3£Ci appare una finestrella sul browser|
+
+d4£Cosa fa il parsing della pagina durante una finestra di alert?|
+r4_1£Si ferma in attesa della pressione del tasto OK o ANNULLA|
+r4_2£Continua senza alcuna interruzione|
+r4_3£Termina|
+g4£Si ferma in attesa della pressione del tasto OK o ANNULLA|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Tra le parentesi di alert non sono necessari apici per stampare del testo|
+r5_2£Javascript esegue le istruzioni in ordine|
+r5_3£Il codice Javascript va dichiarato tra i TAG < SCRIPT >|
+g5£Tra le parentesi di alert non sono necessari apici per stampare del testo|
+
+
+
+
+
+
+titolo£ Quiz Tipi di dato|
+next£73|
+tutorial_id£72|
+
+d1£ Cosa significa che Javascript è un linguaggio a tipizzazione debole?|
+r1_1£Che le variabili possono cambiare facilmente tipo|
+r1_2£Che non occorre dichiarare il tipo di una variabile|
+r1_3£Che occorre sempre dichiarare il tipo di ogni variabile|
+g1£Che non occorre dichiarare il tipo di una variabile|
+
+d2£Quale funzione si usa per convertire un elemento in un numero intero?|
+r2_1£ParseInt|
+r2_2£ParseFloat|
+r2_3£ParseNum|
+g2£ParseInt|
+
+d3£Qual è il significato della sigla NaN?|
+r3_1£Nine and None|
+r3_2£Not and Not|
+r3_3£Not a Number|
+g3£Not a Number|
+
+d4£Posso chiudere una stringa con un apice diverso da quello che ho usato per aprirla?|
+r4_1£Si|
+r4_2£No|
+r4_3£Qualche volta|
+g4£No|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Un dato booleano può assumere solo i valori true e false|
+r5_2£Se fornisco una stringa vuota ad una funzione booleana, mi restituirà true|
+r5_3£La funzione IsNaN controlla che l'argomento passatogli sia un numero|
+g5£Se fornisco una stringa vuota ad una funzione booleana, mi restituirà true|
+
+
+
+
+
+
+titolo£ Quiz Variabili|
+next£74|
+tutorial_id£73|
+
+d1£ Come si dichiara una variabile in Javascript?|
+r1_1£variable|
+r1_2£var|
+r1_3£Non è possibile dichiararla|
+g1£var|
+
+d2£Si può dichiarare una variabile senza inizializzarla?|
+r2_1£Si|
+r2_2£No|
+r2_3£Solo se si tratta di una stringa|
+g2£Si|
+
+d3£Var1 e var1 sono variabili diverse?|
+r3_1£Si|
+r3_2£No|
+r3_3£Sono diverse ma con lo stesso valore|
+g3£Si|
+
+d4£Può il nome di una variabile contenere il carattere ; ?|
+r4_1£No|
+r4_2£Si|
+r4_3£Solo se al centro della parola|
+g4£No|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Assegnazione vuol dire assegnare un valore ad una variabile|
+r5_2£Non si può assegnare ad una variabile una altra variabile|
+r5_3£Si può assegnare ad una variabile una espressione|
+g5£Non si può assegnare ad una variabile una altra variabile|
+
+
+
+
+
+
+
+titolo£ Quiz Funzioni|
+next£75|
+tutorial_id£74|
+
+d1£ Quale nome devo dare ad una funzione?|
+r1_1£Qualsiasi|
+r1_2£Qualsiasi che inizi per maiuscola|
+r1_3£Solo quelli predefiniti|
+g1£Qualsiasi|
+
+d2£Quanti argomenti posso passare ad una funzione?|
+r2_1£1|
+r2_2£Nessuno|
+r2_3£Infiniti|
+g2£Infiniti|
+
+d3£Come faccio ad eseguire una funzione?|
+r3_1£Si esegue automaticamente dopo la dichiarazione|
+r3_2£Devo invocarla in qualche istruzione|
+r3_3£Non posso eseguirla|
+g3£Devo invocarla in qualche istruzione|
+
+d4£A cosa serve il comando prompt ?|
+r4_1£A far apparire una finestrella come alert|
+r4_2£A far apparire una finestrella in cui si può scrivere|
+r4_3£Ad invocare una funzione|
+g4£A far apparire una finestrella in cui si può scrivere|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Per impostare un valore di ritorno devo usare la funzione prompt|
+r5_2£Una funzione può non avere un valore di ritorno|
+r5_3£Una funzione non può essere chiamata se non ancora dichiarata|
+g5£Per impostare un valore di ritorno devo usare la funzione prompt|
+
+
+
+
+
+
+titolo£ Quiz Oggetti|
+next£76|
+tutorial_id£75|
+
+d1£ Un oggetto può essere dichiarato senza associarlo ad una variabile?|
+r1_1£No|
+r1_2£Si|
+r1_3£Solo nel caso di oggetti senza parametri|
+g1£No|
+
+d2£Quanti parametri può avere la classe associata ad un oggetto?|
+r2_1£1|
+r2_2£Nessuno|
+r2_3£Infiniti|
+g2£Infiniti|
+
+d3£Come faccio a riferirmi ad una certa proprietà di un oggetto?|
+r3_1£Tramite :|
+r3_2£Tramite .|
+r3_3£Tramite ()|
+g3£Tramite .|
+
+d4£Cosa succede se non assegno un nome ad un oggetto ?|
+r4_1£Nulla|
+r4_2£Non sarò in grado di usarlo|
+r4_3£Mi genera un codice di errore|
+g4£Non sarò in grado di usarlo|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Il nome di un oggetto deve contenere almeno un underscore|
+r5_2£Una classe deve avere () dopo il nome|
+r5_3£Una proprietà di un oggetto può essere usata più volte nello stesso programma|
+g5£Il nome di un oggetto deve contenere almeno un underscore|
+
+
+
+
+
+
+titolo£ Quiz Oggetto String (Costruttore e Proprietà)|
+next£77|
+tutorial_id£76|
+
+d1£ Un oggetto di tipo string va dichiarato sempre usando new String(..)?|
+r1_1£No|
+r1_2£Si|
+r1_3£Solo nel caso di variabili non inizializzate|
+g1£Si|
+
+d2£Posso assegnare ad una stringa i metodi degli oggetti String?|
+r2_1£Si|
+r2_2£No|
+r2_3£Solo quando si tratta di stringhe vuote|
+g2£Si|
+
+d3£Cosa restituisce la proprietà length?|
+r3_1£Il numero di caratteri della stringa|
+r3_2£Il numero di stringhe presenti nel documento|
+r3_3£Il numero di parole della stringa|
+g3£Il numero di caratteri della stringa|
+
+d4£Quanto vale la variabile prova?<br><code>var prova = "ciao".length; </code><br>|
+r4_1£5|
+r4_2£1|
+r4_3£4|
+g4£4|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Javascript converte automaticamente le stinghe in oggetti String|
+r5_2£Length non può essere usato per le stringhe|
+r5_3£Una stringa deve sempre essere inserita tra apici|
+g5£Length non può essere usato per le stringhe|
+
+
+
+
+
+
+titolo£ Quiz Oggetto String (Metodi)|
+next£78|
+tutorial_id£77|
+
+d1£ I metodi modificano i valori degli oggetti String?|
+r1_1£No|
+r1_2£Si|
+r1_3£Solo nel caso di metodi senza parametri|
+g1£No|
+
+d2£Cosa fa il metodo toUpperCase?|
+r2_1£Rende minuscoli tutti i caratteri della stringa|
+r2_2£Rende maiuscoli tutti i caratteri della stringa|
+r2_3£Elimina gli ultimi 2 caratteri della stringa|
+g2£Rende maiuscoli tutti i caratteri della stringa|
+
+d3£Quali sono i 2 parametri che accetta indexOf( )?|
+r3_1£Length e Search|
+r3_2£Length e Start|
+r3_3£Search e Start|
+g3£Search e Start|
+
+d4£Qual è la differenza tra lastIndexOf e indexOf?|
+r4_1£Nessuna|
+r4_2£lastIndexOf inizia la ricerca dalla fine della stringa|
+r4_3£lastIndexOf cerca solo nella parola finale|
+g4£lastIndexOf inizia la ricerca dalla fine della stringa|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Il metodo split divide in più parti una stringa|
+r5_2£Il metodo replace vuole 2 parametri|
+r5_3£Il metodo charAt restituisce la posizione del carattere cercato|
+g5£Il metodo charAt restituisce la posizione del carattere cercato|
+
+
+
+
+
+
+titolo£ Quiz Oggetto Array(Funzionamento e Proprietà)|
+next£79|
+tutorial_id£78|
+
+d1£ Che cosa è un Array?|
+r1_1£Un dato strutturato che organizza i dati secondo un indice|
+r1_2£Un dato strutturato che organizza i dati secondo una stringa|
+r1_3£Un dato strutturato che organizza gli indici secondo dati|
+g1£Un dato strutturato che organizza i dati secondo un indice|
+
+d2£Quale tra le seguenti scritture è corretta?|
+r2_1£new Array( ) = var vettore|
+r2_2£var Array = new vettore( )|
+r2_3£var vettore = new Array( )|
+g2£var vettore = new Array( )|
+
+d3£Cosa succede se scrivo vettore[indice]?|
+r3_1£Cambio il valore di un elemento del vettore|
+r3_2£Accedo ad un elemento del vettore|
+r3_3£Elimino un elemento del vettore|
+g3£Accedo ad un elemento del vettore|
+
+d4£Cosa restituisce il metodo length degli array?|
+r4_1£Il numero di elementi al suo interno|
+r4_2£Il numero di elementi -1|
+r4_3£Il valore più alto nel vettore|
+g4£Il numero di elementi al suo interno|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Quando si crea un Array non serve mettere elementi al suo interno|
+r5_2£La posizione 0 del vettore corrisponde al primo elemento|
+r5_3£La posizione finale del vettore è la posizione length|
+g5£La posizione finale del vettore è la posizione length|
+
+
+
+
+
+titolo£ Quiz Oggetto Array (Metodi)|
+next£80|
+tutorial_id£79|
+
+d1£ Che cosa fa il metodo concat( )?|
+r1_1£Aggiunge allo stesso array gli elementi tra le parentesi|
+r1_2£Crea un nuovo array unendo il vecchio array con gli elementi tra parentesi|
+r1_3£Crea un nuovo array sovrascrivendo gli elementi del vecchio array con quelli nuovi|
+g1£Crea un nuovo array unendo il vecchio array con gli elementi tra parentesi|
+
+d2£Cosa fa il metodo sort( )?|
+r2_1£Elimina il primo elemento del vettore|
+r2_2£Ordina il vettore|
+r2_3£Crea una copia del vettore|
+g2£Ordina il vettore|
+
+d3£Cosa fa il metodo reverse( )?|
+r3_1£Crea una copia del vettore ordinato|
+r3_2£Inverte gli elementi del vettore|
+r3_3£Elimina il valore finale del vettore|
+g3£Inverte gli elementi del vettore|
+
+d4£Cosa conviene fare prima di applicare il metodo sort ad un array di stringhe?|
+r4_1£Invocare il metodo toLowerCase|
+r4_2£Creare una copia del vettore|
+r4_3£Invocare il metodo reverse|
+g4£Invocare il metodo toLowerCase|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£Il metodo slice( ) copia parti di un vettore|
+r5_2£Il metodo sort( ) ha bisogno di un parametro tra le parentesi|
+r5_3£Gli elementi passati al metodo concat devono essere tra apici|
+g5£Il metodo sort( ) ha bisogno di un parametro tra le parentesi|
+
+
+
+
+
+
+titolo£ Quiz Gli Eventi|
+next£71|
+tutorial_id£80|
+
+d1£ Che cosa fa un evento in Javascript?|
+r1_1£Rende statica la pagina|
+r1_2£Rende dinamica la pagina|
+r1_3£Non influisce sulla pagina|
+g1£Rende dinamica la pagina|
+
+d2£Quando si attivano gli eventi onclick?|
+r2_1£Quando si passa con il mouse sopra ad un elemento|
+r2_2£Quando si clicca su un elemento|
+r2_3£Quando si resta per 3 secondi con il mouse sopra ad un elemento|
+g2£Quando si clicca su un elemento|
+
+d3£A quali elementi è applicabile onchange?|
+r3_1£A tutti|
+r3_2£Solo agli elementi dei form|
+r3_3£A nessun elemento HTML|
+g3£Solo agli elementi dei form|
+
+d4£Quando si attivano gli eventi onload?|
+r4_1£Al caricamento della pagina|
+r4_2£Con la pressione di un tasto sulla tastiera|
+r4_3£Con il tasto destro del mouse|
+g4£Al caricamento della pagina|
+
+d5£Quale delle seguenti affermazione è falsa?|
+r5_1£onresize si attiva solo quando si ridimensiona la finestra del browser|
+r5_2£onmousdown si attiva quando si preme un pulsante del mouse|
+r5_3£ondblclick si attiva quando si preme sul tasto destro del mouse|
+g5£ondblclick si attiva quando si preme sul tasto destro del mouse

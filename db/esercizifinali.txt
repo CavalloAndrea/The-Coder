@@ -1,0 +1,464 @@
+titolo£Esercizio Finale C|
+linguaggio£C|
+testo£
+Si consideri un file contenente informazioni su un insieme di articoli presenti in magazzino (uno per riga, al massimo 50).<br>
+Per ciascun articolo sono memorizzati il numero di pezzi disponibili e il nome, separati da uno spazio.
+Il nome è lungo al massimo 20 caratteri e può contenere anche spazi. Come esempio si consideri il seguente
+file:<br>
+40 Viti M4<br>
+37 Viti da legno<br>
+20 Martelli<br>
+15 Chiavi inglesi<br>
+150 Chiodi<br>
+3 Pinze<br>
+Si scriva una funzione C che prenda come parametri il nome di un file siffatto, il nome di un file di output ed un valore reale che rappresenta una soglia percentuale.<br>
+La funzione deve scrivere nel file di output gli articoli del file di input nel formato: nome e percentuale di pezzi di quell’articolo rispetto al numero totale di pezzi in magazzino (separati dal carattere ’:’). La funzione deve però scrivere solo gli articoli che superano in percentuale il valore di soglia e deve anche restituire il numero di articoli nel file di uscita.<br>
+Ad esempio, se il file di ingresso è quello dell’esempio e la soglia `e 10.2, il file di uscita sarà il seguente(in quanto Martelli,Chiavi inglesi e Pinze sono in quantità inferiore al 10.2% del totale) e il valore restituito sarà 3:<br>
+Viti M4: 15.09<br>
+Viti da legno: 13.96<br>
+Chiodi: 56.60<br>
+|
+soluzione£
+<code><br>
+#include <stdio.h><br>
+#include <stdlib.h><br>
+#define MAX_DIM 100<br>
+struct Articolo{<br>
+	char nome[21];<br>
+	int numero;<br>
+};<br>
+int TrasformaFile(char nome_file_input[], char nome_file_output[], float soglia);<br>
+int LeggiVettore(char nome_file[], struct Articolo v[]);<br>
+int main(int argc, char* argv[]){ /* non richiesto per il compito in classe */<br>
+	int k;<br>
+	if (argc != 4)<br>
+		printf("Utilizzo: %s <nome_file_input> <nome_file_output> <soglia>\n", argv[0]);<br>
+	else{<br>
+		k = TrasformaFile(argv[1],argv[2],atof(argv[3]));<br>
+		printf("Il nuovo file contiene %d elementi\n",k);<br>
+	}<br>
+	return 0;<br>
+}<br>
+int TrasformaFile(char nome_file_input[], char nome_file_output[], float soglia){<br>
+	int i = 0, n, m = 0, totale = 0;<br>
+	float percentuale;<br>
+	struct Articolo articoli[MAX_DIM];<br>
+	FILE* fp;<br>
+	n = LeggiVettore(nome_file_input, articoli);<br>
+	for (i = 0; i < n; i++)<br>
+		totale += articoli[i].numero;<br>
+	fp = fopen(nome_file_output,"w");<br>
+	for (i = 0; i < n; i++){<br>
+		percentuale = 100.0 * articoli[i].numero / totale;<br>
+		if (percentuale > soglia)<br>
+		{<br>
+			fprintf(fp,"%s: %.2f\n",articoli[i].nome,percentuale);<br>
+			m++;<br>
+		}<br>
+	}<br>
+	fclose(fp);<br>
+	return m;<br>
+}<br>
+int LeggiVettore(char nome_file[], struct Articolo v[]){<br>
+	int i = 0, j;<br>
+	FILE* fp;<br>
+	fp = fopen(nome_file,"r");<br>
+	while(fscanf(fp,"%d",&v[i].numero) != EOF){<br>
+		j = 0;<br>
+	getc(fp);<br>
+	while ((v[i].nome[j] = getc(fp)) != ’\n’)<br>
+		j++;<br>
+	v[i].nome[j] = ’\0’;<br>
+	i++;<br>
+	}<br>
+return i;<br>
+}<br>
+</code>
+|
+titolo£Esercizio Finale Java|
+linguaggio£Java|
+testo£
+Implementare un metodo ricorsivo per il rovesciamento di un array di interi. Ad es., dato l'array [4, 5, 2, 7], il risultato sarà l'array [7, 2, 5, 4].<br>
+|
+soluzione£
+<code>
+MyArray.java <br>
+public class MyArray  <br>
+{ <br>
+      private int[] theArray; <br>
+    public MyArray(int[] unArray) <br>
+      {      <br>
+      theArray = unArray; <br>
+      }      <br>
+    public int[] getArray() <br>
+      {            <br>
+      return theArray; <br>
+      }      <br>
+    public void rovescia() <br>
+      {      <br>
+      if ((theArray.length)<2) return; <br>   
+      int primo = theArray[0]; <br>
+      int ultimo = theArray[(theArray.length-1)]; <br>
+          int[] arrayPiccino = new int[(theArray.length-2)]; <br>
+            System.arraycopy(theArray,1,arrayPiccino,0,(theArray.length-2)); <br>
+      MyArray arrayPiccolo = new MyArray(arrayPiccino); <br>
+      arrayPiccolo.rovescia(); <br>
+      System.arraycopy(arrayPiccino,0,theArray,1,(theArray.length-2)); <br>
+      theArray[0] = ultimo; <br>
+      theArray[(theArray.length-1)] = primo; <br>
+      }      <br>
+    public String stampa()<br>
+    { <br>
+      String ris=""; <br>
+      for (int i=0; i<theArray.length; i++) <br>
+         ris = ris +" "+theArray[i]; <br>
+      return ris; <br>             
+    } <br>
+} <br>
+MyArrayTest.java <br>
+import java.util.Scanner; <br>
+public class MyArrayTest <br>
+ { <br>
+    public static void main (String[] args) <br> 
+    { <br>
+      int[] array = new int[6]; <br>
+      Scanner in = new Scanner(System.in); <br>
+      for (int i=0; i<6; i++) <br>
+      { <br>
+                System.out.println((i+1)+" numero"); <br>
+                array[i] = in.nextInt(); <br>
+      } <br>
+      MyArray arrayMio = new MyArray(array); <br>
+      arrayMio.rovescia(); <br>
+      System.out.println(arrayMio.stampa()); <br>
+    } 
+} 
+</code>
+|
+titolo£Esercizio Finale Python|
+linguaggio£Python|
+testo£
+Scrivi una funzione generatrice di password. La funzione deve generare una stringa alfanumerica di 8 caratteri qualora l'utente voglia una password semplice, o di 20 caratteri ascii qualora desideri una password più complicata.<br>
+|
+soluzione£
+<code>
+import random<br>
+<br>
+def psw_generator():<br>
+    print('Benvenuti nel generatore di password. Il programma permette di scegliere tra due livelli di complessità della password.')<br>
+    full_char_table = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~"<br>
+    alpha_char_table = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"<br>
+    <br>
+    if input("Desideri una password semplice(8 caratteri alfanumerici) o difficile(20 caratteri ascii)?  S/D ") == "D":<br>
+        lunghezza = 20<br>
+        tipo = full_char_table<br>
+    else:<br>
+        lunghezza = 8<br>
+        tipo = alpha_char_table<br>
+    psw = ""<br>
+    x = 0<br>
+    for x in range(int(lunghezza)):<br>
+        psw += tipo[int(random.randrange(len(tipo)))]<br>
+        x += 1<br>
+        <br>
+    print("La password generata è : " + psw)<br>
+    </code><br>
+
+titolo£Esercizio Finale Assembly|
+linguaggio£Assembly|
+testo£
+Dato un vettore di DIM dati da un byte, rappresentati come unsigned trovare:<br>
+1) l’elemento con il massimo numero di ricorrenze (moda)<br>
+2) il corrispondente numero di ricorrenze<br>
+<br>
+L’ALGORITMO<br>
+<br>
+MAX_NUM=0; //memorizza la moda<br>
+MAX_RIC=0;   //memorizza il numero di ricorrenze della moda<br>
+FOR INT I=0 TO DIM-1 {<br>
+	IF ((I==0) OR ( (I!=0) && (A[I]!=MAX_NUM) ) ) {// Conta il numero di ricorrenze dell’elemento i-esimo se e solo<br>
+	                                               //seI=0,  oppure I!=0 e l’elemento A[I] non è già la moda<br>
+	TEMP_RIC=0;<br>
+	FOR INT J=I TO DIM-1<br>
+		{ IF A[J]=A[I] TEMP_RIC++; }<br>
+	IF (TEMP_RIC>MAX_RIC)<br>
+		{MAX_RIC=TEMP_RIC; MAX_NUM=A[I];}<br>
+}<br>
+|
+soluzione£
+<code>
+ORG 400H<br>
+ARRAY EQU 1000H<br>
+DIMEQU 10<br>
+MAXNUM EQU 950H<br>
+MAXRIC EQU 951H<br>
+	CODE<br>
+	XORL R0,R0; MAXNUM=0<br>
+	XORL R1,R1; MAXRIC=0<br>
+	XORL R2,R2; I=0<br>
+FOR1:<br>
+	MOVB ARRAY(R2),R5; R5=A[I]=ARRAY(R2)<br>
+	CMPL #0,R2<br>
+	JZ DOIT  ;IF (I==0) JMP DOIT<br>
+	CMPB R5,R0 ELSE IF A[I]==MAXNUM<br>
+	JZ NOMAX   ; JMP NOMAX INNER SKIP CICLE)<br>
+DOIT:<br>
+	MOVL R2,R3 ;J=I<br>
+	XORL R4,R4 ;TEMPRIC=0<br>
+FOR2:<br>
+	CMPB ARRAY(R3), R5; IF A[I]!=A[J]<br>
+	JNZ NOADD; SKIP ADD<br>
+	ADDL #1,R4; TEMPRIC++<br>
+NOADD:<br>
+	ADDL #1,R3  ; J++<br>
+	CMPL #DIM,R3 ; IF (J!=N) GOTO FOR2<br>
+	JNZ FOR2<br>
+	CMPL R4,R1  ; IF MAXRIC>TEMPRIC<br>
+	JNC NOMAX  ; SKIP UPDATING MAX<br>
+	MOVL R4,R1  ; MAXRIC=TEMPRIC<br>
+	MOVB ARRAY(R2),R0; MAXNUM=A[I]<br>
+NOMAX:<br>
+	ADDL #1,R2  ; I++<br>
+	CMPL #DIM,R2 ; IF (R2!=DIM)<br>
+	JNZ FOR1    ; GOTO FOR1<br>
+<br>
+	MOVB R0, MAXNUM<br>
+	MOVL R1, MAXRIC<br>
+	HALT<br>
+<br>
+	END<br>
+</code>
+|
+titolo£Esercizio Finale SQL|
+linguaggio£SQL|
+testo£
+SCHEMA RELAZIONALE: <br>
+AUTO (Targa, Marca, Cilindrata, Potenza, CodF*, CodAss*)  <br>
+PROPRIETARI (CodF, Nome, Residenza) <br>
+ASSICURAZIONI (CodAss, Nome, Sede)<br> 
+SINISTRO (CodS, Località, Data) <br>
+AUTOCOINVOLTE (CodS*, Targa*, ImportoDelDanno)<br> 
+<br>
+Scrivere le interrogazioni SQL che restituiscono le seguenti informazioni: <br>
+1- Targa e Marca delle Auto di cilindrata superiore a 2000 cc o di potenza superiore a 120 CV <br>
+<br>
+2- Nome del proprietario e Targa delle Auto di cilindrata superiore a 2000 cc oppure di potenza  superiore a 120 CV <br>
+<br>
+3- Targa e Nome del proprietario delle Auto assicurate presso la “SARA” e coinvolte in sinistri il 20/01/02 <br>
+<br>
+4- Per ciascuna Assicurazione, il nome, la sede ed il numero di auto assicurate <br>
+<br>
+5- Per ciascuna auto “Fiat”, la targa dell’auto ed il numero di sinistri in cui è stata coinvolta  <br>
+ <br>
+6- La targa delle auto che non sono state coinvolte in sinistri dopo il 20/01/01 <br>
+|
+soluzione£
+<code>
+1-<br>
+Targa e Marca delle Auto di cilindrata superiore a 2000 cc o di potenza superiore a 120 CV<br>
+SELECT A.Targa, A.Marca <br>
+FROM  Auto A <br>
+WHERE  A.Cilindrata > 2000 or A.Potenza > 120  <br>
+<br>
+2-<br>
+Nome del proprietario e Targa  delle Auto di cilindrata superiore a 2000 cc oppure di potenza superiore  
+a 120 CV<br>
+SELECT P.Nome, A.Targa <br>
+FROM    Proprietari P, Auto A <br>
+WHERE  (A.Cilindrata > 2000 or A.Potenza > 120) and A.CodF=P.CodF <br>
+ <br>
+3-<br>
+Targa e Nome del proprietario delle Auto assicurate presso la “SARA” e coinvolte in sinistri il 20/01/02 <br>
+SELECT Targa, Proprietari.Nome <br>
+FROM  Auto Au, Proprietari P, Assicurazioni As, AutoCoinvolte AC, Sinistri S <br>
+WHERE As. Nome = ”Sara” and  S.Data = 20/01/02  and Au.CodF = P.CodF and Au.CodAss = As.CodAss and Au.Targa = Targa and ACo.CodS = S.CodS<br> 
+<br>
+4- Per ciascuna Assicurazione, il nome, la sede ed il numero di auto assicurate <br>
+SELECT As.Nome, As.Sede, count(*) as NumAuto <br>
+FROM  Assicurazioni As, Auto Au <br>
+WHERE  Au.CodAss = As.CodAss  <br>
+GROUP BY  As.CodAss, As.Nome, As.Sede <br>
+<br>
+5- Per ciascuna auto “Fiat”, la targa dell’auto ed il numero di sinistri in cui è stata coinvolta <br>
+SELECT A.Targa, count(*) as NumSin <br>
+FROM  Auto A, AutoCoinvolte AC <br>
+WHERE    A. Marca=”Fiat” and A.Targa=AC.Targa <br> 
+GROUP BY  A.Targa <br>
+<br>
+6- La targa delle auto che non sono state coinvolte in sinistri dopo il 20/01/01 <br>
+SELECT  A.Targa <br>
+FROM Auto A <br>
+WHERE   Not Exists  (  SELECT * <br>
+					   FROM AutoCoinvolte AC, Sinistri S <br>
+ 					   WHERE A.Targa =AC.Targa and AC.CodS=S.CodS and S.Data>20/01/01) )<br>
+</code>
+|
+titolo£Esercizio Finale HTML|
+linguaggio£HTML|
+testo£
+Creare una pagina con inserita una tabella contenente un'immagine( si inserisca un immagine casuale)
+|
+soluzione£
+<code>
+<HTML><br>
+<HEAD><br>
+<TITLE>GLI OLANDESI</TITLE><br>
+</HEAD><br>
+<BODY background="bg_color.gif" text="#000080"><br>
+<P align="center"><BR><br>
+<FONT size="5"><B>GLI OLANDESI</B></FONT><BR><br>
+<BR><br>
+<BR><br>
+</P><br>
+<DIV align="center"><CENTER><br>
+<TABLE border="10" cellpadding="0" cellspacing="0" bordercolordark="#000080" bordercolorlight="#0000ff"><br>
+<TR><br>
+<TD width="100%"><p align="left"><img src="windmill.jpg" width="150" height="117"></P><br>
+</TD><br>
+</TR><br>
+</TABLE><br>
+</CENTER></DIV><br>
+<P align="left"><FONT size="4"> Gli olandesi hanno scelto il contenuto delle loro manifestazioni da loro stessi, dal presente della loro vita e non si può rimproverare loro di aver dato ancora una volta realtà a questo presente per mezzo dell'arte. ciò che è portato dinanzi agli occhi e allo spirito dei contemporanei deve appartenere anche a questi se deve pretendere tutto il loro interesse. per sapere in che consisteva l'interesse contemporaneo degli olandesi, noi dobbiamo interrogare la loro storia.<BR><br>
+</P><br>
+<P align="center"><BR>HEGEL</FONT></P><br>
+</BODY><br>
+</HTML><br>
+</code>
+|
+titolo£Esercizio Finale CSS|
+linguaggio£CSS|
+testo£
+Vogliamo realizzare una pagina con un layout come il seguente:<br>
+in alto una barra di intestazione, subito sotto una barra di navigazione.<br>
+lo spazio sottostante sarà divisa in una sezione menù a sinistra e una di contenuto a destra;<br>
+in basso si avrà una sezione footer;<br>
+<br>
+<html> <br>
+  <head><br> 
+    <title>Un layout coi CSS</title> <br>
+  </head> <br>
+  <body> <br>
+    <div id="contenitore"> <br>
+      <div id="intestazione"></div>  <br>
+      <div id="contenuto"></div> <br>
+      <div id="barranavigazione"></div> <br>
+      <div id="menu"></div> <br>
+      <div id="footer"></div> <br>
+    </div> <br>
+  </body> <br>
+</html> <br>
+
+|
+soluzione£
+<code>
+Scelte da fare: 
+(1) Layout a larghezza fissa o liquido? 
+(2) Layout centrato o allineato a sinistra/destra? 
+(3) Quali box saranno disposti secondo il flusso normale? Quali saranno 
+posizionati in modo assoluto, e quali in modo relativo? Ci sono box flottanti? 
+
+POSSIBILE Soluzione: 
+
+a.contenitore: larghezza fissa, centrato, posiz. relativo <br>
+b.intestazione: larghezza variabile, flusso normale <br>
+c.contenuto: larghezza fissa, flusso normale <br>
+d.barranavigazione: larghezza fissa, posiz. assoluto <br>
+e.menu: larghezza fissa, posiz. assoluto <br>
+f.footer: larghezza variabile, flusso normale <br>
+3.<br>
+Definiamo lo stile per il body e il contenitore (ad esempio direttamente nel file HTML): <br>
+body  { <br>
+        margin: 0px; padding: 0px; <br>
+        font-size: 85%; <br>
+        font-family: Verdana, sans-serif; <br>
+        text-align: center; <br>
+        color: black; <br>
+        background-color: white; <br>
+      } <br>
+      #contenitore { <br>
+        padding: 0px; <br>
+        margin: 1em auto<br>; 
+        position: relative; <br>
+        width: 630px; <br>
+        height: 150px; /* per vederlo... */ <br>
+        text-align: left; <br>
+        background-color: lightgrey;<br> 
+        border: 1px solid black; <br>
+      }<br>
+4.<br>
+Definiamo l’intestazione: <br>
+#intestazione { <br>
+  height: 80px;  <br>
+  background-color: red; <br>
+} <br>
+5.<br>
+Definiamo il contenuto, supponendo che la barra di
+ navigazione superiore sia alta 25 pixel (per 
+vederlo, dobbiamo inserire  qualcosa nel div con id=“contenuto”...): <br>
+#contenuto { <br>
+  margin-top: 25px; <br>
+  margin-left: 129px; <br>
+  background-color: yellow; <br>
+} <br>
+6.<br>
+Inseriamo la barra di navigazione: <br>
+    #barranavigazione { <br>
+      position: absolute; <br>
+      top: 80px; left: 0px; <br>
+      height: 25px; <br>
+      width: 100%; <br>
+      background-color: lightgreen; <br>
+    } <br>
+7.<br>
+Inseriamo il menù di navigazione a sinistra: <br>
+    #menu { <br>
+      position: absolute; <br>
+      top: 115px; left: 0px;<br> 
+      width: 109px; <br>
+      background-color: cyan; <br>
+    } <br>
+8.<br>
+Inseriamo il footer:<br> 
+    #footer { <br>
+      height: 20px; <br> 
+      background-color: white;<br> 
+    } <br>
+</code>
+|
+titolo£Esercizio Finale JavaScript|
+linguaggio£JavaScript|
+testo£
+Dato un numero calcolarne il fattoriale
+|
+soluzione£
+<code>
+<HTML><br>
+<HEAD><br>
+<TITLE>ESEMPIO: fattoriale</TITLE><br>
+</HEAD><br>
+<BODY><br>
+<SCRIPT><br>
+<!-- Inizio script JavaScript<br>
+	var fattoriale;<br>
+	var N;<br>
+	N = window.prompt("Inserisci il numero");<br>
+	N=N*1;<br>
+	if (N >= 0)<br>
+	{<br>
+	fattoriale = 1;<br>
+	while(N>0)<br>
+	{<br>
+		fattoriale = fattoriale * N;<br>
+		N=N-1;<br>
+	}<br>
+	window.alert("Risultato = " + fattoriale);<br>
+	}<br>
+		else<br>
+		{<br>
+		window.alert("Numero negativo!");<br>
+		}<br>
+// Fine script --><br>
+</SCRIPT><br>
+</BODY><br>
+</HTML><br>
+</code><br>
