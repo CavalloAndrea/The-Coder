@@ -405,13 +405,13 @@ titolo£ Quiz Controllo del Flusso|
 next£13|
 tutorial_id£12|
 
-d1£ qualidi questi non è un costrutto per il controllo dei flussi?|
+d1£ quali di questi non è un costrutto per il controllo dei flussi?|
 r1_1£while|
 r1_2£if...else|
 r1_3£swipe|
 g1£swipe|
 
-d2£Quale delle seguenti affermazioni sul costrutto if..else è vero?<code><br>
+d2£Quale delle seguenti affermazioni sul costrutto if..else è vera?<code><br>
 if(espressione booleana) <br>
 	istruzione1 <br>
 else <br>
@@ -429,26 +429,18 @@ r3_3£il do... while esegue almeno una volta l'istruzione che segue il do|
 g3£il do... while esegue almeno una volta l'istruzione che segue il do|
 
 d4£Quale tra le seguenti è la forma corretta del ciclo for?|
-r4_1£<code> <br>
-for(espressione di inizializzazione; espressione booleana; espressione di incremento)<br>
-	 { istruzione } <br>
+r4_1£<code> <br>for(espressione di inizializzazione; espressione booleana; espressione di incremento)<br>
+	 { istruzione } <br></code><br>|
+r4_2£<code> <br>for(espressione booleana;espressione di inizializzazione; espressione di incremento)<br>
+	 { istruzione } <br></code><br>|
+r4_3£<code> <br>for(espressione di inizializzazione;espressione booleana; istruzione)<br> { incremento } <br>
 </code><br>|
-r4_2£<code> <br>
-for(espressione booleana;espressione di inizializzazione; espressione di incremento)<br>
-	 { istruzione } <br>
-</code><br>|
-r4_3£<code> <br>
-for(espressione di inizializzazione;espressione booleana; istruzione)<br>
-	 { incremento } <br>
-</code><br>|
-g4£<code> <br>
-for(espressione di inizializzazione; espressione booleana; espressione di incremento)<br>
-	 { istruzione } <br>
-</code><br>|
+g4£<code> <br>for(espressione di inizializzazione; espressione booleana; espressione di incremento)<br>
+	 { istruzione } <br></code><br>|
 
 d5£Cosa comporta l'espressione <code> continue</code> ?|
-r5_1£182espressione continue provoca il salto alla fine del ciclo dove è inserita|
-r5_2£91Provoca l'esecuzioni di tutte le istruzini che la seguono fino al break|
+r5_1£espressione continue provoca il salto alla fine del ciclo dove è inserita|
+r5_2£Provoca l'esecuzioni di tutte le istruzini che la seguono fino al break|
 r5_3£provoca il salto all'inizio del ciclo dove è inserita|
 g5£91espressione continue provoca il salto alla fine del ciclo dove è inserita|
 

@@ -606,6 +606,7 @@ Unespressione continue provoca il salto alla fine del ciclo dove è inserita, 
 Infine un ulteriore impiego del goto è quello che consente di eseguire codice di pulizia prima delluscita da un metodo o da un blocco: anche in questo caso in Java si utilizza il break con etichetta o il costrutto finally se si è allinterno di una <b>trycatch. </b>
 <br>
 <b>Costrutto return </b><br>
+<br>
 Viene utilizzato per permettere a un metodo di restituire un valore allesterno. Ad esempio: <br>
 <code><br>
 public int add(int i1, int i2) <br>

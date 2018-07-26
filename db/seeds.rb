@@ -94,17 +94,17 @@ quiz = contenuto.split("|")
 end
 
 # Creazione EsercizioProposto
-file = File.open("db/esercizifinali.txt", "rb")
+file = File.open("db/problem.txt", "rb")
 contenuto = file.read
 contenuto = contenuto.force_encoding('UTF-8').gsub("\u2028", " ")
-esercizi = contenuto.split("|")
+problem = contenuto.split("|")
 
 (0..31).step(4) do |n|
 
-    titolo = esercizi[n].split("£")[1]
-    linguaggio = esercizi[n+1].split("£")[1]
-    testo = esercizi[n+2].split("£")[1]
-    soluzione = esercizi[n+3].split("£")[1]
-    Esercizi.create!(titolo: titolo, linguaggio: linguaggio, testo: testo, soluzione: soluzione)
+    titolo = problem[n].split("£")[1]
+    linguaggio = problem[n+1].split("£")[1]
+    esercizio = problem[n+2].split("£")[1]
+    soluzione = problem[n+3].split("£")[1]
+    Problem.create!(titolo: titolo, linguaggio: linguaggio, esercizio: esercizio, soluzione: soluzione)
 end
 
