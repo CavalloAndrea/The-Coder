@@ -32,6 +32,7 @@ Then "I should be able to sign up" do
     fill_in 'Password', with: 'password'
     fill_in 'Conferma Password', with: 'password'
     click_button "Registrati"
+    expect(page).to have_content("attivare")
 end
 
 Then "I should be able to change my e-mail" do
@@ -40,4 +41,25 @@ Then "I should be able to change my e-mail" do
     expect(User.find(2).email).to eq("the2@coder.com")
 end
 
+Then "I should be able to logout" do
+    click_link "Logout"
+    expect(page).to have_content("Benvenuti")
+end
 
+Then "I should be able to change my nickname" do
+    fill_in 'Nickname', with: 'TheCoder'
+    click_button "Salva modifiche"
+    expect(User.find(2).nickname).to eq("TheCoder")
+end
+
+Then "I should be able to delete my account" do
+    count = User.count
+    click_button "Cancella il tuo account"
+    expect(User.count).to eq(count-1)
+end
+
+Then "I should be able to change my profile in public or private" do
+    find('input#user_privato').click
+    click_button 'Salva modifiche'
+    expect(User.find(2).privato).to be_truthy
+end
