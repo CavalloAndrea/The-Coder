@@ -26,7 +26,7 @@ Then "I should be able to view user account" do
 end
 
 Then "I should be able to suspend website" do
-    find('input#suspended').click
+    find('input#sospeso').click
     click_button 'Salva modifiche'
     expect(Site.first.suspended).to be_truthy
 end

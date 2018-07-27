@@ -2,7 +2,7 @@ Given "the user logged in" do
     visit login_path
     fill_in 'Email', with: 'thecoder@gmail.com'
     fill_in 'Password', with: 'password'
-    click_button 'Log in'
+    click_button 'Login'
 end
 
 When "I go to login page" do
