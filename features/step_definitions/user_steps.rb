@@ -19,22 +19,22 @@ When "I write email and password" do
 end
 
 Then "I should be able to sign up" do
-    fill_in 'Name', with: 'User'
+    fill_in 'Nome', with: 'User'
     fill_in 'Email', with: 'thecoder@gmail.com'
     fill_in 'Password', with: 'password'
-    fill_in 'Confirmation', with: 'password'
-    click_button "Create my account"
+    fill_in 'Conferma Password', with: 'password'
+    click_button "Registrati"
     expect(page).to have_content("activate")
 end
 
 Then "I should be able to login" do
-    click_button "Log in"
+    click_button "Login"
     expect(page).to have_content("following")
 end
 
 Then "I should be able to logout" do
-    click_link "Log out"
-    expect(page).to have_content("Welcome")
+    click_link "Logout"
+    expect(page).to have_content("Logout effettuato con successo. Torna a trovarci!")
 end
 
 Then "I should be able to change my e-mail" do
@@ -45,9 +45,9 @@ end
 
 Then "I should be able to change my password" do
     fill_in 'Password', with: 'password2'
-    fill_in 'Confirmation', with: 'password2'
+    fill_in 'Conferma password', with: 'password2'
     click_button "Salva modifiche"
-    expect(page).to have_content("Profile updated")
+    expect(page).to have_content("Profile aggiornato correttamente")
 end
 
 
