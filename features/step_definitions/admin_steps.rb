@@ -6,7 +6,7 @@ Given "the admin logged in" do
 end
 
 When "I go to personal profile" do
-    visit edit_user_path(User.find(1))
+    visit edit_user_path(User.find(3))
 end
 
 When "I go to users list" do
