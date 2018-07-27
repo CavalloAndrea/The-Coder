@@ -1122,69 +1122,422 @@ g5£Essendo n un int non lo si può confrontare con guess porta un ciclo infinit
 
 
 
-titolo£ Quiz Assembly|
+titolo£ Quiz Introduzione|
 next£32|
 tutorial_id£31|
-|||||||||||||||||||||||||
 
-titolo£ Quiz Assembly|
+d1£ I sistemi di calcolo si basano:|
+r1_1£su un certo numero di enunciati|
+r1_2£su un certo numero di astrazioni|
+r1_3£su un certo numero di strumenti|
+g1£su un certo numero di astrazioni|
+
+d2£Due delle più importanti astrazioni sono:|
+r2_1£Memoria,ISA|
+r2_2£CPU,ISA|
+r2_3£Memoria,CPU|
+g2£Memoria,ISA|
+
+d3£Quali sono le due ISA più diffuse:|
+r3_1£x86-66 e IA32|
+r3_2£IA32 e x86-64|
+r3_3£IAX32 e x86-64|
+g3£IA32 e x86-64|
+
+d4£Programmi scritti in linguaggio macchina per piattaforme IA32 possono essere eseguiti anche su piattaforme x86-64?|
+r4_1£No|
+r4_2£Qualche volta|
+r4_3£Si|
+g4£Si|
+
+d5£il tipo macchina Extended precision quanti byte richiede in IA32?|
+r5_1£64|
+r5_2£32|
+r5_3£12|
+g5£12|
+
+
+
+
+
+
+titolo£ Quiz Registri|
 next£33|
 tutorial_id£32|
-|||||||||||||||||||||||||
 
-titolo£ Quiz Assembly|
+d1£IA32 è composta da quanti registri interi ?|
+r1_1£32|
+r1_2£12|
+r1_3£8|
+g1£8|
+
+d2£Da quanti bit si compone un registro ?|
+r2_1£32|
+r2_2£4|
+r2_3£6|
+g2£32|
+
+d3£Cosa contiene il registro EIP ?|
+r3_1£indirizzo della prossima istruzione da eseguire|
+r3_2£totale delle istruzioni eseguite|
+r3_3£somma dei valori degli altri registri|
+g3£indirizzo della prossima istruzione da eseguire|
+
+d4£Gli operandi sorgente possono essere di quanti tipi ?|
+r4_1£32|
+r4_2£8|
+r4_3£3|
+g4£3|
+
+d5£Le istruzioni MOVZ, e MOVS servono per :|
+r5_1£spostare dati da un operando sorgente a un operando destinazione di dimensione maggiore|
+r5_2£spostare dati da un operando destinazione a un operando destinazione di dimensione maggiore|
+r5_3£spostare dati da un operando destinazione a un operando sorgente di dimensione minore|
+g5£spostare dati da un operando sorgente a un operando destinazione di dimensione maggiore|
+
+
+
+
+
+
+titolo£ Quiz Istruzioni|
 next£34|
 tutorial_id£33|
-|||||||||||||||||||||||||
 
-titolo£ Quiz Assembly|
+d1£Le istruzioni PUSH servono per spostare dati da un operando sorgente verso :|
+r1_1£la fine della stack|
+r1_2£un operando destinazione|
+r1_3£la cima della stack|
+g1£la cima della stack|
+
+d2£Cosa eseguo con la seguente istruzione - popl D4 ?|
+r2_1£aggiungi 4 byte dalla cima della stack e copiali in uno operando D 4|
+r2_2£togli i 4 byte dalla cima della stack e copiali in uno operando D 4|
+r2_3£togli i 4 byte dalla cima della stack e cancella uno operando D 4|
+g2£togli i 4 byte dalla cima della stack e copiali in uno operando D 4|
+
+d3£Che operazione eseguo con la istruzione ADD S,D ?|
+r3_1£aggiungi sorgente a destinazione e risultato moltiplicato per la destinazione|
+r3_2£aggiungi sorgente a destinazione e risultato in sorgente|
+r3_3£aggiungi sorgente a destinazione e risultato in destinazione|
+g3£aggiungi sorgente a destinazione e risultato in destinazione|
+
+d4£Quale è il risultato della istruzione XOR S,D ?|
+r4_1£or esclusivo destinazione con sorgente e risultato in destinazione|
+r4_2£or esclusivo sorgente con destinazione e risultato in sorgente|
+r4_3£or esclusivo sorgente con destinazione e risultato in destinazione|
+g4£or esclusivo sorgente con destinazione e risultato in destinazione|
+
+d5£La istruzione leal viene usata per scrivere programmi più :|
+r5_1£grandi|
+r5_2£veloci|
+r5_3£piccoli|
+g5£veloci|
+
+
+
+
+
+
+
+titolo£ Quiz Istruzioni di Salto|
 next£35|
 tutorial_id£34|
-|||||||||||||||||||||||||
 
-titolo£ Quiz Assembly|
+d1£Quanti sono i tipi di istruzioni di salto ?|
+r1_1£5|
+r1_2£3|
+r1_3£12|
+g1£3|
+
+d2£Cosa succede nei salti incondizionati ?|
+r2_1£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione precedente|
+r2_2£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione successiva|
+r2_3£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione a cui si vuole saltare|
+g2£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione a cui si vuole saltare|
+
+d3£Cosa succede nei salti condizionati ?|
+r3_1£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione precedente a quella a cui si vuole saltare|
+r3_2£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione a cui si vuole saltare, ma solo se è verificata una determinata condizione sui dati|
+r3_3£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione a cui si vuole saltare|
+g3£registro EIP viene sovrascritto con indirizzo di memoria della istruzione a cui si vuole saltare, ma solo se è verificata una determinata condizione sui dati|
+
+d4£Le istruzioni di salto incondizionato possono essere di tipo :|
+r4_1£diretto o indiretto|
+r4_2£solo indiretto|
+r4_3£solo diretto|
+g4£diretto o indiretto|
+
+d5£Il registro dei FLAG quanti codici di condizione (condition code) booleani contiene ?|
+r5_1£3|
+r5_2£8|
+r5_3£4|
+g5£4|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+titolo£ Quiz Chiamata e Ritorno da Funzione|
 next£36|
 tutorial_id£35|
-|||||||||||||||||||||||||
 
-titolo£ Quiz Assembly|
+d1£Quali sono le funzioni Chiamata e Ritorno ?|
+r1_1£CALL e RIT|
+r1_2£GO e RET|
+r1_3£CALL e RET|
+g1£CALL e RET|
+
+d2£cosa deposita in stack la CALL ?|
+r2_1£indirizzo della istruzione precedente|
+r2_2£indirizzo della istruzione successiva|
+r2_3£indirizzo della prima istruzione|
+g2£indirizzo della istruzione successiva|
+
+d3£Azioni del ritorno da Funzione RET:|
+r3_1£toglie dalla stack un indirizzo di ritorno e lo scrive in EIP|
+r3_2£aggiunge dalla stack un indirizzo di ritorno e lo scrive in EIP|
+r3_3£toglie dalla stack un indirizzo di ritorno e lo scrive in CALL|
+g3£toglie dalla stack un indirizzo di ritorno e lo scrive in EIP|
+
+d4£Effetto della chiamata a funzione CALL S:|
+r4_1£mette in stack un indirizzo di ritorno e termina la chiamata|
+r4_2£mette in stack un indirizzo di ritorno e salta allo indirizzo specificato in S (operando)|
+r4_3£mette in stack un indirizzo di ritorno e salta allo indirizzo successivo|
+g4£mette in stack un indirizzo di ritorno e salta allo indirizzo specificato in S (operando)|
+
+d5£Quante sono le chiamate a funzione ?|
+r5_1£3|
+r5_2£4|
+r5_3£1|
+g5£1|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+titolo£ Quiz Istruzioni di Assegnamento|
 next£37|
 tutorial_id£36|
-|||||||||||||||||||||||||
 
-titolo£ Quiz Assembly|
+d1£una CMOVcc non può essere un operando immediato, la destinazione deve essere un registro, quali operandi sono supportati?|
+r1_1£a 32 e 64 bit|
+r1_2£a 16 e 32 bit|
+r1_3£solo a 32 bit|
+g1£a 16 e 32 bit|
+
+d2£Cosa esegue la istruzione TEST S,D|
+r2_1£calcola S & D|
+r2_2£cancella S & D|
+r2_3£legge S & D|
+g2£calcola S & D|
+
+d3£La istruzione CMOVcc consente di effettuare degli assegnamenti:|
+r3_1£sempre|
+r3_2£solo se una determinata condizione è verificata|
+r3_3£mai|
+g3£solo se una determinata condizione è verificata|
+
+d4£Cosa succede con la seguente istruzione CMOVcc S,D ?|
+r4_1£se la condizione associata al suffisso cc è verificata, cancella la sorgente |
+r4_2£se la condizione associata al suffisso cc è verificata, copia la destinazione nella sorgente|
+r4_3£se la condizione associata al suffisso cc è verificata, copia la sorgente nella destinazione|
+g4£se la condizione associata al suffisso cc è verificata, copia la sorgente nella destinazione|
+
+d5£la istruzione TEST è identica a una AND:|
+r5_1£VERO, tranne che non modifica l’operando destinazione|
+r5_2£VERO, tranne che non modifica l’operando sorgente|
+r5_3£FALSO|
+g5£VERO, tranne che non modifica l’operando destinazione|
+
+
+
+
+
+
+
+
+titolo£ Quiz Istruzioni condizionali|
 next£38|
 tutorial_id£37|
-|||||||||||||||||||||||||
+
+d1£istruzione if, Se il test effettuato è vero, viene eseguito il blocco e si riprende dalla istruzione successiva|
+r1_1£VERO|
+r1_2£FALSO|
+r1_3£dipende dalla istruzione successiva|
+g1£VERO|
+
+d2£istruzione while, Se il test effettuato è vero, viene eseguito il blocco e si ritorna al test, altrimenti si prosegue con la istruzione successiva al while|
+r2_1£VERO|
+r2_2£FALSO|
+r2_3£dipende dalla istruzione successivo|
+g2£VERO|
+
+d3£il while è del tutto simile all’if:|
+r3_1£sempre|
+r3_2£tranne che dopo la esecuzione del blocco non si prosegue alla istruzione successiva|
+r3_3£mai|
+g3£tranne che dopo la esecuzione del blocco non si prosegue alla istruzione successiva|
+
+d4£La istruzione if…else viene realizzata effettuando un salto al blocco 2 che evita di eseguire il blocco 1 se il test non è soddisfatto|
+r4_1£FALSO|
+r4_2£VERO, solo se il test è soddisfatto|
+r4_3£VERO|
+g4£VERO|
+
+d5£la istruzione for è uguale alla istruzione if:|
+r5_1£VERO, tranne che non effettua alcun test|
+r5_2£VERO|
+r5_3£FALSO|
+g5£FALSO|
 
 
-titolo£ Quiz Assembly|
+
+
+
+
+
+
+titolo£ Quiz Cicli|
 next£39|
 tutorial_id£38|
-|||||||||||||||||||||||||
+
+d1£istruzione if, Se il test effettuato è vero, viene eseguito il blocco e si riprende dalla istruzione successiva|
+r1_1£VERO|
+r1_2£FALSO|
+r1_3£dipende dalla istruzione successiva|
+g1£VERO|
+
+d2£istruzione while, Se il test effettuato è vero, viene eseguito il blocco e si ritorna al test, altrimenti si prosegue con la istruzione successiva al while|
+r2_1£VERO|
+r2_2£FALSO|
+r2_3£dipende dalla istruzione successivo|
+g2£VERO|
+
+d3£il while è del tutto simile all’if:|
+r3_1£sempre|
+r3_2£tranne che dopo la esecuzione del blocco non si prosegue alla istruzione successiva|
+r3_3£mai|
+g3£tranne che dopo la esecuzione del blocco non si prosegue alla istruzione successiva|
+
+d4£La istruzione if…else viene realizzata effettuando un salto al blocco 2 che evita di eseguire il blocco 1 se il test non è soddisfatto|
+r4_1£FALSO|
+r4_2£VERO, solo se il test è soddisfatto|
+r4_3£VERO|
+g4£VERO|
+
+d5£la istruzione for è uguale alla istruzione if:|
+r5_1£VERO, tranne che non effettua alcun test|
+r5_2£VERO|
+r5_3£FALSO|
+g5£FALSO|
 
 
-titolo£ Quiz Assembly|
+
+
+
+
+
+
+
+
+
+titolo£ Quiz Funzioni|
 next£40|
 tutorial_id£39|
-|||||||||||||||||||||||||
 
-titolo£ Quiz Assembly|
+d1£Una funzione C è tradotta in assembly IA32 come una sequenza di istruzioni terminate da una:|
+r1_1£CALL|
+r1_2£RET|
+r1_3£FOR|
+g1£RET|
+
+d2£la funzione che ha effettuato la invocazione viene detta:|
+r2_1£RETER|
+r2_2£CALL|
+r2_3£CALLER|
+g2£CALLER|
+
+d3£La funzione invocata viene detta:|
+r3_1£CALLEE|
+r3_2£CALLER|
+r3_3£CALL|
+g3£CALLEE|
+
+d4£Le convenzioni relative alla traduzione delle funzioni sono conformi con la System V (ABI)|
+r4_1£FALSO|
+r4_2£VERO, solo in USA|
+r4_3£VERO|
+g4£VERO|
+
+d5£Per convenzione, valori scalari come interi e puntatori vengono restituiti al chiamante dal chiamato scrivendoli nel registro:|
+r5_1£aqw|
+r5_2£eax|
+r5_3£ewx|
+g5£eax|
+
+
+
+
+
+
+
+
+
+titolo£ Quiz Memoria|
 next£31|
 tutorial_id£40|
-|||||||||||||||||||||||||
 
+d1£Ogni processo è identificato univocamente da un identificatore di processo chiamato:|
+r1_1£POD|
+r1_2£PID|
+r1_3£RID|
+g1£PID|
 
+d2£Un processo può essere attivato :|
+r2_1£su richiesta utente|
+r2_2£in risposta ad eventi|
+r2_3£entrambe le risposte|
+g2£entrambe le risposte|
 
+d3£Un allocatore di memoria è una struttura di dati per la gestione della memoria. Un allocatore supporta generalmente quante primitive ?|
+r3_1£6|
+r3_2£16|
+r3_3£3|
+g3£3|
 
+d4£Un processo è semplicemente un programma in esecuzione:|
+r4_1£FALSO|
+r4_2£VERO, solo nel linguaggio C|
+r4_3£VERO|
+g4£VERO|
 
-
-
-
-
-
-
-
+d5£p=alloca(n): contiene indirizzo iniziale di un blocco di almeno n byte contigui|
+r5_1£FALSO|
+r5_2£VERO|
+r5_3£VERO, ma i byte possono non essere contigui |
+g5£VERO|
 
 
 
