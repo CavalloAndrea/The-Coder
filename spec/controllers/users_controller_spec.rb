@@ -1,12 +1,28 @@
-require 'rails_helper'
+require 'spec_helper'
 
-RSpec.describe UsersController, type: :controller do
+require 'spec_helper'
 
-  describe "GET #new" do
-    it "returns http success" do
-      get :new
-      expect(response).to have_http_status(:success)
+describe UsersController, type: :controller do
+    before(:all) do
+        @user = create(:user)
     end
-  end
-
+    
+    after(:all) do
+        @user.destroy
+    end
+    
+    describe "GET #new" do
+        it "renders the :new template" do
+            get :new
+            expect(response).to be_success
+        end
+    end
+    
+    describe "GET #edit" do
+        it "renders the :edit template" do
+            log_in(@user)
+            get :edit, params: { id: @user.id }
+            expect(response).to be_success
+        end
+    end
 end
