@@ -1,5 +1,5 @@
 When "I go to problems" do
-    visit problems_path
+    click_link "Esercizi"
 end
 
 Then "I should be able to search a problem by keyword" do
@@ -10,7 +10,13 @@ Then "I should be able to search a problem by keyword" do
 end
 
 Then "I should be able to search a problem by language" do
-    fill_in "linguaggio", with: "Java"
+    select "Assembly", :from => "linguaggio"
     click_button "Cerca"
-    expect(page).to have_content("Esercizio Finale Java")
+    expect(page).to have_content("Assembly")
 end
+
+Then "I should be able to propose a problem" do
+    click_link "Proponi un esercizio"
+    expect(page).to have_content("Titolo")    
+end
+
