@@ -230,14 +230,398 @@ def psw_generator():<br>
 
 
 <% elsif params[:linguaggio] == 'Assembly' %>
-	<p>Qui ci va il quiz di Assembly</p>
-<% elsif params[:linguaggio] == 'SQL' %>
-	<p>Qui ci va il quiz di SQL</p>
-<% elsif params[:linguaggio] == 'HTML' %>
-	<p>Qui ci va il quiz di HMTL</p>
-<% elsif params[:linguaggio] == 'CSS' %>
-	<p>Qui ci va il quiz di CSS</p>
-<% elsif params[:linguaggio] == 'Javascript' %>
-	<p>Qui ci va il quiz di Javascript</p>
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script type="text/javascript">
+				function mostraassembly(){
+					document.getElementById("soluzione4").style.visibility = "visible";
+					
+				}
+			</script>
+		</head>
+		
+		<body>
+
+		<h1>Esercizio finale di <%= params[:linguaggio]%> </h1>
+Dato un vettore di DIM dati da un byte, rappresentati come unsigned trovare:<br>
+1) l’elemento con il massimo numero di ricorrenze (moda)<br>
+2) il corrispondente numero di ricorrenze<br>
+<br>
+L’ALGORITMO<br>
+<br>
+MAX_NUM=0; //memorizza la moda<br>
+MAX_RIC=0;   //memorizza il numero di ricorrenze della moda<br>
+FOR INT I=0 TO DIM-1 {<br>
+	IF ((I==0) OR ( (I!=0) && (A[I]!=MAX_NUM) ) ) {// Conta il numero di ricorrenze dell’elemento i-esimo se e solo<br>
+	                                               //seI=0,  oppure I!=0 e l’elemento A[I] non è già la moda<br>
+	TEMP_RIC=0;<br>
+	FOR INT J=I TO DIM-1<br>
+		{ IF A[J]=A[I] TEMP_RIC++; }<br>
+	IF (TEMP_RIC>MAX_RIC)<br>
+		{MAX_RIC=TEMP_RIC; MAX_NUM=A[I];}<br>
+}<br>
+		<br>
+<button onclick="mostraassembly();" class="btn btn-primary">Soluzione</button>
+<div id="soluzione4" style="visibility: hidden;">
+	<h2 style="font-size: 2.5em; color: inherit">Soluzione</h2>
+	ORG 400H<br>
+ARRAY EQU 1000H<br>
+DIMEQU 10<br>
+MAXNUM EQU 950H<br>
+MAXRIC EQU 951H<br>
+	CODE<br>
+	XORL R0,R0; MAXNUM=0<br>
+	XORL R1,R1; MAXRIC=0<br>
+	XORL R2,R2; I=0<br>
+FOR1:<br>
+	MOVB ARRAY(R2),R5; R5=A[I]=ARRAY(R2)<br>
+	CMPL #0,R2<br>
+	JZ DOIT  ;IF (I==0) JMP DOIT<br>
+	CMPB R5,R0 ELSE IF A[I]==MAXNUM<br>
+	JZ NOMAX   ; JMP NOMAX INNER SKIP CICLE)<br>
+DOIT:<br>
+	MOVL R2,R3 ;J=I<br>
+	XORL R4,R4 ;TEMPRIC=0<br>
+FOR2:<br>
+	CMPB ARRAY(R3), R5; IF A[I]!=A[J]<br>
+	JNZ NOADD; SKIP ADD<br>
+	ADDL #1,R4; TEMPRIC++<br>
+NOADD:<br>
+	ADDL #1,R3  ; J++<br>
+	CMPL #DIM,R3 ; IF (J!=N) GOTO FOR2<br>
+	JNZ FOR2<br>
+	CMPL R4,R1  ; IF MAXRIC>TEMPRIC<br>
+	JNC NOMAX  ; SKIP UPDATING MAX<br>
+	MOVL R4,R1  ; MAXRIC=TEMPRIC<br>
+	MOVB ARRAY(R2),R0; MAXNUM=A[I]<br>
+NOMAX:<br>
+	ADDL #1,R2  ; I++<br>
+	CMPL #DIM,R2 ; IF (R2!=DIM)<br>
+	JNZ FOR1    ; GOTO FOR1<br>
+<br>
+	MOVB R0, MAXNUM<br>
+	MOVL R1, MAXRIC<br>
+	HALT<br>
+<br>
+	END<br>
+</code>
+</div>
+
+	</body>
+	</html>
+
 	
+<% elsif params[:linguaggio] == 'SQL' %>
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script type="text/javascript">
+				function mostrasql(){
+					document.getElementById("soluzione5").style.visibility = "visible";
+					
+				}
+			</script>
+		</head>
+		
+		<body>
+			<h1>Esercizio finale di <%= params[:linguaggio]%> </h1>
+SCHEMA RELAZIONALE: <br>
+AUTO (Targa, Marca, Cilindrata, Potenza, CodF*, CodAss*)  <br>
+PROPRIETARI (CodF, Nome, Residenza) <br>
+ASSICURAZIONI (CodAss, Nome, Sede)<br> 
+SINISTRO (CodS, Località, Data) <br>
+AUTOCOINVOLTE (CodS*, Targa*, ImportoDelDanno)<br> 
+<br>
+Scrivere le interrogazioni SQL che restituiscono le seguenti informazioni: <br>
+1- Targa e Marca delle Auto di cilindrata superiore a 2000 cc o di potenza superiore a 120 CV <br>
+<br>
+2- Nome del proprietario e Targa delle Auto di cilindrata superiore a 2000 cc oppure di potenza  superiore a 120 CV <br>
+<br>
+3- Targa e Nome del proprietario delle Auto assicurate presso la “SARA” e coinvolte in sinistri il 20/01/02 <br>
+<br>
+4- Per ciascuna Assicurazione, il nome, la sede ed il numero di auto assicurate <br>
+<br>
+5- Per ciascuna auto “Fiat”, la targa dell’auto ed il numero di sinistri in cui è stata coinvolta  <br>
+ <br>
+6- La targa delle auto che non sono state coinvolte in sinistri dopo il 20/01/01 <br>
+
+<button onclick="mostrasql();" class="btn btn-primary">Soluzione</button>
+<div id="soluzione5" style="visibility: hidden;">
+	<h2 style="font-size: 2.5em; color: inherit">Soluzione</h2>
+<code>
+1-<br>
+Targa e Marca delle Auto di cilindrata superiore a 2000 cc o di potenza superiore a 120 CV<br>
+SELECT A.Targa, A.Marca <br>
+FROM  Auto A <br>
+WHERE  A.Cilindrata > 2000 or A.Potenza > 120  <br>
+<br>
+2-<br>
+Nome del proprietario e Targa  delle Auto di cilindrata superiore a 2000 cc oppure di potenza superiore  
+a 120 CV<br>
+SELECT P.Nome, A.Targa <br>
+FROM    Proprietari P, Auto A <br>
+WHERE  (A.Cilindrata > 2000 or A.Potenza > 120) and A.CodF=P.CodF <br>
+ <br>
+3-<br>
+Targa e Nome del proprietario delle Auto assicurate presso la “SARA” e coinvolte in sinistri il 20/01/02 <br>
+SELECT Targa, Proprietari.Nome <br>
+FROM  Auto Au, Proprietari P, Assicurazioni As, AutoCoinvolte AC, Sinistri S <br>
+WHERE As. Nome = ”Sara” and  S.Data = 20/01/02  and Au.CodF = P.CodF and Au.CodAss = As.CodAss and Au.Targa = Targa and ACo.CodS = S.CodS<br> 
+<br>
+4- Per ciascuna Assicurazione, il nome, la sede ed il numero di auto assicurate <br>
+SELECT As.Nome, As.Sede, count(*) as NumAuto <br>
+FROM  Assicurazioni As, Auto Au <br>
+WHERE  Au.CodAss = As.CodAss  <br>
+GROUP BY  As.CodAss, As.Nome, As.Sede <br>
+<br>
+5- Per ciascuna auto “Fiat”, la targa dell’auto ed il numero di sinistri in cui è stata coinvolta <br>
+SELECT A.Targa, count(*) as NumSin <br>
+FROM  Auto A, AutoCoinvolte AC <br>
+WHERE    A. Marca=”Fiat” and A.Targa=AC.Targa <br> 
+GROUP BY  A.Targa <br>
+<br>
+6- La targa delle auto che non sono state coinvolte in sinistri dopo il 20/01/01 <br>
+SELECT  A.Targa <br>
+FROM Auto A <br>
+WHERE   Not Exists  (  SELECT * <br>
+					   FROM AutoCoinvolte AC, Sinistri S <br>
+ 					   WHERE A.Targa =AC.Targa and AC.CodS=S.CodS and S.Data>20/01/01) )<br>
+</code>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+<% elsif params[:linguaggio] == 'HTML' %>
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script type="text/javascript">
+				function mostrahtml(){
+					document.getElementById("soluzione6").style.visibility = "visible";
+					
+				}
+			</script>
+		</head>
+		
+		<body>
+			<h1>Esercizio finale di <%= params[:linguaggio]%> </h1>
+Creare una pagina con inserita una tabella contenente un'immagine( si inserisca un immagine casuale)
+<button onclick="mostrahtml();" class="btn btn-primary">Soluzione</button>
+<div id="soluzione6" style="visibility: hidden;">
+	<h2 style="font-size: 2.5em; color: inherit">Soluzione</h2>
+< HTML ><br>
+< HEAD ><br>
+< TITLE >GLI OLANDESI< /TITLE ><br>
+< /HEAD ><br>
+< BODY background="bg_color.gif" text="#000080" ><br>
+< P align="center" ><br>
+< FONT size="5" >< B >GLI OLANDESI< /B >< /FONT ><br>
+<br>
+<br>
+< /P ><br>
+< DIV align="center" >< CENTER ><br>
+< TABLE border="10" cellpadding="0" cellspacing="0" bordercolordark="#000080" <br>bordercolorlight="#0000ff" ><br>
+< TR ><br>
+< TD width="100%" >< p align="left" >< img src="windmill.jpg" width="150" height="117" >< /P ><br>
+< /TD ><br>
+< /TR ><br>
+< /TABLE ><br>
+< /CENTER >< /DIV ><br>
+< P align="left" >< FONT size="4" > Gli olandesi hanno scelto il contenuto delle loro manifestazioni da loro stessi, dal presente della loro vita e non si può rimproverare loro di aver dato ancora una volta realtà a questo presente per mezzo dell'arte. ciò che è portato dinanzi agli occhi e allo spirito dei contemporanei deve appartenere anche a questi se deve pretendere tutto il loro interesse. per sapere in che consisteva l'interesse contemporaneo degli olandesi, noi dobbiamo interrogare la loro storia.<br>
+< /P ><br>
+< P align="center" >HEGEL< /FONT >< /P ><br>
+< /BODY ><br>
+< /HTML ><br>
+< /code ><br>
+
+</div>
+</body>
+</html>
+
+
+
+	
+<% elsif params[:linguaggio] == 'CSS' %>
+	
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script type="text/javascript">
+				function mostracss(){
+					document.getElementById("soluzione7").style.visibility = "visible";
+					
+				}
+			</script>
+		</head>
+		
+		<body>
+			<h1>Esercizio finale di <%= params[:linguaggio]%> </h1>
+Vogliamo realizzare una pagina con un layout come il seguente:<br>
+in alto una barra di intestazione, subito sotto una barra di navigazione.<br>
+lo spazio sottostante sarà divisa in una sezione menù a sinistra e una di contenuto a destra;<br>
+in basso si avrà una sezione footer;<br>
+<br>
+  < head >  <br>
+    < title > Un layout coi CSS< /title > <br>
+  < /head >  <br>
+  < body >  <br>
+    < div id="contenitore" >  <br>
+      < div id="intestazione" > < /div >  <br> 
+      < div id="contenuto" > < /div > <br> 
+      < div id="barranavigazione" > < /div >  <br>
+      < div id="menu" > < /div >  <br>
+      < div id="footer" > < /div > <br> 
+    < /div >  <br>
+  < /body > <br> 
+< /html ><br>  
+
+<button onclick="mostracss();" class="btn btn-primary">Soluzione</button>
+<div id="soluzione7" style="visibility: hidden;">
+	<h2 style="font-size: 2.5em; color: inherit">Soluzione</h2>
+
+
+Scelte da fare: 
+(1) Layout a larghezza fissa o liquido? 
+(2) Layout centrato o allineato a sinistra/destra? 
+(3) Quali box saranno disposti secondo il flusso normale? Quali saranno 
+posizionati in modo assoluto, e quali in modo relativo? Ci sono box flottanti? 
+
+POSSIBILE Soluzione: 
+
+a.contenitore: larghezza fissa, centrato, posiz. relativo <br>
+b.intestazione: larghezza variabile, flusso normale <br>
+c.contenuto: larghezza fissa, flusso normale <br>
+d.barranavigazione: larghezza fissa, posiz. assoluto <br>
+e.menu: larghezza fissa, posiz. assoluto <br>
+f.footer: larghezza variabile, flusso normale <br>
+3.<br>
+Definiamo lo stile per il body e il contenitore (ad esempio direttamente nel file HTML): <br>
+
+< html >  
+body  { <br>
+        margin: 0px; padding: 0px; <br>
+        font-size: 85%; <br>
+        font-family: Verdana, sans-serif; <br>
+        text-align: center; <br>
+        color: black; <br>
+        background-color: white; <br>
+      } <br>
+      #contenitore { <br>
+        padding: 0px; <br>
+        margin: 1em auto<br>; 
+        position: relative; <br>
+        width: 630px; <br>
+        height: 150px; /* per vederlo... */ <br>
+        text-align: left; <br>
+        background-color: lightgrey;<br> 
+        border: 1px solid black; <br>
+      }<br>
+4.<br>
+Definiamo l’intestazione: <br>
+#intestazione { <br>
+  height: 80px;  <br>
+  background-color: red; <br>
+} <br>
+5.<br>
+Definiamo il contenuto, supponendo che la barra di
+ navigazione superiore sia alta 25 pixel (per 
+vederlo, dobbiamo inserire  qualcosa nel div con id=“contenuto”...): <br>
+#contenuto { <br>
+  margin-top: 25px; <br>
+  margin-left: 129px; <br>
+  background-color: yellow; <br>
+} <br>
+6.<br>
+Inseriamo la barra di navigazione: <br>
+    #barranavigazione { <br>
+      position: absolute; <br>
+      top: 80px; left: 0px; <br>
+      height: 25px; <br>
+      width: 100%; <br>
+      background-color: lightgreen; <br>
+    } <br>
+7.<br>
+Inseriamo il menù di navigazione a sinistra: <br>
+    #menu { <br>
+      position: absolute; <br>
+      top: 115px; left: 0px;<br> 
+      width: 109px; <br>
+      background-color: cyan; <br>
+    } <br>
+8.<br>
+Inseriamo il footer:<br> 
+    #footer { <br>
+      height: 20px; <br> 
+      background-color: white;<br> 
+    } <br>
+</code>
+</div>
+</body>
+</html>
+
+
+<% elsif params[:linguaggio] == 'Javascript' %>
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script type="text/javascript">
+				function mostrajavascript(){
+					document.getElementById("soluzione8").style.visibility = "visible";
+					
+				}
+			</script>
+		</head>
+		
+		<body>
+			<h1>Esercizio finale di <%= params[:linguaggio]%> </h1>
+Dato un numero calcolarne il fattoriale<br>
+	<button onclick="mostrajavascript();" class="btn btn-primary">Soluzione</button>
+<div id="soluzione8" style="visibility: hidden;">
+	<h2 style="font-size: 2.5em; color: inherit">Soluzione</h2>
+< HTML ><br>
+< HEAD ><br>
+< TITLE >ESEMPIO: fattoriale< /TITLE ><br>
+< /HEAD ><br>
+< BODY ><br>
+< SCRIPT ><br>
+< !-- Inizio script JavaScript<br>
+  var fattoriale;<br>
+  var N;<br>
+  N = window.prompt("Inserisci il numero");<br>
+  N=N*1;<br>
+  if (N  >= 0)<br>
+  {<br>
+  fattoriale = 1;<br>
+  while(N >0)<br>
+  {<br>
+    fattoriale = fattoriale * N;<br>
+    N=N-1;<br>
+  }<br>
+  window.alert("Risultato = " + fattoriale);<br>
+  }<br>
+    else<br>
+    {<br>
+    window.alert("Numero negativo!");<br>
+    }<br>
+// Fine script -- ><br>
+< /SCRIPT ><br>
+< /BODY ><br>
+< /HTML ><br>
+</div>
+</body>
+</html>
+
+
 <%end%>
