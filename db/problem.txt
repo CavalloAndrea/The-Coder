@@ -140,7 +140,8 @@ linguaggio£Python|
 esercizio£
 Scrivi una funzione generatrice di password. La funzione deve generare una stringa alfanumerica di 8 caratteri qualora l'utente voglia una password semplice, o di 20 caratteri ascii qualora desideri una password più complicata.<br>
 |
-soluzione£
+soluzione£<br>
+<br>
 <code>
 import random<br>
 <br>
@@ -167,6 +168,7 @@ def psw_generator():<br>
 titolo£Esercizio Finale Assembly|
 linguaggio£Assembly|
 esercizio£
+<br>
 Dato un vettore di DIM dati da un byte, rappresentati come unsigned trovare:<br>
 1) l’elemento con il massimo numero di ricorrenze (moda)<br>
 2) il corrispondente numero di ricorrenze<br>
@@ -186,6 +188,8 @@ FOR INT I=0 TO DIM-1 {<br>
 }<br>
 |
 soluzione£
+<br>
+<br>
 <code>
 ORG 400H<br>
 ARRAY EQU 1000H<br>
@@ -231,7 +235,7 @@ NOMAX:<br>
 |
 titolo£Esercizio Finale SQL|
 linguaggio£SQL|
-esercizio£
+esercizio£<br>
 SCHEMA RELAZIONALE: <br>
 AUTO (Targa, Marca, Cilindrata, Potenza, CodF*, CodAss*)  <br>
 PROPRIETARI (CodF, Nome, Residenza) <br>
@@ -253,7 +257,7 @@ Scrivere le interrogazioni SQL che restituiscono le seguenti informazioni: <br>
 6- La targa delle auto che non sono state coinvolte in sinistri dopo il 20/01/01 <br>
 |
 soluzione£
-<code>
+<code><br><br>
 1-<br>
 Targa e Marca delle Auto di cilindrata superiore a 2000 cc o di potenza superiore a 120 CV<br>
 SELECT A.Targa, A.Marca <br>
@@ -300,29 +304,29 @@ Creare una pagina con inserita una tabella contenente un'immagine( si inserisca 
 |
 soluzione£
 <code>
-<HTML><br>
-<HEAD><br>
-<TITLE>GLI OLANDESI</TITLE><br>
-</HEAD><br>
-<BODY background="bg_color.gif" text="#000080"><br>
-<P align="center"><BR><br>
-<FONT size="5"><B>GLI OLANDESI</B></FONT><BR><br>
-<BR><br>
-<BR><br>
-</P><br>
-<DIV align="center"><CENTER><br>
-<TABLE border="10" cellpadding="0" cellspacing="0" bordercolordark="#000080" bordercolorlight="#0000ff"><br>
-<TR><br>
-<TD width="100%"><p align="left"><img src="windmill.jpg" width="150" height="117"></P><br>
-</TD><br>
-</TR><br>
-</TABLE><br>
-</CENTER></DIV><br>
-<P align="left"><FONT size="4"> Gli olandesi hanno scelto il contenuto delle loro manifestazioni da loro stessi, dal presente della loro vita e non si può rimproverare loro di aver dato ancora una volta realtà a questo presente per mezzo dell'arte. ciò che è portato dinanzi agli occhi e allo spirito dei contemporanei deve appartenere anche a questi se deve pretendere tutto il loro interesse. per sapere in che consisteva l'interesse contemporaneo degli olandesi, noi dobbiamo interrogare la loro storia.<BR><br>
-</P><br>
-<P align="center"><BR>HEGEL</FONT></P><br>
-</BODY><br>
-</HTML><br>
+ < HTML > <br>
+ < HEAD > <br>
+ < TITLE >GLI OLANDESI < /TITLE > <br>
+ < /HEAD > <br>
+ < BODY background="bg_color.gif" text="#000080" ><br> 
+ < P align="center" >  <br>
+ < FONT size="5" > < B >GLI OLANDESI < /B > < /FONT >  <br>
+  <br>
+  <br>
+ < /P > <br>
+ < DIV align="center" > < CENTER > <br>
+ < TABLE border="10" cellpadding="0" cellspacing="0" bordercolordark="#000080" <br>bordercolorlight="#0000ff" > <br>
+ < TR ><br> 
+ < TD width="100%" > < p align="left" > < img src="windmill.jpg" width="150" height="117" > < /P > <br>
+ < /TD > <br>
+ < /TR > <br>
+ < /TABLE > <br>
+ < /CENTER > < /DIV > <br>
+ < P align="left" > < FONT size="4" ><br> Gli olandesi hanno scelto il contenuto delle loro manifestazioni da loro stessi, dal presente della loro vita e non si può rimproverare loro di aver dato ancora una volta realtà a questo presente per mezzo dell'arte. ciò che è portato dinanzi agli occhi e allo spirito dei contemporanei deve appartenere anche a questi se deve pretendere tutto il loro interesse. per sapere in che consisteva l'interesse contemporaneo degli olandesi, noi dobbiamo interrogare la loro storia.< BR ><br>
+< /P ><br>
+< P align="center" >< BR > HEGEL < /FONT >< /P ><br>
+< /BODY ><br>
+< /HTML ><br>
 </code>
 |
 titolo£Esercizio Finale CSS|
@@ -333,20 +337,20 @@ in alto una barra di intestazione, subito sotto una barra di navigazione.<br>
 lo spazio sottostante sarà divisa in una sezione menù a sinistra e una di contenuto a destra;<br>
 in basso si avrà una sezione footer;<br>
 <br>
-<html> <br>
-  <head><br> 
-    <title>Un layout coi CSS</title> <br>
-  </head> <br>
-  <body> <br>
-    <div id="contenitore"> <br>
-      <div id="intestazione"></div>  <br>
-      <div id="contenuto"></div> <br>
-      <div id="barranavigazione"></div> <br>
-      <div id="menu"></div> <br>
-      <div id="footer"></div> <br>
-    </div> <br>
-  </body> <br>
-</html> <br>
+< html > <br>
+  < head > <br>
+    < title >Un layout coi CSS< /title > <br>
+  < /head > <br>
+  < body > <br>
+    < div id="contenitore" > <br>
+      < div id="intestazione" >< /div > <br> 
+      < div id="contenuto" >< /div > <br>
+      < div id="barranavigazione" >< /div > <br>
+      < div id="menu" >< /div > <br>
+      < div id="footer" >< /div > <br>
+    < /div > <br>
+  < /body > <br>
+< /html > <br>
 
 |
 soluzione£
@@ -432,13 +436,13 @@ Dato un numero calcolarne il fattoriale
 |
 soluzione£
 <code>
-<HTML><br>
-<HEAD><br>
-<TITLE>ESEMPIO: fattoriale</TITLE><br>
-</HEAD><br>
-<BODY><br>
-<SCRIPT><br>
-<!-- Inizio script JavaScript<br>
+< HTML ><br>
+< HEAD ><br>
+< TITLE >ESEMPIO: fattoriale< /TITLE ><br>
+< /HEAD ><br>
+< BODY ><br>
+< SCRIPT ><br>
+
 	var fattoriale;<br>
 	var N;<br>
 	N = window.prompt("Inserisci il numero");<br>
@@ -457,8 +461,8 @@ soluzione£
 		{<br>
 		window.alert("Numero negativo!");<br>
 		}<br>
-// Fine script --><br>
-</SCRIPT><br>
-</BODY><br>
-</HTML><br>
+// Fine script <br>
+< /SCRIPT ><br>
+< /BODY ><br>
+< /HTML ><br>
 </code><br>

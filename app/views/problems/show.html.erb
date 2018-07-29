@@ -3,12 +3,12 @@
 
 <div class="row">
     <div class="col-md-8 col-md-offset-2">
-        <h4>Titolo: <%= @problem.titolo %></h4>
+        
 
         <p><b>Linguaggio:</b> <%= @problem.linguaggio %></p>
 
-        <p><b>Esercizio:</b> <%= @problem.esercizio %></p>
+        <p><b>Esercizio:</b> <%= sanitize @problem.esercizio %></p>
 
-        <p><b>Soluzione:</b> <%= @problem.soluzione %></p>
+        <p><b>Soluzione:</b> <%=  sanitize @problem.soluzione %></p>
     </div>
 </div>
