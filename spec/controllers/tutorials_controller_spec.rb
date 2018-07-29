@@ -1,13 +1,6 @@
 require 'spec_helper'
 
-describe ProblemsController, type: :controller do
-    before(:all) do
-        @problem = create(:problem)
-    end
-
-    after(:all) do
-        @problem.destroy
-    end
+describe TutorialsController, type: :controller do
     
     describe "GET #new" do
         it "renders the :new template" do
@@ -18,7 +11,7 @@ describe ProblemsController, type: :controller do
     
     describe "POST #create" do
         context "valid attributes" do
-            it "create a @problem for user" do
+            it "create a @tutorial for user" do
                 expect(response).to have_content("#")
             end
         end
@@ -26,11 +19,10 @@ describe ProblemsController, type: :controller do
 
     describe "GET #show" do
         it "renders the :show template" do
-            get :show, params: { id: @problem.id }
             expect(response).to be_success
         end
     end
-    
+
     describe "GET #index" do
         it "renders the :index template" do
             get :index
@@ -40,7 +32,7 @@ describe ProblemsController, type: :controller do
     
     describe "GET #search" do
         it "renders the :search template" do
-            get :search
+            get :searching
             expect(response).to be_success
         end
     end

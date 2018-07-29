@@ -1,3 +1,7 @@
 class Problem < ActiveRecord::Base
-  belongs_to :user
+	validates :titolo, presence: true
+    validates :esercizio, presence: true
+    validates :soluzione, presence: true
+    belongs_to :user
 end
+

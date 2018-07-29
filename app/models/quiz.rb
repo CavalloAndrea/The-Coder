@@ -1,3 +1,31 @@
 class Quiz < ActiveRecord::Base
+	validates :tutorial_id, presence: true
+    validates :next, presence: true
+    validates :titolo, presence: true
+    validates :d1, presence: true
+    validates :d2, presence: true
+    validates :d3, presence: true
+    validates :d4, presence: true
+    validates :d5, presence: true
+    validates :g1, presence: true
+    validates :g2, presence: true
+    validates :g3, presence: true
+    validates :g4, presence: true
+    validates :g5, presence: true
+    validates :r1_1, presence: true
+    validates :r1_2, presence: true
+    validates :r1_3, presence: true
+    validates :r2_1, presence: true
+    validates :r2_2, presence: true
+    validates :r2_3, presence: true
+    validates :r3_1, presence: true
+    validates :r3_2, presence: true
+    validates :r3_3, presence: true
+    validates :r4_1, presence: true
+    validates :r4_2, presence: true
+    validates :r4_3, presence: true
+    validates :r5_1, presence: true
+    validates :r5_2, presence: true
+    validates :r5_3, presence: true
   belongs_to :tutorial
 end
