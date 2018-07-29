@@ -14,7 +14,7 @@ r2_2£Sezione|
 r2_3£Elemento|
 g2£Blocco|
 
-d3£Quale elemento determina la fine dell'esecuzione del programma?|
+d3£Quale elemento determina la fine dell esecuzione del programma?|
 r3_1£#include<stdio.h>|
 r3_2£printf(  );|
 r3_3£return 0;|
@@ -44,7 +44,7 @@ r1_2£Tipo|
 r1_3£Forma|
 g1£Forma|
 
-d2£Quale di questi rappresenta il simbolo per l'istruzione di assegnamento delle variabili?|
+d2£Quale di questi rappresenta il simbolo per l istruzione di assegnamento delle variabili?|
 r2_1£->|
 r2_2£=|
 r2_3£//|
@@ -56,7 +56,7 @@ r3_2£Solo nel main()|
 r3_3£In ogni momento|
 g3£Mai|
 
-d4£A cosa serve l'istruzione #define?|
+d4£A cosa serve l istruzione #define?|
 r4_1£A dichiarare variabili molto grandi|
 r4_2£A stampare elementi a video|
 r4_3£Ad assegnare ad una stringa un determinato valore|
@@ -88,11 +88,11 @@ g2£float,char,int,double|
 
 d3£Su cosa influiscono i quantificatori long e short?|
 r3_1£Lunghezza dei caratteri della variabile|
-r3_2£Spazio in memoria per l'allocazione della variabile|
+r3_2£Spazio in memoria per l allocazione della variabile|
 r3_3£Dominio dei dati della variabile|
-g3£Spazio in memoria per l'allocazione della variabile|
+g3£Spazio in memoria per l allocazione della variabile|
 
-d4£Cosa restituisce l'operatore & applicato ai puntatori?|
+d4£Cosa restituisce l operatore & applicato ai puntatori?|
 r4_1£Contenuto della variabile puntata|
 r4_2£Tipo della variabile puntata|
 r4_3£Indirizzo della variabile puntata|
@@ -112,17 +112,17 @@ tutorial_id£4|
 
 d1£ Quale tra questi NON è un operatore aritmetico?|
 r1_1£+|
-r1_2£>|
+r1_2£>>|
 r1_3£/|
-g1£>|
+g1£&>>|
 
-d2£Qual è la forma corretta dell'operatore relazionale per la disuguaglianza?|
+d2£Qual è la forma corretta dell operatore relazionale per la disuguaglianza?|
 r2_1£= !|
 r2_2£! = =|
 r2_3£! =|
 g2£! =|
 
-d3£Cosa restituisce il programma se l'operazione logica A==B è "vera"? |
+d3£Cosa restituisce il programma se l operazione logica A==B è "vera"? |
 r3_1£true|
 r3_2£null|
 r3_3£1|
@@ -147,10 +147,10 @@ titolo£ Quiz Espressioni|
 next£6|
 tutorial_id£5|
 
-d1£ Cosa bisogna fare prima di usare una variabile in un'espressione?|
+d1£ Cosa bisogna fare prima di usare una variabile in un espressione?|
 r1_1£Assegnarle un valore|
 r1_2£Stamparla|
-r1_3£Confrontarla con un'altra variabile|
+r1_3£Confrontarla con un altra variabile|
 g1£Assegnarle un valore|
 
 d2£Quale tra le seguenti operazioni di assegnamento NON è corretta?|
@@ -165,7 +165,7 @@ r3_2£Espressione alfanumerica|
 r3_3£Espressione relazionale|
 g3£Espressione relazionale|
 
-d4£Quali operatori logici è possibile associare in un'espressione?|
+d4£Quali operatori logici è possibile associare in un espressione?|
 r4_1£! e =|
 r4_2£! e &|
 r4_3£& e =|
@@ -196,13 +196,13 @@ r2_2£stdi.o|
 r2_3£stdio.h|
 g2£stdio.h|
 
-d3£Cosa indica il valore "%f" all'interno di una printf()? |
+d3£Cosa indica il valore "%f" all interno di una printf()? |
 r3_1£Un dato int|
 r3_2£Un dato char|
 r3_3£Un dato float|
 g3£Un dato float|
 
-d4£Quali sono le istruzioni predefinite in C per l'input/output?|
+d4£Quali sono le istruzioni predefinite in C per l input/output?|
 r4_1£in e out|
 r4_2£IN e OUT|
 r4_3£Non esistono|
@@ -270,7 +270,7 @@ g2£int matrice[10][5];|
 
 d3£Cosa restituisce la funzione sizeof(nome_variabile)? |
 r3_1£Il valore della variabile|
-r3_2£L'indirizzo della variabile|
+r3_2£L indirizzo della variabile|
 r3_3£La dimensione in bytes della variabile|
 g3£La dimensione in bytes della variabile|
 
@@ -305,19 +305,19 @@ r2_2£5|
 r2_3£solo 1|
 g2£infinite|
 
-d3£E' possibile passare una variabile di tipo diverso da quello specificato nella funzione? |
+d3£E  possibile passare una variabile di tipo diverso da quello specificato nella funzione? |
 r3_1£Si|
 r3_2£No|
 r3_3£Solo se di tipo int|
 g3£No|
 
-d4£E' possibile passare come argomento di una funzione un'altra funzione?|
+d4£E  possibile passare come argomento di una funzione un altra funzione?|
 r4_1£Si, purchè coincidano i tipi|
 r4_2£No|
 r4_3£Si, purchè coincidano gli indirizzi di ritorno|
 g4£Si, purchè coincidano i tipi|
 
-d5£E' possibile passare come argomento un numero diverso di elementi da quello definito nella dichiarazione della funzione?|
+d5£E  possibile passare come argomento un numero diverso di elementi da quello definito nella dichiarazione della funzione?|
 r5_1£Mai|
 r5_2£Solo se è una funzione ricorsiva|
 r5_3£Solo se è una funzione void|
@@ -348,13 +348,13 @@ r3_2£Non succede nulla|
 r3_3£Darà errore in fase di compilazione|
 g3£Si andrà in Stack Overflow|
 
-d4£Che cos'è la ricorsione di coda?|
+d4£Che cos è la ricorsione di coda?|
 r4_1£Una ricorsione che non termina|
 r4_2£Una funzione la cui ultima chiamata è la chiamata ricorsiva|
 r4_3£Una chiamata ricorsiva la valore null|
-g4£Una funzione in cui l'ultima chiamata è la chiamata ricorsiva|
+g4£Una funzione la cui ultima chiamata è la chiamata ricorsiva|
 
-d5£E' possibile definire una funzione ricorsiva senza mettere nemmeno una condizione di if nel corpo?|
+d5£E  possibile definire una funzione ricorsiva senza mettere nemmeno una condizione di if nel corpo?|
 r5_1£Si|
 r5_2£Solo se si parte da un valore negativo|
 r5_3£No|
@@ -393,7 +393,7 @@ r4_2£serve per definire una classe valida solo nel blocco in cui è contenuta|
 r4_3£ha lo stesso valore della class |
 g4£serve per definire un valore costante|
 
-d5£Cosa comporta l'utilizzo di codice bytecode? |
+d5£Cosa comporta l utilizzo di codice bytecode? |
 r5_1£Una maggiore leggibilità del codice|
 r5_2£il codice Java sarà meno efficiente di un codice nativo|
 r5_3£che il codice deve essere necessariamente convertito manualmente in binario prima della compilazione|
@@ -408,41 +408,33 @@ tutorial_id£12|
 d1£ quali di questi non è un costrutto per il controllo dei flussi?|
 r1_1£while|
 r1_2£if...else|
-r1_3£swipe|
-g1£swipe|
+r1_3£ swipe|
+g1£ swipe|
 
 d2£Quale delle seguenti affermazioni sul costrutto if..else è vera?<code><br>
-if(espressione booleana) <br>
-	istruzione1 <br>
-else <br>
-	istruzione2 <br>
-</code><br>|
-r2_1£l'istruzione 2 viene eseguita sempre|
-r2_2£se l'espressione booleana è true l'else non viene proprio letto|
-r2_3£dopo aver letto l'istruzione 1 viene eseguita l'istruzione 2 solo se l'espressione booleana è true|
-g2£se l'espressione booleana è true l'else non viene proprio letto|
+if(espressione booleana) <br>	istruzione1 <br>else <br>	istruzione2 <br></code>|
+r2_1£l istruzione 2 viene eseguita sempre|
+r2_2£se l espressione booleana è true l else non viene proprio letto|
+r2_3£dopo aver letto l istruzione 1 viene eseguita l istruzione 2 solo se l espressione booleana è true|
+g2£se l espressione booleana è true l else non viene proprio letto|
 
-d3£Qual'è a differenza tra il ciclo <code> while </code> e il <code> do... while</code>|
+d3£Qual è a differenza tra il ciclo <code> while </code> e il <code> do... while</code>|
 r3_1£il while a differenza del do... while prende un espressione booleana|
 r3_2£solo il while può essere interrotto con un break;|
-r3_3£il do... while esegue almeno una volta l'istruzione che segue il do|
-g3£il do... while esegue almeno una volta l'istruzione che segue il do|
+r3_3£il do... while esegue almeno una volta l istruzione che segue il do|
+g3£il do... while esegue almeno una volta l istruzione che segue il do|
 
 d4£Quale tra le seguenti è la forma corretta del ciclo for?|
-r4_1£<code> <br>for(espressione di inizializzazione; espressione booleana; espressione di incremento)<br>
-	 { istruzione } <br></code><br>|
-r4_2£<code> <br>for(espressione booleana;espressione di inizializzazione; espressione di incremento)<br>
-	 { istruzione } <br></code><br>|
-r4_3£<code> <br>for(espressione di inizializzazione;espressione booleana; istruzione)<br> { incremento } <br>
-</code><br>|
-g4£<code> <br>for(espressione di inizializzazione; espressione booleana; espressione di incremento)<br>
-	 { istruzione } <br></code><br>|
+r4_1£for(espressione di inizializzazione; espressione booleana; espressione di incremento){ istruzione} |
+r4_2£for(espressione booleana;espressione di inizializzazione; espressione di incremento){ istruzione}|
+r4_3£for(espressione di inizializzazione;espressione booleana; istruzione){ incremento }|
+g4£for(espressione di inizializzazione; espressione booleana; espressione di incremento){ istruzione} |
 
-d5£Cosa comporta l'espressione <code> continue</code> ?|
+d5£Cosa comporta l espressione <code> continue</code> ?|
 r5_1£espressione continue provoca il salto alla fine del ciclo dove è inserita|
-r5_2£Provoca l'esecuzioni di tutte le istruzini che la seguono fino al break|
-r5_3£provoca il salto all'inizio del ciclo dove è inserita|
-g5£91espressione continue provoca il salto alla fine del ciclo dove è inserita|
+r5_2£Provoca l esecuzioni di tutte le istruzini che la seguono fino al break|
+r5_3£provoca il salto all inizio del ciclo dove è inserita|
+g5£espressione continue provoca il salto alla fine del ciclo dove è inserita|
 
 
 
@@ -469,7 +461,7 @@ r3_3£è necessario usare un ciclo e definirlo istanza per istanza|
 g3£è necessario e sufficiente creare un metodo con lo stesso nome della classe|
 
 d4£Quali tra le seguenti affermazioni è falsa?|
-r4_1£In Java ogni oggetto definito deve obbligatoriamente avere un costruttore|
+r4_1£ In Java ogni oggetto definito deve obbligatoriamente avere un costruttore|
 r4_2£Nel caso in cui si definisca un costruttore, allora il costruttore di default non verrà generato|
 r4_3£In java le variabili locali possono non essere definite in quanto impostate di default|
 g4£In java le variabili locali possono non essere definite in quanto impostate di default|
@@ -486,11 +478,11 @@ titolo£ Eccezioni|
 next£15|
 tutorial_id£14|
 
-d1£Cos'è un eccezione?|
-r1_1£un'anomalia di funzionamento del programma che non può essere prevista in fase di scrittura del codice|
-r1_2£un'anomalia di funzionamento del programma che può essere prevista in fase di scrittura del codice|
+d1£Cos è un eccezione?|
+r1_1£un anomalia di funzionamento del programma che non può essere prevista in fase di scrittura del codice|
+r1_2£un anomalia di funzionamento del programma che può essere prevista in fase di scrittura del codice|
 r1_3£è un bug del programma che si riscontra durante la compilazione|
-g1£un'anomalia di funzionamento del programma che non può essere prevista in fase di scrittura del codice|
+g1£un anomalia di funzionamento del programma che non può essere prevista in fase di scrittura del codice|
 
 d2£Quale di queste espressioni causa un eccezione?|
 r2_1£ una semplice divisione il cui denominatore è nullo|
@@ -513,7 +505,7 @@ catch(Exception2 e) <br>
 	{ ... // gestione delleventuale problema nato nel blocco try ... }<br>
  finally <br>
 	{ ... // codice da eseguire sempre } <br>
-</code><br>|
+</code>|
 r4_1£nel caso si verifichi una eccezione il controllo viene passato al costrutto catch dove si possono implementare soluzioni di gestione di tale anomalia|
 r4_2£nel caso si verifichi una eccezione il programma "salta" tali istruzioni in modo da non creare errori a tempo di compilazione|
 r4_3£la finally viene eseguta solo se non vi sono errori|
@@ -522,7 +514,7 @@ g4£nel caso si verifichi una eccezione il controllo viene passato al costrutto 
 d5£Qual è la differenza tra ce eccezioni checked e unchecked?|
 r5_1£le prime devono essere necessariamente controllate mentre le seconde no|
 r5_2£devono essere controllate entrambe ma le unchecked causano semplici Warnings e non errori|
-r5_3£le unchecked non rallentano l'esecuzione del programma|
+r5_3£le unchecked non rallentano l esecuzione del programma|
 g5£le prime devono essere necessariamente controllate mentre le seconde no|
 
 
@@ -532,15 +524,15 @@ titolo£ Quiz Ereditarietà|
 next£16|
 tutorial_id£15|
 
-d1£Qual'è la soluzione di Java all'impossibilità di implementare l'ereditarietà multipla? |
-r1_1£Java può implementare l'ereditarietà multipla ma è un processo lungo e difficile|
+d1£Qual è la soluzione di Java all impossibilità di implementare l ereditarietà multipla? |
+r1_1£Java può implementare l ereditarietà multipla ma è un processo lungo e difficile|
 r1_2£Una classe può implementare più interfacce e in questo modo è possibile definire per essa diversi comportamenti|
 r1_3£Una classe può implementare più sottoclassi e in questo modo è possibile definire per essa diversi comportamenti|
 g1£Una classe può implementare più interfacce e in questo modo è possibile definire per essa diversi comportamenti|
 
 d2£Quale tra le seguenti informazioni su <code>Persistent</code> è falsa?|
-r2_1£l'interfaccia Persistent nasconde completamente i dettagli di salvataggio che potrebbe avvenire su file oppure su DB attraverso JDBC.|
-r2_2£è utile ad aggirare il problema dell'ereditarietà multipla|
+r2_1£l interfaccia Persistent nasconde completamente i dettagli di salvataggio che potrebbe avvenire su file oppure su DB attraverso JDBC.|
+r2_2£è utile ad aggirare il problema dell ereditarietà multipla|
 r2_3£consente di impostare una variabile immutabile|
 g2£consente di impostare una variabile immutabile|
 
@@ -550,17 +542,17 @@ r3_2£01|
 r3_3£11|
 g3£00|
 
-d4£Qual'è la caratteristica fondamentale della composizione|
+d4£Qual è la caratteristica fondamentale della composizione|
 r4_1£la possibilità di creare diverse interfacce che comunichino tra loro|
 r4_2£permette di riutilizzare funzionalità esistenti principalmente attraverso ereditarietà fra classi e composizione di oggetti|
-r4_3£sfrutta l'ereditarietà per utilizzare funzioni gi esistenti, che vanno chiamate attraverso il <code>Validator</code>|
+r4_3£sfrutta l ereditarietà per utilizzare funzioni gi esistenti, che vanno chiamate attraverso il Validator|
 g4£permette di riutilizzare funzionalità esistenti principalmente attraverso ereditarietà fra classi e composizione di oggetti|
 
-d5£Le logiche di validazione saranno incorporate all'interno di un'opportuna classe che implementa un'interfaccia Validator, qual'è la sua struttura?|
-r5_1£<br><code><br>public interface Validator { <br>public void validate(Object o);<br> } <br></code><br>|
-r5_2£<br><code><br>public interface Validator { <br>public void validator(Object o);<br> } <br></code><br>|
-r5_3£<br><code><br>public Class Validator { <br>public void validate(Object o);<br> } <br></code><br>|
-g5£<br><code><br>public interface Validator { <br>public void validate(Object o);<br> } <br></code><br>|
+d5£Le logiche di validazione saranno incorporate all interno di un opportuna classe che implementa un interfaccia Validator, qual è la sua struttura?|
+r5_1£public interface Validator { public void validate(Object o); }|
+r5_2£public interface Validator { public void validator(Object o); } |
+r5_3£public Class Validator {public void validate(Object o);}|
+g5£public interface Validator { public void validate(Object o); }|
 
 
 
@@ -569,17 +561,17 @@ titolo£ Quiz Processi e Multitasking|
 next£17|
 tutorial_id£16|
 
-d1£Qual'è il principale utilizzo del multitasking ?|
+d1£Qual è il principale utilizzo del multitasking ?|
 r1_1£organizzare il codice di una stessa applicazione in modo che possano essere mandate in esecuzione contemporanea più Classi differenti fra loro|
 r1_2£la possibilità di lanciare una funzione che faccia più istruzioni contemporaneamente|
 r1_3£organizzare il codice di una stessa applicazione in modo che possano essere mandate in esecuzione contemporanea più parti di codice differenti fra loro|
 g1£organizzare il codice di una stessa applicazione in modo che possano essere mandate in esecuzione contemporanea più parti di codice differenti fra loro|
 
 d2£Quando è possibile un parallelismo reale?|
-r2_1£Quando si hanno più processori all'opera|
+r2_1£Quando si hanno più processori all opera|
 r2_2£Quando di ha attiva la Virtual Box|
 r2_3£quando si lavora su un processore x64|
-g2£Quando si hanno più processori all'opera|
+g2£Quando si hanno più processori all opera|
 
 d3£Nei sistemi preemptive vi è poi un processo particolare che gestisce tutti gli altri processi:...|
 r3_1£socket|
@@ -593,7 +585,7 @@ r4_2£eseguibile|
 r4_3£bloccato|
 g4£bloccato|
 
-d5£qual'è la funzione del metodo join?|
+d5£qual è la funzione del metodo join?|
 r5_1£possibile eseguire una determinata operazione nel momento in cui un thread termina la sua esecuzione|
 r5_2£evita che un solo thread monopolizzi il processore per periodi troppo lunghi|
 r5_3£consente di eseguire in parallelo le diverse funzioni di un thread|
@@ -617,7 +609,7 @@ r2_2£4|
 r2_3£1|
 g2£2|
 
-d3£ Qual'è la struttura implementata dagli stream?|
+d3£ Qual è la struttura implementata dagli stream?|
 r3_1£LIFO|
 r3_2£FIFO|
 r3_3£FILO|
@@ -631,10 +623,10 @@ g4£java.io|
 
 d5£Quale delle seguenti affermazioni sul codice è vera?<br><code>public abstract void write(int b) throws IOException </code><br>
 |
-r5_1£nonostante l'argomento sia di tipo intero, verrà scritto solo il byte meno significativo|
-r5_2£essendo abstract non verrà scritto nulla attraverso lo stream a meno che non vi sia un'eccezione|
-r5_3£nonostante l'argomento sia di tipo intero, verrà scritto solo il byte più significativo|
-g5£nonostante l'argomento sia di tipo intero, verrà scritto solo il byte meno significativo|
+r5_1£nonostante l argomento sia di tipo intero, verrà scritto solo il byte meno significativo|
+r5_2£essendo abstract non verrà scritto nulla attraverso lo stream a meno che non vi sia un eccezione|
+r5_3£nonostante l argomento sia di tipo intero, verrà scritto solo il byte più significativo|
+g5£nonostante l argomento sia di tipo intero, verrà scritto solo il byte meno significativo|
 
 
 
@@ -642,32 +634,32 @@ titolo£ Quiz File|
 next£19|
 tutorial_id£18|
 
-d1£ Cosa consente in java l'accesso ai file? |
+d1£ Cosa consente in java l accesso ai file? |
 r1_1£i pakages|
 r1_2£le librerie|
 r1_3£gli stream|
 g1£gli stream|
 
 d2£cosa restituisce il seguente codice? <br><code> public String getName() <br>public String getPath()</code><br>|
-r2_1£il nome e il percorso dell'oggetto File|
+r2_1£il nome e il percorso dell oggetto File|
 r2_2£non resituisce nulla|
 r2_3£ritorna il puntatore al nome e alla posizione|
-g2£il nome e il percorso dell'oggetto File|
+g2£il nome e il percorso dell oggetto File|
 
 d3£cosa restituisce il seguente codice?<br><code>public boolean exists()<br>public boolean canWrite() <br>public boolean canRead() </code><br>
 <br>|
 r3_1£Questi metodi permettono di capire se un file con il nome specificato esiste, se è scrivibile e se è leggibile.|
-r3_2£Ritora true se e solo se un file con il nome specificato esiste, se è scrivibile e se è leggibile.|
-r3_3£Ritora true se e solo se un file con il nome specificato esiste, o se è scrivibile o se è leggibile.|
+r3_2£Ritorna true se e solo se un file con il nome specificato esiste, se è scrivibile e se è leggibile.|
+r3_3£Ritorna true se e solo se un file con il nome specificato esiste, o se è scrivibile o se è leggibile.|
 g3£Questi metodi permettono di capire se un file con il nome specificato esiste, se è scrivibile e se è leggibile.|
 
 d4£cosa fa il seguente codice?<br><code>public boolean mkdir() <br>public boolean mkdirs()</code><br>|
-r4_1£restituisce true se ci troviamo nella directory dell'oggetto File|
+r4_1£restituisce true se ci troviamo nella directory dell oggetto File|
 r4_2£crea un oggetto File nella directory|
-r4_3£Permette di creare una directory che corrisponde all'oggetto File.|
-g4£Permette di creare una directory che corrisponde all'oggetto File.|
+r4_3£Permette di creare una directory che corrisponde all oggetto File.|
+g4£Permette di creare una directory che corrisponde all oggetto File.|
 
-d5£La classe File fornisce l'accesso a file e directory in modo indipendente dal sistema operativo.|
+d5£La classe File fornisce l accesso a file e directory in modo indipendente dal sistema operativo.|
 r5_1£Vero|
 r5_2£Falso|
 r5_3£solo se siamo operando su Linux|
@@ -702,7 +694,7 @@ d4£Quali tra i seguenti metodi NON è descritto nel PrintStream?|
 r4_1£print|
 r4_2£println|
 r4_3£printchar|
-g4£printlchar|
+g4£printchar|
 
 d5£è possibile convertire character stream e byte stream?|
 r5_1£Mai|
@@ -765,9 +757,9 @@ g2£Python Package Index|
 
 d3£di cosa si occupa il garbage collection?|
 r3_1£di aggiornare le librerie|
-r3_2£dell'allocazione e il rilascio della memoria|
+r3_2£dell allocazione e il rilascio della memoria|
 r3_3£consente di non definire le variabili|
-g3£dell'allocazione e il rilascio della memoria|
+g3£dell allocazione e il rilascio della memoria|
 
 d4£Come è sviluppato Python?|
 r4_1£in ANSI C|
@@ -787,11 +779,11 @@ titolo£ Quiz Print e Input|
 next£23|
 tutorial_id£22|
 
-d1£qual'è la principale funzione dell'input?|
-r1_1£consente di chiedere dei valori all'utente|
+d1£qual è la principale funzione dell input?|
+r1_1£consente di chiedere dei valori all utente|
 r1_2£consente di inserire dei valori nel database|
 r1_3£consente di inserire dei valori in una lisa|
-g1£consente di chiedere dei valori all'utente|
+g1£consente di chiedere dei valori all utente|
 
 d2£Cosa stampa il seguente codice?<code><br> a = 12<br> b = 3<br> print(a, b, a-b)<br>|
 r2_1£genera un errore|
@@ -805,13 +797,13 @@ r3_2£3|
 r3_3£infiniti|
 g3£infiniti|
 
-d4£per visualizzare un elemento sull'interprete interattivo, non è necessario chiamare la print|
+d4£per visualizzare un elemento sull interprete interattivo, non è necessario chiamare la print|
 r4_1£vero|
 r4_2£falso|
 r4_3£solo se la print prende un solo valore in ingresso|
 g4£vero|
 
-d5£cosa stampa il seguente codice?<code><br> raggio = input('Inserisci il raggio: ')<br>Inserisci il raggio: 8.4<br> r = float(raggio)<br> raggio, r<br>('8.4', 8.4)<br> print('Area:', 3.14 * r**2)<br>|
+d5£cosa stampa il seguente codice?<code><br> raggio = input( Inserisci il raggio:  )<br>Inserisci il raggio: 8.4<br> r = float(raggio)<br> raggio, r<br>( 8.4 , 8.4)<br> print( Area: , 3.14 * r**2)<br>|
 r5_1£Syntax Error|
 r5_2£Area,52.752|
 r5_3£Area: 221.5584|
@@ -824,17 +816,10 @@ next£24|
 tutorial_id£23|
 
 d1£ La PEP 8 cosa suggerisce?|
-r1_1£usare sempre 4 spazi per livello di indentazione;<br>
-    evitare l’uso dei caratteri di tabulazione;<br>
-    non mischiare mai l’uso di tabulazioni e spazi.<br>|
-r1_2£usare sempre 4 spazi per livello di indentazione;<br>
-    usare sempre dei caratteri di tabulazione;<br>
-    non mischiare mai l’uso di tabulazioni e spazi.<br>|
-r1_3£usare sempre 4 spazi per livello di indentazione;<br>
-    evitare l’uso dei caratteri di tabulazione;<br>|
-g1£usare sempre 4 spazi per livello di indentazione;<br>
-    evitare l’uso dei caratteri di tabulazione;<br>
-    non mischiare mai l’uso di tabulazioni e spazi.<br>|
+r1_1£usare sempre 4 spazi per livello di indentazione;evitare l’uso dei caratteri di tabulazione;non mischiare mai l’uso di tabulazioni e spazi.|
+r1_2£usare sempre 4 spazi per livello di indentazione;usare sempre dei caratteri di tabulazione;non mischiare mai l’uso di tabulazioni e variabili.|
+r1_3£usare sempre 4 spazi per livello di indentazione;evitare l’uso dei caratteri di tabulazione;|
+g1£usare sempre 4 spazi per livello di indentazione;evitare l’uso dei caratteri di tabulazione;non mischiare mai l’uso di tabulazioni e spazi.|
 
 d2£Come vengono definite le variabili in Python?|
 r2_1£Attraverso un assegnazione(=)|
@@ -842,7 +827,7 @@ r2_2£Ne va prima definito il tipo e poi assegnato un valore|
 r2_3£se non ne viene definito il tipo vengono messe di defoult a int|
 g2£Attraverso un assegnazione(=)|
 
-d3£Cosa stampa il seguente codice?<code><br>x = 10<br>x = "Python"<br>x = [1, 2, 3]<br>print(x)</code><br>|
+d3£Cosa stampa il seguente codice?<code><br>x = 10<br>x = "Python"<br>x = [1, 2, 3]<br>print(x)</code>|
 r3_1£Errore |
 r3_2£x = [1, 2, 3]|
 r3_3£x=10|
@@ -878,7 +863,7 @@ r2_2£2|
 r2_3£1|
 g2£1|
 
-d3£se a=1 e b=0 cosa restituisce a and b?|
+d3£se a=1 e b=0 cosa restituisce a or b?|
 r3_1£true|
 r3_2£false|
 r3_3£1|
@@ -887,8 +872,8 @@ g3£true|
 d4£cosa fa x^y?|
 r4_1£fa la potenza di x|
 r4_2£fa il prodotto|
-r4_3£fa l'or esclusivo|
-g4£fa l'or esclusivo|
+r4_3£fa l or esclusivo|
+g4£fa l or esclusivo|
 
 d5£cosa restituisce 12//5|
 r5_1£2|
@@ -904,30 +889,30 @@ next£26|
 tutorial_id£25|
 
 d1£Come si dichiara una stringa?|
-r1_1£x=Hello World!|
+r1_1£x=(Hello World!)|
 r1_2£x=< Hello World! >|
-r1_3£x="Hello World!"|
-g1£x="Hello World!"|
+r1_3£x=" Hello World! "|
+g1£x=Hello World!|
 
-d2£Cos'è l'indexing|
+d2£Cos è l indexing|
 r2_1£la possibilità di accedere agli elementi di una sequenza, usando la sintassi sequenza[indice]|
 r2_2£la possibilità di accedere agli elementi di una sequenza, usando la sintassi sequenza(indice)|
 r2_3£è il tipo di indentazione tipico di python|
 g2£la possibilità di accedere agli elementi di una sequenza, usando la sintassi sequenza[indice]|
 
-d3£Cosa stampa il seguente codice?s = <br><code>s='Python'<br>print(s[1])<br></code> |
+d3£Cosa stampa il seguente codice?s = <br><code>s= Python <br>print(s[1])</code> |
 r3_1£P|
-r3_2£'y'|
-r3_3£'P'|
-g3£'y'|
+r3_2£y|
+r3_3£Py|
+g3£y|
 
 d4£In cosa consiste lo slicinig?|
 r4_1£la possibilà di partizionare random una sequenza|
-r4_2£la possibilità di ottenere una nuova sequenza dello stesso tipo che include tutti gli elementi partendo dall’indice inizio (incluso) all’indice fine (escluso).|
+r4_2£la possibilità di ottenere una nuova sequenza dello stesso tipo che include tutti gli elementi partendo dall’indice inizio (incluso) all indice fine (escluso).|
 r4_3£la possibilità di ottenere una nuova sequenza dello stesso tipo che include tutti gli elementi partendo dall’indice inizio (non incluso) all’indice fine (escluso).|
-g4£la possibilità di ottenere una nuova sequenza dello stesso tipo che include tutti gli elementi partendo dall’indice inizio (incluso) all’indice fine (escluso).|
+g4£la possibilità di ottenere una nuova sequenza dello stesso tipo che include tutti gli elementi partendo dall’indice inizio (incluso) all indice fine (escluso).|
 
-d5£cosa stampa il seguente codice?<code><br>s = 'Python'<br>'py' in s<br></code>|
+d5£cosa stampa il seguente codice?<code><br>s =  Python <br> py  in s<br></code>|
 r5_1£True|
 r5_2£False|
 r5_3£py|
@@ -940,7 +925,7 @@ titolo£ Quiz Tuple|
 next£27|
 tutorial_id£26|
 
-d1£qual'è l'operatore che definisce le tuple?|
+d1£qual è l operatore che definisce le tuple?|
 r1_1£(.)|
 r1_2£(,)|
 r1_3£(;)|
@@ -958,11 +943,11 @@ r3_2£classi|
 r3_3£mutabili|
 g3£immutabili|
 
-d4£cosa stampa il codice?<code><br>t = ('abc', 123, 45.67)<br>print(t * 2)|
+d4£cosa stampa il codice?<code><br>t = ( abc , 123, 45.67)<br>print(t * 2)|
 r4_1£Syntax Error|
-r4_2£('abcabc', 123123, 45.6745.67)|
-r4_3£('abc', 123, 45.67, 'abc', 123, 45.67)|
-g4£('abc', 123, 45.67, 'abc', 123, 45.67)|
+r4_2£( abcabc , 123123, 45.6745.67)|
+r4_3£(abc, 123, 45.67, abc, 123, 45.67)|
+g4£(abc, 123, 45.67, abc, 123, 45.67)|
 
 d5£è possibile usare min() su una tupla?|
 r5_1£sempre|
@@ -981,7 +966,7 @@ r1_2£[(,)]|
 r1_3£{(,)}|
 g1£([,])|
 
-d2£Cosa fa l'istruzione empty = [];|
+d2£Cosa fa l istruzione empty = [];|
 r2_1£Elimina tutti gli elementi di una lista|
 r2_2£Crea una nuova lista ripempita di valori 0|
 r2_3£Crea una nuova lista vuota|
@@ -990,10 +975,10 @@ g2£Crea una nuova lista vuota|
 d3£Cosa restituisce .count() se applicato a una lista?|
 r3_1£il numero di elementi doppi nella lista|
 r3_2£la lunghezza della lista|
-r3_3£quante volte l'elemento tra () è presente nella lista|
-g3£quante volte l'elemento tra () è presente nella lista|
+r3_3£quante volte l elemento tra () è presente nella lista|
+g3£quante volte l elemento tra () è presente nella lista|
 
-d4£qual'è la differenza tra tuple e liste?|
+d4£qual è la differenza tra tuple e liste?|
 r4_1£Nessuna|
 r4_2£le seconde sono immutabili|
 r4_3£Le prime possono contenere oggetti di tipo diverso, le seconde no|
@@ -1017,10 +1002,10 @@ r1_2£Si|
 r1_3£Solo se della stessa categoria(da int a double)|
 g1£No|
 
-d2£Se volessi convertire una stringa <code>myString='3.14' in float, come dovrei fare?|
+d2£Se volessi convertire una stringa <code>myString= 3.14  in float, come dovrei fare?|
 r2_1£myString= float(3.14)|
 r2_2£myFloat=float(myString)|
-r2_3£myFloat='3.14'|
+r2_3£myFloat= 3.14 |
 g2£myFloat=float(myString)|
 
 d3£è possibile convertire una lista in un intero? se si in quali casi?|
@@ -1048,33 +1033,32 @@ titolo£ Quiz Istruzioni condizionali|
 next£30|
 tutorial_id£29|
 
-d1£Qual'è la peculiarità delle istruzioni if.. elif.. else?|
+d1£Qual è la peculiarità delle istruzioni if.. elif.. else?|
 r1_1£permette di eseguire  una sola istruzione a seconda del verificarsi di una o più condizioni|
 r1_2£è un sostituto dei cicli|
 r1_3£permette di eseguire istruzioni o gruppi di istruzioni diverse a seconda del verificarsi di una o più condizioni|
 g1£permette di eseguire istruzioni o gruppi di istruzioni diverse a seconda del verificarsi di una o più condizioni|
 
-d2£quale tra le affermazioni sul seguente codice è falsa?<br><code>n = int(input('Inserisci un numero: '))<br>
-if n < 0:   <br>    n = -n  <br>print(n)<br>
-</code><br>|
+d2£quale tra le affermazioni sul seguente codice è falsa?<br><code>n = int(input( Inserisci un numero:  ))<br>
+if n < 0:   <br>    n = -n  <br>print(n)</code>|
 r2_1£esegue la print solo se n<0|
 r2_2£esegue sempre la print|
 r2_3£calcola il valore assoluto di n|
 g2£esegue la print solo se n<0|
 
-d3£aggiungendo dopo le istruzioni dell'if, else: cosa succede|
-r3_1£l'else deve prendere necessariamente una codizione booleana altrimenti non viene eseguito|
-r3_2£l'else viene sempre eseguito subito dopo l'if|
-r3_3£le istruzioni dopo l'else vengono eseguite solo se la condizione dell'if è falsa|
-g3£le istruzioni dopo l'else vengono eseguite solo se la condizione dell'if è falsa|
+d3£aggiungendo dopo le istruzioni dell if, else: cosa succede|
+r3_1£l else deve prendere necessariamente una codizione booleana altrimenti non viene eseguito|
+r3_2£l else viene sempre eseguito subito dopo l if|
+r3_3£le istruzioni dopo l else vengono eseguite solo se la condizione dell if è falsa|
+g3£le istruzioni dopo l else vengono eseguite solo se la condizione dell if è falsa|
 
-d4£dove va inserito l'elif ?|
-r4_1£tra l'if e l'else|
-r4_2£subito dopo l'else|
-r4_3£prima dell'if|
-g4£tra l'if e l'else|
+d4£dove va inserito l elif ?|
+r4_1£tra l if e l else|
+r4_2£subito dopo l else|
+r4_3£prima dell if|
+g4£tra l if e l else|
 
-d5£cosa stampa il seguente codice?<code>n = int(input('Inserisci un numero: '))<br>if n < 0: <br>    print(n, 'è negativo')<br>elsif n>0:  <br>    print(n, 'è positivo')<br>
+d5£cosa stampa il seguente codice?<code>n = int(input( Inserisci un numero:  ))<br>if n < 0: <br>    print(n,  è negativo )<br>elsif n>0:  <br>    print(n,  è positivo )<br>
 </code><br>|
 r5_1£Se n=0 non stampa nulla|
 r5_2£se n=0 stampa che n è sia positivo che negativo|
@@ -1095,10 +1079,10 @@ r1_3£4|
 g1£2|
 
 d2£Come è strutturato il ciclo for?|
-r2_1£"for" variabile "in" i++|
-r2_2£"for" i "in" i++|
-r2_3£"for" variabile "in" iterabile|
-g2£"for" variabile "in" iterabile|
+r2_1£for variabile in i++|
+r2_2£for i in i++|
+r2_3£for variabile in iterabile|
+g2£for variabile in iterabile|
 
 d3£cosa ritorna list(range(5))|
 r3_1£[012345]|
@@ -1112,7 +1096,7 @@ r4_2£Si|
 r4_3£Si, ma è poco usato|
 g4£No|
 
-d5£Qual'è l'errore del seguente codice? n = '8'<br>>>> while True:<br>...     guess = int(input('Inserisci un numero da 1 a 10: '))<br>...     if guess == n:<br>...         print('Hai indovinato!')<br>...         break  # numero indovinato, interrompi il ciclo<br>...     else:<br>...         print('Ritenta sarai più fortunato')<br>...<br>|
+d5£Qual è l errore del seguente codice? n =  8 <br>>>> while True:<br>...     guess = int(input( Inserisci un numero da 1 a 10:  ))<br>...     if guess == n:<br>...         print( Hai indovinato! )<br>...         break  # numero indovinato, interrompi il ciclo<br>...     else:<br>...         print( Ritenta sarai più fortunato )<br>...<br>|
 r5_1£Essendo n un int non lo si può confrontare con guess porta un ciclo infinito|
 r5_2£Non vi è errore, Python riconosce comunque che n=guess se inserisco 8|
 r5_3£il ciclo si interrompe dopo 10 tentativi|
@@ -1260,7 +1244,7 @@ d3£Cosa succede nei salti condizionati ?|
 r3_1£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione precedente a quella a cui si vuole saltare|
 r3_2£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione a cui si vuole saltare, ma solo se è verificata una determinata condizione sui dati|
 r3_3£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione a cui si vuole saltare|
-g3£registro EIP viene sovrascritto con indirizzo di memoria della istruzione a cui si vuole saltare, ma solo se è verificata una determinata condizione sui dati|
+g3£il registro EIP viene sovrascritto con indirizzo di memoria della istruzione a cui si vuole saltare, ma solo se è verificata una determinata condizione sui dati|
 
 d4£Le istruzioni di salto incondizionato possono essere di tipo :|
 r4_1£diretto o indiretto|
@@ -1594,7 +1578,7 @@ g1£ Le relazioni rappresentano le entita’ che si ritiene essere interessanti 
 
 d2£Definizione di “chiave primaria”:|
 r2_1£un insieme di attributi che permettono di identificare univocamente una tupla in una relazione.|
-r2_2£|un insieme di istanze che permettono di identificare univocamente una tupla in una relazione.
+r2_2£un insieme di istanze che permettono di identificare univocamente una tupla in una relazione.|
 r2_3£un insieme di attributi che permettono di identificare una tupla in una relazione.|
 g2£un insieme di attributi che permettono di identificare univocamente una tupla in una relazione.|
 
@@ -1610,7 +1594,7 @@ r4_2£viene applicato a due relazioni ed effettua il prodotto cartesiano delle t
 r4_3£vengono concatenate le tuple di due relazioni in base al valore di un insieme dei loro attibuti|
 g4£vengono concatenate le tuple di due relazioni in base al valore di un insieme dei loro attibuti|
 
-d5£Cosa fa l'INTERSECT?|
+d5£Cosa fa l INTERSECT?|
 r5_1£applicato a due relazioni, restituisce una relazione contenente le tuple che esistono in entrambe le relazioni|
 r5_2£applicato a due relazioni, restituisce una relazione contenente le tuple di entrambe le relazioni|
 r5_3£applicato a due relazioni compatibili, restituisce una relazione contenente le tuple che esistono in entrambe le relazioni|
@@ -1629,13 +1613,13 @@ r1_3£invocazione tramite un programma relazionale|
 g1£invocazione tramite un programma relazionale|
 
 d2£La sintassi per invocare il programma psql è:|
-r2_1£<code>psql [ dbname [ user ] ]</code>|
-r2_2£<code>psql  [ user ] </code>|
-r2_3£<code>user [ dbname [ psql ] ]</code>|
-g2£<code>psql [ dbname [ user ] ]</code>|
+r2_1£psql [ dbname [ user ] ]|
+r2_2£psql  [ user ] |
+r2_3£user [ dbname [ psql ] ]|
+g2£psql [ dbname [ user ] ]|
 
 d3£Cosa fa il comando :<code>psql mydb benfante</code>|
-r3_1£crea un nuovo database chiamato 'benefante'|
+r3_1£crea un nuovo database chiamato  benefante |
 r3_2£attiva il programma psql, accedendo al database mydb come utente benfante|
 r3_3£attiva il programma psql, accedendo al database benefante come utente mydb|
 g3£attiva il programma psql, accedendo al database mydb come utente benfante|
@@ -1646,7 +1630,7 @@ r4_2£Crea degli spazi dei nomi separati|
 r4_3£crea una nuova tabella piena|
 g4£Crea degli spazi dei nomi separati|
 
-d5£ cosa fa l'istruzione CHARACTER VARYING(n)|
+d5£ cosa fa l istruzione CHARACTER VARYING(n)|
 r5_1£Crea una stringa a lunghezza variabile di al massimo n caratteri.|
 r5_2£Una lista a lunghezza variabile di al massimo n caratteri.|
 r5_3£Una stringa a lunghezza n.|
@@ -1658,7 +1642,7 @@ titolo£ Quiz Popolazione del database|
 next£45|
 tutorial_id£44|
 
-d1£Cosa si intede con il termine 'popolazione del database'?|
+d1£Cosa si intede con il termine  popolazione del database ?|
 r1_1£l’attività di inserimento dei dati al suo interno|
 r1_2£l’attività di aggiornamento dei dati al suo interno|
 r1_3£si intende la creazione del database|
@@ -1670,11 +1654,11 @@ r2_2£il DBMS impedisce l’operazione di inserimento facendola fallire|
 r2_3£il DBMS impedisce l’operazione di inserimento senza però farla fallire|
 g2£il DBMS impedisce l’operazione di inserimento facendola fallire|
 
-d3£Qual'è la sintassi dell'utilizzo dell'INSERT?|
-r3_1£<code>INSERT INTO nome_tabella [ ( elenco_campi ) ]<br>VALUES ( elenco_valori )<br></code>|
-r3_2£<code>INSERT nome_tabella [ ( elenco_campi ) ]<br>VALUES ( elenco_valori )<br></code>|
-r3_3£<code>INSERT INTO nome_tabella [ ( elenco_campi ) ]<br></code>|
-g3£<code>INSERT INTO nome_tabella [ ( elenco_campi ) ]<br>VALUES ( elenco_valori )<br></code>|
+d3£Qual è la sintassi dell utilizzo dell INSERT?|
+r3_1£INSERT INTO nome_tabella [ ( elenco_campi ) ]VALUES ( elenco_valori )|
+r3_2£INSERT nome_tabella [ ( elenco_campi ) ]VALUES ( elenco_valori )|
+r3_3£INSERT INTO nome_tabella [ ( elenco_campi ) ]|
+g3£INSERT INTO nome_tabella [ ( elenco_campi ) ]VALUES ( elenco_valori )|
 
 d4£Cosa permette di fare la SELECT?|
 r4_1£permette di estrarre dalle tabelle del database dei dati che vengono organizzati in una relazione già esistente|
@@ -1713,7 +1697,7 @@ r3_2£definisce dove le stringhe verranno analizzate|
 r3_3£definisce l’ordinamento da applicare al risultato finale|
 g3£definisce invece un filtro sulle righe che verranno analizzate|
 
-d4£Cosa indica l'asterisco in:<code>SELECT Person.* FROM Person</code>|
+d4£Cosa indica l asterisco in:<code>SELECT Person.* FROM Person</code>|
 r4_1£che andrà fatta il prodotto cartesiano tra la tabella selezionata e quella originale|
 r4_2£che si vogliono analizzare tutte le colonne di una tabella|
 r4_3£che si vogliono analizzare tutte le righe di una tabella|
@@ -1750,10 +1734,10 @@ r3_2£AND|
 r3_3£OR|
 g3£NOT|
 
-d4£Quale tra le seguenti affermazioni sull'operatore BETWEEN è falsa?|
+d4£Quale tra le seguenti affermazioni sull operatore BETWEEN è falsa?|
 r4_1£serve per cercare valori in un intervallo|
 r4_2£Non funziona su variabili VARCHAR|
-r4_3£l'intervallo si intende chiuso|
+r4_3£l intervallo si intende chiuso|
 g4£Non funziona su variabili VARCHAR|
 
 d5£Come si riconosce un valore NULL in SQL?|
@@ -1770,10 +1754,10 @@ tutorial_id£47|
 d1£Quale è una valida alternativa al GROUP BY?|
 r1_1£DISTINC|
 r1_2£ORDER BY|
-r1_3£Non vi è un'alternativa|
+r1_3£Non vi è un alternativa|
 g1£DISTINCT|
 
-d2£Qual'è la principale funzione di GROUP BY?|
+d2£Qual è la principale funzione di GROUP BY?|
 r2_1£serve a specificare quali sono i campi sui cui effettuare i raggruppamenti|
 r2_2£distingue le righe uguali riportandole quindi una sola volta|
 r2_3£modifica la tabella di lavoro eliminando tutti gli elementi esclusi|
@@ -1809,25 +1793,25 @@ r1_2£Modificare dati già esistenti nel database, se non esistenti ne crea di n
 r1_3£Modificare dati già esistenti nel database, creandone uno nuovo|
 g1£Modificare dati già esistenti nel database|
 
-d2£Qual'è la sintassi di UPDATE?|
-r2_1£<code>UPDATE nome_tabella<br>SET nomeCampo1 = <valore1> [,nomeCampoX = <valoreX>]*<br>[ WHERE predicato ]</code><br>|
-r2_2£<code>UPDATE nome_tabella<br>SET nomeCampo1 = <valore1> [,nomeCampoX = <valoreX>]/<br>[ WHERE predicato ]</code><br>|
-r2_3£<code>UPDATE nome_tabella<br>SET nomeCampo1 = <valore1> [nomeCampoX = <valoreX>]*<br>[ WHERE predicato ]</code><br>|
-g2£<code>UPDATE nome_tabella<br>SET nomeCampo1 = <valore1> [,nomeCampoX = <valoreX>]*<br>[ WHERE predicato ]</code><br>|
+d2£Qual è la sintassi di UPDATE?|
+r2_1£UPDATE nome_tabella SET nomeCampo1 = <valore1> [,nomeCampoX = <valoreX>]*[ WHERE predicato ]|
+r2_2£UPDATE nome_tabella SET nomeCampo1 = <valore1> [,nomeCampoX = <valoreX>]/[ WHERE predicato ]|
+r2_3£UPDATE nome_tabella SET nomeCampo1 = <valore1> [nomeCampoX = <valoreX>]*[ WHERE predicato ]|
+g2£UPDATE nome_tabella SET nomeCampo1 = <valore1> [,nomeCampoX = <valoreX>]*[ WHERE predicato ]|
 
-d3£Qual'è l'utilizzo tipo?|
+d3£Qual è l utilizzo tipo?|
 r3_1£Modificare in blocco tutti i valori del database|
 r3_2£Modificare in blocco tutti i valori di una specifica tabella|
-r3_3£Modificare un singolo valore usando l'id|
-g3£Modificare un singolo valore usando l'id|
+r3_3£Modificare un singolo valore usando l id|
+g3£Modificare un singolo valore usando l id|
 
-d4£Cosa vi è di sbagliato nel seguente codice?: <code>UPDATE Person SET given_names = 'Stefano' WHERE ID = 4</code>|
+d4£Cosa vi è di sbagliato nel seguente codice?: <code>UPDATE Person SET given_names =  Stefano  WHERE ID = 4</code>|
 r4_1£Nulla|
-r4_2£il set non può selezionare tra gli utenti quelli di nome 'Stefano'|
-r4_3£UPDATE si deve riferire all'ID non alla tabella Person|
+r4_2£il set non può selezionare tra gli utenti quelli di nome  Stefano |
+r4_3£UPDATE si deve riferire all ID non alla tabella Person|
 g4£Nulla|
 
-d5£Cosa fa questo Codice?:<code>UPDATE Book SET volume = 1, note='1 solo volume'  WHERE volume IS NULL</code>|
+d5£Cosa fa questo Codice?:<code>UPDATE Book SET volume = 1, note= 1 solo volume   WHERE volume IS NULL</code>|
 r5_1£Setta a NULL tutti i valori di book|
 r5_2£Setta a 1 tutti i valori null|
 r5_3£mettendo a 1 il valore del campo volume di tutti i record|
@@ -1840,29 +1824,29 @@ titolo£ Quiz Eliminare i dati|
 next£50|
 tutorial_id£49|
 
-d1£Cosa permette di fare l'istruzione DELETE?|
+d1£Cosa permette di fare l istruzione DELETE?|
 r1_1£di eliminare i record di una tabella che soddisfano un certo predicato|
 r1_2£di creare una nuova tabella senza i record di una tabella che soddisfano un certo predicato|
 r1_3£di eliminare i record di una tabella indistintamente|
 g1£di eliminare i record di una tabella che soddisfano un certo predicato|
 
-d2£Qual'è la struttura CLASSICA di DELETE?|
-r2_1£<code>DELETE FROM nome_tabella<br></code><br>|
-r2_2£<code>DELETE nome_tabella<br></code><br>|
-r2_3£<code>DELETE FROM nome_tabella<br>[ WHERE predicato ]<br></code><br>|
-g2£<code>DELETE FROM nome_tabella<br>[ WHERE predicato ]<br></code><br>|
+d2£Qual è la struttura CLASSICA di DELETE?|
+r2_1£DELETE FROM nome_tabella|
+r2_2£DELETE nome_tabella|
+r2_3£DELETE FROM nome_tabella[ WHERE predicato ]|
+g2£DELETE FROM nome_tabella[ WHERE predicato ]|
 
 d3£Nel caso in cui venga esclusa la clausola WHERE cosa succede?|
 r3_1£ritorna ERRORE|
-r3_2£ l’eliminazione avverrà su tutte le righe della tabella|
-r3_3£ l’eliminazione avverrà su tutte le colonne della tabella|
-g3£ l’eliminazione avverrà su tutte le righe della tabella|
+r3_2£ l eliminazione avverrà su tutte le righe della tabella|
+r3_3£ l eliminazione avverrà su tutte le colonne della tabella|
+g3£ l eliminazione avverrà su tutte le righe della tabella|
 
 d4£Cosa succede se sussistono delle chiavi esterne sui record che vengono specificati|
-r4_1£Nulla, l'eleminazione avviene senza errori|
-r4_2£l'eliminazione fallisce|
+r4_1£Nulla, l eleminazione avviene senza errori|
+r4_2£l eliminazione fallisce|
 r4_3£vengono eliminate anche le chiavi esterne collegate ai record|
-g4£l'eliminazione fallisce|
+g4£l eliminazione fallisce|
 
 d5£Cosa comporta la clausola ON DELETE CASCADE?|
 r5_1£vengono eliminate anche le chiavi esterne collegate ai record|
@@ -1877,19 +1861,19 @@ titolo£ Quiz Transazioni|
 next£41|
 tutorial_id£50|
 
-d1£Cosa fa questo codice?<code><br>START TRANSACTION;<br>   DELETE FROM Book WHERE Publisher = 1;<br>   DELETE FROM Publisher WHERE ID = 1<br>COMMIT;<br></code><br>|
-r1_1£elimina l’editore con ID pari a 1, e dopo vengono eliminati i libri pubblicati da esso|
-r1_2£elimina l’editore con ID pari a 1, ma prima vengono eliminati i libri pubblicati da esso|
-r1_3£elimina l’editore con ID pari a 1|
-g1£elimina l’editore con ID pari a 1, ma prima vengono eliminati i libri pubblicati da esso|
+d1£Cosa fa questo codice?<code><br>START TRANSACTION;<br>   DELETE FROM Book WHERE Publisher = 1;<br>   DELETE FROM Publisher WHERE ID = 1<br>COMMIT;</code>|
+r1_1£elimina l editore con ID pari a 1, e dopo vengono eliminati i libri pubblicati da esso|
+r1_2£elimina l editore con ID pari a 1, ma prima vengono eliminati i libri pubblicati da esso|
+r1_3£elimina l editore con ID pari a 1|
+g1£elimina l editore con ID pari a 1, ma prima vengono eliminati i libri pubblicati da esso|
 
 d2£Racchiudendo il blocco tra START TRANSACTION e COMMIT TRANSACTION|
 r2_1£si può scrivere un commento vicino al codice|
 r2_2£Si rende il blocco atomico|
-r2_3£si rende possibile passare da un'istruzione all'altra senza generare errori|
+r2_3£si rende possibile passare da un istruzione all altra senza generare errori|
 g2£Si rende il blocco atomico|
 
-d3£Cosa fa l'istruzione ROLLBACK|
+d3£Cosa fa l istruzione ROLLBACK|
 r3_1£si forza la chiusura della transazione|
 r3_2£si salta alla fine della transazione|
 r3_3£si forza il fallimento della transazione|
@@ -1911,13 +1895,13 @@ titolo£ Quiz Introduzione|
 next£52|
 tutorial_id£51|
 
-d1£ Cosa significa l'acronimo HTML?|
+d1£ Cosa significa l acronimo HTML?|
 r1_1£HiperText Model Language|
 r1_2£HiperText Markup Language|
 r1_3£HighText Markup Language|
 g1£HiperText Markup Language|
 
-d2£E' possibile realizzare un sito web utilizzando esclusivamente codice HTML?|
+d2£E  possibile realizzare un sito web utilizzando esclusivamente codice HTML?|
 r2_1£Si|
 r2_2£No|
 r2_3£Solo se utilizziamo Internet Explorer|
@@ -1963,11 +1947,11 @@ r2_2£)|
 r2_3£/|
 g2£/|
 
-d3£Quali sono generalmente il primo e l'ultimo TAG di un documento HTML?|
-r3_1£< html > e </ html >|
-r3_2£< head > e </ head >|
-r3_3£< body > e </ body >|
-g3£< html > e </ html >|
+d3£Quali sono generalmente il primo e l ultimo TAG di un documento HTML?|
+r3_1£< html > e < / html >|
+r3_2£< head > e < / head >|
+r3_3£< body > e < / body >|
+g3£< html > e < / html >|
 
 d4£Di quali parti si compone un documento HTML?|
 r4_1£Titolo e Intestazione|
@@ -2015,7 +1999,7 @@ r4_3£Le parole chiave del nome del sito|
 g4£Le parole chiave per la ricerca del browser|
 
 d5£Quale delle seguenti affermazioni è corretta?|
-r5_1£I META-TAG vanno inseriti all'interno del body|
+r5_1£I META-TAG vanno inseriti all interno del body|
 r5_2£I META-TAG non sono obbligatori in una pagina web|
 r5_3£I META-TAG possono essere al massimo 3 per ogni documento|
 g5£I META-TAG non sono obbligatori in una pagina web|
@@ -2051,15 +2035,15 @@ g3£BACKGROUND|
 
 d4£Cosa fa la funzione < ..body .. ONLOAD = "controlla();" ?|
 r4_1£Chiama la funzione Controlla() al caricamento della pagina|
-r4_2£Chiama la funzione Controlla() al caricamento dell'immagine di sfondo|
+r4_2£Chiama la funzione Controlla() al caricamento dell immagine di sfondo|
 r4_3£Chiama la funzione Controlla() alla fine della pagina|
 g4£Chiama la funzione Controlla() al caricamento della pagina|
 
 d5£Quale delle seguenti affermazioni è corretta?|
 r5_1£Gli attributti del body sono obbligatori|
 r5_2£Nel body non posso inserire sia BACKGROUND che BGCOLOR contemporaneamente|
-r5_3£VLINK si riferisce ai link della pagina già cliccati dall'utente|
-g5£VLINK si riferisce ai link della pagina già cliccati dall'utente|
+r5_3£VLINK si riferisce ai link della pagina già cliccati dall utente|
+g5£VLINK si riferisce ai link della pagina già cliccati dall utente|
 
 
 
@@ -2097,10 +2081,10 @@ r4_3£HR|
 g4£BR|
 
 d5£Quale delle seguenti affermazioni è corretta?|
-r5_1£Il TAG < HR > non può avere attributi|
-r5_2£Il TAG < DIR > raggruppa elementi diversi|
-r5_3£Il TAG < P > può non essere chiuso|
-g5£Il TAG < P > può non essere chiuso|
+r5_1£Il TAG  HR  non può avere attributi|
+r5_2£Il TAG  DIR  raggruppa elementi diversi|
+r5_3£Il TAG  P  può non essere chiuso|
+g5£Il TAG  P  può non essere chiuso|
 
 
 
@@ -2116,7 +2100,7 @@ r1_2£STRONG|
 r1_3£BOLD|
 g1£BOLD|
 
-d2£Quale TAG permette di visualizzare spazi e ritorni a capo così come scritti dall'utente?|
+d2£Quale TAG permette di visualizzare spazi e ritorni a capo così come scritti dall utente?|
 r2_1£P|
 r2_2£PRE|
 r2_3£DIV|
@@ -2162,10 +2146,10 @@ r2_3£SRC|
 g2£SRC|
 
 d3£A cosa serve ALT nel tag < IMG  ALT = .. >?|
-r3_1£Alla descrizione dell'imagine che appare quando non viene caricata correttamente dal browser|
-r3_2£Alla descrizione dell'imagine che appare quando carichiamo troppe volte la pagina|
-r3_3£Alla descrizione dell'imagine che appare accanto all'immagine come didascalia|
-g3£Alla descrizione dell'imagine che appare quando non viene caricata correttamente dal browser|
+r3_1£Alla descrizione dell imagine che appare quando non viene caricata correttamente dal browser|
+r3_2£Alla descrizione dell imagine che appare quando carichiamo troppe volte la pagina|
+r3_3£Alla descrizione dell imagine che appare accanto all immagine come didascalia|
+g3£Alla descrizione dell imagine che appare quando non viene caricata correttamente dal browser|
 
 d4£Quale attributo si IMG ne determina la larghezza?|
 r4_1£HEIGTH|
@@ -2295,7 +2279,7 @@ r5_3£I form servono a inviare dati a qualcuno|
 g5£ACTION può essere vuoto|
 
 titolo£ Quiz Introduzione|
-next£61|
+next£62|
 tutorial_id£61|
 
 d1£ A cosa serve il linguaggio CSS?|
@@ -2304,7 +2288,7 @@ r1_2£A creare contenuti per le pagine HTML|
 r1_3£A rendere dinamiche le pagine HTML|
 g1£A dare lo stile alle pagine HTML|
 
-d2£E' più conveniente utilizzare fogli di stili esterni o interni al documento HTML?|
+d2£E  più conveniente utilizzare fogli di stili esterni o interni al documento HTML?|
 r2_1£Interni|
 r2_2£Esterni|
 r2_3£Interni se sono pagine pesanti|
@@ -2316,7 +2300,7 @@ r3_2£LINK|
 r3_3£CSS|
 g3£STYLE|
 
-d4£Quale attributo è obbligatorio per il TAG STYLE dichiarato nell'head?|
+d4£Quale attributo è obbligatorio per il TAG STYLE dichiarato nell head?|
 r4_1£Media|
 r4_2£Link|
 r4_3£Type|
@@ -2402,7 +2386,7 @@ r4_3£Infiniti ma solo se si tratta di TAG diversi tra loro|
 g4£Infiniti|
 
 d5£Quale delle seguenti affermazione è falsa?|
-r5_1£E' possibile applicare uno stile solo ad alcuni TAG di una classe|
+r5_1£E  possibile applicare uno stile solo ad alcuni TAG di una classe|
 r5_2£Posso omettere il simbolo # per indicare lo stile di un TAG con un certo ID|
 r5_3£Posso assegnare ad un TAG sia una classe che un ID|
 g5£Posso omettere il simbolo # per indicare lo stile di un TAG con un certo ID|
@@ -2744,7 +2728,7 @@ g4£No|
 d5£Quale delle seguenti affermazione è falsa?|
 r5_1£Un dato booleano può assumere solo i valori true e false|
 r5_2£Se fornisco una stringa vuota ad una funzione booleana, mi restituirà true|
-r5_3£La funzione IsNaN controlla che l'argomento passatogli sia un numero|
+r5_3£La funzione IsNaN controlla che l argomento passatogli sia un numero|
 g5£Se fornisco una stringa vuota ad una funzione booleana, mi restituirà true|
 
 

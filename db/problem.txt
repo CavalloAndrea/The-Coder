@@ -425,8 +425,8 @@ Inseriamo il footer:<br>
     } <br>
 </code>
 |
-titolo£Esercizio Finale JavaScript|
-linguaggio£JavaScript|
+titolo£Esercizio Finale Javascript|
+linguaggio£Javascript|
 esercizio£
 Dato un numero calcolarne il fattoriale
 |

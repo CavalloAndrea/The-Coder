@@ -695,7 +695,7 @@ lezione£
 <b>Gestione delle eccezioni </b><br>
 Il concetto di eccezione, pur non essendo una prerogativa esclusiva di Java, ha avuto un nuovo impulso proprio grazie a questo linguaggio che ne fa uno dei suoi punti di forza. Si può addirittura dire che, senza il meccanismo di gestione delle eccezioni, buona parte della struttura di Java non avrebbe ragione di esistere. Si potrebbe definire sinteticamente il concetto di eccezione come unanomalia di funzionamento del programma che non può essere prevista in fase di scrittura del codice. Si può prendere ad esempio il caso in cui la connessione verso un database remoto venga chiusa per un qualche motivo, oppure il collegamento via socket verso una applicazione server-side non sia più disponibile per motivi non prevedibili o non dipendenti dalla correttezza del codice dellapplicazione. Spesso fonte di problemi è data dagli effetti derivanti dalla contestualizzazione delle variabili (effettuare una divisione potrebbe essere impossibile se il divisore è nullo), ed anche la presenza di situazioni dinamiche, polimorfiche può portare alla non predicibilità del flusso delle operazioni. Una eccezione quindi non è un errore di programmazione, situazione questa ben più grave, ma un evento non previsto e non dipendente dalla volontà del programmatore<br> 
 <br>
-<b>Cosa sono le eccezioni e come si gestiscono<b> <br>
+<b>Cosa sono le eccezioni e come si gestiscono</b> <br>
 La leggenda narra che i progettisti che allepoca definirono tutta la struttura del linguaggio fossero appassionati di uno degli sport più popolari negli USA, il baseball, ed è per tale ragione che nellambito della gestione delle eccezioni si trovano termini tipici di tale sport, come lanciare (throw) o catturare (catch) una eccezione. La struttura sintattica di base è un qualcosa del tipo <br>
 <code><br>
 try { ... // porzione di codice che potrebbe dare dei problemi ... } <br>
@@ -1194,8 +1194,8 @@ La sintassi sequenza[inizio:fine] ci permette di ottenere una nuova sequenza del
 >>> s[-2:]  # dall'elemento con indice -2 (incluso) alla fine<br>
 'on'<br>
 </code><br>
-<b>Contenimento</code><br>
-<br>
+<b>Contenimento</b><br>
+<br> 
 Gli operatori in e not in possono essere usati per verificare se un elemento fa parte di una sequenza o no. Nel caso delle stringhe, è anche possibile verificare se una sottostringa è contenuta in una stringa:<br>
 <code><br>
 >>> s = 'Python'<br>
@@ -3552,7 +3552,7 @@ Supponiamo di voler colorare di rosso un paragrafo. Con questo metodo basta dich
 direttamente nell’elemento <b>< p ></b>:<br>
 <code>< p style=’color:red’>Hello World!< /p ></code><br>
 ed il gioco è fatto.<br><br>
-<b>2. Utilizzare l’elemento < style > nell’head dei nostri documenti XHTML.<b>
+<b>2. Utilizzare l’elemento < style > nell’head dei nostri documenti XHTML.</b>
 Con questo metodo è sufficente inserire le proprietà direttamente nell’ head:<br>
 <code><html><br>
 <head><br>
@@ -3639,7 +3639,7 @@ lato inferiore; in pratica è equivalente a scrivere:<code> p { margin: 3px 10px
 
 titolo£[CSS]-Le Classi e gli ID|
 linguaggio£CSS|
-lezione£ <b>Classi</b> ed <b>ID</> sono due attributi del codice xHTML, importantissimi per i fogli di stile.
+lezione£ <b>Classi</b> ed <b>ID</b> sono due attributi del codice xHTML, importantissimi per i fogli di stile.
 Permettono infatti di associare un’insieme di regole ad un solo selettore ( ID ) o ad un
 gruppo ( class ).<br>
 Immaginiamo di voler assegnare a tutti i commenti di un blog il colore grigio ed una
