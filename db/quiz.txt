@@ -2198,7 +2198,7 @@ g4£HREF =  indirizzo |
 
 d5£Quale delle seguenti affermazioni è corretta?|
 r5_1£Un indirizzo assoluto è del tipo  /home/documento.html |
-r5_2Il nome di un segnalibro si richiamo con il simbolo #|
+r5_2£Il nome di un segnalibro si richiamo con il simbolo #|
 r5_3£Nella pagina ci deve essere almeno un segnalibro|
 g5£Il nome di un segnalibro si richiamo con il simbolo #|
 
