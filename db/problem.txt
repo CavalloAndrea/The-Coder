@@ -162,7 +162,7 @@ def psw_generator():<br>
         x += 1<br>
         <br>
     print("La password generata è : " + psw)<br>
-    </code><br>
+    </code><br>|
 
 titolo£Esercizio Finale Assembly|
 linguaggio£Assembly|
