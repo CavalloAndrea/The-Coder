@@ -2,8 +2,8 @@ titolo£ Quiz Hello World|
 next£2|
 tutorial_id£1|
 
-d1£ Cosa stampa il seguente frammento di codice?<br><code>#include<stdio.h><br>int main(){ <br>printf("Ciao"); <br>printf( "a" ); <br>printf("tutti\n"); <br>return 0; }</code><br>|
-r1_1£"ciao<br> &emsp; a<br>&emsp; tutti"|
+d1£ Cosa stampa il seguente frammento di codice?<br><code>#include<stdio.h><br>int main(){ <br>printf( Ciao ); <br>printf(  a  ); <br>printf( tutti\n ); <br>return 0; }</code><br>|
+r1_1£ ciao<br> &emsp; a<br>&emsp; tutti |
 r1_2£Ciao a<br>&emsp; tutti|
 r1_3£Ciao a tutti|
 g1£Ciao a tutti|
@@ -62,7 +62,7 @@ r4_2£A stampare elementi a video|
 r4_3£Ad assegnare ad una stringa un determinato valore|
 g4£Ad assegnare ad una stringa un determinato valore|
 
-d5£Cosa stampa il seguente frammento di codice?<br><code>#define altezza 182;<br>int peso = altezza/2;<br>printf("%d",peso);<br>...<br></code>|
+d5£Cosa stampa il seguente frammento di codice?<br><code>#define altezza 182;<br>int peso = altezza/2;<br>printf( %d ,peso);<br>...<br></code>|
 r5_1£182|
 r5_2£91|
 r5_3£Il porgramma va in errore|
@@ -98,7 +98,7 @@ r4_2£Tipo della variabile puntata|
 r4_3£Indirizzo della variabile puntata|
 g4£Indirizzo della variabile puntata|
 
-d5£Cosa stampa il seguente frammento di codice?<br><code>...<br>int a= 5;<br>printf("%d",*a);<br>...<br></code>|
+d5£Cosa stampa il seguente frammento di codice?<br><code>...<br>int a= 5;<br>printf( %d ,*a);<br>...<br></code>|
 r5_1£5|
 r5_2£*5|
 r5_3£0x00005|
@@ -122,22 +122,22 @@ r2_2£! = =|
 r2_3£! =|
 g2£! =|
 
-d3£Cosa restituisce il programma se l operazione logica A==B è "vera"? |
+d3£Cosa restituisce il programma se l operazione logica A==B è  vera ? |
 r3_1£true|
 r3_2£null|
 r3_3£1|
 g3£1|
 
-d4£Quali operazioni è possibile effettuare sui tipi di dato "char"?|
+d4£Quali operazioni è possibile effettuare sui tipi di dato  char ?|
 r4_1£Solo la somma|
 r4_2£Le stesse del tipo int|
 r4_3£Solamente la sottrazione|
 g4£Le stesse del tipo int|
 
-d5£Cosa stampa il seguente frammento di codice?<br><code>...<br>int a= 2;<br>b= 3;<br>if(a==b)<br>printf("Vero");<br>else<br>printf("Falso");<br>...<br></code>|
+d5£Cosa stampa il seguente frammento di codice?<br><code>...<br>int a= 2;<br>b= 3;<br>if(a==b)<br>printf( Vero );<br>else<br>printf( Falso );<br>...<br></code>|
 r5_1£Vero|
 r5_2£Falso|
-r5_3£" "|
+r5_3£   |
 g5£Falso|
 
 
@@ -171,7 +171,7 @@ r4_2£! e &|
 r4_3£& e =|
 g4£! e =|
 
-d5£Cosa stampa il seguente frammento di codice?<br><code>int a = 3;<br>int b= ++a;<br>b = a++;<br>printf("%d", "%d",b,a);<br>...<br></code>|
+d5£Cosa stampa il seguente frammento di codice?<br><code>int a = 3;<br>int b= ++a;<br>b = a++;<br>printf( %d ,  %d ,b,a);<br>...<br></code>|
 r5_1£4 5|
 r5_2£5 5|
 r5_3£3 4|
@@ -196,7 +196,7 @@ r2_2£stdi.o|
 r2_3£stdio.h|
 g2£stdio.h|
 
-d3£Cosa indica il valore "%f" all interno di una printf()? |
+d3£Cosa indica il valore  %f  all interno di una printf()? |
 r3_1£Un dato int|
 r3_2£Un dato char|
 r3_3£Un dato float|
@@ -208,7 +208,7 @@ r4_2£IN e OUT|
 r4_3£Non esistono|
 g4£Non esistono|
 
-d5£Cosa stampa il seguente frammento di codice?<br><code>int a = 3;<br>float b= 3.0;<br>printf("%d%f", "%d",a,b);<br>...<br></code>|
+d5£Cosa stampa il seguente frammento di codice?<br><code>int a = 3;<br>float b= 3.0;<br>printf( %d%f ,  %d ,a,b);<br>...<br></code>|
 r5_1£33.0|
 r5_2£3.03|
 r5_3£3.3|
@@ -490,7 +490,7 @@ r2_2£ un ciclo infinito|
 r2_3£ritorno di una funzione diverso dalla tipo richiesto|
 g2£ una semplice divisione il cui denominatore è nullo|
 
-d3£Da cosa derivano termini quali "throw" e "catch"? |
+d3£Da cosa derivano termini quali  throw  e  catch ? |
 r3_1£golf|
 r3_2£baseball|
 r3_3£football|
@@ -507,7 +507,7 @@ catch(Exception2 e) <br>
 	{ ... // codice da eseguire sempre } <br>
 </code>|
 r4_1£nel caso si verifichi una eccezione il controllo viene passato al costrutto catch dove si possono implementare soluzioni di gestione di tale anomalia|
-r4_2£nel caso si verifichi una eccezione il programma "salta" tali istruzioni in modo da non creare errori a tempo di compilazione|
+r4_2£nel caso si verifichi una eccezione il programma  salta  tali istruzioni in modo da non creare errori a tempo di compilazione|
 r4_3£la finally viene eseguta solo se non vi sono errori|
 g4£nel caso si verifichi una eccezione il controllo viene passato al costrutto catch dove si possono implementare soluzioni di gestione di tale anomalia|
 
@@ -827,7 +827,7 @@ r2_2£Ne va prima definito il tipo e poi assegnato un valore|
 r2_3£se non ne viene definito il tipo vengono messe di defoult a int|
 g2£Attraverso un assegnazione(=)|
 
-d3£Cosa stampa il seguente codice?<code><br>x = 10<br>x = "Python"<br>x = [1, 2, 3]<br>print(x)</code>|
+d3£Cosa stampa il seguente codice?<code><br>x = 10<br>x =  Python <br>x = [1, 2, 3]<br>print(x)</code>|
 r3_1£Errore |
 r3_2£x = [1, 2, 3]|
 r3_3£x=10|
@@ -891,7 +891,7 @@ tutorial_id£25|
 d1£Come si dichiara una stringa?|
 r1_1£x=(Hello World!)|
 r1_2£x=< Hello World! >|
-r1_3£x=" Hello World! "|
+r1_3£x=  Hello World!  |
 g1£x=Hello World!|
 
 d2£Cos è l indexing|
@@ -1020,7 +1020,7 @@ r4_2£permette di lavorare con numeri a virgola mobile|
 r4_3£si utilizza per lavorare con i decimali con maggiore precisione|
 g4£permette di lavorare con numeri a virgola mobile|
 
-d5£per utilizzare tipi diversi da queli "base" cosa bisogna fare?|
+d5£per utilizzare tipi diversi da queli  base  cosa bisogna fare?|
 r5_1£import|
 r5_2£import Python.Types|
 r5_3£#import|
@@ -1986,13 +1986,13 @@ r2_2£HTTP-EQUIV / TITLE / CONTENT|
 r2_3£HTTP-EQUIV / NAME / HEAD|
 g2£HTTP-EQUIV / NAME / CONTENT|
 
-d3£Cosa indica il seguente META-TAG?<br><code>< META HTTP-EQUIV="Content-Language" CONTENT="It" ></code>|
+d3£Cosa indica il seguente META-TAG?<br><code>< META HTTP-EQUIV= Content-Language  CONTENT= It  ></code>|
 r3_1£Che il sito finisce con .it|
 r3_2£Che il sito è stato scritto in Italia|
 r3_3£Che la lingua della pagina è in italiano|
 g3£Che la lingua della pagina è in italiano|
 
-d4£Che cosa indica il META NAME="Keywords"?|
+d4£Che cosa indica il META NAME= Keywords ?|
 r4_1£Le parole chiave per la ricerca del browser|
 r4_2£Le parole che si ripetono più volte nel documento|
 r4_3£Le parole chiave del nome del sito|
@@ -2033,7 +2033,7 @@ r3_2£BACKGROUND|
 r3_3£IMG|
 g3£BACKGROUND|
 
-d4£Cosa fa la funzione < ..body .. ONLOAD = "controlla();" ?|
+d4£Cosa fa la funzione < ..body .. ONLOAD =  controlla();  ?|
 r4_1£Chiama la funzione Controlla() al caricamento della pagina|
 r4_2£Chiama la funzione Controlla() al caricamento dell immagine di sfondo|
 r4_3£Chiama la funzione Controlla() alla fine della pagina|
@@ -2184,20 +2184,20 @@ r2_2£A|
 r2_3£HREF|
 g2£A|
 
-d3£Quale attributo fa da "segnalibro" negli elementi della pagina?|
+d3£Quale attributo fa da  segnalibro  negli elementi della pagina?|
 r3_1£ID|
 r3_2£NAME|
 r3_3£HREF|
 g3£NAME|
 
 d4£Qual è la sintassi corretta di HREF?|
-r4_1£HREF : "indirizzo"|
+r4_1£HREF :  indirizzo |
 r4_2£HREF = indirizzo|
-r4_3£HREF = "indirizzo"|
-g4£HREF = "indirizzo"|
+r4_3£HREF =  indirizzo |
+g4£HREF =  indirizzo |
 
 d5£Quale delle seguenti affermazioni è corretta?|
-r5_1£Un indirizzo assoluto è del tipo "/home/documento.html"|
+r5_1£Un indirizzo assoluto è del tipo  /home/documento.html |
 r5_2Il nome di un segnalibro si richiamo con il simbolo #|
 r5_3£Nella pagina ci deve essere almeno un segnalibro|
 g5£Il nome di un segnalibro si richiamo con il simbolo #|
@@ -2876,7 +2876,7 @@ r3_2£Il numero di stringhe presenti nel documento|
 r3_3£Il numero di parole della stringa|
 g3£Il numero di caratteri della stringa|
 
-d4£Quanto vale la variabile prova?<br><code>var prova = "ciao".length; </code><br>|
+d4£Quanto vale la variabile prova?<br><code>var prova =  ciao .length; </code><br>|
 r4_1£5|
 r4_2£1|
 r4_3£4|
