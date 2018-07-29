@@ -2236,7 +2236,7 @@ g4£Unire righe e colonne adiacenti|
 
 d5£Quale delle seguenti affermazioni è corretta?|
 r5_1£Il TAG TABLE non ha bisogno di essere chiuso|
-r5_2Il TAG CAPTION permette di inserire una didascalia alla tabella|
+r5_2£Il TAG CAPTION permette di inserire una didascalia alla tabella|
 r5_3£Non è possibile inserire una riga contenente i titoli delle colonne|
 g5£Il TAG CAPTION permette di inserire una didascalia alla tabella|
 
@@ -2274,7 +2274,7 @@ g4£INPUT,TEXTAREA,SELECT|
 
 d5£Quale delle seguenti affermazioni è corretta?|
 r5_1£Il TAG FORM non ha bisogno di essere chiuso|
-r5_2ACTION può essere vuoto|
+r5_2£ACTION può essere vuoto|
 r5_3£I form servono a inviare dati a qualcuno|
 g5£ACTION può essere vuoto|
 
