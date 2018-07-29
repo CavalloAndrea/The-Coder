@@ -137,7 +137,7 @@ g4£Le stesse del tipo int|
 d5£Cosa stampa il seguente frammento di codice?<br><code>...<br>int a= 2;<br>b= 3;<br>if(a==b)<br>printf( Vero );<br>else<br>printf( Falso );<br>...<br></code>|
 r5_1£Vero|
 r5_2£Falso|
-r5_3£   |
+r5_3£Errore|
 g5£Falso|
 
 
