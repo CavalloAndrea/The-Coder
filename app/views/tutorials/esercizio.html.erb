@@ -3,11 +3,94 @@
 	<html>
 		<head>
 			<title></title>
+			<script type="text/javascript">
+				function mostra(){
+					document.getElementById("soluzione").style.visibility = "visible";
+					
+				}
+			</script>
 		</head>
 		
 		<body>
 
 		<h1>Esercizio finale di <%= params[:linguaggio]%> </h1>
+		Si consideri un file contenente informazioni su un insieme di articoli presenti in magazzino (uno per riga, al massimo 50).<br>
+Per ciascun articolo sono memorizzati il numero di pezzi disponibili e il nome, separati da uno spazio.
+Il nome è lungo al massimo 20 caratteri e può contenere anche spazi. Come esempio si consideri il seguente
+file:<br>
+40 Viti M4<br>
+37 Viti da legno<br>
+20 Martelli<br>
+15 Chiavi inglesi<br>
+150 Chiodi<br>
+3 Pinze<br>
+Si scriva una funzione C che prenda come parametri il nome di un file siffatto, il nome di un file di output ed un valore reale che rappresenta una soglia percentuale.<br>
+La funzione deve scrivere nel file di output gli articoli del file di input nel formato: nome e percentuale di pezzi di quell’articolo rispetto al numero totale di pezzi in magazzino (separati dal carattere ’:’). La funzione deve però scrivere solo gli articoli che superano in percentuale il valore di soglia e deve anche restituire il numero di articoli nel file di uscita.<br>
+Ad esempio, se il file di ingresso è quello dell’esempio e la soglia `e 10.2, il file di uscita sarà il seguente(in quanto Martelli,Chiavi inglesi e Pinze sono in quantità inferiore al 10.2% del totale) e il valore restituito sarà 3:<br>
+Viti M4: 15.09<br>
+Viti da legno: 13.96<br>
+Chiodi: 56.60<br>
+<br>
+<button onclick="mostra();" class="btn btn-primary">Soluzione</button>
+<div id="soluzione" style="visibility: hidden;">
+	<h2 style="font-size: 2.5em; color: inherit">Soluzione</h2>
+
+	<code><br>
+#include <stdio.h><br>
+#include <stdlib.h><br>
+#define MAX_DIM 100<br>
+struct Articolo{<br>
+	char nome[21];<br>
+	int numero;<br>
+};<br>
+int TrasformaFile(char nome_file_input[], char nome_file_output[], float soglia);<br>
+int LeggiVettore(char nome_file[], struct Articolo v[]);<br>
+int main(int argc, char* argv[]){ <br>
+	int k;<br>
+	if (argc != 4)<br>
+		printf("Utilizzo: %s <nome_file_input> <nome_file_output> <soglia>\n", argv[0]);<br>
+	else{<br>
+		k = TrasformaFile(argv[1],argv[2],atof(argv[3]));<br>
+		printf("Il nuovo file contiene %d elementi\n",k);<br>
+	}<br>
+	return 0;<br>
+}<br>
+int TrasformaFile(char nome_file_input[], char nome_file_output[], float soglia){<br>
+	int i = 0, n, m = 0, totale = 0;<br>
+	float percentuale;<br>
+	struct Articolo articoli[MAX_DIM];<br>
+	FILE* fp;<br>
+	n = LeggiVettore(nome_file_input, articoli);<br>
+	for (i = 0; i < n; i++)<br>
+		totale += articoli[i].numero;<br>
+	fp = fopen(nome_file_output,"w");<br>
+	for (i = 0; i < n; i++){<br>
+		percentuale = 100.0 * articoli[i].numero / totale;<br>
+		if (percentuale > soglia)<br>
+		{<br>
+			fprintf(fp,"%s: %.2f\n",articoli[i].nome,percentuale);<br>
+			m++;<br>
+		}<br>
+	}<br>
+	fclose(fp);<br>
+	return m;<br>
+}<br>
+int LeggiVettore(char nome_file[], struct Articolo v[]){<br>
+	int i = 0, j;<br>
+	FILE* fp;<br>
+	fp = fopen(nome_file,"r");<br>
+	while(fscanf(fp,"%d",&v[i].numero) != EOF){<br>
+		j = 0;<br>
+	getc(fp);<br>
+	while ((v[i].nome[j] = getc(fp)) != ’\n’)<br>
+		j++;<br>
+	v[i].nome[j] = ’\0’;<br>
+	i++;<br>
+	}<br>
+return i;<br>
+}<br>
+</code>
+</div>
 		</body>
 	</html>
 

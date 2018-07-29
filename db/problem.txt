@@ -29,7 +29,7 @@ struct Articolo{<br>
 };<br>
 int TrasformaFile(char nome_file_input[], char nome_file_output[], float soglia);<br>
 int LeggiVettore(char nome_file[], struct Articolo v[]);<br>
-int main(int argc, char* argv[]){ /* non richiesto per il compito in classe */<br>
+int main(int argc, char* argv[]){ <br>
 	int k;<br>
 	if (argc != 4)<br>
 		printf("Utilizzo: %s <nome_file_input> <nome_file_output> <soglia>\n", argv[0]);<br>
