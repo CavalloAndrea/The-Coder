@@ -36,8 +36,8 @@ Chiodi: 56.60<br>
 	<h2 style="font-size: 2.5em; color: inherit">Soluzione</h2>
 
 	<code><br>
-#include <stdio.h><br>
-#include <stdlib.h><br>
+#include < stdio.h ><br>
+#include < stdlib.h ><br>
 #define MAX_DIM 100<br>
 struct Articolo{<br>
 	char nome[21];<br>
@@ -48,7 +48,7 @@ int LeggiVettore(char nome_file[], struct Articolo v[]);<br>
 int main(int argc, char* argv[]){ <br>
 	int k;<br>
 	if (argc != 4)<br>
-		printf("Utilizzo: %s <nome_file_input> <nome_file_output> <soglia>\n", argv[0]);<br>
+		printf("Utilizzo: %s < nome_file_input > < nome_file_output > <soglia>\n", argv[0]);<br>
 	else{<br>
 		k = TrasformaFile(argv[1],argv[2],atof(argv[3]));<br>
 		printf("Il nuovo file contiene %d elementi\n",k);<br>
@@ -95,11 +95,142 @@ return i;<br>
 	</html>
 
 	<% elsif params[:linguaggio] == 'Java' %>
-	<p>Questo è il quiz di Java</p>
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script type="text/javascript">
+				function mostrajava(){
+					document.getElementById("soluzione2").style.visibility = "visible";
+					
+				}
+			</script>
+		</head>
+		
+		<body>
+			<h1>Esercizio finale di <%= params[:linguaggio]%> </h1>
+
+			Implementare un metodo ricorsivo per il rovesciamento di un array di interi. Ad es., dato l'array [4, 5, 2, 7], il risultato sarà l'array [7, 2, 5, 4].<br>
+
+			<br>
+<button onclick="mostrajava();" class="btn btn-primary">Soluzione</button>
+<div id="soluzione2" style="visibility: hidden;">
+	<h2 style="font-size: 2.5em; color: inherit">Soluzione</h2>
+
+	<code>
+MyArray.java <br>
+public class MyArray  <br>
+{ <br>
+      private int[] theArray; <br>
+    public MyArray(int[] unArray) <br>
+      {      <br>
+      theArray = unArray; <br>
+      }      <br>
+    public int[] getArray() <br>
+      {            <br>
+      return theArray; <br>
+      }      <br>
+    public void rovescia() <br>
+      {      <br>
+      if ((theArray.length)< 2) return; <br>   
+      int primo = theArray[0]; <br>
+      int ultimo = theArray[(theArray.length-1)]; <br>
+          int[] arrayPiccino = new int[(theArray.length-2)]; <br>
+            System.arraycopy(theArray,1,arrayPiccino,0,(theArray.length-2)); <br>
+      MyArray arrayPiccolo = new MyArray(arrayPiccino); <br>
+      arrayPiccolo.rovescia(); <br>
+      System.arraycopy(arrayPiccino,0,theArray,1,(theArray.length-2)); <br>
+      theArray[0] = ultimo; <br>
+      theArray[(theArray.length-1)] = primo; <br>
+      }      <br>
+    public String stampa()<br>
+    { <br>
+      String ris=""; <br>
+      for (int i=0; i< theArray.length; i++) <br>
+         ris = ris +" "+theArray[i]; <br>
+      return ris; <br>             
+    } <br>
+} <br>
+MyArrayTest.java <br>
+import java.util.Scanner; <br>
+public class MyArrayTest <br>
+ { <br>
+    public static void main (String[] args) <br> 
+    { <br>
+      int[] array = new int[6]; <br>
+      Scanner in = new Scanner(System.in); <br>
+      for (int i=0; i< 6; i++) <br>
+      { <br>
+                System.out.println((i+1)+" numero"); <br>
+                array[i] = in.nextInt(); <br>
+      } <br>
+      MyArray arrayMio = new MyArray(array); <br>
+      arrayMio.rovescia(); <br>
+      System.out.println(arrayMio.stampa()); <br>
+    } 
+} 
+</code>
+
+</div>
+		</body>
+		</html>
+
+
+<% elsif params[:linguaggio] == 'Python' %>
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title></title>
+			<script type="text/javascript">
+				function mostrapython(){
+					document.getElementById("soluzione3").style.visibility = "visible";
+					
+				}
+			</script>
+		</head>
+		
+		<body>
+
+		<h1>Esercizio finale di <%= params[:linguaggio]%> </h1>
+
+Scrivi una funzione generatrice di password. La funzione deve generare una stringa alfanumerica di 8 caratteri qualora l'utente voglia una password semplice, o di 20 caratteri ascii qualora desideri una password più complicata.<br>
+
+		<br>
+<button onclick="mostrapython();" class="btn btn-primary">Soluzione</button>
+<div id="soluzione3" style="visibility: hidden;">
+	<h2 style="font-size: 2.5em; color: inherit">Soluzione</h2>
+
+	<code>
+import random<br>
+<br>
+def psw_generator():<br>
+    print('Benvenuti nel generatore di password. Il programma permette di scegliere tra due livelli di complessità della password.')<br>
+    full_char_table = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~"<br>
+    alpha_char_table = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"<br>
+    <br>
+    if input("Desideri una password semplice(8 caratteri alfanumerici) o difficile(20 caratteri ascii)?  S/D ") == "D":<br>
+        lunghezza = 20<br>
+        tipo = full_char_table<br>
+    else:<br>
+        lunghezza = 8<br>
+        tipo = alpha_char_table<br>
+    psw = ""<br>
+    x = 0<br>
+    for x in range(int(lunghezza)):<br>
+        psw += tipo[int(random.randrange(len(tipo)))]<br>
+        x += 1<br>
+        <br>
+    print("La password generata è : " + psw)<br>
+    </code><br>
+</div>
+	
+		</body>
+		</html>
+
+
 <% elsif params[:linguaggio] == 'Assembly' %>
 	<p>Qui ci va il quiz di Assembly</p>
-<% elsif params[:linguaggio] == 'Python' %>
-	<p>Qui ci va il quiz di Python</p>
 <% elsif params[:linguaggio] == 'SQL' %>
 	<p>Qui ci va il quiz di SQL</p>
 <% elsif params[:linguaggio] == 'HTML' %>
