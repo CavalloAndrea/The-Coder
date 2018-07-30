@@ -34,20 +34,22 @@
     <div class="col-md-8 col-md-offset-2">
         <h5 ><b>Inserisci la parola chiave dell'argomento</b></h5>
         <%= form_tag searching_path, method: 'get' do %>
-        <%= text_field_tag :searching, params[:searching] %> 
+        <%= text_field_tag :searching, params[:searching] %>
+        <div class="row">
+ 
+        <div class="col-md-12">
+        <%= submit_tag "Cerca", class: "btn btn-primary" %>
+    </div>
 
     </div>
 </div>
-
-<div class="row">
-    <div class="col-md-8 col-md-offset-2">
-        <%= submit_tag "Cerca", class: "btn btn-primary" %>
+</div>
     </div>
     
 
 
 <% end %>
-	</div>
+	
 
 <% else %>
 <div class="center jumbotron" id="intestazione">
@@ -64,3 +66,4 @@
 
 
 <% end %>
+

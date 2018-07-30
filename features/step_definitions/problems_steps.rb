@@ -12,7 +12,7 @@ end
 Then "I should be able to search a problem by language" do
     select "Assembly", :from => "linguaggio"
     click_button "Cerca"
-    expect(page).to have_content("Assembly")
+    expect(page).to have_content("Risultati ricerca")
 end
 
 Then "I should be able to propose a problem" do
